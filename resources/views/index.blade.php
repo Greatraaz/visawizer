@@ -1240,5 +1240,6 @@
 
     @include('partials.testi')
     @include('partials.blogs')
+    @include('partials.faq')
 
 @endsection    
