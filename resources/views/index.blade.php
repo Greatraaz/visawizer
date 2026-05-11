@@ -1135,6 +1135,85 @@
     </section>
     <!-- why-clients-choose-section end -->
 
+    <!-- resources-knowledge-hub-section start -->
+    <section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #006039e0), url('{{ asset('assets/images/home-banner-1.webp') }}');">
+        <div class="container">
+            <div class="text-center m-b-50 m-b-xs-40">
+                <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <span class="text-white">Resources</span>
+                </div>
+                <div class="common-title style-color-light m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <h2>Learn before you apply</h2>
+                </div>
+                <p class="text-white m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">
+                    Explore useful guidance, updates, and practical information to make better migration decisions.
+                </p>
+                <p class="text-white" style="font-size: 16px; font-weight: 400; line-height: 1.75; opacity: 0.92; max-width: 980px; margin: 0 auto;">
+                    The best applications begin with better understanding. Our resource hub is designed to help you learn about visa categories, common mistakes, changing rules, and important planning decisions before you begin.
+                </p>
+            </div>
+
+            <div class="row row-gap-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <div class="col-xl-3 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Visa Guides</h4>
+                            <i class="fa-light fa-passport"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>Straightforward explainers for key pathways and subclasses.</p>
+                        </div>
+                        <div class="i-shape"><h1>01</h1></div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Checklists</h4>
+                            <i class="fa-light fa-list-check"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>Know what documents and details are usually important.</p>
+                        </div>
+                        <div class="i-shape"><h1>02</h1></div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Videos &amp; Webinars</h4>
+                            <i class="fa-light fa-circle-play"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>Helpful content for applicants who prefer visual guidance.</p>
+                        </div>
+                        <div class="i-shape"><h1>03</h1></div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Blogs &amp; Updates</h4>
+                            <i class="fa-light fa-newspaper"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>Stay informed about changes, timelines, and practical migration topics.</p>
+                        </div>
+                        <div class="i-shape"><h1>04</h1></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center m-t-40">
+                <a class='e-primary-btn has-icon active' href="{{ url('reports-newsletters') }}">
+                    Explore Resources
+                    <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- resources-knowledge-hub-section end -->
+
     @include('partials.testi')
     @include('partials.blogs')
 
