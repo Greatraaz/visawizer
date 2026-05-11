@@ -1058,6 +1058,83 @@
     </section>
     <!-- how-we-work-section end -->
 
+    <!-- why-clients-choose-section start -->
+    <section class="services-section-3 p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-color: #f8f7f0;">
+        <div class="container">
+            <div class="row row-gap-5 align-items-start">
+                <div class="col-xl-5 col-lg-5">
+                    <div class="section-top-9 sticky-top" style="top: 110px;">
+                        <div class="common-subtitle text-uppercase" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <span>Trust</span>
+                        </div>
+                        <div class="common-title m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <h2>Guidance that is responsive, practical, and focused on outcomes</h2>
+                        </div>
+                        <p class="m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">
+                            Clients come to us for clarity. They stay with us because they feel supported at every stage.
+                        </p>
+                        <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">
+                            Migration decisions affect education, family, work, and future plans. That is why our clients value responsiveness, straightforward guidance, and a process that feels more personal than transactional.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7">
+                    <div class="row row-gap-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                        <div class="col-md-6">
+                            <div class="service-card-3">
+                                <div class="service-top">
+                                    <h4>Clear Communication</h4>
+                                    <i class="fa-light fa-comments"></i>
+                                </div>
+                                <div class="service-content">
+                                    <p>Understand what matters, what is needed, and what comes next.</p>
+                                </div>
+                                <div class="i-shape"><h1>01</h1></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-card-3">
+                                <div class="service-top">
+                                    <h4>Tailored Advice</h4>
+                                    <i class="fa-light fa-user-pen"></i>
+                                </div>
+                                <div class="service-content">
+                                    <p>Recommendations shaped around your case, not generic assumptions.</p>
+                                </div>
+                                <div class="i-shape"><h1>02</h1></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-card-3">
+                                <div class="service-top">
+                                    <h4>Broad Pathway Coverage</h4>
+                                    <i class="fa-light fa-route"></i>
+                                </div>
+                                <div class="service-content">
+                                    <p>Support across study, family, skilled, sponsored, visitor, and review matters.</p>
+                                </div>
+                                <div class="i-shape"><h1>03</h1></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-card-3">
+                                <div class="service-top">
+                                    <h4>Action-Focused Guidance</h4>
+                                    <i class="fa-light fa-bullseye-arrow"></i>
+                                </div>
+                                <div class="service-content">
+                                    <p>We help turn confusion into a practical next step.</p>
+                                </div>
+                                <div class="i-shape"><h1>04</h1></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why-clients-choose-section end -->
+
     @include('partials.testi')
     @include('partials.blogs')
 
