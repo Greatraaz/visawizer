@@ -208,11 +208,11 @@
                         <span>Solutions</span>
                     </div>
                     <div class="common-title text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                        <h2>From Policy to Practice</h2>
+                        <h2>Start with the pathway that fits your goal</h2>
                     </div>
                 </div>
                 <div class="right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                    <p>Advisory, training, certifications, and institution-building customised for your context.</p>
+                    <p>Choose your direction and we will help you navigate the next step.</p>
                 </div>
             </div>
             <div class="row row-gap-md-5 row-gap-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
@@ -223,11 +223,11 @@
                                 <img src="{{ asset('assets/images/from-policy-to-practice/1.webp') }}" alt="thumb-14"/>
                             </a>
                             <div class="content">
-                                <h5>Advisory & Consulting</h5>
-                                <p>Codes of conduct, professional ethics, and investigations framework.</p>
+                                <h5>Study in Australia</h5>
+                                <p>Admissions, course guidance, student visas, and post-study options.</p>
                                 <div class="details-btn">
                                     <a class='e-primary-btn has-icon is-hover-white' href="{{ url('service/advisory-consulting') }}">
-                                        Read More
+                                        Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                                         </span>
@@ -244,11 +244,11 @@
                                 <img src="{{ asset('assets/images/from-policy-to-practice/2.jpg') }}" alt="thumb-15"/>
                             </a>
                             <div class="content">
-                                <h5>Training & Workshops</h5>
-                                <p>Leader labs, frontline drills, summer camps, seminars, and conferences.</p>
+                                <h5>Visit Australia</h5>
+                                <p>Tourist, ETA, eVisitor, transit, and holiday visa support.</p>
                                 <div class="details-btn">
                                     <a class='e-primary-btn has-icon is-hover-white' href="{{ url('service/training-workshops') }}">
-                                        Read More
+                                        Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                                         </span>
@@ -265,11 +265,11 @@
                                 <img src="{{ asset('assets/images/from-policy-to-practice/3.webp') }}" alt="thumb-16"/>
                             </a>
                             <div class="content">
-                                <h5>Certification Programs</h5>
-                                <p>Industry-relevant certifications focused on ethical decision-making business practices.</p>
+                                <h5>Skilled Migration</h5>
+                                <p>Independent, nominated, and regional migration pathways.</p>
                                 <div class="details-btn">
                                     <a class='e-primary-btn has-icon is-hover-white' href="{{ url('service/certification-programs') }}">
-                                        Read More
+                                        Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                                         </span>
@@ -286,11 +286,11 @@
                                 <img src="{{ asset('assets/images/from-policy-to-practice/4.jpg') }}" alt="thumb-14"/>
                             </a>
                             <div class="content">
-                                <h5><span class="green">Ethics<span class="golden">4</span>Work</span> Framework</h5>
-                                <p>A holistic framework that helps organizations move from ethical intent to ethical action.</p>
+                                <h5>Employer Sponsored</h5>
+                                <p>482, 186, 494, DAMA, and other employer-led visa options.</p>
                                 <div class="details-btn">
                                     <a class='e-primary-btn has-icon is-hover-white' href="{{ url('service/measure-maintain') }}">
-                                        Read More
+                                        Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                                         </span>
@@ -307,11 +307,11 @@
                                 <img src="{{ asset('assets/images/from-policy-to-practice/5.webp') }}" alt="thumb-15"/>
                             </a>
                             <div class="content">
-                                <h5>Centres & Accreditation</h5>
-                                <p>Set up a Centre for Business Ethics; get your institution accredited.</p>
+                                <h5>Family Visas</h5>
+                                <p>Partner, parent, child, and relative visa pathways.</p>
                                 <div class="details-btn">
                                     <a class='e-primary-btn has-icon is-hover-white' href="{{ url('service/centres-accreditation') }}">
-                                        Read More
+                                        Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                                         </span>
@@ -328,11 +328,11 @@
                                 <img src="{{ asset('assets/images/from-policy-to-practice/6.jpg') }}" alt="thumb-16"/>
                             </a>
                             <div class="content">
-                                <h5>Coaching & Mentoring</h5>
-                                <p>1:1 and cohort journeys for ethical <br>leadership.</p>
+                                <h5>Appeals & Protection</h5>
+                                <p>Support for complex matters, review pathways, and humanitarian cases.</p>
                                 <div class="details-btn">
                                     <a class='e-primary-btn has-icon is-hover-white' href="{{ url('service/coaching-mentoring') }}">
-                                        Read More
+                                        Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                                         </span>
@@ -342,6 +342,14 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="text-center m-t-40" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                <a class='e-primary-btn has-icon is-hover-white' href="{{ url('contact-us') }}">
+                    Find My Pathway
+                    <span class="icon-wrap">
+                        <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
+                    </span>
+                </a>
             </div>
         </div>
         <div class="shape-10">
