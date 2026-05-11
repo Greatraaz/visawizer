@@ -390,50 +390,42 @@
 
                     <!-- Subtitle -->
                     <div class="common-subtitle">
-                        <span>Principles That Shape Responsible Action</span>
+                        <span>Why Visawizer</span>
                     </div>
 
                     <!-- Title -->
                     <div class="common-title text-start">
-                        <h2>Foundational principles that turn ethics into everyday practice.</h2>
+                        <h2>Practical migration guidance built around real goals</h2>
                     </div>
+
+                    <p class="m-t-15 m-b-15">Not just forms and documents. Advice that connects your visa, study, work, and settlement plans.</p>
+                    <p class="m-b-25">Every migration journey is different. Some clients need help choosing the right course and institution. Others need support with employer sponsorship, partner visas, regional pathways, or appeal matters. Our approach is to understand your situation first, then guide you with clarity, transparency, and a practical action plan.</p>
 
                     <!-- Principles List -->
                     <div class="services">
                         <div class="service-left">
                             <div class="service">
                                 <i class="fa-solid fa-check"></i>
-                                <p><strong>Collaboration</strong><br>
-                                Harnessing diverse perspectives and collective intelligence to drive ethical progress.</p>
+                                <p><strong>Clear eligibility assessment</strong></p>
                             </div>
                             <div class="service">
                                 <i class="fa-solid fa-check"></i>
-                                <p><strong>Empowerment</strong><br>
-                                Enabling individuals and institutions to act with integrity, purpose, and moral courage.</p>
+                                <p><strong>Honest pathway advice</strong></p>
                             </div>
                         </div>
 
                         <div class="service-right">
                             <div class="service">
                                 <i class="fa-solid fa-check"></i>
-                                <p><strong>Stakeholder Engagement</strong><br>
-                                Making balanced, inclusive decisions grounded in transparency and shared responsibility.</p>
+                                <p><strong>Application preparation support</strong></p>
                             </div>
                             <div class="service">
                                 <i class="fa-solid fa-check"></i>
-                                <p><strong>Ethical Accountability</strong><br>
-                                Ensuring responsibility for actions, outcomes, and impacts across the value chain.</p>
+                                <p><strong>Ongoing updates and next-step guidance</strong></p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- CTA & Micro-Info -->
-                    <div class="annual-donation-wrap">
-                        <a class='e-primary-btn has-icon' href="{{ url('about-us') }}">
-                            About Us
-                            <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
-                        </a>
-                    </div>
 
                 </div>
             </div>
