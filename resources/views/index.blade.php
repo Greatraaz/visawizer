@@ -973,6 +973,91 @@
         </div>
     </section>
 
+    <!-- how-we-work-section start -->
+    <section class="services-section-3 p-t-100 p-b-100 p-t-xs-80 p-b-xs-80">
+        <div class="container">
+            <div class="row m-b-50 m-b-xs-40">
+                <div class="col-xl-12">
+                    <div class="section-top-9 text-center">
+                        <div class="common-subtitle text-uppercase" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <span>Process</span>
+                        </div>
+                        <div class="common-title m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <h2>A clearer way to move through the visa journey</h2>
+                        </div>
+                        <p class="m-t-20 m-b-0" style="font-size: 20px; font-weight: 600; line-height: 1.5;">
+                            We make the process easier by breaking it into practical, manageable steps.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-gap-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Consultation</h4>
+                            <i class="fa-light fa-comments"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>We understand your background, goal, and current visa situation.</p>
+                        </div>
+                        <div class="i-shape">
+                            <h1>01</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Pathway Review</h4>
+                            <i class="fa-light fa-route"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>We identify suitable options and explain the requirements clearly.</p>
+                        </div>
+                        <div class="i-shape">
+                            <h1>02</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Documentation &amp; Preparation</h4>
+                            <i class="fa-light fa-file-lines"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>We help organise documents, address gaps, and prepare the application carefully.</p>
+                        </div>
+                        <div class="i-shape">
+                            <h1>03</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Submission &amp; Ongoing Guidance</h4>
+                            <i class="fa-light fa-circle-check"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>We stay involved through submission, updates, and next-step planning.</p>
+                        </div>
+                        <div class="i-shape">
+                            <h1>04</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center m-t-40">
+                <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">
+                    No guesswork. No confusing jargon. Just a more structured path forward.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- how-we-work-section end -->
+
     @include('partials.testi')
     @include('partials.blogs')
 
