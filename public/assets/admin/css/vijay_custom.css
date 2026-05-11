@@ -1,0 +1,286 @@
+/************************************************************************************
+ * 
+ * 
+ * Jay Shree Ram - Jai Shree Shyam - Om Namah Shivay
+ * Created by: vijay Raaz 
+ * 8923005483
+ * Mathura
+ * 
+ * 
+ ***********************************************************************************/
+
+.display-inline {
+	display: inline;
+}
+
+.view {
+	background: green !important;
+	border-color: green !important;
+}
+
+.delete {
+	background: red !important;
+	border-color: red !important;
+}
+
+.add-new {
+	text-align: end;
+	margin-right: 10px;
+}
+#invoice-table thead {
+    vertical-align: middle;
+}
+#invoice-table th {
+    padding: 4px;
+}
+.main-body {
+    padding: 15px;
+}
+.card {
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1rem;
+}
+
+.gutters-sm {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.gutters-sm>.col, .gutters-sm>[class*=col-] {
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.mb-3, .my-3 {
+    margin-bottom: 1rem!important;
+}
+
+.bg-gray-300 {
+    background-color: #e2e8f0;
+}
+.h-100 {
+    height: 100%!important;
+}
+.shadow-none {
+    box-shadow: none!important;
+}
+
+     .number {
+    display: none !important;
+}
+
+
+.wizard > .steps .current a {
+    background-color: transparent !important;
+}
+
+
+.wizard > .steps .done a {
+    background-color: transparent !important;
+}
+
+.mt-3 {
+    padding: 20px 0;
+}
+
+.lbl {
+    padding: 3px;
+}
+
+/*#pageloader
+{
+  background: rgba( 255, 255, 255, 0.8 );
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+#pageloader img
+{
+  left: 50%;
+  margin-left: -32px;
+  margin-top: -32px;
+  position: absolute;
+  top: 50%;
+}*/
+
+
+.csv {
+    margin-bottom: 10px;
+}
+
+.space-20{
+    padding: 10px;
+}
+
+.align-right{
+    text-align: right;
+}
+
+.card .error_message{
+    text-align: center;
+}
+.table>tbody {
+    vertical-align: middle;
+}
+.main-product-image .rounded{
+    width: 200px;
+    border: 1px solid #f0f0f0;
+}
+.mini-stat .mini-stat-img img {
+    background: #fff;
+    border-radius: 5px;
+}
+
+.plus-ico {
+  float: right;
+    color: #38bf38;
+    cursor: pointer;
+}
+
+.table-vertical-middle td{
+  vertical-align: middle;
+}
+
+form .error {
+    font-size: 80%;
+}
+.display-inline.table-action-buttons {
+    display: table-cell;
+    padding: 1px;
+}
+.mini-stat .mini-stat-img img {
+    background: #fff;
+    border-radius: 5px;
+    max-width: 40px !important;
+}
+.dabbe{
+    background-size: 74% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 6px;
+}
+.dabbe p a {
+    border-radius: 50px;
+    border: 1px solid #f7bc2f;
+    background: #f7bc2f;
+    padding: 3px 10px;
+}
+.dabbe .mini-stat-label {
+    left: 99px;
+    clip-path: polygon(100% 0,85% 50%,100% 100%,0 100%,0% 0%,0% 0) !important;
+    width: fit-content;
+    padding: 2px 30px 2px 10px !important;
+    font-weight: 500;
+    font-size: 16px;
+}
+.dabbe .float-start{
+        height: auto !important;
+}
+.dabbe h4 {
+    padding-bottom: 8px;
+}
+.mar-2 {
+    margin-top: 70px;
+}
+.dabbe i.mdi.mdi-arrow-right.h5 {
+    color: #fff;
+}
+.dabbe h4.fw-medium.font-size-24::before {
+    position: absolute;
+    content: '';
+    border-top: 1px solid #fff;
+    top: 72px;
+    left: 27px;
+    width: 35px;
+}
+li.barabar {
+    width: 50%;
+    text-align: center;
+}
+.barabar .active {
+    background: #f7bc2f !important;
+    color: #fff !important;
+}
+#fra-caro img{
+    height: 220px;
+    object-fit: cover;
+}
+/*#fra-caro img {
+    height: 220px;
+    object-fit: contain;
+    background: #5f5f5f;
+}*/
+input.select2-search__field {
+    padding-left: 10px !important;
+}
+span.select2-selection {
+    min-height: 40px !important;
+    width: 100%;
+    background: none;
+    line-height: 25px;
+}
+span.select2-selection__rendered {
+    padding-top: 6px;
+}
+span.select2-selection__arrow {
+    top: 6px !important;
+}
+span.line {
+    border: 2px solid #f7bc2f;
+    width: 80px;
+    display: -webkit-inline-box;
+    text-align: center;
+}
+.car-despm {
+    font-size: 30px;
+}
+.modal-body.car-des {
+    text-align: center;
+}
+.modal {
+    backdrop-filter: blur(2px);
+    background: #00000029;
+}
+.time-slots {
+    align-items: baseline;
+    text-align: center;
+    justify-content: center;
+}
+.time-slots .col-md-2{
+    box-shadow: 4px 4px 20px rgb(0 0 0 / 10%);
+    border-bottom: 3px solid #f7bc2f;
+    border-radius: 10px;
+    padding: 10px !important;
+}
+.time-slots input[type="radio"] {
+    cursor: pointer;
+    position: relative;
+}
+.bord-pro{
+    border: 1px solid #e6e6e6;
+    width: 100%;
+    background: none;
+    padding: 10px;
+}
+select.form-control {
+    appearance: auto;
+}
