@@ -89,8 +89,72 @@
 </section>
 <!-- hero-section end -->
 
+<!-- why-visawizer-section start -->
+<section class="why-us-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: url({{ asset('assets/img/bg/why-us-bg.webp') }})">
+    <div class="container">
+        <div class="row row-gap-5 align-items-center">
 
- <!-- about-us-section start -->
+            <!-- Left Visuals -->
+            <div class="col-xl-6">
+                <div class="thumb px-xl-5 left" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="thumb-1">
+                        <img alt="thumb-1" src="{{ asset('assets/images/principles-image-1.webp') }}">
+                        <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-14.webp') }}"></div>
+                    </div>
+                    <div class="thumb-2"><img alt="thumb-2" src="{{ asset('assets/images/principles-image-2.webp') }}"></div>
+                    <div class="thumb-3">
+                        <div class="shape-wrapped-thumb">
+                            <img alt="thumb-3" src="{{ asset('assets/images/principles-image-3.webp') }}">
+                            <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-13.webp') }}"></div>
+                            <div class="s-shape-2"><img alt="shape-2" src="{{ asset('assets/img/shapes/shape-15.webp') }}"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="col-xl-6">
+                <div class="why-us-content" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="common-subtitle">
+                        <span>Why Visawizer</span>
+                    </div>
+                    <div class="common-title text-start">
+                        <h2>Practical migration guidance built around real goals</h2>
+                    </div>
+                    <p class="m-t-15 m-b-15" style="font-size: 20px; font-weight: 600; line-height: 1.5;">Not just forms and documents. Advice that connects your visa, study, work, and settlement plans.</p>
+                    <p class="m-b-25">Every migration journey is different. Some clients need help choosing the right course and institution. Others need support with employer sponsorship, partner visas, regional pathways, or appeal matters. Our approach is to understand your situation first, then guide you with clarity, transparency, and a practical action plan.</p>
+                    <div class="services">
+                        <div class="service-left">
+                            <div class="service">
+                                <i class="fa-solid fa-check"></i>
+                                <p><strong>Clear eligibility assessment</strong></p>
+                            </div>
+                            <div class="service">
+                                <i class="fa-solid fa-check"></i>
+                                <p><strong>Honest pathway advice</strong></p>
+                            </div>
+                        </div>
+                        <div class="service-right">
+                            <div class="service">
+                                <i class="fa-solid fa-check"></i>
+                                <p><strong>Application preparation support</strong></p>
+                            </div>
+                            <div class="service">
+                                <i class="fa-solid fa-check"></i>
+                                <p><strong>Ongoing updates and next-step guidance</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- why-visawizer-section end -->
+
+
+{{-- about-us-section start
 <section class="about-us-section m-t-120 m-t-md-100 m-t-xs-80">
     <div class="container">
         <div class="row align-items-center">
@@ -198,6 +262,7 @@
     </div>
 </section>
 <!-- about-us-section end -->
+--}}
 
     <!-- what-we-do-section start -->
     <section class="what-we-do-section m-t-80 p-t-100 p-b-120 p-b-md-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #000000e0), url({{ asset('assets/images/banner.jpg') }})">
@@ -361,79 +426,6 @@
     </section>
     <!-- what-we-do-section end -->
 
-<!-- why-us-section start -->
-<section class="why-us-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: url({{ asset('assets/img/bg/why-us-bg.webp') }})">
-    <div class="container">
-        <div class="row row-gap-5 align-items-center">
-
-            <!-- Left Visuals -->
-            <div class="col-xl-6">
-                <div class="thumb px-xl-5 left" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <div class="thumb-1">
-                        <img alt="thumb-1" src="{{ asset('assets/images/principles-image-1.webp') }}">
-                        <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-14.webp') }}"></div>
-                    </div>
-                    <div class="thumb-2"><img alt="thumb-2" src="{{ asset('assets/images/principles-image-2.webp') }}"></div>
-                    <div class="thumb-3">
-                        <div class="shape-wrapped-thumb">
-                            <img alt="thumb-3" src="{{ asset('assets/images/principles-image-3.webp') }}">
-                            <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-13.webp') }}"></div>
-                            <div class="s-shape-2"><img alt="shape-2" src="{{ asset('assets/img/shapes/shape-15.webp') }}"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Content -->
-            <div class="col-xl-6">
-                <div class="why-us-content" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-
-                    <!-- Subtitle -->
-                    <div class="common-subtitle">
-                        <span>Why Visawizer</span>
-                    </div>
-
-                    <!-- Title -->
-                    <div class="common-title text-start">
-                        <h2>Practical migration guidance built around real goals</h2>
-                    </div>
-
-                    <p class="m-t-15 m-b-15">Not just forms and documents. Advice that connects your visa, study, work, and settlement plans.</p>
-                    <p class="m-b-25">Every migration journey is different. Some clients need help choosing the right course and institution. Others need support with employer sponsorship, partner visas, regional pathways, or appeal matters. Our approach is to understand your situation first, then guide you with clarity, transparency, and a practical action plan.</p>
-
-                    <!-- Principles List -->
-                    <div class="services">
-                        <div class="service-left">
-                            <div class="service">
-                                <i class="fa-solid fa-check"></i>
-                                <p><strong>Clear eligibility assessment</strong></p>
-                            </div>
-                            <div class="service">
-                                <i class="fa-solid fa-check"></i>
-                                <p><strong>Honest pathway advice</strong></p>
-                            </div>
-                        </div>
-
-                        <div class="service-right">
-                            <div class="service">
-                                <i class="fa-solid fa-check"></i>
-                                <p><strong>Application preparation support</strong></p>
-                            </div>
-                            <div class="service">
-                                <i class="fa-solid fa-check"></i>
-                                <p><strong>Ongoing updates and next-step guidance</strong></p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- why-us-section end -->
 
 
     <!-- our-camping start -->
@@ -569,7 +561,7 @@
                 </div>
             </div>
             <div class="text-center m-t-40">
-                <a class='e-primary-btn has-icon is-hover-white' href="{{ url('contact') }}">
+                <a class='e-primary-btn has-icon is-hover-white' href="{{ url('contact-us') }}">
                     Explore Study Pathways
                     <span class="icon-wrap">
                         <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -621,7 +613,7 @@
 
             <div class="text-center m-t-40">
                 <p class="m-b-25">Need help choosing between skilled and sponsored options? We help compare routes based on eligibility, timelines, and long-term goals.</p>
-                <a class='e-primary-btn has-icon is-hover-white' href="{{ url('contact') }}">
+                <a class='e-primary-btn has-icon is-hover-white' href="{{ url('contact-us') }}">
                     Check Your Options
                     <span class="icon-wrap">
                         <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -633,7 +625,7 @@
     <!-- skilled-sponsored-section end -->
 
     <!-- volunteer-section start -->
-    <section class="volunteer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80">
+    <!-- <section class="volunteer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80">
         <div class="container">
             <div class="text-center m-b-50 m-b-xs-40">
                 <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
@@ -746,7 +738,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- volunteer-section end -->
 
     <!-- completed-project start -->
@@ -783,7 +775,7 @@
                                     <h5>Family Visas</h5>
                                     <p>Partner, parent, child, and relative visa pathways handled with clarity and care.</p>
                                     <div class="details-btn">
-                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact') }}">Learn More
+                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact-us') }}">Learn More
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                                     </div>
                                 </div>
@@ -798,7 +790,7 @@
                                     <h5>Visitor Visas</h5>
                                     <p>Visitor, holiday, ETA, eVisitor, and transit support for short-term travel plans.</p>
                                     <div class="details-btn">
-                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact') }}">Learn More
+                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact-us') }}">Learn More
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                                     </div>
                                 </div>
@@ -813,7 +805,7 @@
                                     <h5>Appeals &amp; Protection</h5>
                                     <p>Guidance for review matters and other complex visa situations where careful strategy matters.</p>
                                     <div class="details-btn">
-                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact') }}">Learn More
+                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact-us') }}">Learn More
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                                     </div>
                                 </div>
@@ -827,7 +819,7 @@
     <!-- completed-project end -->
 
    <!-- work-process-section start -->
-<section class="work-process p-t-100 p-b-120 p-b-md-100 p-t-xs-80 p-b-xs-80">
+{{--<section class="work-process p-t-100 p-b-120 p-b-md-100 p-t-xs-80 p-b-xs-80">
     <div class="container">
 
         <!-- Section Header -->
@@ -910,10 +902,10 @@
 
         </div>
     </div>
-</section>
+</section>--}}
 <!-- work-process-section end -->
 
-    <section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #0060399e), url('assets/images/home-banner-1.webp')">
+    <!-- <section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #0060399e), url('assets/images/home-banner-1.webp')">
         <div class="container">
             <div class="text-center m-b-50 m-b-xs-40">
                 <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
@@ -971,7 +963,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- how-we-work-section start -->
     <section class="services-section-3 p-t-100 p-b-100 p-t-xs-80 p-b-xs-80">
@@ -1230,7 +1222,7 @@
                             From your first question to your next milestone, we are here to help you move ahead with more confidence.
                         </p>
                         <div class="d-flex flex-wrap justify-content-center gap-3 m-t-30">
-                            <a class='e-primary-btn has-icon active' href="{{ url('contact') }}">
+                            <a class='e-primary-btn has-icon active' href="{{ url('contact-us') }}">
                                 Book Appointment
                                 <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                             </a>
