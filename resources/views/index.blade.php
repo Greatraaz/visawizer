@@ -756,14 +756,15 @@
                 <div class="row align-items-end m-b-60 m-b-xs-40">
                     <div class="col-xl-6 col-lg-6 col-md-7">
                         <div class="common-subtitle style-color-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <span class="text-white">Stories that Changed How Work Works</span>
+                            <span class="text-white">More pathways, one trusted team</span>
                         </div>
                         <div class="common-title style-color-light text-start m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                            <h2 class="fs-1">What went wrong, what we fixed, and what stayed fixed.</h2>
+                            <h2 class="fs-1">Support for family visas, visitor visas, and complex matters</h2>
+                            <p class="text-white m-t-15" style="max-width: 90%;">Some applications are emotional. Some are urgent. Some are complicated. All of them deserve careful guidance.</p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-5 text-md-end">
-                        <a class='e-primary-btn has-icon active' data-aos-delay='600' data-aos-duration='1000' data-aos='fade-up' href="{{ url('case-studies') }}">View All Case Studies
+                        <a class='e-primary-btn has-icon active' data-aos-delay='600' data-aos-duration='1000' data-aos='fade-up' href="{{ url('contact-us') }}">Speak to a Visa Expert
                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                     </div>
                 </div>
@@ -779,10 +780,10 @@
                             <div class="thumb">
                                 <a href="#"><img alt="thumb-11" src="{{ asset('assets/images/stories-image-1.webp') }}" style="object-fit: none;object-position: -20px -3rem;"></a>
                                 <div class="content">
-                                    <h5>The Code That People<br> Actually Read</h5>
-                                    <p>Energy Turning compliance PDFs into <br>living rituals.</p>
+                                    <h5>Family Visas</h5>
+                                    <p>Partner, parent, child, and relative visa pathways handled with clarity and care.</p>
                                     <div class="details-btn">
-                                        <a class='e-primary-btn is-hover-white has-icon' href="#">View Case Study
+                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact') }}">Learn More
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                                     </div>
                                 </div>
@@ -794,10 +795,10 @@
                             <div class="thumb">
                                 <a href="#"><img alt="thumb-11" src="{{ asset('assets/images/stories-image-2.webp') }}" style="object-fit: none;object-position: -10px -6rem;"></a>
                                 <div class="content">
-                                    <h5>Crisis in the Supply<br> Chain</h5>
-                                    <p>Rapid triage, stakeholder communication, lasting controls.</p>
+                                    <h5>Visitor Visas</h5>
+                                    <p>Visitor, holiday, ETA, eVisitor, and transit support for short-term travel plans.</p>
                                     <div class="details-btn">
-                                        <a class='e-primary-btn is-hover-white has-icon' href="#">View Case Study
+                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact') }}">Learn More
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                                     </div>
                                 </div>
@@ -809,10 +810,10 @@
                             <div class="thumb">
                                 <a href="#"><img alt="thumb-11" src="{{ asset('assets/images/stories-image-3.webp') }}" style="object-fit: none;object-position: -52px -12rem;"></a>
                                 <div class="content">
-                                    <h5>Enron & Pinto,<br> Re-examined</h5>
-                                    <p>Not history class—decision patterns you can rewrite today.</p>
+                                    <h5>Appeals &amp; Protection</h5>
+                                    <p>Guidance for review matters and other complex visa situations where careful strategy matters.</p>
                                     <div class="details-btn">
-                                        <a class='e-primary-btn is-hover-white has-icon' href="#">View Case Study
+                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact') }}">Learn More
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                                     </div>
                                 </div>
