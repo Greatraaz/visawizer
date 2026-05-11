@@ -443,11 +443,13 @@
                 <div class="col-xl-12">
                     <div class="text-center">
                         <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <span>A Living Library of Good Decisions</span>
+                            <span>Study</span>
                         </div>
                         <div class="common-title mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                            <h2>Ideas you can search, cite, and adapt</h2>
+                            <h2>Build your future through education in Australia</h2>
                         </div>
+                        <p class="m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">From admissions and course selection to student visas and post-study planning, we help students make informed moves.</p>
+                        <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">Australia offers strong academic opportunities, international exposure, and real career potential. We support students with admissions guidance, education planning, OSHC, change of course or institution support, and visa pathways that align with long-term goals.</p>
                     </div>
                 </div>
             </div>
@@ -464,10 +466,10 @@
                                         <div class="content">
                                             <div class="content-top">
                                                 <div class="title">
-                                                    <h3>Ethical Theories, Simply<br> Explained</h3>
+                                                    <h3>Admissions<br> Support</h3>
                                                 </div>
                                                 <div class="text">
-                                                    <p>Practical takeaways from philosophy to policy.</p>
+                                                    <p>Find suitable colleges, universities, and programs based on your profile and budget.</p>
                                                 </div>
                                             </div>
                                             <!-- <div class="mb-3 ms-3">
@@ -488,10 +490,10 @@
                                         <div class="content">
                                             <div class="content-top">
                                                 <div class="title">
-                                                    <h3>Stakeholder<br> Management</h3>
+                                                    <h3>Student Visa<br> Guidance</h3>
                                                 </div>
                                                 <div class="text">
-                                                    <p>Ways to reconcile or balance conflicting interests.</p>
+                                                    <p>Support for Student Visa 500, Student Guardian 590, and Training Visa 407 pathways.</p>
                                                 </div>
                                             </div>
                                             <!-- <div class="mb-3 ms-3">
@@ -512,10 +514,10 @@
                                         <div class="content">
                                             <div class="content-top">
                                                 <div class="title">
-                                                    <h3>CSR, Sustainability<br> & ESG</h3>
+                                                    <h3>Post-Study<br> Planning</h3>
                                                 </div>
                                                 <div class="text">
-                                                    <p>Reporting standards and real-world trade-offs.</p>
+                                                    <p>Explore graduate visa options and next steps after study.</p>
                                                 </div>
                                             </div>
                                             <!-- <div class="mb-3 ms-3">
@@ -536,34 +538,10 @@
                                         <div class="content">
                                             <div class="content-top">
                                                 <div class="title">
-                                                    <h3>Giving Voice<br> to Values</h3>
+                                                    <h3>Student Support<br> Services</h3>
                                                 </div>
                                                 <div class="text">
-                                                    <p>Scripts to speak up—safely and effectively.</p>
-                                                </div>
-                                            </div>
-                                            <!-- <div class="mb-3 ms-3">
-                                                <div class="d-bottom">
-                                                    <a class='e-primary-btn has-icon d-btn' href="#">Read More
-                                                        <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
-                                                    </a>
-                                                </div>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="camping-card">
-                                        <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('assets/images/podcasts-practitioner-interviews.webp') }}">
-                                        </div>
-                                        <div class="content">
-                                            <div class="content-top">
-                                                <div class="title">
-                                                    <h3>Podcasts & Practitioner<br> Interviews</h3>
-                                                </div>
-                                                <div class="text">
-                                                    <p>Voices from boardrooms, and classrooms.</p>
+                                                    <p>Guidance for OSHC, course change, college transfer, and education planning.</p>
                                                 </div>
                                             </div>
                                             <!-- <div class="mb-3 ms-3">
@@ -590,9 +568,69 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center m-t-40">
+                <a class='e-primary-btn has-icon is-hover-white' href="{{ url('contact') }}">
+                    Explore Study Pathways
+                    <span class="icon-wrap">
+                        <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
+                    </span>
+                </a>
+            </div>
         </div>
     </section>
     <!-- our-camping end -->
+
+    <!-- skilled-sponsored-section start -->
+    <section class="volunteer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80">
+        <div class="container">
+            <div class="text-center m-b-50 m-b-xs-40">
+                <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <span>Work in Australia</span>
+                </div>
+                <div class="common-title mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <h2>Skilled and employer-sponsored migration pathways, explained clearly</h2>
+                </div>
+                <p class="m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">Whether you are applying independently or through an employer, we help you understand the pathway, process, and next action.</p>
+                <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">Australian migration can feel complex when visa subclasses, regional conditions, nominations, and sponsorship rules overlap. We simplify the picture by helping you understand which pathway matches your profession, employer opportunity, location, and long-term residency goals.</p>
+            </div>
+
+            <div class="row row-gap-4 justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="col-xl-6 col-md-6">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <h4>Skilled Migration</h4>
+                            <i><img alt="icon" src="{{ asset('assets/images/icon/workplace-business.svg') }}"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>For applicants exploring independent, nominated, or regional pathways including 189, 190, 491, 191, and 887 options.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <h4>Employer Sponsored</h4>
+                            <i><img alt="icon" src="{{ asset('assets/images/icon/corporate-governance.svg') }}"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>For applicants and employers looking at 482, 186, 494, DAMA, short-stay specialist options, and related sponsorship pathways.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center m-t-40">
+                <p class="m-b-25">Need help choosing between skilled and sponsored options? We help compare routes based on eligibility, timelines, and long-term goals.</p>
+                <a class='e-primary-btn has-icon is-hover-white' href="{{ url('contact') }}">
+                    Check Your Options
+                    <span class="icon-wrap">
+                        <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- skilled-sponsored-section end -->
 
     <!-- volunteer-section start -->
     <section class="volunteer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80">
