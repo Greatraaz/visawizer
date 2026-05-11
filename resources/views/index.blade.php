@@ -1214,6 +1214,38 @@
     </section>
     <!-- resources-knowledge-hub-section end -->
 
+    <!-- final-cta-banner start -->
+    <section class="p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-color: #f8f7f0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="text-center p-5 p-md-4 p-xs-3 rounded-4" style="background: #ffffff; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);">
+                        <div class="common-title m-b-0" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <h2>Ready to take the next step toward Australia?</h2>
+                        </div>
+                        <p class="m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">
+                            Book a consultation with Visawizer and get clarity on your options, requirements, and best path forward.
+                        </p>
+                        <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">
+                            From your first question to your next milestone, we are here to help you move ahead with more confidence.
+                        </p>
+                        <div class="d-flex flex-wrap justify-content-center gap-3 m-t-30">
+                            <a class='e-primary-btn has-icon active' href="{{ url('contact') }}">
+                                Book Appointment
+                                <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
+                            </a>
+                            <a class='e-primary-btn has-icon is-hover-white' href="tel:{{ config('site.phone1') }}">
+                                Call Now
+                                <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-phone"></i> <i class="fa-regular fa-phone"></i></span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- final-cta-banner end -->
+
     @include('partials.testi')
     @include('partials.blogs')
 
