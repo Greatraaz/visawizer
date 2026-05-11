@@ -23,7 +23,7 @@
                     @php
                         $title = $post['title']['rendered'];
                         $slug = $post['slug'];
-                        $author = 'Ethics4work';
+                        $author = 'Visawizer';
                         $date = \Carbon\Carbon::parse($post['date']);
                         $day = $date->format('d');
                         $month = $date->format('M');

@@ -30,7 +30,7 @@
                                         </div>
                                         <div class="view">
                                             <i class="fa-light fa-user"></i>
-                                            <p><span class="green">Ethics<span class="golden">4</span>Work</span></p>
+                                            <p><span class="green">Visawizer</span></p>
                                         </div>
                                     </div>
                                     <div class="title">
@@ -55,7 +55,7 @@
                                     <div class="detail-list">
                                         @php  
                                             $categories = [];
-                                            $category = Http::get('https://ethics4work.com/ethics-blog/wp-json/wp/v2/categories');
+                                            $category = Http::get('https://visawizer.com.au/wp-json/wp/v2/categories');
                                             $categories = [];
                                             if ($category->successful()) {
                                                 $categories = $category->json();

@@ -312,14 +312,14 @@ class HomeController extends Controller
 
     public function blogs(Request $request)
     {
-        $title = 'Ethics4work';
-        $description = 'Ethics4work';
-        $keywords = 'Ethics4work';
+        $title = 'Visawizer';
+        $description = 'Visawizer';
+        $keywords = 'Visawizer';
 
         $page = $request->get('page', 1);
         $perPage = 12;
         $categoryId = 2;
-        $response = Http::get("https://ethics4work.com/ethics-blog/wp-json/wp/v2/posts?_embed&per_page={$perPage}&page={$page}&categories={$categoryId}");
+        $response = Http::get("https://visawizer.com.au/wp-json/wp/v2/posts?_embed&per_page={$perPage}&page={$page}&categories={$categoryId}");
 
         if ($response->successful()) {
             $posts = $response->json();
@@ -339,18 +339,18 @@ class HomeController extends Controller
 
     public function blogsByCategory(Request $request, $slug)
     {
-        $title = 'Ethics4work';
-        $description = 'Ethics4work';
-        $keywords = 'Ethics4work';
+        $title = 'Visawizer';
+        $description = 'Visawizer';
+        $keywords = 'Visawizer';
 
-        $categories = Http::get('https://ethics4work.com/ethics-blog/wp-json/wp/v2/categories')->json();
+        $categories = Http::get('https://visawizer.com.au/wp-json/wp/v2/categories')->json();
         $catId = collect($categories)->firstWhere('slug', $slug)['id'] ?? null;
         if (!$catId)
             abort(404);
 
         $page = $request->get('page', 1);
         $perPage = 12;
-        $response = Http::get("https://ethics4work.com/ethics-blog/wp-json/wp/v2/posts?categories={$catId}&_embed&per_page={$perPage}&page={$page}");
+        $response = Http::get("https://visawizer.com.au/wp-json/wp/v2/posts?categories={$catId}&_embed&per_page={$perPage}&page={$page}");
         
         if ($response->successful()) {
             $posts = collect($response->json());
@@ -375,10 +375,10 @@ class HomeController extends Controller
 
     public function blogSingle($slug)
     {
-        $title = 'Ethics4work';
-        $description = 'Ethics4work';
-        $keywords = 'Ethics4work';
-        $res = Http::get("https://ethics4work.com/ethics-blog/wp-json/wp/v2/posts?slug=$slug&_embed");
+        $title = 'Visawizer';
+        $description = 'Visawizer';
+        $keywords = 'Visawizer';
+        $res = Http::get("https://visawizer.com.au/wp-json/wp/v2/posts?slug=$slug&_embed");
         $post = $res->successful() ? $res->json()[0] : abort(404);
         return view('blogSingle', compact('post', 'title', 'description', 'keywords'));
     }
