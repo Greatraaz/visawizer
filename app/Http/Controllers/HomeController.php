@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Models\Seminars;
 use App\Models\Courses;
+use App\Support\StudyTopicData;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 
@@ -19,6 +20,29 @@ class HomeController extends Controller
     public function studyInAustralia()
     {
         return view('study');
+    }
+
+    public function studyTopic($slug)
+    {
+        return $this->renderStudyTopic($slug);
+    }
+
+    public function studyVisaTopic($slug)
+    {
+        return $this->renderStudyTopic('visa/' . $slug);
+    }
+
+    private function renderStudyTopic(string $slug)
+    {
+        $page = StudyTopicData::get($slug);
+
+        if (!$page) {
+            abort(404);
+        }
+
+        $countries = StudyTopicData::countries();
+
+        return view('studyTopic', compact('page', 'countries'));
     }
 
     public function singleCourse(Request $request, $slug)

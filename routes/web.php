@@ -194,3 +194,6 @@ Route::get('clear-cache', function () {
     return "All cache cleared!";
 });
 
+Route::get('visa/{slug}', [HomeController::class, 'studyVisaTopic']);
+Route::get('{slug}', [HomeController::class, 'studyTopic']);
+
