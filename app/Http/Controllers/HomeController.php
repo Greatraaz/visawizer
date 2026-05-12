@@ -16,6 +16,11 @@ class HomeController extends Controller
         return view('index', compact('banners'));
     }
 
+    public function studyInAustralia()
+    {
+        return view('study');
+    }
+
     public function singleCourse(Request $request, $slug)
     {
         $course = Courses::where('slug', $slug)->firstOrFail();
