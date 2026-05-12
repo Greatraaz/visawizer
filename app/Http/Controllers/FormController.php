@@ -41,7 +41,7 @@ class FormController extends Controller
                 'name' => $request->name,
                 'courseName' => $request->course
             ], function($message) use ($request){
-                $message->to($request->email)->subject('Thank You for Your Interest – Ethics4Work');
+                $message->to($request->email)->subject('Thank you for contacting Visawizer');
             });
         }
 

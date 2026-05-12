@@ -96,6 +96,7 @@ Route::post('contact-form', [FormController::class,'submitContact']);
 Route::post('newsletter-form', [FormController::class,'submitNewsletter']);
 Route::post('event-form', [FormController::class,'submitEvent']);
 Route::get('thank-you', function () { return view('thankYou'); });
+Route::get('order-thank-you', function () { return view('thankYouOrder'); });
 Route::get('thank-you-subscribe', function () { return view('thankYouNews'); });
 Route::get('thank-you-for-registration', function () { return view('thankYouEvent'); });
 

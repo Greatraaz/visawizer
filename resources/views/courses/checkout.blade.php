@@ -269,7 +269,7 @@ $('#checkoutForm').on('submit', function (e) {
                         success: function (result) {
                             if (result.status === 'success') {
                                 toastr.success("Payment Successful");
-                                window.location.href = "{{ url('thank-you') }}";
+                                window.location.href = "{{ url('order-thank-you') }}";
                                 $.ajax({
                                     url: "{{ url('send-mail') }}",
                                     type: "POST",

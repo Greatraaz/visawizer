@@ -1,72 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ethics4Work - Thank You</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Visawizer</title>
 </head>
-<body style="margin:0; padding:0; background:#f4f4f4; font-family:Arial, sans-serif;">
-
-    <div style="max-width:600px; margin:30px auto; background:white; border-radius:12px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,0.1);">
-
-        <!-- Header -->
-        <div style="background:var(--theme-color-3); padding:25px 30px; color:white;text-align: center;">
-            <h2 style="margin:0; font-size:24px;">Thank You for Your Interest!</h2>
+<body style="margin:0; padding:0; background:#f4f7f6; font-family:Arial, sans-serif; color:#1f2937;">
+    <div style="max-width:640px; margin:32px auto; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 10px 30px rgba(15,23,42,0.08);">
+        <div style="background:linear-gradient(135deg, #006039 0%, #be182f 100%); padding:28px 32px; color:#ffffff; text-align:center;">
+            <h1 style="margin:0; font-size:28px; line-height:1.2;">Thank you for contacting Visawizer</h1>
         </div>
 
-        <!-- Body -->
-        <div style="padding:30px; color:#333;">
-
-            <p style="font-size:16px; line-height:1.6;">
-                Hi <strong>{{ $name }}</strong>,  
+        <div style="padding:32px;">
+            <p style="margin:0 0 16px; font-size:16px; line-height:1.7;">
+                Hi <strong>{{ $name }}</strong>,
             </p>
 
-            <p style="font-size:16px; line-height:1.6;">
-                Thank you for your interest in the <strong>{{ $courseName }}</strong> with <strong><span class="green">Ethics<span class="golden">4</span>Work</span></strong>.
-                You’re exactly our kind of learner—curious, pragmatic, and eager to turn values into everyday decisions.
+            <p style="margin:0 0 16px; font-size:16px; line-height:1.7;">
+                We have received your enquiry for <strong>{{ $courseName ?: 'Visawizer services' }}</strong>. Our team will review your details and get back to you with the next right step as soon as possible.
             </p>
 
-            <h3 style="color:var(--theme-color-3); margin-top:25px;">What you can expect</h3>
-            <ul style="font-size:16px; line-height:1.6; padding-left:20px;">
-                <li><strong>Applied, not abstract:</strong> real dilemmas, role-plays, and take-home toolkits you’ll actually use on Monday.</li>
-                <li><strong>Culture by design:</strong> rituals and micro-behaviours that compound into trust and performance.</li>
-                <li><strong>Measurable outcomes:</strong> dashboards, reflection prompts, and simple ways to track progress.</li>
-            </ul>
+            <div style="margin:24px 0; padding:20px; border-radius:12px; background:#f8fbfa; border:1px solid #e5eeea;">
+                <h2 style="margin:0 0 12px; font-size:18px; line-height:1.4; color:#0f172a;">What happens next</h2>
+                <ul style="margin:0; padding-left:20px; font-size:15px; line-height:1.7; color:#475569;">
+                    <li>We review your enquiry and requirements carefully.</li>
+                    <li>We identify the most relevant visa, study, or migration pathway options.</li>
+                    <li>Our team contacts you to discuss the next steps.</li>
+                </ul>
+            </div>
 
-            <!-- <p style="font-size:16px; line-height:1.6;">
-                <strong>Syllabus & Overview:</strong> 
-                <a href="{courseOverviewLink}" style="color:var(--theme-color-3); text-decoration:none; font-weight:bold;">
-                    Download the Course Overview
-                </a>
-            </p> -->
-
-            <h3 style="color:var(--theme-color-3); margin-top:25px;">Make your next move</h3>
-            <ul style="font-size:16px; line-height:1.6; padding-left:20px;">
-                <li><strong>Tell us your goals:</strong> What do you want to improve in your team/role over the next 90 days?</li>
-                <li><strong>Pick a format:</strong> cohort workshop • executive intensive • campus module • custom in-house.</li>
-                <li><strong>Book a 20-min call:</strong> Share two time slots that suit you this week and we’ll lock one in.</li>
-            </ul>
-
-            <p style="font-size:16px; line-height:1.6;">
-                If you already have specific scenarios you’d like us to cover (e.g., speak-up systems, fair marketing claims,
-                AI transparency, supply-chain due diligence), hit reply with a few lines—we’ll tailor examples accordingly.
+            <p style="margin:0 0 16px; font-size:16px; line-height:1.7;">
+                If your matter is urgent, you can reply to this email or contact us directly and we will assist you further.
             </p>
 
-            <p style="font-size:16px; line-height:1.6;">
-                Warmly,<br>
-                <strong>Team <span class="green">Ethics<span class="golden">4</span>Work</span></strong><br>
-                Ethics that Works at Work<br>
-                Email: <a href="mailto:{{ config('site.email1') }}" style="color:var(--theme-color-3);">{{ config('site.email1') }}</a><br>
-                Web: <a href="https://ethics4work.com" style="color:var(--theme-color-3);">https://ethics4work.com</a>
+            <p style="margin:24px 0 0; font-size:16px; line-height:1.7;">
+                Regards,<br>
+                <strong>Team Visawizer</strong><br>
+                Email: <a href="mailto:{{ config('site.email1') }}" style="color:#006039; text-decoration:none;">{{ config('site.email1') }}</a><br>
+                Phone: <a href="tel:{{ trim(config('site.phone1')) }}" style="color:#006039; text-decoration:none;">{{ trim(config('site.phone1')) }}</a><br>
+                Address: {{ config('site.address1') }}
             </p>
-
-            <p style="font-size:15px; margin-top:25px; padding:20px; background:#f9f9f9; border-left:4px solid var(--theme-color-3);">
-                <strong>P.S.</strong> Prefer a quick start?  
-                We can hold a <strong>free discovery session</strong> for your team to map dilemmas → decisions → rituals in 45 minutes.  
-                Just click <a href="https://calendly.com/ethics4work/30min" style="color:var(--theme-color-3); font-weight:bold;">schedule your meeting</a>.
-            </p>
-
         </div>
     </div>
-
 </body>
 </html>
