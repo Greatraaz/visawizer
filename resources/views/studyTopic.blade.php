@@ -42,6 +42,27 @@
         line-height: 1.68;
         font-weight: 500;
     }
+    .study-topic-hero .e-primary-btn,
+    .study-topic-overview .e-primary-btn,
+    .study-topic-split .e-primary-btn,
+    .study-topic-contact .e-primary-btn,
+    .study-topic-final .e-primary-btn {
+        border-radius: 12px !important;
+    }
+    .study-topic-hero .e-primary-btn:before,
+    .study-topic-overview .e-primary-btn:before,
+    .study-topic-split .e-primary-btn:before,
+    .study-topic-contact .e-primary-btn:before,
+    .study-topic-final .e-primary-btn:before {
+        border-radius: 12px !important;
+    }
+    .study-topic-hero .e-primary-btn .icon-wrap,
+    .study-topic-overview .e-primary-btn .icon-wrap,
+    .study-topic-split .e-primary-btn .icon-wrap,
+    .study-topic-contact .e-primary-btn .icon-wrap,
+    .study-topic-final .e-primary-btn .icon-wrap {
+        border-radius: 10px !important;
+    }
     .study-topic-hero-band {
         margin-top: -80px;
         position: relative;
@@ -49,7 +70,7 @@
     }
     .study-topic-hero-band .band-card {
         background: linear-gradient(135deg, #0d7d57 0%, #129868 100%);
-        border-radius: 18px;
+        border-radius: 12px;
         padding: 24px 28px;
         box-shadow: 0 28px 60px rgba(5, 39, 35, 0.18);
     }
@@ -72,7 +93,7 @@
         max-width: 340px;
         height: 160px;
         object-fit: cover;
-        border-radius: 14px;
+        border-radius: 12px;
         box-shadow: 0 18px 40px rgba(5, 39, 35, 0.18);
     }
 
@@ -97,7 +118,7 @@
     .study-topic-feature-card,
     .study-topic-showcase-card {
         height: 100%;
-        border-radius: 28px;
+        border-radius: 12px;
         background: #fff;
         border: 1px solid rgba(13, 125, 87, 0.1);
         box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
@@ -114,7 +135,7 @@
         align-items: center;
         gap: 8px;
         padding: 8px 14px;
-        border-radius: 999px;
+        border-radius: 12px;
         background: rgba(18, 152, 104, 0.1);
         color: #0d7d57;
         font-size: 0.78rem;
@@ -128,7 +149,7 @@
         content: "";
         width: 8px;
         height: 8px;
-        border-radius: 50%;
+        border-radius: 8px;
         background: linear-gradient(135deg, #0d7d57 0%, #129868 100%);
         box-shadow: 0 0 0 5px rgba(18, 152, 104, 0.12);
     }
@@ -142,7 +163,7 @@
     .study-topic-feature-body {
         margin-top: 24px;
         padding: 28px;
-        border-radius: 22px;
+        border-radius: 12px;
         background: #ffffff;
         border: 1px solid rgba(13, 125, 87, 0.1);
         box-shadow: 0 20px 45px rgba(15, 23, 42, 0.05);
@@ -162,7 +183,7 @@
         position: relative;
         display: flex;
         flex: 1;
-        border-radius: 24px;
+        border-radius: 12px;
         padding: 10px;
         overflow: hidden;
         background: #ffffff;
@@ -176,7 +197,7 @@
         top: -18px;
         width: 120px;
         height: 120px;
-        border-radius: 32px;
+        border-radius: 12px;
         background: rgba(148, 163, 184, 0.12);
         transform: rotate(18deg);
     }
@@ -185,7 +206,7 @@
         height: 100%;
         min-height: 265px;
         object-fit: cover;
-        border-radius: 18px;
+        border-radius: 12px;
         position: relative;
         z-index: 1;
         display: block;
@@ -200,7 +221,7 @@
         align-items: center;
         gap: 8px;
         padding: 9px 14px;
-        border-radius: 999px;
+        border-radius: 12px;
         background: rgba(255, 255, 255, 0.92);
         color: #0d7d57;
         font-size: 0.76rem;
@@ -214,7 +235,7 @@
         content: "";
         width: 8px;
         height: 8px;
-        border-radius: 50%;
+        border-radius: 8px;
         background: linear-gradient(135deg, #0d7d57 0%, #129868 100%);
     }
     .study-topic-feature-body p,
@@ -235,7 +256,7 @@
         align-items: flex-start;
         gap: 12px;
         padding: 16px 16px;
-        border-radius: 18px;
+        border-radius: 12px;
         background: linear-gradient(180deg, #ffffff 0%, #f8fcfa 100%);
         border: 1px solid rgba(13, 125, 87, 0.1);
     }
@@ -265,7 +286,7 @@
     .study-topic-showcase-media {
         position: relative;
         min-height: 275px;
-        border-radius: 24px;
+        border-radius: 12px;
         overflow: hidden;
         background: #ffffff;
         padding: 10px;
@@ -279,7 +300,7 @@
         top: 26px;
         width: 120px;
         height: 120px;
-        border-radius: 30px;
+        border-radius: 12px;
         background: rgba(255, 255, 255, 0.16);
         transform: rotate(18deg);
     }
@@ -290,7 +311,7 @@
         bottom: -30px;
         width: 130px;
         height: 130px;
-        border-radius: 40px;
+        border-radius: 12px;
         background: rgba(255, 255, 255, 0.12);
         transform: rotate(24deg);
     }
@@ -300,7 +321,7 @@
         object-fit: cover;
         position: relative;
         z-index: 1;
-        border-radius: 18px;
+        border-radius: 12px;
         box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
     }
     .study-topic-showcase-content {
@@ -323,7 +344,7 @@
         align-items: flex-start;
         gap: 14px;
         padding: 16px 16px;
-        border-radius: 18px;
+        border-radius: 12px;
         background: #fff;
         border: 1px solid rgba(13, 125, 87, 0.1);
         box-shadow: 0 14px 30px rgba(15, 23, 42, 0.05);
@@ -332,7 +353,7 @@
         width: 42px;
         height: 42px;
         min-width: 42px;
-        border-radius: 14px;
+        border-radius: 12px;
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -352,7 +373,7 @@
     .study-topic-s4-alt {
         position: relative;
         padding: 46px 38px;
-        border-radius: 30px;
+        border-radius: 12px;
         background:
             linear-gradient(135deg, rgba(7, 43, 36, 0.82) 0%, rgba(11, 61, 51, 0.76) 52%, rgba(6, 33, 28, 0.82) 100%),
             var(--study-topic-s4-bg);
@@ -367,7 +388,7 @@
         position: absolute;
         inset: 0;
         border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 30px;
+        border-radius: 12px;
         pointer-events: none;
     }
     .study-topic-s4-alt.why-us-section-4 .thumb {
@@ -417,14 +438,14 @@
     .study-topic-s4-alt.why-us-section-4 .thumb .thumb-1 > img,
     .study-topic-s4-alt.why-us-section-4 .thumb .thumb-2 > img,
     .study-topic-s4-alt.why-us-section-4 .thumb .thumb-3 img {
-        border-radius: 18px;
+        border-radius: 12px;
         box-shadow: 0 24px 48px rgba(0, 0, 0, 0.28);
         border: 3px solid rgba(255, 255, 255, 0.95);
         object-fit: cover;
     }
     .study-topic-s4-alt.why-us-section-4 .thumb .thumb-3 .shape-wrapped-thumb {
         display: block;
-        border-radius: 18px;
+        border-radius: 12px;
         overflow: hidden;
     }
     .study-topic-s4-alt.why-us-section-4 .thumb .thumb-3 .shape-wrapped-thumb::before {
@@ -438,7 +459,7 @@
     }
     .study-topic-s4-alt .why-us-content-2 {
         padding: 34px 32px;
-        border-radius: 24px;
+        border-radius: 12px;
         background: rgba(8, 31, 26, 0.38);
         border: 1px solid rgba(255, 255, 255, 0.08);
         box-shadow: 0 20px 45px rgba(0, 0, 0, 0.16);
@@ -461,7 +482,7 @@
     .study-topic-s4-alt .service {
         background: rgba(255, 255, 255, 0.06);
         border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 16px;
+        border-radius: 12px;
         padding: 14px 16px;
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12);
         backdrop-filter: blur(6px);
@@ -481,6 +502,7 @@
     .study-topic-contact {
         position: relative;
         padding: 95px 0;
+        background: linear-gradient(180deg, #f8fbfa 0%, #f3f7f5 100%);
         background-size: cover;
         background-position: center;
         overflow: hidden;
@@ -504,7 +526,7 @@
     }
     .study-topic-contact-shell {
         padding: 28px;
-        border-radius: 28px;
+        border-radius: 12px;
         background: rgba(255, 255, 255, 0.42);
         border: 1px solid rgba(255, 255, 255, 0.55);
         box-shadow: 0 28px 60px rgba(15, 23, 42, 0.12);
@@ -515,7 +537,7 @@
         display: flex;
         align-items: center;
         padding: 42px 34px;
-        border-radius: 24px;
+        border-radius: 12px;
         background: rgba(255, 255, 255, 0.7);
         border: 1px solid rgba(255, 255, 255, 0.62);
         box-shadow: 0 20px 45px rgba(15, 23, 42, 0.1);
@@ -540,7 +562,7 @@
         background:
             linear-gradient(135deg, rgba(190, 24, 47, 0.12) 0%, rgba(18, 152, 104, 0.1) 54%, rgba(190, 24, 47, 0.1) 100%),
             rgba(255, 255, 255, 0.76);
-        border-radius: 24px;
+        border-radius: 12px;
         padding: 34px 34px 38px;
         box-shadow: 0 28px 60px rgba(15, 23, 42, 0.12);
         border: 1px solid rgba(255, 255, 255, 0.58);
@@ -583,40 +605,83 @@
     }
 
     .study-topic-final {
-        padding: 80px 0 110px;
+        padding: 54px 0 110px;
+        position: relative;
+        overflow: hidden;
+        background-image:
+            linear-gradient(135deg, rgba(247, 249, 252, 0.68) 0%, rgba(244, 248, 246, 0.54) 100%),
+            var(--study-topic-final-bg);
+        background-size: cover;
+        background-position: center;
+    }
+    .study-topic-final::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.18) 0%, rgba(255, 255, 255, 0.02) 45%, rgba(255, 255, 255, 0.12) 100%);
+        pointer-events: none;
     }
     .study-topic-final .donate-to-us-layout {
         display: flex;
         justify-content: center;
+        position: relative;
+        z-index: 1;
     }
     .study-topic-final .become-volunteer-card {
-        max-width: 760px;
+        max-width: 860px;
         width: 100%;
-        text-align: center;
-        background: rgba(0, 0, 0, 0.48);
-        backdrop-filter: blur(4px);
-        border-radius: 18px;
-        padding: 56px 48px;
+        text-align: left;
+        background: rgba(255, 255, 255, 0.54);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.58);
+        box-shadow: 0 24px 55px rgba(15, 23, 42, 0.1);
+        border-radius: 12px;
+        padding: 44px 42px;
+        position: relative;
+        overflow: hidden;
+    }
+    .study-topic-final .become-volunteer-card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.04));
+        pointer-events: none;
+    }
+    .study-topic-final .become-volunteer-card::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 4px;
+        background: linear-gradient(90deg, rgba(18, 152, 104, 0.85), rgba(190, 24, 47, 0.55));
+        pointer-events: none;
+    }
+    .study-topic-final .common-subtitle {
+        justify-content: flex-start !important;
+        margin-bottom: 10px;
     }
     .study-topic-final .become-volunteer-card h2 {
         font-size: clamp(1.7rem, 3vw, 2.5rem);
         line-height: 1.2;
+        color: #0f172a;
+        margin-bottom: 14px;
     }
     .study-topic-final .become-volunteer-card p {
-        max-width: 560px;
-        margin: 0 auto 24px;
-        color: rgba(255, 255, 255, 0.9);
+        max-width: 680px;
+        margin: 0 0 26px;
+        color: #64748b;
         font-size: 1rem;
         line-height: 1.76;
     }
     .study-topic-final .common-subtitle span {
-        color: rgba(255, 255, 255, 0.85);
+        color: #475569;
         font-size: 0.8rem;
         letter-spacing: 0.12em;
     }
     .study-topic-final .btn-wrap {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
     }
 
     @media (max-width: 991px) {
@@ -701,6 +766,9 @@
         .study-topic-final {
             padding-bottom: 80px;
         }
+        .study-topic-final {
+            padding-top: 24px;
+        }
         .study-topic-rich-grid,
         .study-topic-point-grid {
             grid-template-columns: 1fr;
@@ -710,7 +778,7 @@
         }
         .study-topic-s4-alt {
             padding: 28px 18px;
-            border-radius: 24px;
+            border-radius: 12px;
         }
         .study-topic-s4-alt.why-us-section-4 .thumb {
             min-height: 320px;
@@ -737,21 +805,21 @@
         }
         .study-topic-s4-alt .why-us-content-2 {
             padding: 24px 20px;
-            border-radius: 18px;
+            border-radius: 12px;
         }
         .study-topic-contact {
             padding: 80px 0;
         }
         .study-topic-contact-shell {
             padding: 18px;
-            border-radius: 22px;
+            border-radius: 12px;
         }
         .study-topic-contact .topic-contact-copy,
         .study-topic-contact .contact-form-3 {
-            border-radius: 18px;
+            border-radius: 12px;
         }
         .study-topic-final .become-volunteer-card {
-            padding: 40px 24px;
+            padding: 34px 22px;
         }
     }
 </style>
@@ -916,7 +984,7 @@
     </div>
 </section>
 
-<section class="study-topic-contact" id="study-topic-contact-form" style="background-image: url('{{ asset($page['images']['final_bg']) }}');">
+<section class="study-topic-contact" id="study-topic-contact-form">
     <div class="container">
         <div class="study-topic-contact-shell">
             <div class="row row-gap-4 align-items-stretch">
@@ -976,7 +1044,7 @@
     </div>
 </section>
 
-<section class="donate-to-us-section study-topic-final" style="background-image: url('{{ asset($page['images']['final_bg']) }}');">
+<section class="donate-to-us-section study-topic-final" style="--study-topic-final-bg: url('{{ asset($page['images']['hero_bg']) }}');">
     <div class="container">
         <div class="donate-to-us-layout">
             <div class="become-volunteer-card mb-0">

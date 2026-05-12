@@ -154,13 +154,43 @@
         border: 2px solid rgba(255,255,255,0.85);
         color: #fff;
         font-weight: 600;
-        border-radius: 4px;
+        border-radius: 6px;
         text-decoration: none;
         transition: background 0.25s, color 0.25s;
     }
     .study-btn-outline-light:hover {
         background: #fff;
         color: #1a1a1a;
+    }
+    .study-s1-hero .e-primary-btn,
+    .study-s2-services .e-primary-btn,
+    .study-s3-mission .e-primary-btn,
+    .study-s4-process .e-primary-btn,
+    .study-s5-visa .e-primary-btn,
+    .study-s6-donate .e-primary-btn,
+    .study-s7-split .e-primary-btn,
+    .study-s8-banner .e-primary-btn {
+        border-radius: 12px !important;
+    }
+    .study-s1-hero .e-primary-btn:before,
+    .study-s2-services .e-primary-btn:before,
+    .study-s3-mission .e-primary-btn:before,
+    .study-s4-process .e-primary-btn:before,
+    .study-s5-visa .e-primary-btn:before,
+    .study-s6-donate .e-primary-btn:before,
+    .study-s7-split .e-primary-btn:before,
+    .study-s8-banner .e-primary-btn:before {
+        border-radius: 12px !important;
+    }
+    .study-s1-hero .e-primary-btn .icon-wrap,
+    .study-s2-services .e-primary-btn .icon-wrap,
+    .study-s3-mission .e-primary-btn .icon-wrap,
+    .study-s4-process .e-primary-btn .icon-wrap,
+    .study-s5-visa .e-primary-btn .icon-wrap,
+    .study-s6-donate .e-primary-btn .icon-wrap,
+    .study-s7-split .e-primary-btn .icon-wrap,
+    .study-s8-banner .e-primary-btn .icon-wrap {
+        border-radius: 10px !important;
     }
 
     /* Section 2: visual pathway cards (matches screenshot style) */
@@ -181,7 +211,7 @@
     }
     .study-path-visual-card {
         min-height: 340px;
-        border-radius: 18px;
+        border-radius: 12px;
         overflow: hidden;
         background-size: cover;
         background-position: center;
@@ -212,7 +242,7 @@
         width: 58px;
         height: 58px;
         margin: 0 auto 16px;
-        border-radius: 50%;
+        border-radius: 12px;
         background: rgba(40, 174, 119, 0.2);
         border: 1px solid rgba(255, 255, 255, 0.24);
         color: #fff;
@@ -306,7 +336,7 @@
     }
     .study-journey-card {
         min-height: 238px;
-        border-radius: 18px;
+        border-radius: 12px;
         background: linear-gradient(180deg, #fffdf7 0%, #f7f2e7 100%);
         padding: 28px 28px 26px;
         position: relative;
@@ -331,7 +361,7 @@
         height: 130px;
         right: -28px;
         bottom: -34px;
-        border-radius: 50%;
+        border-radius: 12px;
         background: radial-gradient(circle, rgba(27, 123, 97, 0.08), transparent 68%);
         pointer-events: none;
     }
@@ -343,7 +373,7 @@
     .study-journey-card .journey-icon {
         width: 60px;
         height: 60px;
-        border-radius: 50%;
+        border-radius: 12px;
         border: 1px solid rgba(27, 123, 97, 0.18);
         color: #1b7b61;
         display: flex;
@@ -420,7 +450,7 @@
         height: 420px;
         right: -120px;
         top: -80px;
-        border-radius: 50%;
+        border-radius: 12px;
         background: radial-gradient(circle, rgba(40, 174, 119, 0.12) 0%, transparent 70%);
         pointer-events: none;
     }
@@ -431,14 +461,14 @@
         height: 280px;
         left: -80px;
         bottom: -60px;
-        border-radius: 50%;
+        border-radius: 12px;
         background: radial-gradient(circle, rgba(231, 178, 59, 0.1) 0%, transparent 70%);
         pointer-events: none;
     }
     .study-s5-visa .container { position: relative; z-index: 1; }
     .study-s5-intro-card {
         background: #fff;
-        border-radius: 20px;
+        border-radius: 12px;
         padding: 44px 40px 48px;
         box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08), 0 1px 0 rgba(255,255,255,0.9) inset;
         border: 1px solid rgba(226, 232, 240, 0.9);
@@ -452,7 +482,7 @@
         top: 28px;
         bottom: 28px;
         width: 4px;
-        border-radius: 4px;
+        border-radius: 6px;
         background: linear-gradient(180deg, var(--theme-color-3, #28ae77), #0d9488);
     }
     .study-s5-intro-card .common-subtitle {
@@ -490,7 +520,7 @@
 
     .study-s5-support-card {
         background: #fff;
-        border-radius: 20px;
+        border-radius: 12px;
         padding: 0;
         box-shadow: 0 24px 55px rgba(15, 23, 42, 0.1);
         border: 1px solid rgba(226, 232, 240, 0.95);
@@ -576,7 +606,7 @@
         padding: 0 0 100px;
     }
     .study-s7-split .study-grad-thumb img {
-        border-radius: 16px;
+        border-radius: 12px;
         width: 100%;
         height: auto;
         box-shadow: 0 24px 55px rgba(15, 23, 42, 0.14);
@@ -585,7 +615,7 @@
     .study-grad-card {
         background: #2c333f;
         color: #fff;
-        border-radius: 16px;
+        border-radius: 12px;
         padding: 56px 48px 52px;
         text-align: left;
         max-width: 100%;
@@ -672,7 +702,7 @@
         border: 2px solid #1f2937;
         color: #1f2937;
         font-weight: 600;
-        border-radius: 4px;
+        border-radius: 6px;
         text-decoration: none;
         transition: background 0.2s, color 0.2s;
     }
