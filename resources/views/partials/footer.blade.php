@@ -4,121 +4,97 @@
 <footer class="footer-section footer-section-2 p-t-125 p-t-md-100 p-t-xs-80 p-b-50" style="background-image: linear-gradient(45deg, #0000009e), url({{ asset('assets/images/principles-image-3.webp')  }});z-index: 1;position: relative;">
     <div class="container">
 
-        <div class="newsletter-form">
-            <div class="text-center mb-4">
-                <h3><i class="fas fa-envelope-open-text me-2"></i>Subscribe to Our Newsletter</h3>
-                <p>Get the latest updates and exclusive offers delivered to your inbox!</p>
-            </div>
-            
-            <form id="newsletterForm">
-                @csrf
-                <input type="text" name="bot_field" class="d-none">
-                <input type="hidden" name="formName" value="Newsletter">
-                <div class="row g-3">
-                    <div class="col-md-4">
-                        <div class="input-icon">
-                            <i class="fas fa-user"></i>
-                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="input-icon">
-                            <i class="fas fa-envelope"></i>
-                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <button type="submit" class="btn btn-subscribe w-100">
-                            <i class="fas fa-paper-plane me-2"></i>Subscribe
-                        </button>
-                    </div>
+   
+<div class="row justify-content-between row-gap-md-5 row-gap-4 p-b-80">
+    <div class="col-md-3">
+        <div class="footer-widget">
+            <div class="about-widget">
+                <div class="footer-logo">
+                    <a href="{{ url('/') }}">
+                        <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="logo-footer">
+                    </a>
                 </div>
-            </form>
+                <div class="social-links">
+                    <a href="{{ config('site.facebook') }}"><i class="fab fa-facebook-f"></i></a>
+                    <a href="{{ config('site.twitter') }}"><i class="fab fa-x-twitter"></i></a>
+                    <a href="{{ config('site.instagram') }}"><i class="fab fa-instagram"></i></a>
+                    <a href="{{ config('site.linkedin') }}"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
         </div>
+    </div>
 
-        <div class="row justify-content-between row-gap-md-5 row-gap-4 p-b-80">
-            <div class="col-md-3">
-                <div class="footer-widget">
-                    <div class="about-widget">
-                        <div class="footer-logo">
-                            <a href="{{ url('/') }}">
-                                <img src="{{ asset('assets/images/logo.png') }}" alt="logo-footer">
-                            </a>
-                        </div>
-                        <div class="social-links">
-                            <a href="{{ config('site.facebook') }}"><i class="fab fa-facebook-f"></i></a>
-                            <a href="{{ config('site.twitter') }}"><i class="fab fa-x-twitter"></i></a>
-                            <a href="{{ config('site.instagram') }}"><i class="fab fa-instagram"></i></a>
-                            <a href="{{ config('site.linkedin') }}"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+    <div class="col-md-3">
+        <div class="footer-widget">
+            <h3 class="w-title">Quick Links</h3>
+            <ul>
+                <li><a href="{{ url('about-us') }}">About Us</a></li>
+                <li><a href="{{ url('what-we-do') }}">What We Do</a></li>
+                <li><a href="{{ url('mission-vision') }}">Mission & Vision</a></li>
+                <li><a href="{{ url('advisory-board') }}">Advisory Board</a></li>
+                <li><a href="{{ url('collaborations') }}">Collaborations</a></li>
+                <li><a href="{{ url('featured-and-trending') }}">Featured and Trending</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="footer-widget">
+            <h3 class="w-title">Our Services</h3>
+            <ul>
+                <li><a href="{{ url('service/advisory-consulting') }}">Advisory & Consulting</a></li>
+                <li><a href="{{ url('service/training-workshops') }}">Training & Workshops</a></li>
+                <li><a href="{{ url('service/certification-programs') }}">Certification Programs</a></li>
+                <li><a href="{{ url('service/measure-maintain') }}">Measure & Maintain</a></li>
+                <li><a href="{{ url('service/centres-accreditation') }}">Centres & Accreditation</a></li>
+                <li><a href="{{ url('service/coaching-mentoring') }}">Coaching & Mentoring</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="footer-widget">
+            <h3 class="w-title">Get in Touch</h3>
+            <div class="get-in-touch">
+                
+                <a href="https://maps.google.com/?q={{ urlencode(config('site.address1')) }}" class="footer-address align-items-start">
+                    <div class="icon" style="padding: 14px;">
+                        <i class="fa-solid fa-location-dot"></i>
                     </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="footer-widget">
-                    <h3 class="w-title">Quick Links</h3>
-                    <ul>
-                        <li><a href="{{ url('about-us') }}">About Us</a></li>
-                        <li><a href="{{ url('what-we-do') }}">What We Do</a></li>
-                        <li><a href="{{ url('mission-vision') }}">Mission & Vision</a></li>
-                        <li><a href="{{ url('advisory-board') }}">Advisory Board</a></li>
-                        <li><a href="{{ url('collaborations') }}">Collaborations</a></li>
-                        <li><a href="{{ url('featured-and-trending') }}">Featured and Trending</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="footer-widget">
-                    <h3 class="w-title">Our Services</h3>
-                    <ul>
-                        <li><a href="{{ url('service/advisory-consulting') }}">Advisory & Consulting</a></li>
-                        <li><a href="{{ url('service/training-workshops') }}">Training & Workshops</a></li>
-                        <li><a href="{{ url('service/certification-programs') }}">Certification Programs</a></li>
-                        <li><a href="{{ url('service/measure-maintain') }}">Measure & Maintain</a></li>
-                        <li><a href="{{ url('service/centres-accreditation') }}">Centres & Accreditation</a></li>
-                        <li><a href="{{ url('service/coaching-mentoring') }}">Coaching & Mentoring</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="footer-widget">
-                    <h3 class="w-title">Get in Touch</h3>
-                    <div class="get-in-touch">
-                        <a href="javascript:void(0);" class="footer-address align-items-start">
-                            <div class="icon" style="padding: 14px;">
-                                <i class="fa-solid fa-location-dot"></i>
-                            </div>
-                            <div class="text">
-                                <p>{{ config('site.address1') }}</p>
-                            </div>
-                        </a>
-                        <a href="mailto:support@example.com" class="email">
-                            <div class="icon">
-                                <i class="fa-solid fa-paper-plane"></i>
-                            </div>
-                            <div class="text">
-                                <p>{{ config('site.email1') }}</p>
-                            </div>
-                        </a>
-                        <a href="tel:+70264566579" class="phone">
-                            <div class="icon">
-                                <i class="fa-solid fa-phone-arrow-up-right"></i>
-                            </div>
-                            <div class="text">
-                                <p>{{ config('site.phone1') }}</p>
-                            </div>
-                        </a>
+                    <div class="text">
+                        <p>{{ config('site.address1') }}</p>
                     </div>
-                </div>
+                </a>
+
+                <a href="mailto:{{ config('site.email1') }}" class="email">
+                    <div class="icon">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="text">
+                        <p>{{ config('site.email1') }}</p>
+                    </div>
+                </a>
+
+                <a href="tel:{{ config('site.phone1') }}" class="phone">
+                    <div class="icon">
+                        <i class="fa-solid fa-phone-arrow-up-right"></i>
+                    </div>
+                    <div class="text">
+                        <p>{{ config('site.phone1') }}</p>
+                    </div>
+                </a>
+
             </div>
         </div>
+    </div>
+</div>
         <div class="footer-bottom m-0">
             <div class="row">
                 <div class="col-xl-12">
                     <div class="container">
                         <div class="footer-bottom-layout">
                             <div class="footer-copyright">
-                                © 2025  | All Rights Reserved | Evolvia Consultants and Advisors (OPC) Private Limited
+                               Copyright © 2026 Visawizer.com.au
                             </div>
                             <div class="footer-bottom-menu">
                                 <ul>

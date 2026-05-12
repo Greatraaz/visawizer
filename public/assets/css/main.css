@@ -2,7 +2,7 @@
   --theme-color: #85BF18;
   --theme-shade-color: #99EF68;
   --theme-color-2: #fff;
-  --theme-color-3: #006039;
+  --theme-color-3: #bd1c2e;
   --title-color: #15161C;
   --body-color: #868681;
   --gray-color: #383838;
@@ -1871,7 +1871,7 @@ label {
 .off-canvas-contact-item .icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #28ae77 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, #bd1c2e 48.85%, var(--theme-color-3) 100%);
   color: var(--white-color);
   font-size: 20px;
   border-radius: 100%;

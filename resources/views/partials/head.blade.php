@@ -9,13 +9,13 @@
     </script>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <title>{{ $title ?? 'Ethics4Work' }}</title>
+    <title>{{ $title ?? 'Study, Work, and Travel Across Australia | Discover endless opportunities in Australia' }}</title>
 
-    <meta name="description" content="{{ $description ?? 'Ethics4Work' }}">
-    <meta name="keywords" content="{{ $keywords ?? 'Ethics4Work' }}">
+    <meta name="description" content="{{ $description ?? 'Australia Study is dedicated to supporting international students in reaching their academic and career goals in Australia. Our knowledgeable and friendly team provides tailored assistance throughout your journey — from visa applications and course selection to accommodation arrangements.' }}">
+    <meta name="keywords" content="{{ $keywords ?? 'Study visa, Australia, international students' }}">
     <link rel="canonical" href="{{ url()->current() }}">
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/favicon.svg') }}"/>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/visa_favicon.png') }}"/>
 
     <!-- Google fonts -->
     <link rel="preconnect" href="https/fonts.googleapis_com_4456470.html"/>
