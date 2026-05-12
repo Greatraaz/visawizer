@@ -1,4 +1,4 @@
-<!-- <section class="testimonial p-t-100 p-t-xs-80 m-b-50">
+<section class="testimonial p-t-100 p-t-xs-80 m-b-50">
         <div class="container">
             <div class="row align-items-center justify-content-between">
                 <div class="col-xl-4 m-b-lg-60 m-b-md-60 m-b-xs-60">
@@ -7,10 +7,16 @@
                              <span>Testimonials</span>
                         </div>
                         <div class="common-title text-start">
-                            <h2>Why They Believe <span><i class="fa-solid fa-quote-right"></i> In Us</span></h2>
+                            <h2>Real experiences. <span><i class="fa-solid fa-quote-right"></i> Real outcomes.</span></h2>
                         </div>
                         <div class="text">
-                            <p>Organizations across industries trust <span class="green">Ethics<span class="golden">4</span>Work</span>for our commitment to integrity, transparency, and practical ethical solutions. Each story reflects the positive impact we create in workplaces, helping teams grow with clarity, confidence, and responsibility.</p>
+                            <p>Hear from clients who trusted Visawizer with their study, family, sponsored, and migration journeys.</p>
+                            <p>Every successful application carries a story of hope, uncertainty, effort, and relief. Our clients appreciate clear communication, practical guidance, and support that continues through the process.</p>
+                            <p class="m-t-20">Trusted by clients across student, partner, sponsored, and visitor pathways.</p>
+                        </div>
+                        <div class="cta-btn m-t-30">
+                            <a class='e-primary-btn has-icon' href="{{ url('blogs') }}">Read More Success Stories
+                                <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span></span></a>
                         </div>
                     </div>
                 </div>
@@ -21,18 +27,14 @@
                                 <div class="swiper-slide">
                                     <div class="testimonial-card">
                                         <div class="thumb">
-                                            <img alt="thumb-10" src="{{ asset('assets/images/testimonial1.webp') }}">
+                                            <img alt="testimonial-client-1" src="{{ asset('assets/images/testimonial1.webp') }}">
                                         </div>
                                         <div class="card-content">
                                             <div class="rating">
                                                 <p>Rating</p><i class="fa-solid fa-star-sharp"></i> <span>5.0</span>
                                             </div>
                                             <div class="review">
-                                                <p><span class="green">Ethics<span class="golden">4</span>Work</span>truly transformed the way our team approaches compliance and ethical decisions. Their training sessions were not only insightful but incredibly practical. I finally feel confident that our organization is moving in the right direction.</p>
-                                            </div>
-                                            <div class="author-details">
-                                                <h5>Neha Sharma</h5>
-                                                <h6>HR Manager, Delhi</h6>
+                                                <p>"Visawizer made the process feel clear from the very beginning. Every step was explained properly, our questions were answered quickly, and we felt supported throughout."</p>
                                             </div>
                                         </div>
                                     </div>
@@ -40,18 +42,14 @@
                                 <div class="swiper-slide">
                                     <div class="testimonial-card">
                                         <div class="thumb">
-                                            <img alt="thumb-10" src="{{ asset('assets/images/testimonial2.webp') }}">
+                                            <img alt="testimonial-client-2" src="{{ asset('assets/images/testimonial2.webp') }}">
                                         </div>
                                         <div class="card-content">
                                             <div class="rating">
                                                 <p>Rating</p><i class="fa-solid fa-star-sharp"></i> <span>5.0</span>
                                             </div>
                                             <div class="review">
-                                                <p>The consultants at <span class="green">Ethics<span class="golden">4</span>Work</span>are experts who genuinely care. Their guidance helped our team handle sensitive situations with clarity and fairness. Their approach is modern, practical, and perfectly tailored to today’s corporate challenges.</p>
-                                            </div>
-                                            <div class="author-details">
-                                                <h5>Shivam Gupta</h5>
-                                                <h6>Senior Analyst, Bengaluru</h6>
+                                                <p>"We came in after previous challenges and uncertainty, but the guidance was patient, detailed, and reassuring. The experience felt professional and genuinely caring."</p>
                                             </div>
                                         </div>
                                     </div>
@@ -59,37 +57,14 @@
                                 <div class="swiper-slide">
                                     <div class="testimonial-card">
                                         <div class="thumb">
-                                            <img alt="thumb-10" src="{{ asset('assets/images/testimonial3.webp') }}">
+                                            <img alt="testimonial-client-3" src="{{ asset('assets/images/testimonial3.webp') }}">
                                         </div>
                                         <div class="card-content">
                                             <div class="rating">
                                                 <p>Rating</p><i class="fa-solid fa-star-sharp"></i> <span>5.0</span>
                                             </div>
                                             <div class="review">
-                                                <p>We struggled with internal communication, but after partnering with <span class="green">Ethics<span class="golden">4</span>Work</span>, everything became structured and transparent. Their ethical frameworks are easy to implement and made a real difference in our daily processes.</p>
-                                            </div>
-                                            <div class="author-details">
-                                                <h5>Aditi Mehra</h5>
-                                                <h6>Operations Lead, Mumbai</h6>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonial-card">
-                                        <div class="thumb">
-                                            <img alt="thumb-10" src="{{ asset('assets/images/testimonial4.webp') }}">
-                                        </div>
-                                        <div class="card-content">
-                                            <div class="rating">
-                                                <p>Rating</p><i class="fa-solid fa-star-sharp"></i> <span>5.0</span>
-                                            </div>
-                                            <div class="review">
-                                                <p>I was impressed with their deep understanding of workplace ethics. The customised compliance training they provided elevated our entire department’s performance. <span class="green">Ethics<span class="golden">4</span>Work</span>is not just a service provider they are growth partners.</p>
-                                            </div>
-                                            <div class="author-details">
-                                                <h5>Laxman Singh</h5>
-                                                <h6>Compliance Officer, Ahmedabad</h6>
+                                                <p>"What stood out most was responsiveness. We always knew what was happening, what documents were needed, and what to expect next."</p>
                                             </div>
                                         </div>
                                     </div>
@@ -100,4 +75,4 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>

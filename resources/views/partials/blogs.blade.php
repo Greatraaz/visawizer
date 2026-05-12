@@ -1,6 +1,6 @@
 @php  
     $posts = [];
-    $response = Http::get('https://ethics4work.com/ethics-blog/wp-json/wp/v2/posts?_embed&per_page=5');
+    $response = Http::get('https://visawizer.com.au/wp-json/wp/v2/posts?_embed&per_page=5');
     if ($response->successful()) {
         $posts = $response->json();
     }
@@ -43,7 +43,7 @@
                                 @php
                                     $title = $post['title']['rendered'];
                                     $slug = $post['slug'];
-                                    $author = 'Ethics4work';
+                                    $author = 'Visawizer';
                                     $date = \Carbon\Carbon::parse($post['date']);
                                     $day = $date->format('d');
                                     $month = $date->format('M');

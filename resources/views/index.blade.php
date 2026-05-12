@@ -89,8 +89,72 @@
 </section>
 <!-- hero-section end -->
 
+<!-- why-visawizer-section start -->
+<section class="why-us-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: url({{ asset('assets/img/bg/why-us-bg.webp') }})">
+    <div class="container">
+        <div class="row row-gap-5 align-items-center">
 
- <!-- about-us-section start -->
+            <!-- Left Visuals -->
+            <div class="col-xl-6">
+                <div class="thumb px-xl-5 left" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <div class="thumb-1">
+                        <img alt="thumb-1" src="{{ asset('assets/images/principles-image-1.webp') }}">
+                        <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-14.webp') }}"></div>
+                    </div>
+                    <div class="thumb-2"><img alt="thumb-2" src="{{ asset('assets/images/principles-image-2.webp') }}"></div>
+                    <div class="thumb-3">
+                        <div class="shape-wrapped-thumb">
+                            <img alt="thumb-3" src="{{ asset('assets/images/principles-image-3.webp') }}">
+                            <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-13.webp') }}"></div>
+                            <div class="s-shape-2"><img alt="shape-2" src="{{ asset('assets/img/shapes/shape-15.webp') }}"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="col-xl-6">
+                <div class="why-us-content" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <div class="common-subtitle">
+                        <span>Why Visawizer</span>
+                    </div>
+                    <div class="common-title text-start">
+                        <h2>Practical migration guidance built around real goals</h2>
+                    </div>
+                    <p class="m-t-15 m-b-15" style="font-size: 20px; font-weight: 600; line-height: 1.5;">Not just forms and documents. Advice that connects your visa, study, work, and settlement plans.</p>
+                    <p class="m-b-25">Every migration journey is different. Some clients need help choosing the right course and institution. Others need support with employer sponsorship, partner visas, regional pathways, or appeal matters. Our approach is to understand your situation first, then guide you with clarity, transparency, and a practical action plan.</p>
+                    <div class="services">
+                        <div class="service-left">
+                            <div class="service">
+                                <i class="fa-solid fa-check"></i>
+                                <p><strong>Clear eligibility assessment</strong></p>
+                            </div>
+                            <div class="service">
+                                <i class="fa-solid fa-check"></i>
+                                <p><strong>Honest pathway advice</strong></p>
+                            </div>
+                        </div>
+                        <div class="service-right">
+                            <div class="service">
+                                <i class="fa-solid fa-check"></i>
+                                <p><strong>Application preparation support</strong></p>
+                            </div>
+                            <div class="service">
+                                <i class="fa-solid fa-check"></i>
+                                <p><strong>Ongoing updates and next-step guidance</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- why-visawizer-section end -->
+
+
+{{-- about-us-section start
 <section class="about-us-section m-t-120 m-t-md-100 m-t-xs-80">
     <div class="container">
         <div class="row align-items-center">
@@ -198,6 +262,7 @@
     </div>
 </section>
 <!-- about-us-section end -->
+--}}
 
     <!-- what-we-do-section start -->
     <section class="what-we-do-section m-t-80 p-t-100 p-b-120 p-b-md-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #000000e0), url({{ asset('assets/images/banner.jpg') }})">
@@ -208,11 +273,11 @@
                         <span>Solutions</span>
                     </div>
                     <div class="common-title text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-                        <h2>From Policy to Practice</h2>
+                        <h2>Start with the pathway that fits your goal</h2>
                     </div>
                 </div>
                 <div class="right" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                    <p>Advisory, training, certifications, and institution-building customised for your context.</p>
+                    <p>Choose your direction and we will help you navigate the next step.</p>
                 </div>
             </div>
             <div class="row row-gap-md-5 row-gap-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
@@ -223,11 +288,11 @@
                                 <img src="{{ asset('assets/images/from-policy-to-practice/1.webp') }}" alt="thumb-14"/>
                             </a>
                             <div class="content">
-                                <h5>Advisory & Consulting</h5>
-                                <p>Codes of conduct, professional ethics, and investigations framework.</p>
+                                <h5>Study in Australia</h5>
+                                <p>Admissions, course guidance, student visas, and post-study options.</p>
                                 <div class="details-btn">
                                     <a class='e-primary-btn has-icon is-hover-white' href="{{ url('service/advisory-consulting') }}">
-                                        Read More
+                                        Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                                         </span>
@@ -244,11 +309,11 @@
                                 <img src="{{ asset('assets/images/from-policy-to-practice/2.jpg') }}" alt="thumb-15"/>
                             </a>
                             <div class="content">
-                                <h5>Training & Workshops</h5>
-                                <p>Leader labs, frontline drills, summer camps, seminars, and conferences.</p>
+                                <h5>Visit Australia</h5>
+                                <p>Tourist, ETA, eVisitor, transit, and holiday visa support.</p>
                                 <div class="details-btn">
                                     <a class='e-primary-btn has-icon is-hover-white' href="{{ url('service/training-workshops') }}">
-                                        Read More
+                                        Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                                         </span>
@@ -265,11 +330,11 @@
                                 <img src="{{ asset('assets/images/from-policy-to-practice/3.webp') }}" alt="thumb-16"/>
                             </a>
                             <div class="content">
-                                <h5>Certification Programs</h5>
-                                <p>Industry-relevant certifications focused on ethical decision-making business practices.</p>
+                                <h5>Skilled Migration</h5>
+                                <p>Independent, nominated, and regional migration pathways.</p>
                                 <div class="details-btn">
                                     <a class='e-primary-btn has-icon is-hover-white' href="{{ url('service/certification-programs') }}">
-                                        Read More
+                                        Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                                         </span>
@@ -286,11 +351,11 @@
                                 <img src="{{ asset('assets/images/from-policy-to-practice/4.jpg') }}" alt="thumb-14"/>
                             </a>
                             <div class="content">
-                                <h5><span class="green">Ethics<span class="golden">4</span>Work</span> Framework</h5>
-                                <p>A holistic framework that helps organizations move from ethical intent to ethical action.</p>
+                                <h5>Employer Sponsored</h5>
+                                <p>482, 186, 494, DAMA, and other employer-led visa options.</p>
                                 <div class="details-btn">
                                     <a class='e-primary-btn has-icon is-hover-white' href="{{ url('service/measure-maintain') }}">
-                                        Read More
+                                        Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                                         </span>
@@ -307,11 +372,11 @@
                                 <img src="{{ asset('assets/images/from-policy-to-practice/5.webp') }}" alt="thumb-15"/>
                             </a>
                             <div class="content">
-                                <h5>Centres & Accreditation</h5>
-                                <p>Set up a Centre for Business Ethics; get your institution accredited.</p>
+                                <h5>Family Visas</h5>
+                                <p>Partner, parent, child, and relative visa pathways.</p>
                                 <div class="details-btn">
                                     <a class='e-primary-btn has-icon is-hover-white' href="{{ url('service/centres-accreditation') }}">
-                                        Read More
+                                        Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                                         </span>
@@ -328,11 +393,11 @@
                                 <img src="{{ asset('assets/images/from-policy-to-practice/6.jpg') }}" alt="thumb-16"/>
                             </a>
                             <div class="content">
-                                <h5>Coaching & Mentoring</h5>
-                                <p>1:1 and cohort journeys for ethical <br>leadership.</p>
+                                <h5>Appeals & Protection</h5>
+                                <p>Support for complex matters, review pathways, and humanitarian cases.</p>
                                 <div class="details-btn">
                                     <a class='e-primary-btn has-icon is-hover-white' href="{{ url('service/coaching-mentoring') }}">
-                                        Read More
+                                        Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                                         </span>
@@ -342,6 +407,14 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="text-center m-t-40" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
+                <a class='e-primary-btn has-icon is-hover-white' href="{{ url('contact-us') }}">
+                    Find My Pathway
+                    <span class="icon-wrap">
+                        <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
+                    </span>
+                </a>
             </div>
         </div>
         <div class="shape-10">
@@ -353,87 +426,6 @@
     </section>
     <!-- what-we-do-section end -->
 
-<!-- why-us-section start -->
-<section class="why-us-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: url({{ asset('assets/img/bg/why-us-bg.webp') }})">
-    <div class="container">
-        <div class="row row-gap-5 align-items-center">
-
-            <!-- Left Visuals -->
-            <div class="col-xl-6">
-                <div class="thumb px-xl-5 left" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <div class="thumb-1">
-                        <img alt="thumb-1" src="{{ asset('assets/images/principles-image-1.webp') }}">
-                        <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-14.webp') }}"></div>
-                    </div>
-                    <div class="thumb-2"><img alt="thumb-2" src="{{ asset('assets/images/principles-image-2.webp') }}"></div>
-                    <div class="thumb-3">
-                        <div class="shape-wrapped-thumb">
-                            <img alt="thumb-3" src="{{ asset('assets/images/principles-image-3.webp') }}">
-                            <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-13.webp') }}"></div>
-                            <div class="s-shape-2"><img alt="shape-2" src="{{ asset('assets/img/shapes/shape-15.webp') }}"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Content -->
-            <div class="col-xl-6">
-                <div class="why-us-content" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-
-                    <!-- Subtitle -->
-                    <div class="common-subtitle">
-                        <span>Principles That Shape Responsible Action</span>
-                    </div>
-
-                    <!-- Title -->
-                    <div class="common-title text-start">
-                        <h2>Foundational principles that turn ethics into everyday practice.</h2>
-                    </div>
-
-                    <!-- Principles List -->
-                    <div class="services">
-                        <div class="service-left">
-                            <div class="service">
-                                <i class="fa-solid fa-check"></i>
-                                <p><strong>Collaboration</strong><br>
-                                Harnessing diverse perspectives and collective intelligence to drive ethical progress.</p>
-                            </div>
-                            <div class="service">
-                                <i class="fa-solid fa-check"></i>
-                                <p><strong>Empowerment</strong><br>
-                                Enabling individuals and institutions to act with integrity, purpose, and moral courage.</p>
-                            </div>
-                        </div>
-
-                        <div class="service-right">
-                            <div class="service">
-                                <i class="fa-solid fa-check"></i>
-                                <p><strong>Stakeholder Engagement</strong><br>
-                                Making balanced, inclusive decisions grounded in transparency and shared responsibility.</p>
-                            </div>
-                            <div class="service">
-                                <i class="fa-solid fa-check"></i>
-                                <p><strong>Ethical Accountability</strong><br>
-                                Ensuring responsibility for actions, outcomes, and impacts across the value chain.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- CTA & Micro-Info -->
-                    <div class="annual-donation-wrap">
-                        <a class='e-primary-btn has-icon' href="{{ url('about-us') }}">
-                            About Us
-                            <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- why-us-section end -->
 
 
     <!-- our-camping start -->
@@ -443,11 +435,13 @@
                 <div class="col-xl-12">
                     <div class="text-center">
                         <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <span>A Living Library of Good Decisions</span>
+                            <span>Study</span>
                         </div>
                         <div class="common-title mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                            <h2>Ideas you can search, cite, and adapt</h2>
+                            <h2>Build your future through education in Australia</h2>
                         </div>
+                        <p class="m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">From admissions and course selection to student visas and post-study planning, we help students make informed moves.</p>
+                        <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">Australia offers strong academic opportunities, international exposure, and real career potential. We support students with admissions guidance, education planning, OSHC, change of course or institution support, and visa pathways that align with long-term goals.</p>
                     </div>
                 </div>
             </div>
@@ -464,10 +458,10 @@
                                         <div class="content">
                                             <div class="content-top">
                                                 <div class="title">
-                                                    <h3>Ethical Theories, Simply<br> Explained</h3>
+                                                    <h3>Admissions<br> Support</h3>
                                                 </div>
                                                 <div class="text">
-                                                    <p>Practical takeaways from philosophy to policy.</p>
+                                                    <p>Find suitable colleges, universities, and programs based on your profile and budget.</p>
                                                 </div>
                                             </div>
                                             <!-- <div class="mb-3 ms-3">
@@ -488,10 +482,10 @@
                                         <div class="content">
                                             <div class="content-top">
                                                 <div class="title">
-                                                    <h3>Stakeholder<br> Management</h3>
+                                                    <h3>Student Visa<br> Guidance</h3>
                                                 </div>
                                                 <div class="text">
-                                                    <p>Ways to reconcile or balance conflicting interests.</p>
+                                                    <p>Support for Student Visa 500, Student Guardian 590, and Training Visa 407 pathways.</p>
                                                 </div>
                                             </div>
                                             <!-- <div class="mb-3 ms-3">
@@ -512,10 +506,10 @@
                                         <div class="content">
                                             <div class="content-top">
                                                 <div class="title">
-                                                    <h3>CSR, Sustainability<br> & ESG</h3>
+                                                    <h3>Post-Study<br> Planning</h3>
                                                 </div>
                                                 <div class="text">
-                                                    <p>Reporting standards and real-world trade-offs.</p>
+                                                    <p>Explore graduate visa options and next steps after study.</p>
                                                 </div>
                                             </div>
                                             <!-- <div class="mb-3 ms-3">
@@ -536,34 +530,10 @@
                                         <div class="content">
                                             <div class="content-top">
                                                 <div class="title">
-                                                    <h3>Giving Voice<br> to Values</h3>
+                                                    <h3>Student Support<br> Services</h3>
                                                 </div>
                                                 <div class="text">
-                                                    <p>Scripts to speak up—safely and effectively.</p>
-                                                </div>
-                                            </div>
-                                            <!-- <div class="mb-3 ms-3">
-                                                <div class="d-bottom">
-                                                    <a class='e-primary-btn has-icon d-btn' href="#">Read More
-                                                        <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
-                                                    </a>
-                                                </div>
-                                            </div> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="camping-card">
-                                        <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('assets/images/podcasts-practitioner-interviews.webp') }}">
-                                        </div>
-                                        <div class="content">
-                                            <div class="content-top">
-                                                <div class="title">
-                                                    <h3>Podcasts & Practitioner<br> Interviews</h3>
-                                                </div>
-                                                <div class="text">
-                                                    <p>Voices from boardrooms, and classrooms.</p>
+                                                    <p>Guidance for OSHC, course change, college transfer, and education planning.</p>
                                                 </div>
                                             </div>
                                             <!-- <div class="mb-3 ms-3">
@@ -590,12 +560,72 @@
                     </div>
                 </div>
             </div>
+            <div class="text-center m-t-40">
+                <a class='e-primary-btn has-icon is-hover-white' href="{{ url('contact-us') }}">
+                    Explore Study Pathways
+                    <span class="icon-wrap">
+                        <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
+                    </span>
+                </a>
+            </div>
         </div>
     </section>
     <!-- our-camping end -->
 
-    <!-- volunteer-section start -->
+    <!-- skilled-sponsored-section start -->
     <section class="volunteer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80">
+        <div class="container">
+            <div class="text-center m-b-50 m-b-xs-40">
+                <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <span>Work in Australia</span>
+                </div>
+                <div class="common-title mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <h2>Skilled and employer-sponsored migration pathways, explained clearly</h2>
+                </div>
+                <p class="m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">Whether you are applying independently or through an employer, we help you understand the pathway, process, and next action.</p>
+                <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">Australian migration can feel complex when visa subclasses, regional conditions, nominations, and sponsorship rules overlap. We simplify the picture by helping you understand which pathway matches your profession, employer opportunity, location, and long-term residency goals.</p>
+            </div>
+
+            <div class="row row-gap-4 justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                <div class="col-xl-6 col-md-6">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <h4>Skilled Migration</h4>
+                            <i><img alt="icon" src="{{ asset('assets/images/icon/workplace-business.svg') }}"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>For applicants exploring independent, nominated, or regional pathways including 189, 190, 491, 191, and 887 options.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <h4>Employer Sponsored</h4>
+                            <i><img alt="icon" src="{{ asset('assets/images/icon/corporate-governance.svg') }}"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>For applicants and employers looking at 482, 186, 494, DAMA, short-stay specialist options, and related sponsorship pathways.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center m-t-40">
+                <p class="m-b-25">Need help choosing between skilled and sponsored options? We help compare routes based on eligibility, timelines, and long-term goals.</p>
+                <a class='e-primary-btn has-icon is-hover-white' href="{{ url('contact-us') }}">
+                    Check Your Options
+                    <span class="icon-wrap">
+                        <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- skilled-sponsored-section end -->
+
+    <!-- volunteer-section start -->
+    <!-- <section class="volunteer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80">
         <div class="container">
             <div class="text-center m-b-50 m-b-xs-40">
                 <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
@@ -708,7 +738,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- volunteer-section end -->
 
     <!-- completed-project start -->
@@ -718,14 +748,15 @@
                 <div class="row align-items-end m-b-60 m-b-xs-40">
                     <div class="col-xl-6 col-lg-6 col-md-7">
                         <div class="common-subtitle style-color-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <span class="text-white">Stories that Changed How Work Works</span>
+                            <span class="text-white">More pathways, one trusted team</span>
                         </div>
                         <div class="common-title style-color-light text-start m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                            <h2 class="fs-1">What went wrong, what we fixed, and what stayed fixed.</h2>
+                            <h2 class="fs-1">Support for family visas, visitor visas, and complex matters</h2>
+                            <p class="text-white m-t-15" style="max-width: 90%;">Some applications are emotional. Some are urgent. Some are complicated. All of them deserve careful guidance.</p>
                         </div>
                     </div>
                     <div class="col-xl-6 col-lg-6 col-md-5 text-md-end">
-                        <a class='e-primary-btn has-icon active' data-aos-delay='600' data-aos-duration='1000' data-aos='fade-up' href="{{ url('case-studies') }}">View All Case Studies
+                        <a class='e-primary-btn has-icon active' data-aos-delay='600' data-aos-duration='1000' data-aos='fade-up' href="{{ url('contact-us') }}">Speak to a Visa Expert
                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                     </div>
                 </div>
@@ -741,10 +772,10 @@
                             <div class="thumb">
                                 <a href="#"><img alt="thumb-11" src="{{ asset('assets/images/stories-image-1.webp') }}" style="object-fit: none;object-position: -20px -3rem;"></a>
                                 <div class="content">
-                                    <h5>The Code That People<br> Actually Read</h5>
-                                    <p>Energy Turning compliance PDFs into <br>living rituals.</p>
+                                    <h5>Family Visas</h5>
+                                    <p>Partner, parent, child, and relative visa pathways handled with clarity and care.</p>
                                     <div class="details-btn">
-                                        <a class='e-primary-btn is-hover-white has-icon' href="#">View Case Study
+                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact-us') }}">Learn More
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                                     </div>
                                 </div>
@@ -756,10 +787,10 @@
                             <div class="thumb">
                                 <a href="#"><img alt="thumb-11" src="{{ asset('assets/images/stories-image-2.webp') }}" style="object-fit: none;object-position: -10px -6rem;"></a>
                                 <div class="content">
-                                    <h5>Crisis in the Supply<br> Chain</h5>
-                                    <p>Rapid triage, stakeholder communication, lasting controls.</p>
+                                    <h5>Visitor Visas</h5>
+                                    <p>Visitor, holiday, ETA, eVisitor, and transit support for short-term travel plans.</p>
                                     <div class="details-btn">
-                                        <a class='e-primary-btn is-hover-white has-icon' href="#">View Case Study
+                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact-us') }}">Learn More
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                                     </div>
                                 </div>
@@ -771,10 +802,10 @@
                             <div class="thumb">
                                 <a href="#"><img alt="thumb-11" src="{{ asset('assets/images/stories-image-3.webp') }}" style="object-fit: none;object-position: -52px -12rem;"></a>
                                 <div class="content">
-                                    <h5>Enron & Pinto,<br> Re-examined</h5>
-                                    <p>Not history class—decision patterns you can rewrite today.</p>
+                                    <h5>Appeals &amp; Protection</h5>
+                                    <p>Guidance for review matters and other complex visa situations where careful strategy matters.</p>
                                     <div class="details-btn">
-                                        <a class='e-primary-btn is-hover-white has-icon' href="#">View Case Study
+                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact-us') }}">Learn More
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                                     </div>
                                 </div>
@@ -788,7 +819,7 @@
     <!-- completed-project end -->
 
    <!-- work-process-section start -->
-<section class="work-process p-t-100 p-b-120 p-b-md-100 p-t-xs-80 p-b-xs-80">
+{{--<section class="work-process p-t-100 p-b-120 p-b-md-100 p-t-xs-80 p-b-xs-80">
     <div class="container">
 
         <!-- Section Header -->
@@ -871,10 +902,10 @@
 
         </div>
     </div>
-</section>
+</section>--}}
 <!-- work-process-section end -->
 
-    <section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #0060399e), url('assets/images/home-banner-1.webp')">
+    <!-- <section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #0060399e), url('assets/images/home-banner-1.webp')">
         <div class="container">
             <div class="text-center m-b-50 m-b-xs-40">
                 <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
@@ -932,9 +963,283 @@
                 </div>
             </div>
         </div>
+    </section> -->
+
+    <!-- how-we-work-section start -->
+    <section class="services-section-3 p-t-100 p-b-100 p-t-xs-80 p-b-xs-80">
+        <div class="container">
+            <div class="row m-b-50 m-b-xs-40">
+                <div class="col-xl-12">
+                    <div class="section-top-9 text-center">
+                        <div class="common-subtitle text-uppercase" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <span>Process</span>
+                        </div>
+                        <div class="common-title m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <h2>A clearer way to move through the visa journey</h2>
+                        </div>
+                        <p class="m-t-20 m-b-0" style="font-size: 20px; font-weight: 600; line-height: 1.5;">
+                            We make the process easier by breaking it into practical, manageable steps.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-gap-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Consultation</h4>
+                            <i class="fa-light fa-comments"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>We understand your background, goal, and current visa situation.</p>
+                        </div>
+                        <div class="i-shape">
+                            <h1>01</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Pathway Review</h4>
+                            <i class="fa-light fa-route"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>We identify suitable options and explain the requirements clearly.</p>
+                        </div>
+                        <div class="i-shape">
+                            <h1>02</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Documentation &amp; Preparation</h4>
+                            <i class="fa-light fa-file-lines"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>We help organise documents, address gaps, and prepare the application carefully.</p>
+                        </div>
+                        <div class="i-shape">
+                            <h1>03</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-6 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Submission &amp; Ongoing Guidance</h4>
+                            <i class="fa-light fa-circle-check"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>We stay involved through submission, updates, and next-step planning.</p>
+                        </div>
+                        <div class="i-shape">
+                            <h1>04</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center m-t-40">
+                <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">
+                    No guesswork. No confusing jargon. Just a more structured path forward.
+                </p>
+            </div>
+        </div>
     </section>
+    <!-- how-we-work-section end -->
+
+    <!-- why-clients-choose-section start -->
+    <section class="services-section-3 p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-color: #f8f7f0;">
+        <div class="container">
+            <div class="row row-gap-5 align-items-start">
+                <div class="col-xl-5 col-lg-5">
+                    <div class="section-top-9 sticky-top" style="top: 110px;">
+                        <div class="common-subtitle text-uppercase" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <span>Trust</span>
+                        </div>
+                        <div class="common-title m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <h2>Guidance that is responsive, practical, and focused on outcomes</h2>
+                        </div>
+                        <p class="m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">
+                            Clients come to us for clarity. They stay with us because they feel supported at every stage.
+                        </p>
+                        <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">
+                            Migration decisions affect education, family, work, and future plans. That is why our clients value responsiveness, straightforward guidance, and a process that feels more personal than transactional.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7">
+                    <div class="row row-gap-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                        <div class="col-md-6">
+                            <div class="service-card-3">
+                                <div class="service-top">
+                                    <h4>Clear Communication</h4>
+                                    <i class="fa-light fa-comments"></i>
+                                </div>
+                                <div class="service-content">
+                                    <p>Understand what matters, what is needed, and what comes next.</p>
+                                </div>
+                                <div class="i-shape"><h1>01</h1></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-card-3">
+                                <div class="service-top">
+                                    <h4>Tailored Advice</h4>
+                                    <i class="fa-light fa-user-pen"></i>
+                                </div>
+                                <div class="service-content">
+                                    <p>Recommendations shaped around your case, not generic assumptions.</p>
+                                </div>
+                                <div class="i-shape"><h1>02</h1></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-card-3">
+                                <div class="service-top">
+                                    <h4>Broad Pathway Coverage</h4>
+                                    <i class="fa-light fa-route"></i>
+                                </div>
+                                <div class="service-content">
+                                    <p>Support across study, family, skilled, sponsored, visitor, and review matters.</p>
+                                </div>
+                                <div class="i-shape"><h1>03</h1></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="service-card-3">
+                                <div class="service-top">
+                                    <h4>Action-Focused Guidance</h4>
+                                    <i class="fa-light fa-bullseye-arrow"></i>
+                                </div>
+                                <div class="service-content">
+                                    <p>We help turn confusion into a practical next step.</p>
+                                </div>
+                                <div class="i-shape"><h1>04</h1></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- why-clients-choose-section end -->
+
+    <!-- resources-knowledge-hub-section start -->
+    <section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #006039e0), url('{{ asset('assets/images/home-banner-1.webp') }}');">
+        <div class="container">
+            <div class="text-center m-b-50 m-b-xs-40">
+                <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                    <span class="text-white">Resources</span>
+                </div>
+                <div class="common-title style-color-light m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                    <h2>Learn before you apply</h2>
+                </div>
+                <p class="text-white m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">
+                    Explore useful guidance, updates, and practical information to make better migration decisions.
+                </p>
+                <p class="text-white" style="font-size: 16px; font-weight: 400; line-height: 1.75; opacity: 0.92; max-width: 980px; margin: 0 auto;">
+                    The best applications begin with better understanding. Our resource hub is designed to help you learn about visa categories, common mistakes, changing rules, and important planning decisions before you begin.
+                </p>
+            </div>
+
+            <div class="row row-gap-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                <div class="col-xl-3 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Visa Guides</h4>
+                            <i class="fa-light fa-passport"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>Straightforward explainers for key pathways and subclasses.</p>
+                        </div>
+                        <div class="i-shape"><h1>01</h1></div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Checklists</h4>
+                            <i class="fa-light fa-list-check"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>Know what documents and details are usually important.</p>
+                        </div>
+                        <div class="i-shape"><h1>02</h1></div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Videos &amp; Webinars</h4>
+                            <i class="fa-light fa-circle-play"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>Helpful content for applicants who prefer visual guidance.</p>
+                        </div>
+                        <div class="i-shape"><h1>03</h1></div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6">
+                    <div class="service-card-3">
+                        <div class="service-top">
+                            <h4>Blogs &amp; Updates</h4>
+                            <i class="fa-light fa-newspaper"></i>
+                        </div>
+                        <div class="service-content">
+                            <p>Stay informed about changes, timelines, and practical migration topics.</p>
+                        </div>
+                        <div class="i-shape"><h1>04</h1></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center m-t-40">
+                <a class='e-primary-btn has-icon active' href="{{ url('reports-newsletters') }}">
+                    Explore Resources
+                    <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- resources-knowledge-hub-section end -->
+
+    <!-- final-cta-banner start -->
+    <section class="p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-color: #f8f7f0;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="text-center p-5 p-md-4 p-xs-3 rounded-4" style="background: #ffffff; box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);">
+                        <div class="common-title m-b-0" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            <h2>Ready to take the next step toward Australia?</h2>
+                        </div>
+                        <p class="m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">
+                            Book a consultation with Visawizer and get clarity on your options, requirements, and best path forward.
+                        </p>
+                        <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">
+                            From your first question to your next milestone, we are here to help you move ahead with more confidence.
+                        </p>
+                        <div class="d-flex flex-wrap justify-content-center gap-3 m-t-30">
+                            <a class='e-primary-btn has-icon active' href="{{ url('contact-us') }}">
+                                Book Appointment
+                                <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
+                            </a>
+                            <a class='e-primary-btn has-icon is-hover-white' href="tel:{{ config('site.phone1') }}">
+                                Call Now
+                                <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-phone"></i> <i class="fa-regular fa-phone"></i></span></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- final-cta-banner end -->
 
     @include('partials.testi')
     @include('partials.blogs')
+    @include('partials.faq')
 
 @endsection    
