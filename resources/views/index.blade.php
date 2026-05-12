@@ -26,8 +26,204 @@
 .service-card .service-top i {
     padding: 0;
 }
+.home-static-hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    min-height: 100svh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-top: 20px !important;
+    padding-bottom: 44px !important;
+}
+.home-static-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg, rgba(7, 27, 24, 0.9) 0%, rgba(7, 27, 24, 0.76) 36%, rgba(7, 27, 24, 0.52) 68%, rgba(7, 27, 24, 0.22) 100%);
+}
+.home-static-hero .container {
+    position: relative;
+    z-index: 1;
+    width: min(100%, 1380px);
+}
+.home-static-hero .hero-content-1 {
+    max-width: 980px;
+}
+.home-static-hero .hero-content-1 .subtitle {
+    margin-bottom: 12px;
+    border-radius: 12px;
+    padding: 8px 14px;
+}
+.home-static-hero .hero-content-1 .subtitle span {
+    font-size: 15px;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+}
+.home-static-hero .hero-content-1 .title {
+    max-width: 980px;
+    margin-bottom: 18px;
+}
+.home-static-hero .hero-content-1 .title h1 {
+    font-size: clamp(2.1rem, 3.6vw, 3.6rem);
+    line-height: 0.98;
+}
+.home-static-hero-subheading {
+    max-width: 920px;
+    font-size: clamp(1rem, 1.25vw, 1.18rem);
+    line-height: 1.42;
+    color: rgba(248, 247, 240, 0.92);
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.home-static-hero-body {
+    max-width: 920px;
+    margin-bottom: 24px;
+}
+.home-static-hero-body p {
+    font-size: 15px;
+    line-height: 1.55;
+    color: rgba(248, 247, 240, 0.82);
+    margin-bottom: 0;
+}
+.home-static-hero .join-us {
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 18px;
+}
+.home-static-hero .join-us .e-primary-btn {
+    border-radius: 12px;
+}
+.home-static-hero .join-us .e-primary-btn .icon-wrap {
+    border-radius: 10px;
+}
+.home-static-secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    padding: 5px 5px 5px 24px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    backdrop-filter: blur(8px);
+    transition: all 0.25s ease;
+}
+.home-static-secondary-btn .icon-wrap {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background: #fff;
+    color: var(--theme-color-3);
+    flex: none;
+    transition: all 0.25s ease;
+}
+.home-static-secondary-btn .icon {
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+.home-static-secondary-btn:hover {
+    color: #0f172a;
+    background: #fff;
+    border-color: #fff;
+}
+.home-static-secondary-btn:hover .icon-wrap {
+    background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+    color: #fff;
+}
+.home-static-trust-points {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 980px;
+}
+.home-static-trust-points li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    backdrop-filter: blur(8px);
+    color: rgba(248, 247, 240, 0.92);
+    font-size: 13px;
+    line-height: 1.3;
+    flex: 0 1 auto;
+}
+.home-static-trust-points li i {
+    color: #7ee1b9;
+    font-size: 14px;
+    margin-top: 0;
+}
+.home-static-hero.hero-slider-active-1 .hero-slider-pagination-1 {
+    display: inline-flex;
+}
+.home-static-hero.hero-slider-active-1 .hero-slider-pagination-1 .swiper-pagination-bullet {
+    cursor: default;
+}
+.home-static-hero.hero-slider-active-1 .hero-slider-social {
+    display: flex;
+}
+@media (max-width: 991px) {
+    .home-static-hero {
+        min-height: auto;
+        padding-top: 74px !important;
+        padding-bottom: 48px !important;
+    }
+    .home-static-hero-body p {
+        font-size: 15px;
+        line-height: 1.55;
+    }
+    .home-static-trust-points {
+        max-width: 100%;
+    }
+}
+@media (max-width: 767px) {
+    .home-static-hero {
+        padding-top: 66px !important;
+        padding-bottom: 40px !important;
+    }
+    .home-static-hero .hero-content-1 .subtitle {
+        margin-bottom: 10px;
+    }
+    .home-static-hero-subheading {
+        font-size: 0.98rem;
+        line-height: 1.4;
+    }
+    .home-static-hero-body {
+        margin-bottom: 18px;
+    }
+    .home-static-hero .join-us {
+        align-items: stretch;
+    }
+    .home-static-secondary-btn {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .home-static-hero.hero-slider-active-1 .hero-slider-social,
+    .home-static-hero.hero-slider-active-1 .hero-slider-pagination-1 {
+        display: none;
+    }
+}
 </style>
-   <!-- hero-section start -->
+   {{-- Dynamic banner disabled in favor of a single static homepage hero.
 <section class="hero-slider-active-1">
     <div class="swiper">
         <div class="swiper-wrapper">
@@ -86,6 +282,71 @@
         <div class="text">Join Social:</div>
     </div>
 
+</section>
+--}}
+<!-- hero-section end -->
+
+<!-- hero-section start -->
+<section class="home-static-hero hero-side hero-slider-active-1" style="background-image: linear-gradient(135deg, rgba(7, 27, 24, 0.16) 0%, rgba(7, 27, 24, 0.1) 100%), url('{{ asset('assets/images/banner.jpg') }}');">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="hero-content-1">
+                    <div class="subtitle">
+                        <span>Clarity in every step</span>
+                    </div>
+
+                    <div class="title">
+                        <h1>Australian visas, study pathways, and migration guidance made simpler</h1>
+                    </div>
+
+                    <p class="home-static-hero-subheading">From student admissions to skilled migration, employer-sponsored visas, family pathways, and appeals, Visawizer helps you move forward with confidence and a clear plan.</p>
+
+                    <div class="home-static-hero-body">
+                        <p>Whether you want to study, work, reunite with family, or settle in Australia, the right advice can save time, stress, and costly mistakes. At Visawizer, we help individuals and families understand their options, prepare strong applications, and take the next step with more confidence.</p>
+                    </div>
+
+                    <div class="join-us">
+                        <a class="e-primary-btn has-icon" href="{{ url('contact-us') }}">
+                            Book Appointment
+                            <span class="icon-wrap">
+                                <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
+                            </span>
+                        </a>
+                        <a class="home-static-secondary-btn" href="#home-visa-pathways">
+                            Explore Visa Pathways
+                            <span class="icon-wrap">
+                                <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <ul class="home-static-trust-points">
+                        <li><i class="fa-solid fa-circle-check"></i><span>Melbourne-based visa and education support</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Student, family, skilled, sponsored, and appeal pathways</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i><span>Clear, personalised guidance from consultation to submission</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero-slider-social">
+        <div class="social-links">
+            <a href="{{ config('site.facebook') }}"><i class="fab fa-facebook-f"></i></a>
+            <a href="{{ config('site.twitter') }}"><i class="fab fa-x-twitter"></i></a>
+            <a href="{{ config('site.instagram') }}"><i class="fab fa-instagram"></i></a>
+            <a href="{{ config('site.linkedin') }}"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="text">Join Social:</div>
+    </div>
+
+    <div class="group-shape-1">
+        <img src="{{ asset('assets/img/shapes/group-shape-1.webp') }}" alt="group-shape-1"/>
+    </div>
+    <div class="s-shape-1">
+        <img src="{{ asset('assets/img/shapes/shape-2.webp') }}" alt="s-shape-1"/>
+    </div>
 </section>
 <!-- hero-section end -->
 
@@ -265,7 +526,7 @@
 --}}
 
     <!-- what-we-do-section start -->
-    <section class="what-we-do-section m-t-80 p-t-100 p-b-120 p-b-md-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #000000e0), url({{ asset('assets/images/banner.jpg') }})">
+    <section id="home-visa-pathways" class="what-we-do-section m-t-80 p-t-100 p-b-120 p-b-md-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #000000e0), url({{ asset('assets/images/banner.jpg') }})">
         <div class="container">
             <div class="section-top-2">
                 <div class="left">
