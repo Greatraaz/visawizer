@@ -72,6 +72,15 @@ class HomeController extends Controller
         return view('faq');
     }
 
+    public function codeOfConduct()
+    {
+        $title = 'Code of Conduct for registered migration agents | Visawizer';
+        $description = 'Summary of the OMARA Code of Conduct for registered migration agents in Australia, with a link to the official Department of Home Affairs page.';
+        $keywords = 'OMARA, MARA, migration agent, code of conduct, registered migration agent, Australia';
+
+        return view('codeOfConduct', compact('title', 'description', 'keywords'));
+    }
+
     public function returnRefund()
     {
         return view('returnRefund');

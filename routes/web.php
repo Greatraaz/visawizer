@@ -80,6 +80,7 @@ Route::get('coaching-mentoring-personality-development', [HomeController::class,
 
 Route::get('privacy-policy', [HomeController::class, 'privacyPolicy']);
 Route::get('faq', [HomeController::class, 'faq']);
+Route::get('code-of-conduct', [HomeController::class, 'codeOfConduct']);
 Route::get('return-and-refund', [HomeController::class, 'returnRefund']);
 Route::get('terms-and-conditions', [HomeController::class, 'termsConditions']);
 
