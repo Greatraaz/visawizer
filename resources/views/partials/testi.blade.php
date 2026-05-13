@@ -7,11 +7,10 @@
                              <span>Testimonials</span>
                         </div>
                         <div class="common-title text-start">
-                            <h2>Real experiences. <span><i class="fa-solid fa-quote-right"></i> Real outcomes.</span></h2>
+                            <h2>What Clients Say About Us and <span>Our Services</span></h2>
                         </div>
                         <div class="text">
-                            <p>Hear from clients who trusted Visawizer with their study, family, sponsored, and migration journeys.</p>
-                            <p>Every successful application carries a story of hope, uncertainty, effort, and relief. Our clients appreciate clear communication, practical guidance, and support that continues through the process.</p>
+                            <p>Hear from clients who trusted Visawizer with study, family, sponsored, and migration journeys.</p>
                             <p class="m-t-20">Trusted by clients across student, partner, sponsored, and visitor pathways.</p>
                         </div>
                         <div class="cta-btn m-t-30">
@@ -34,7 +33,8 @@
                                                 <p>Rating</p><i class="fa-solid fa-star-sharp"></i> <span>5.0</span>
                                             </div>
                                             <div class="review">
-                                                <p>"Visawizer made the process feel clear from the very beginning. Every step was explained properly, our questions were answered quickly, and we felt supported throughout."</p>
+                                                <p>"Had a great experience with them. Always available on one call, provided relevant and accurate information."</p>
+                                                <p class="small mt-2 mb-0 text-muted"><strong>Nishchay Sharma</strong></p>
                                             </div>
                                         </div>
                                     </div>
@@ -49,7 +49,8 @@
                                                 <p>Rating</p><i class="fa-solid fa-star-sharp"></i> <span>5.0</span>
                                             </div>
                                             <div class="review">
-                                                <p>"We came in after previous challenges and uncertainty, but the guidance was patient, detailed, and reassuring. The experience felt professional and genuinely caring."</p>
+                                                <p>"We are extremely pleased with the professional services provided by Visawizer. They guided us throughout the visa process with clarity and efficiency."</p>
+                                                <p class="small mt-2 mb-0 text-muted"><strong>Kamaljeet Kaur</strong></p>
                                             </div>
                                         </div>
                                     </div>
@@ -64,7 +65,8 @@
                                                 <p>Rating</p><i class="fa-solid fa-star-sharp"></i> <span>5.0</span>
                                             </div>
                                             <div class="review">
-                                                <p>"What stood out most was responsiveness. We always knew what was happening, what documents were needed, and what to expect next."</p>
+                                                <p>"I had an amazing experience working with Visawizer for my wife&apos;s visa application… A 100% recommended for anyone trying for a visa no matter how complicated it is."</p>
+                                                <p class="small mt-2 mb-0 text-muted"><strong>Monish Kumar</strong></p>
                                             </div>
                                         </div>
                                     </div>

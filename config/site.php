@@ -3,11 +3,11 @@ return [
     'siteTitle' => 'Visawizer',
     'poweredBy' => 'Mirashka',
 
-    'phone1' => ' 0451951561',
+    'phone1' => '+61 451 951 561',
     'phone2' => ' ',
     'email1' => 'info@visawizer.com.au',
     'email2' => '',
-    'address1' => 'Level 7, 276 Flinders Street, Melbourne CBD VIC – 3000',
+    'address1' => 'level 7/276 Flinders St, Melbourne VIC 3000, Australia',
     'address2' => '',
 
     'facebook' => '',

@@ -12,7 +12,15 @@ class FormController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'name'      => 'required|string|max:100',
-            'phone'   => ['required', 'regex:/^[6-9]\d{9}$/'],
+            'phone'   => ['required', function (string $attribute, mixed $value, \Closure $fail) {
+                $digits = preg_replace('/\D/', '', (string) $value);
+                $validIndian = strlen($digits) === 10 && preg_match('/^[6-9]/', $digits);
+                $validAuMobile = strlen($digits) === 10 && str_starts_with($digits, '04');
+                $validAuIntl = strlen($digits) === 11 && str_starts_with($digits, '614');
+                if (! ($validIndian || $validAuMobile || $validAuIntl)) {
+                    $fail('Enter a valid phone number (e.g. Australian mobile or 10-digit number).');
+                }
+            }],
             'email' => [
                 'required',
                 'email:rfc,dns',
