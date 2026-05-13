@@ -129,16 +129,9 @@
     /*--------------------------------------------------------------
     07 Fancybox Video Popup JS
     --------------------------------------------------------------*/
-    if (jQuery("[data-fancybox]").length > 0) {
-        Fancybox.bind('[data-fancybox]', {
-            Html: {
-                youtube: {
-                    controls: 0,
-                    rel: 0,
-                    fs: 0
-                }
-            }
-        });
+    /* Fancybox 5: do not pass v3-style Html.youtube options — they break createSlideEl (ReferenceError: t_class). */
+    if (typeof Fancybox !== 'undefined' && jQuery('[data-fancybox]').length > 0) {
+        Fancybox.bind('[data-fancybox]', {});
     }
 
 

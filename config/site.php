@@ -16,4 +16,7 @@ return [
     'linkedin' => '',
     'pinterest' => '',
     'twitter' => '',
+
+    /** Full YouTube (or Fancybox-supported) URL for About page promo video */
+    'aboutPageVideoUrl' => '',
 ];

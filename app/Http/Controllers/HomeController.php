@@ -229,8 +229,7 @@ class HomeController extends Controller
     
     public function aboutus()
     {
-        $team = DB::table('facilitators')->where('status', 1)->orderBy('id', 'asc')->get();
-        return view('aboutUs', compact('team'));
+        return view('aboutUs');
     }
 
     public function ethicalLeadership()
