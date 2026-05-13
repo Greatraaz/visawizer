@@ -66,7 +66,12 @@ class HomeController extends Controller
     {
         return view('privacyPolicy');
     }
-    
+
+    public function faq()
+    {
+        return view('faq');
+    }
+
     public function returnRefund()
     {
         return view('returnRefund');

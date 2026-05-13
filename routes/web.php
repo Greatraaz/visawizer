@@ -79,6 +79,7 @@ Route::get('centre-for-business-society', [HomeController::class, 'centreForBusi
 Route::get('coaching-mentoring-personality-development', [HomeController::class, 'cmpd']);
 
 Route::get('privacy-policy', [HomeController::class, 'privacyPolicy']);
+Route::get('faq', [HomeController::class, 'faq']);
 Route::get('return-and-refund', [HomeController::class, 'returnRefund']);
 Route::get('terms-and-conditions', [HomeController::class, 'termsConditions']);
 
