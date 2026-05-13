@@ -22,6 +22,15 @@ class HomeController extends Controller
         return view('study');
     }
 
+    public function workSkilledMigration()
+    {
+        $title = 'Work & Skilled Migration Pathways for Australia | Visawizer';
+        $description = 'Explore skilled, employer-sponsored, regional, training, and innovation visa pathways for Australia with clear guidance from Visawizer.';
+        $keywords = 'skilled migration Australia, work visa, employer sponsored, 189 visa, 190 visa, 491 visa, 482 visa, regional visa, National Innovation Visa 858, Visawizer';
+
+        return view('workSkilledMigration', compact('title', 'description', 'keywords'));
+    }
+
     public function studyTopic($slug)
     {
         return $this->renderStudyTopic($slug);

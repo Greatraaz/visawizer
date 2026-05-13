@@ -784,7 +784,7 @@ span.green { color: var(--theme-color-3); }
 
             <!-- 2) Work & Skilled Migration -->
             <li class="has-dropdown has-megamenu">
-              <a href="javascript:void(0);">Work &amp; Skilled Migration <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
+              <a href="{{ url('work-skilled-migration') }}">Work &amp; Skilled Migration <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
               <div class="visa-mega">
                 <div class="visa-mega-inner">
                   <div class="visa-mega-row">
@@ -1170,8 +1170,9 @@ span.green { color: var(--theme-color-3); }
         </li>
 
         <li class="has-dropdown">
-          <a href="javascript:void(0);">Work &amp; Skilled Migration</a>
+          <a href="{{ url('work-skilled-migration') }}">Work &amp; Skilled Migration</a>
           <ul class="sub-menu">
+            <li><a href="{{ url('work-skilled-migration') }}">Work &amp; Skilled Migration overview</a></li>
             <li><a href="{{ url('visa/skilled-independent-189') }}">Skilled Independent Visa (Subclass 189)</a></li>
             <li><a href="{{ url('visa/skilled-nominated-190') }}">Skilled Nominated Visa (Subclass 190)</a></li>
             <li><a href="{{ url('visa/skilled-work-regional-491') }}">Skilled Work Regional (Provisional) Visa (Subclass 491)</a></li>

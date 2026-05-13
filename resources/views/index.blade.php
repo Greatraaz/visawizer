@@ -1499,8 +1499,6 @@
     </section>
     <!-- final-cta-banner end -->
 
-    @include('partials.contactAgentCta')
-
     @include('partials.testi')
     @include('partials.blogs')
     @include('partials.faq')

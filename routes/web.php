@@ -198,5 +198,6 @@ Route::get('clear-cache', function () {
 });
 
 Route::get('visa/{slug}', [HomeController::class, 'studyVisaTopic']);
+Route::get('work-skilled-migration', [HomeController::class, 'workSkilledMigration']);
 Route::get('{slug}', [HomeController::class, 'studyTopic']);
 
