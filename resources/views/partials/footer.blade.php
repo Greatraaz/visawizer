@@ -14,6 +14,7 @@
                         <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="logo-footer">
                     </a>
                 </div>
+                <p class="text-white">Guiding your journey to new beginnings in Australia with expert education and migration assistance. Committed to providing tailored solutions to navigate visa processes and education pathways seamlessly.</p>
                 <div class="social-links">
                     <a href="{{ config('site.facebook') }}"><i class="fab fa-facebook-f"></i></a>
                     <a href="{{ config('site.twitter') }}"><i class="fab fa-x-twitter"></i></a>

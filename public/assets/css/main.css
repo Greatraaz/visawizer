@@ -2,7 +2,7 @@
   --theme-color: #85BF18;
   --theme-shade-color: #99EF68;
   --theme-color-2: #fff;
-  --theme-color-3: #bd1c2e;
+  --theme-color-3: #66003f;
   --title-color: #15161C;
   --body-color: #868681;
   --gray-color: #383838;
@@ -507,8 +507,8 @@ label {
   display: inline-block;
   width: 200px;
   height: 200px;
-  border-radius: 100%;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  border-radius: 6px;
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   -webkit-animation: preloader 1.3s linear infinite;
   animation: preloader 1.3s linear infinite;
 }
@@ -549,8 +549,8 @@ label {
   line-height: 100%;
   color: #fff;
   padding: 16px 25px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
-  border-radius: 100px;
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
+  border-radius: 6px;
   overflow: hidden;
   position: relative;
   z-index: 1;
@@ -620,7 +620,7 @@ label {
   flex: none;
   background: #fff;
   color: var(--theme-color-3);
-  border-radius: 100%;
+  border-radius: 6px;
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
@@ -682,7 +682,7 @@ label {
   color: var(--theme-color-3);
 }
 .e-primary-btn.is-hover-white:hover .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .e-primary-btn:hover {
@@ -693,7 +693,7 @@ label {
   transform: translateX(0%) translateY(-50%);
 }
 .e-primary-btn:hover .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .e-primary-btn:hover .icon-wrap .icon i {
@@ -893,7 +893,7 @@ label {
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .header-middle {
-    padding: 10px 12px;
+    padding: 5px 12px;
   }
 }
 .header-middle .header-info-wrap {
@@ -935,7 +935,7 @@ label {
   font-size: 18px;
   line-height: 167%;
   color: var(--theme-color-3);
-  border-radius: 100px;
+  border-radius: 6px;
   gap: 5px;
 }
 @media (min-width: 1400px) and (max-width: 1700px) {
@@ -1015,30 +1015,24 @@ label {
   display: inline-block;
 }
 .main-menu-2 ul li:hover a {
-  color: var(--theme-color-3);
-  background: rgba(217, 217, 217, 0.16);
+  color: #1e1b1b;
 }
 .main-menu-2 ul li a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 5px 16px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 167%;
-  color: #000;
-  border-radius: 100px;
-  gap: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 125%;
+    gap: 7px;
 }
 @media (min-width: 1400px) and (max-width: 1700px) {
   .main-menu-2 ul li a {
-    padding: 5px 12px;
+    padding: 7px 0;
     font-size: 16px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .main-menu-2 ul li a {
-    padding: 4px 10px;
+    padding: 7px 0;
     font-size: 16px;
   }
 }
@@ -1091,14 +1085,14 @@ label {
 }
 .main-menu-2 ul .has-dropdown .sub-menu li a:hover {
   color: #fff;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 
 .main-menu-3 {
   padding: 3px;
   background-color: rgba(255, 255, 255, 0.13);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 100px;
+  border-radius: 6px;
 }
 .main-menu-3 ul {
   list-style: none;
@@ -1135,7 +1129,7 @@ label {
   font-size: 18px;
   line-height: 167%;
   color: var(--white-color);
-  border-radius: 100px;
+  border-radius: 6px;
 }
 @media (min-width: 1400px) and (max-width: 1700px) {
   .main-menu-3 ul li a {
@@ -1218,7 +1212,7 @@ label {
 .header-info .header-info-icon {
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: rgba(217, 217, 217, 0.1);
   border: 2px solid rgba(0, 69, 64, 0.1);
   backdrop-filter: blur(4.1px);
@@ -1243,7 +1237,7 @@ label {
 .header-info .header-info-icon-2 {
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: rgba(0, 69, 64, 0.1);
   border: 1.5px solid rgba(0, 69, 64, 0.15);
   backdrop-filter: blur(4.1px);
@@ -1307,7 +1301,7 @@ label {
 .header-info-2 .header-info-icon {
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: rgba(217, 217, 217, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(4.1px);
@@ -1371,7 +1365,7 @@ label {
 .header-info-3 .header-info-icon {
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: rgba(217, 217, 217, 0.1);
   border: 2px solid rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(4.1px);
@@ -1428,7 +1422,7 @@ label {
   background: rgba(255, 255, 255, 0.15);
   border: 2px solid rgba(0, 69, 64, 0.1);
   backdrop-filter: blur(4.1px);
-  border-radius: 100%;
+  border-radius: 6px;
   overflow: hidden;
   flex: none;
   cursor: pointer;
@@ -1443,7 +1437,7 @@ label {
   }
 }
 .header-bar .bar {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   width: 20px;
   height: 1.6px;
   position: absolute;
@@ -1466,7 +1460,7 @@ label {
   margin-top: 6px;
 }
 .header-bar.active {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border-color: var(--theme-color-3);
 }
 .header-bar.active .bar {
@@ -1504,7 +1498,7 @@ label {
   background: rgba(255, 255, 255, 0.15);
   border: 2px solid rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(4.1px);
-  border-radius: 100%;
+  border-radius: 6px;
   overflow: hidden;
   flex: none;
   cursor: pointer;
@@ -1542,7 +1536,7 @@ label {
   margin-top: 6px;
 }
 .header-bar-2.active {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border-color: var(--theme-color-3);
 }
 .header-bar-2.active .bar {
@@ -1631,7 +1625,7 @@ label {
   margin-top: 6px;
 }
 .header-bar-3.active {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border-color: var(--theme-color-3);
 }
 .header-bar-3.active .bar {
@@ -1689,7 +1683,7 @@ label {
   z-index: 10;
 }
 .header-section-3 .e-primary-btn {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: none;
   color: var(--theme-color-2);
 }
@@ -1697,14 +1691,14 @@ label {
   background: var(--theme-color-2);
 }
 .header-section-3 .e-primary-btn .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .header-section-3 .e-primary-btn:hover {
   color: var(--theme-color-3);
 }
 .header-section-3 .e-primary-btn:hover .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 
@@ -1759,7 +1753,7 @@ label {
   justify-content: center;
   width: 40px;
   height: 40px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: var(--white-color);
   font-size: 20px;
   cursor: pointer;
@@ -1871,10 +1865,10 @@ label {
 .off-canvas-contact-item .icon {
   width: 50px;
   height: 50px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #bd1c2e 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, #66003f 48.85%, var(--theme-color-3) 100%);
   color: var(--white-color);
   font-size: 20px;
-  border-radius: 100%;
+  border-radius: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1910,8 +1904,8 @@ label {
   width: 40px;
   height: 40px;
   color: var(--white-color);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
-  border-radius: 50px;
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
+  border-radius: 6px;
 }
 .off-canvas-social-links a:hover {
   color: var(--theme-color-3);
@@ -2090,7 +2084,7 @@ label {
 
 /* 06 Footer Css */
 .footer-section {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   background-size: cover;
@@ -2103,7 +2097,7 @@ label {
   padding: 3px 24px 3px 3px;
   background-color: rgba(255, 255, 255, 0.13);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 100px;
+  border-radius: 6px;
   overflow: hidden;
   gap: 20px;
 }
@@ -2122,7 +2116,7 @@ label {
   }
 }
 .footer-bottom-layout .top-btn {
-  border-radius: 100px;
+  border-radius: 6px;
   gap: 5px;
   padding: 14px;
 }
@@ -2290,7 +2284,7 @@ label {
   height: 40px;
   color: #fff;
   background: var(--theme-color-3);
-  border-radius: 50px;
+  border-radius: 6px;
 }
 .about-widget .social-links a:hover {
   color: var(--theme-color-3);
@@ -2527,10 +2521,10 @@ label {
   content: "";
   width: 5px;
   height: 5px;
-  border-radius: 100%;
+  border-radius: 6px;
   display: inline-flex;
   margin: 0 20px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   opacity: 0.5;
 }
 
@@ -2554,7 +2548,7 @@ label {
   width: 50px;
   height: 50px;
   background: var(--theme-color-3);
-  border-radius: 100%;
+  border-radius: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2645,10 +2639,10 @@ label {
   content: "";
   width: 5px;
   height: 5px;
-  border-radius: 100%;
+  border-radius: 6px;
   display: inline-flex;
   margin: 0 20px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   opacity: 0.5;
 }
 @media (max-width: 767px) {
@@ -2672,7 +2666,7 @@ label {
 }
 .footer-bottom-3 .footer-bottom-layout-2 {
   align-items: center;
-  border-radius: 100px;
+  border-radius: 6px;
   overflow: hidden;
   gap: 20px;
   display: flex;
@@ -2876,7 +2870,7 @@ label {
 ====================================================================*/
 /* 07 Topbar Css */
 .top-bar {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   padding-top: 6px;
   padding-bottom: 6px;
 }
@@ -2947,7 +2941,7 @@ label {
   transform: translate(-50%, -50%);
   color: var(--light-color);
   padding: 23px 21px;
-  border-radius: 100%;
+  border-radius: 6px;
   border: 1px solid var(--light-color);
   font-weight: 500;
   font-size: 25px;
@@ -3196,9 +3190,9 @@ label {
 .hero-content-1 .subtitle {
   padding: 9px 15px;
   gap: 10px;
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--theme-color-3);
   backdrop-filter: blur(2px);
-  border-radius: 100px;
+  border-radius: 6px;
   display: inline-flex;
   align-items: center;
   margin-bottom: 16px;
@@ -3355,10 +3349,10 @@ label {
   color: #000;
 }
 .hero-content-1 .join-us .e-primary-btn:before {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .hero-content-1 .join-us .e-primary-btn .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .hero-content-1 .join-us .e-primary-btn:hover {
@@ -3448,7 +3442,7 @@ label {
   background: rgba(255, 255, 255, 0.06);
   border: 1.5px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(8.5px);
-  border-radius: 100px;
+  border-radius: 6px;
   width: auto;
   padding: 10px 16px;
 }
@@ -3481,7 +3475,7 @@ label {
   border: 1px solid transparent;
   margin: 0;
   opacity: 1;
-  border-radius: 100%;
+  border-radius: 6px;
   position: relative;
   cursor: pointer;
   -webkit-transition: all 0.3s linear 0s;
@@ -3492,7 +3486,7 @@ label {
   content: "";
   width: 7px;
   height: 7px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: #868681;
   position: absolute;
   left: 50%;
@@ -3564,16 +3558,16 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
   color: var(--theme-color-3);
   background: #fff;
   border: 1.5px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8.5px);
 }
 .hero-slider-active-1 .hero-slider-social .social-links a:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 
@@ -3808,7 +3802,7 @@ label {
   background: var(--theme-color-2);
 }
 .hero-content-2 .join-us .e-primary-btn .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .hero-content-2 .join-us .e-primary-btn:hover {
@@ -3816,7 +3810,7 @@ label {
   color: var(--theme-color-3);
 }
 .hero-content-2 .join-us .e-primary-btn:hover .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: var(--white-color);
 }
 
@@ -3854,8 +3848,8 @@ label {
   padding: 4px;
   width: 25px;
   height: 25px;
-  border-radius: 100%;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  border-radius: 6px;
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 @media (max-width: 767px) {
@@ -3885,7 +3879,7 @@ label {
   background: rgba(255, 255, 255, 0.06);
   border: 1.5px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(8.5px);
-  border-radius: 100px;
+  border-radius: 6px;
   width: auto;
   padding: 10px 16px;
 }
@@ -3915,7 +3909,7 @@ label {
   border: 1px solid transparent;
   margin: 0;
   opacity: 1;
-  border-radius: 100%;
+  border-radius: 6px;
   position: relative;
   cursor: pointer;
   -webkit-transition: all 0.3s linear 0s;
@@ -3926,7 +3920,7 @@ label {
   content: "";
   width: 7px;
   height: 7px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: #868681;
   position: absolute;
   left: 50%;
@@ -4078,7 +4072,7 @@ label {
   background: transparent;
   gap: 10px;
   backdrop-filter: blur(2px);
-  border-radius: 100px;
+  border-radius: 6px;
   display: inline-flex;
   align-items: center;
   margin-bottom: 16px;
@@ -4243,7 +4237,7 @@ label {
   padding: 4px;
   width: 25px;
   height: 25px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: var(--theme-color);
   color: var(--white-color);
 }
@@ -4383,14 +4377,14 @@ label {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 6px;
   color: var(--theme-color-3);
   background: rgba(255, 255, 255, 0.33);
   border: 1.5px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(8.5px);
 }
 .hero-slider-active-3 .hero-slider-social .social-links a:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .hero-slider-active-3 .hero-slider-navigation {
@@ -4440,7 +4434,7 @@ label {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2.35px);
-  border-radius: 100px;
+  border-radius: 6px;
   cursor: pointer;
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
@@ -4548,7 +4542,7 @@ label {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 6px;
   color: var(--theme-color-3);
   background: rgba(0, 69, 64, 0.1);
   border: 1.5px solid rgba(0, 69, 64, 0.05);
@@ -4569,7 +4563,7 @@ label {
   }
 }
 .hero-section-4 .hero-slider-social .social-links a:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 
@@ -4605,7 +4599,7 @@ label {
   padding: 9px 15px;
   gap: 10px;
   background: rgba(0, 69, 64, 0.06);
-  border-radius: 100px;
+  border-radius: 6px;
   display: inline-flex;
   align-items: center;
   margin-bottom: 20px;
@@ -4737,7 +4731,7 @@ label {
 }
 .hero-rating-wrap .annual-donation img {
   padding: 17px 15px;
-  border-radius: 100%;
+  border-radius: 6px;
   border: 2px solid rgba(0, 69, 64, 0.1);
 }
 
@@ -5030,7 +5024,7 @@ label {
   transform: scale(1.1);
 }
 .camping-card.active .content .donation-wrap, .camping-card:hover .content .donation-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .camping-card.active .content .donation-wrap .d-top p, .camping-card:hover .content .donation-wrap .d-top p {
   color: var(--theme-color-2);
@@ -5056,7 +5050,7 @@ label {
   transform: translateX(0%) translateY(-50%);
 }
 .camping-card.active .content .donation-wrap .d-bottom .d-btn .icon-wrap, .camping-card:hover .content .donation-wrap .d-bottom .d-btn .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .camping-card.active .content .donation-wrap .d-bottom .d-wishlist, .camping-card:hover .content .donation-wrap .d-bottom .d-wishlist {
@@ -5176,14 +5170,14 @@ label {
 .camping-card .content .donation-wrap .progress {
   background: rgba(0, 69, 64, 0.1);
   height: 8px;
-  border-radius: 100px;
+  border-radius: 6px;
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
 .camping-card .content .donation-wrap .progress .progress-bar {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
-  border-radius: 100px;
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
+  border-radius: 6px;
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
@@ -5221,13 +5215,13 @@ label {
 }
 .camping-card .content .donation-wrap .d-bottom .d-btn {
   color: var(--theme-color-2);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .camping-card .content .donation-wrap .d-bottom .d-btn:before {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .camping-card .content .donation-wrap .d-bottom .d-btn .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .camping-card .content .donation-wrap .d-bottom .d-wishlist {
@@ -5277,12 +5271,12 @@ label {
   color: var(--theme-color-2);
 }
 .camping-card-2.active .content .donation-wrap .d-bottom .d-btn:before, .camping-card-2:hover .content .donation-wrap .d-bottom .d-btn:before {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   left: -10%;
   transform: translateX(0%) translateY(-50%);
 }
 .camping-card-2.active .content .donation-wrap .d-bottom .d-btn .icon-wrap, .camping-card-2:hover .content .donation-wrap .d-bottom .d-btn .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .camping-card-2 .thumb {
@@ -5395,14 +5389,14 @@ label {
 .camping-card-2 .content .donation-wrap .progress {
   background: rgba(0, 69, 64, 0.1);
   height: 8px;
-  border-radius: 100px;
+  border-radius: 6px;
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
 .camping-card-2 .content .donation-wrap .progress .progress-bar {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
-  border-radius: 100px;
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
+  border-radius: 6px;
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
@@ -5443,10 +5437,10 @@ label {
   background: #fff;
 }
 .camping-card-2 .content .donation-wrap .d-bottom .d-btn:before {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .camping-card-2 .content .donation-wrap .d-bottom .d-btn .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: var(--light-color);
 }
 
@@ -5473,7 +5467,7 @@ label {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  border-radius: 100px;
+  border-radius: 6px;
   width: auto;
   padding: 0;
 }
@@ -5489,7 +5483,7 @@ label {
   border: 1px solid transparent;
   margin: 0;
   opacity: 1;
-  border-radius: 100%;
+  border-radius: 6px;
   position: relative;
   cursor: pointer;
   -webkit-transition: all 0.3s linear 0s;
@@ -5500,7 +5494,7 @@ label {
   content: "";
   width: 7px;
   height: 7px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: #868681;
   position: absolute;
   left: 50%;
@@ -5541,7 +5535,7 @@ label {
   z-index: 10;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: #FFFFFF;
   color: #868681;
   display: flex;
@@ -5595,7 +5589,7 @@ label {
   }
 }
 .camping-slider-active-3 .camping-button-prev-3:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .camping-slider-active-3 .camping-button-next-3 {
@@ -5606,7 +5600,7 @@ label {
   z-index: 10;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: #FFFFFF;
   color: #868681;
   display: flex;
@@ -5655,7 +5649,7 @@ label {
   }
 }
 .camping-slider-active-3 .camping-button-next-3:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 
@@ -5681,7 +5675,7 @@ label {
   z-index: 10;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: #FFFFFF;
   color: #868681;
   display: flex;
@@ -5736,7 +5730,7 @@ label {
   }
 }
 .camping-slider-active .camping-button-prev:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .camping-slider-active .camping-button-next {
@@ -5747,7 +5741,7 @@ label {
   z-index: 10;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: #FFFFFF;
   color: #868681;
   display: flex;
@@ -5797,7 +5791,7 @@ label {
   }
 }
 .camping-slider-active .camping-button-next:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .camping-slider-active .camping-pagination-wrap {
@@ -5812,7 +5806,7 @@ label {
   background: #FFFFFF;
   border: 1.5px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(8.5px);
-  border-radius: 100px;
+  border-radius: 6px;
   width: auto;
   padding: 10px 16px;
   margin-top: 50px;
@@ -5825,7 +5819,7 @@ label {
   backdrop-filter: blur(4.75px);
   margin: 0;
   opacity: 1;
-  border-radius: 100%;
+  border-radius: 6px;
   position: relative;
   cursor: pointer;
   -webkit-transition: all 0.3s linear 0s;
@@ -5836,7 +5830,6 @@ label {
   content: "";
   width: 7px;
   height: 7px;
-  border-radius: 100%;
   background: #868681;
   position: absolute;
   left: 50%;
@@ -5867,7 +5860,7 @@ label {
   z-index: 10;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: #F8F7F0;
   color: #868681;
   display: flex;
@@ -5908,7 +5901,7 @@ label {
   }
 }
 .camping-slider-active-2 .camping-button-prev-2:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .camping-slider-active-2 .camping-button-next-2 {
@@ -5919,7 +5912,7 @@ label {
   z-index: 10;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: #F8F7F0;
   color: #868681;
   display: flex;
@@ -5960,7 +5953,7 @@ label {
   }
 }
 .camping-slider-active-2 .camping-button-next-2:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .camping-slider-active-2 .camping-pagination-wrap-2 {
@@ -5975,7 +5968,7 @@ label {
   background: #FFFFFF;
   border: 1.5px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(8.5px);
-  border-radius: 100px;
+  border-radius: 6px;
   width: auto;
   padding: 10px 16px;
   margin-top: 50px;
@@ -5988,7 +5981,7 @@ label {
   backdrop-filter: blur(4.75px);
   margin: 0;
   opacity: 1;
-  border-radius: 100%;
+  border-radius: 6px;
   position: relative;
   cursor: pointer;
   -webkit-transition: all 0.3s linear 0s;
@@ -5999,7 +5992,7 @@ label {
   content: "";
   width: 7px;
   height: 7px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: #868681;
   position: absolute;
   left: 50%;
@@ -6021,7 +6014,7 @@ label {
   transform: scale(1.1);
 }
 .swiper-slide-active .camping-card .content .donation-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .swiper-slide-active .camping-card .content .donation-wrap .d-top p {
   color: var(--theme-color-2);
@@ -6047,7 +6040,7 @@ label {
   transform: translateX(0%) translateY(-50%);
 }
 .swiper-slide-active .camping-card .content .donation-wrap .d-bottom .d-btn .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .swiper-slide-active .camping-card .content .donation-wrap .d-bottom .d-wishlist {
@@ -6065,12 +6058,12 @@ label {
   color: var(--theme-color-2);
 }
 .swiper-slide-active .camping-card-2 .content .donation-wrap .d-bottom .d-btn:before {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   left: -10%;
   transform: translateX(0%) translateY(-50%);
 }
 .swiper-slide-active .camping-card-2 .content .donation-wrap .d-bottom .d-btn .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 
@@ -6185,7 +6178,7 @@ label {
   }
 }
 .contact-info.active {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   transform: translateY(-20px);
   box-shadow: 0px 33px 50.3px -27px rgba(0, 69, 64, 0.3);
 }
@@ -6292,7 +6285,7 @@ label {
   overflow-x: clip;
 }
 .latest-blog-section .blog-btn .e-primary-btn {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .latest-blog-section .blog-btn .e-primary-btn:before {
@@ -6306,7 +6299,7 @@ label {
   color: var(--theme-color-3);
 }
 .latest-blog-section .blog-btn .e-primary-btn:hover .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .latest-blog-section .shape {
@@ -6446,9 +6439,9 @@ label {
 }
 .form-1 input {
   width: 100%;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: 1px solid var(--theme-color-3);
-  border-radius: 100px;
+  border-radius: 6px;
   padding: 5px 24px;
   color: var(--white-color);
   line-height: 1;
@@ -6543,7 +6536,7 @@ label {
 .blog-card .thumb .category a {
   display: inline-block;
   padding: 8px 18px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: 1.5px solid rgba(255, 255, 255, 0.3);
   box-shadow: inset 0 4px 11px rgba(255, 255, 255, 0.4), inset -1px -4px 23.1px rgba(0, 24, 25, 0.28);
   backdrop-filter: blur(23.9px);
@@ -6566,7 +6559,7 @@ label {
   text-align: center;
   padding: 5px;
   border-radius: 4px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .blog-card .event-date h2 {
   color: var(--theme-color-2);
@@ -6706,13 +6699,13 @@ label {
   justify-content: center;
   width: 30px;
   height: 30px;
-  border-radius: 50px;
+  border-radius: 6px;
   background: rgba(0, 69, 64, 0.1);
   color: var(--body-color);
 }
 .blog-card .content .social-share .social-links a:hover {
   color: var(--theme-color-2);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 
 .blog-card-2 {
@@ -6763,7 +6756,7 @@ label {
   z-index: 2;
   text-align: center;
   border-radius: 4px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .blog-card-2 .thumb .event-date h2 {
   color: var(--theme-color-2);
@@ -6817,7 +6810,7 @@ label {
   background-color: transparent;
 }
 .blog-card-2 .content .content-bottom .read-more-btn .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .blog-card-2 .content .author {
@@ -6868,7 +6861,7 @@ label {
 }
 
 .blog-card-3 {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   padding: 10px;
   border-radius: 10px;
 }
@@ -6885,7 +6878,7 @@ label {
   transform: translateX(0%) translateY(-50%);
 }
 .blog-card-3:hover .content .content-bottom .read-more-btn .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .blog-card-3 .thumb {
@@ -6905,7 +6898,7 @@ label {
   height: 70px;
   background: var(--theme-color-2);
   border: 2px solid var(--theme-color-3);
-  border-radius: 100px;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7095,7 +7088,7 @@ label {
   margin: 0;
 }
 .blog-slider-active .blog-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 
 /* 13 Event Css */
@@ -7711,14 +7704,14 @@ label {
 }
 .section-top-6 .right a {
   color: var(--white-color);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: none;
 }
 .section-top-6 .right a::before {
   background-color: var(--theme-color-2);
 }
 .section-top-6 .right a .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .section-top-6 .right a:hover {
@@ -7726,7 +7719,7 @@ label {
   background-color: var(--theme-color-2);
 }
 .section-top-6 .right a:hover .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: var(--white-color);
 }
 
@@ -7910,7 +7903,7 @@ label {
   max-width: 202px;
   height: 119px;
   width: 100%;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border-radius: 8px;
 }
 
@@ -7931,7 +7924,7 @@ label {
 }
 .partner-2:hover {
   border: 1px solid var(--theme-color-3);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .partner-2:hover .logo-1 {
   visibility: visible;
@@ -7984,7 +7977,7 @@ label {
   background: rgba(255, 255, 255, 0.1);
 }
 .partner-3:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 
 .partner-marquee {
@@ -8073,7 +8066,7 @@ label {
 .contact-form {
   max-width: 580px;
   width: 100%;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   padding: 60px;
   border: 2px solid var(--light-color);
   border-radius: 10px;
@@ -8432,8 +8425,8 @@ label {
 .testimonial .common-title h2 span i {
   color: #fff;
   padding: 5px 10px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
-  border-radius: 100%;
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
+  border-radius: 6px;
 }
 .testimonial .reviews {
   display: flex;
@@ -8560,7 +8553,7 @@ label {
 }
 
 .testimonial-card {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   padding: 20px;
   border-radius: 16px;
   display: flex;
@@ -8627,7 +8620,7 @@ label {
   transform: translate(-50%, -50%) scale(0.5);
   color: var(--light-color);
   padding: 23px 21px;
-  border-radius: 100%;
+  border-radius: 6px;
   border: 1px solid var(--light-color);
   font-weight: 500;
   font-size: 20px;
@@ -8807,7 +8800,7 @@ label {
   transform: translate(-50%, -50%);
   color: var(--light-color);
   padding: 23px 21px;
-  border-radius: 100%;
+  border-radius: 6px;
   border: 1px solid var(--light-color);
   font-weight: 500;
   font-size: 20px;
@@ -8974,13 +8967,13 @@ label {
 }
 .testimonial-section-2 .e-primary-btn {
   color: var(--theme-color-2);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .testimonial-section-2 .e-primary-btn:before {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .testimonial-section-2 .e-primary-btn .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .testimonial-section-2 .e-primary-btn:hover {
@@ -8992,12 +8985,12 @@ label {
   transform: translateX(0%) translateY(-50%);
 }
 .testimonial-section-2 .e-primary-btn:hover .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 
 .testimonial-card-3 {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border-radius: 10px;
 }
 .testimonial-card-3:hover .testimonial-card-thumb:before {
@@ -9096,8 +9089,8 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
-  border-radius: 100%;
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
+  border-radius: 6px;
   border: 2px solid var(--theme-color-3);
   color: var(--theme-color-2);
   position: absolute;
@@ -9219,7 +9212,7 @@ label {
   background: #ffffff;
   border: 1.5px solid rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(8.5px);
-  border-radius: 100px;
+  border-radius: 6px;
   width: auto;
   padding: 10px 16px;
   margin-top: 50px;
@@ -9232,7 +9225,7 @@ label {
   backdrop-filter: blur(4.75px);
   margin: 0;
   opacity: 1;
-  border-radius: 100%;
+  border-radius: 6px;
   position: relative;
   cursor: pointer;
   -webkit-transition: all 0.3s linear 0s;
@@ -9243,7 +9236,7 @@ label {
   content: "";
   width: 7px;
   height: 7px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: #868681;
   position: absolute;
   left: 50%;
@@ -9530,7 +9523,7 @@ label {
   margin: 0;
 }
 .completed-project-slider-active .completed-project-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 
 .project-card-2 {
@@ -9749,7 +9742,7 @@ label {
   margin: 0;
 }
 .completed-project-slider-active-2 .completed-project-pagination-2 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 
 .details-btn-2 {
@@ -9759,7 +9752,7 @@ label {
   justify-content: center;
   width: 50px;
   height: 50px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
   transform: rotate(-45deg);
   padding: 12px 20px;
@@ -9785,11 +9778,11 @@ label {
 }
 .project-pagination ul li.active a {
   color: var(--theme-color-2);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .project-pagination ul li:hover a {
   color: var(--theme-color-2);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .project-pagination ul li.icon a {
   border: 2px solid rgba(0, 69, 64, 0.1);
@@ -9797,7 +9790,7 @@ label {
 }
 .project-pagination ul li.icon a:hover {
   color: var(--theme-color-2);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border-color: var(--theme-color-3);
 }
 .project-pagination ul li a {
@@ -10013,7 +10006,7 @@ label {
   border-radius: 10px;
   margin: 80px 85px 0;
   padding: 100px 0 120px 0;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 @media (max-width: 1700px) {
   .what-we-do-section-2 {
@@ -10125,7 +10118,7 @@ label {
   align-items: center;
   justify-content: center;
   background-color: #F8F7F0;
-  border-radius: 100%;
+  border-radius: 6px;
   border: 2px solid var(--white-color);
   position: absolute;
   top: 0;
@@ -10153,7 +10146,7 @@ label {
 }
 .what-we-do-section-2 .we-do-card .card-thumb .circled-btn:hover {
   color: var(--theme-color-2);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: 2px solid var(--theme-color-3);
 }
 .what-we-do-section-2 .we-do-card .card-thumb .circled-btn:hover p {
@@ -10235,7 +10228,7 @@ label {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(2.35px);
-  border-radius: 100px;
+  border-radius: 6px;
   cursor: pointer;
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
@@ -10326,7 +10319,7 @@ label {
   .contact-details .join-us-btn {
     padding: 5px 5px 5px 20px;
     border: 1.5px solid rgba(0, 69, 64, 0.1);
-    border-radius: 100px;
+    border-radius: 6px;
   }
 }
 @media (max-width: 767px) {
@@ -10374,7 +10367,7 @@ label {
   font-size: 17px;
   padding: 15px 16px;
   border: 2px solid rgba(0, 69, 64, 0.1);
-  border-radius: 100px;
+  border-radius: 6px;
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
@@ -10410,7 +10403,7 @@ label {
   transform: scale(1.1);
 }
 .volunteer-card:hover a .author-info {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .volunteer-card:hover a .author-info h5 {
   color: var(--theme-color-2);
@@ -10475,7 +10468,7 @@ label {
 .volunteer-card .socials .share-button {
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 6px;
   background: var(--theme-color-2);
   border: 2px solid var(--light-color);
   display: flex;
@@ -10484,7 +10477,7 @@ label {
   cursor: pointer;
 }
 .volunteer-card .socials .share-button:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: 2px solid var(--theme-color-3);
   color: #fff;
 }
@@ -10505,13 +10498,13 @@ label {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 6px;
   background: var(--light-color);
   border: 2px solid var(--light-color);
   color: var(--body-color);
 }
 .volunteer-card .socials .social-links a:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 
@@ -10522,7 +10515,7 @@ label {
   transform: scale(1.1);
 }
 .volunteer-card-2:hover .thumb .socials .share-button {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: 2px solid var(--theme-color-3);
   color: #fff;
 }
@@ -10574,7 +10567,7 @@ label {
 .volunteer-card-2 .thumb .socials .share-button {
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 6px;
   background: var(--theme-color-2);
   border: 2px solid var(--light-color);
   display: flex;
@@ -10602,13 +10595,13 @@ label {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 6px;
   background: var(--light-color);
   border: 2px solid var(--light-color);
   color: var(--body-color);
 }
 .volunteer-card-2 .thumb .socials .social-links a:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .volunteer-card-2 .author-info {
@@ -10646,7 +10639,7 @@ label {
 }
 
 .volunteer-card-3 {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   padding: 10px;
   border-radius: 10px;
   position: relative;
@@ -10661,7 +10654,7 @@ label {
   color: var(--light-color);
 }
 .volunteer-card-3:hover .socials .share-button {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: 2px solid var(--theme-color-3);
   color: #fff;
 }
@@ -10681,7 +10674,7 @@ label {
 }
 .volunteer-card-3 a .author-info {
   text-align: center;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   padding: 14px;
   border-radius: 10px;
   margin-top: 10px;
@@ -10725,7 +10718,7 @@ label {
 .volunteer-card-3 .socials .share-button {
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 6px;
   background: var(--theme-color-2);
   border: 2px solid var(--theme-color-3);
   display: flex;
@@ -10734,7 +10727,7 @@ label {
   cursor: pointer;
 }
 .volunteer-card-3 .socials .share-button:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: 2px solid var(--theme-color-3);
   color: #fff;
 }
@@ -10753,13 +10746,13 @@ label {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 6px;
   background: var(--light-color);
   border: 2px solid var(--light-color);
   color: var(--body-color);
 }
 .volunteer-card-3 .socials .social-links a:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 
@@ -10890,7 +10883,7 @@ label {
   transform: scale(1.1);
 }
 .volunteer-card-4:hover a .author-info {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .volunteer-card-4:hover a .author-info h5 {
   color: var(--theme-color-2);
@@ -10955,7 +10948,7 @@ label {
 .volunteer-card-4 .socials .share-button {
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 6px;
   background: var(--theme-color-2);
   border: 2px solid var(--light-color);
   display: flex;
@@ -10964,7 +10957,7 @@ label {
   cursor: pointer;
 }
 .volunteer-card-4 .socials .share-button:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: 2px solid var(--theme-color-3);
   color: #fff;
 }
@@ -10985,13 +10978,13 @@ label {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 6px;
   background: var(--light-color);
   border: 2px solid var(--light-color);
   color: var(--body-color);
 }
 .volunteer-card-4 .socials .social-links a:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 
@@ -11239,8 +11232,8 @@ label {
   padding: 4px;
   width: 18px;
   height: 18px;
-  border-radius: 100%;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  border-radius: 6px;
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .v-summary-content .content .info-wrapper .info .icon i {
@@ -11592,7 +11585,7 @@ label {
   width: 60px;
   height: 60px;
   padding: 17px 15px;
-  border-radius: 100%;
+  border-radius: 6px;
   border: 2px solid rgba(0, 69, 64, 0.1);
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -11694,8 +11687,8 @@ label {
   padding: 7px;
   width: 25px;
   height: 25px;
-  border-radius: 100%;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  border-radius: 6px;
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 
@@ -12616,7 +12609,7 @@ label {
   width: 60px;
   height: 60px;
   padding: 17px 15px;
-  border-radius: 100%;
+  border-radius: 6px;
   border: 2px solid rgba(0, 69, 64, 0.1);
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -12664,7 +12657,7 @@ label {
   }
 }
 .why-us-content-2 .annual-donation-wrap .e-primary-btn {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: none;
   color: var(--theme-color-2);
 }
@@ -12672,14 +12665,14 @@ label {
   background: var(--theme-color-2);
 }
 .why-us-content-2 .annual-donation-wrap .e-primary-btn .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .why-us-content-2 .annual-donation-wrap .e-primary-btn:hover {
   color: var(--theme-color-3);
 }
 .why-us-content-2 .annual-donation-wrap .e-primary-btn:hover .icon-wrap {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 
@@ -12854,7 +12847,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100%;
+  border-radius: 6px;
   width: 110px;
   height: 110px;
 }
@@ -12884,7 +12877,7 @@ label {
   justify-content: center;
   color: var(--theme-color-3);
   padding: 25px 20px;
-  border-radius: 100%;
+  border-radius: 6px;
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
@@ -12944,7 +12937,7 @@ label {
   height: 8px;
 }
 .why-us-section-5 .progress .progress-bar {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .why-us-section-5 .services {
   margin-bottom: 24px;
@@ -13203,7 +13196,7 @@ label {
 }
 .service-card:hover .service-top i,
 .service-card:hover .service-top .circled-heading {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: 2px solid var(--theme-color-3);
   color: #fff;
   transition: all 0.3s;
@@ -13249,7 +13242,7 @@ label {
   height: 70px;
   background: #f8f7f0;
   border: 2px solid var(--theme-color-3);
-  border-radius: 100%;
+  border-radius: 6px;
   box-shadow: 0px 15px 32.2px -9px rgba(0, 24, 25, 0.2);
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
@@ -13272,7 +13265,7 @@ label {
   justify-content: center;
   padding: 17px 15px;
   background-color: var(--white-color);
-  border-radius: 100%;
+  border-radius: 6px;
   border: 2px solid var(--theme-color-3);
   box-shadow: 0px 15px 32.2px -9px rgba(0, 24, 25, 0.2);
 }
@@ -13320,7 +13313,7 @@ label {
   transition: all 0.3s;
 }
 .service-card-2:hover .service-top .circled-heading {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: 2px solid var(--theme-color-3);
   color: #fff;
   transition: all 0.3s;
@@ -13362,7 +13355,7 @@ label {
   padding: 17px 15px;
   background-color: var(--white-color);
   color: var(--body-color);
-  border-radius: 100%;
+  border-radius: 6px;
   border: 2px solid var(--theme-color-3);
   box-shadow: 0px 15px 32.2px -9px rgba(0, 24, 25, 0.2);
 }
@@ -13399,7 +13392,7 @@ label {
 }
 .service-card-3:hover .service-top i,
 .service-card-3:hover .service-top .circled-heading {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border: 2px solid var(--theme-color-3);
   color: #fff;
   transition: all 0.3s;
@@ -13445,7 +13438,7 @@ label {
   justify-content: center;
   padding: 17px 15px;
   background-color: var(--white-color);
-  border-radius: 100%;
+  border-radius: 6px;
   border: 2px solid var(--theme-color-3);
   box-shadow: 0px 15px 32.2px -9px rgba(0, 24, 25, 0.2);
 }
@@ -13565,7 +13558,7 @@ label {
   z-index: 10;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: #FFFFFF;
   color: var(--theme-color-3);
   display: flex;
@@ -13620,7 +13613,7 @@ label {
   }
 }
 .service-slider-active .service-button-prev:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .service-slider-active .service-button-next {
@@ -13631,7 +13624,7 @@ label {
   z-index: 10;
   width: 50px;
   height: 50px;
-  border-radius: 100%;
+  border-radius: 6px;
   background: #FFFFFF;
   color: #868681;
   display: flex;
@@ -13681,7 +13674,7 @@ label {
   }
 }
 .service-slider-active .service-button-next:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -13886,7 +13879,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100%;
+  border-radius: 6px;
 }
 @media (min-width: 1200px) and (max-width: 1399px) {
   .btn-layer {
@@ -13916,7 +13909,7 @@ label {
   height: 100px;
   color: var(--light-color);
   padding: 25px 20px;
-  border-radius: 100%;
+  border-radius: 6px;
   font-weight: 500;
   font-size: 24px;
   line-height: 36px;
@@ -13951,7 +13944,7 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100%;
+  border-radius: 6px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .btn-layer-2 {
@@ -13976,7 +13969,7 @@ label {
   height: 80px;
   color: var(--theme-color-3);
   padding: 25px 20px;
-  border-radius: 100%;
+  border-radius: 6px;
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
@@ -14105,7 +14098,7 @@ label {
   background: rgba(255, 225, 117, 0.1);
 }
 .dust-recycle-card .campaign-progress .progress .progress-bar {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 
 /* 23 Faq Css */
@@ -14250,7 +14243,7 @@ label {
   opacity: 1;
 }
 .faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) .icon {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   transform: rotate(180deg);
 }
 .faq-accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) .icon .icon-plus {
@@ -14403,7 +14396,7 @@ label {
   gap: 16px;
   padding: 20px 30px;
   border-radius: 6px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   z-index: 2;
 }
 .shape-wrapped-thumb-1 .award-shape img {
@@ -14520,7 +14513,7 @@ label {
   transform: translate(-50%, -50%);
   color: var(--light-color);
   padding: 23px 21px;
-  border-radius: 100%;
+  border-radius: 6px;
   border: 1px solid var(--light-color);
   font-weight: 500;
   font-size: 20px;
@@ -14574,7 +14567,7 @@ label {
 }
 .about-us-content .annual-donation-wrap .annual-donation img {
   padding: 17px 15px;
-  border-radius: 100%;
+  border-radius: 6px;
   border: 2px solid rgba(0, 69, 64, 0.1);
 }
 
@@ -14692,7 +14685,7 @@ label {
   color: var(--theme-color-2);
   width: 20px;
   height: 20px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 
 .shape-wrapped-thumb-2 {
@@ -14987,7 +14980,7 @@ label {
 
 /* 25 Latest Work Css */
 .work-card {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   display: flex;
   align-items: center;
   gap: 100px;
@@ -15311,7 +15304,7 @@ label {
   height: 70px;
   padding: 10px;
   border: 2px solid var(--theme-color-3);
-  border-radius: 100%;
+  border-radius: 6px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .company-achievements .achievement i {
@@ -15446,7 +15439,7 @@ label {
   height: 70px;
   padding: 10px;
   border: 2px solid var(--theme-color-3);
-  border-radius: 100%;
+  border-radius: 6px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .company-achievements-2 .achievement i {
@@ -15522,7 +15515,7 @@ label {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .services-we-offer-section .common-title h2 {
   color: var(--white-color);
@@ -15552,7 +15545,7 @@ label {
   color: #fff;
 }
 .service-card-3.active .content .d-btn:before, .service-card-3:hover .content .d-btn:before {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   left: -10%;
   transform: translateX(0%) translateY(-50%);
 }
@@ -15639,7 +15632,7 @@ label {
 .service-card-3 .content .d-btn .icon-wrap {
   width: 38px;
   height: 38px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: var(--light-color);
 }
 .service-card-3 .content .d-btn:hover .icon-wrap {
@@ -15737,7 +15730,7 @@ label {
 }
 
 .contact-form-3 {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   padding: 36px 54px 48px 36px;
   border-radius: 10px;
 }
@@ -15912,12 +15905,12 @@ label {
   width: 70px;
   height: 70px;
   border: 2px solid var(--white-color);
-  border-radius: 100px;
+  border-radius: 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   box-shadow: 0 15px 32.2px -9px rgba(0, 24, 25, 0.2);
 }
 @media (max-width: 1399px) {
@@ -15982,7 +15975,7 @@ label {
 }
 
 .make-donate-layout {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border-radius: 8px;
   padding: 36px;
 }
@@ -16111,7 +16104,7 @@ label {
   border: none;
 }
 .donate-right .choose-currency .amount:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .donate-right .choose-currency .custom-amount {
@@ -16177,7 +16170,7 @@ label {
   color: var(--theme-color-3);
   background: #ffffff;
   box-shadow: 0px 35px 41.5px -16px rgba(0, 69, 64, 0.12);
-  border-radius: 50px;
+  border-radius: 6px;
 }
 @media (max-width: 767px) {
   .donate-right .bottom .icon-wrap input {
@@ -16193,7 +16186,7 @@ label {
   left: 8px;
   width: 40px;
   height: 40px;
-  border-radius: 100%;
+  border-radius: 6px;
   color: var(--theme-color-3);
   background: #f8f7f0;
   border: 2px solid var(--theme-color-3);
@@ -16208,7 +16201,7 @@ label {
 .donate-right .bottom .donate-btn {
   padding: 22px 88px;
   background: var(--theme-color-2);
-  border-radius: 100px;
+  border-radius: 6px;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -16394,7 +16387,7 @@ label {
   background: linear-gradient(161.69deg, #006039 12.43%, #e7b23b 251.81%);
   box-shadow: 0 15px 32.2px -9px rgba(0, 24, 25, 0.2);
   margin-bottom: 10px;
-  border-radius: 100%;
+  border-radius: 6px;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .become-volunteer-card .card-icon i, .donate-us-card .card-icon i {
@@ -16588,12 +16581,12 @@ label {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 6px;
   background: var(--white-color);
   color: var(--body-color);
 }
 .friends-card .author-details .socials .social-links a:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .friends-card .thumb {
@@ -16821,11 +16814,11 @@ label {
   margin: 0 auto 15px;
   width: 60px;
   height: 60px;
-  border-radius: 100%;
+  border-radius: 6px;
 }
 .donator-cards .donator-card .thumb img {
   width: 100%;
-  border-radius: 100%;
+  border-radius: 6px;
 }
 .donator-cards .donator-card .donator-name {
   margin-bottom: 2px;
@@ -16950,7 +16943,7 @@ label {
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .donation-card .donation-wrap-2:hover .left .d-top p {
   color: var(--theme-color-2);
@@ -16999,14 +16992,14 @@ label {
   margin-bottom: 15px;
   background: rgba(0, 69, 64, 0.1);
   height: 8px;
-  border-radius: 100px;
+  border-radius: 6px;
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
 .donation-card .donation-wrap-2 .left .progress .progress-bar {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
-  border-radius: 100px;
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
+  border-radius: 6px;
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
@@ -17063,9 +17056,9 @@ label {
   width: 110px;
   height: 110px;
   padding: 25px 30px;
-  border-radius: 100%;
+  border-radius: 6px;
   color: var(--theme-color-2);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17089,7 +17082,7 @@ label {
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .donation-wrap-3:hover .left .d-top p {
   color: var(--theme-color-2);
@@ -17138,14 +17131,14 @@ label {
   margin-bottom: 15px;
   background: rgba(0, 69, 64, 0.1);
   height: 8px;
-  border-radius: 100px;
+  border-radius: 6px;
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
 }
 .donation-wrap-3 .left .progress .progress-bar {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
-  border-radius: 100px;
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
+  border-radius: 6px;
   -webkit-transition: all 0.3s linear 0s;
   -o-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
@@ -17202,9 +17195,9 @@ label {
   width: 110px;
   height: 110px;
   padding: 25px 30px;
-  border-radius: 100%;
+  border-radius: 6px;
   color: var(--theme-color-2);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17250,7 +17243,7 @@ label {
   color: var(--theme-color-2);
   width: 18px;
   height: 18px;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   border-radius: 50%;
 }
 .list-wrapper .list-wrap li p {
@@ -17284,7 +17277,7 @@ label {
   height: 80px;
   color: var(--white-color);
   padding: 25px 20px;
-  border-radius: 100%;
+  border-radius: 6px;
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
@@ -17353,7 +17346,7 @@ label {
   height: 80px;
   background: #e7b23b;
   border: 2px solid rgba(0, 69, 64, 0.1);
-  border-radius: 100%;
+  border-radius: 6px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -17434,11 +17427,11 @@ label {
   height: 140px;
   background: #383838;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 100px;
+  border-radius: 6px;
 }
 .previous-project .project-thumb-wrap img,
 .next-project .project-thumb-wrap img {
-  border-radius: 100px;
+  border-radius: 6px;
   width: 100%;
 }
 .previous-project .project-content-wrap .view-project-btn,
@@ -17504,11 +17497,11 @@ label {
   max-width: 100px;
   width: 100%;
   height: 100px;
-  border-radius: 100%;
+  border-radius: 6px;
 }
 .comment-section .comments .comment-wrap .thumb img {
   width: 100%;
-  border-radius: 100%;
+  border-radius: 6px;
 }
 .comment-section .comments .comment-wrap .info .name {
   margin-bottom: 6px;
@@ -17550,7 +17543,7 @@ label {
   cursor: pointer;
 }
 .comment-section .comments .comment-wrap .info .reply-btn:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .comment-section .leave-comment form .info-input {
@@ -17622,7 +17615,7 @@ label {
   left: 8px;
   width: 70px;
   height: 70px;
-  border-radius: 100%;
+  border-radius: 6px;
   font-size: 32px;
   color: var(--theme-color-3);
   background: #f8f7f0;
@@ -17765,12 +17758,12 @@ label {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 6px;
   background: var(--white-color);
   color: var(--body-color);
 }
 .detail-sidebar .s-widget-wrap .socials .social-links a:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .detail-sidebar .s-widget-wrap .project-info-wrap {
@@ -17800,13 +17793,13 @@ label {
 }
 .detail-sidebar .s-widget-wrap .project-info-wrap .project-info:hover .icon {
   color: var(--theme-color-2);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .detail-sidebar .s-widget-wrap .project-info-wrap .project-info .icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 100%;
+  border-radius: 6px;
   width: 60px;
   height: 60px;
   font-size: 26px;
@@ -17840,12 +17833,12 @@ label {
   width: 100%;
   height: 100px;
   margin: 0 auto 10px;
-  border-radius: 100%;
+  border-radius: 6px;
   border: 6px solid var(--white-color);
 }
 .detail-sidebar .s-widget-wrap .organizer-info-wrap .thumb img {
   width: 100%;
-  border-radius: 100%;
+  border-radius: 6px;
 }
 .detail-sidebar .s-widget-wrap .organizer-info-wrap .name h3 {
   text-align: center;
@@ -17889,7 +17882,7 @@ label {
   justify-content: center;
   width: 30px;
   height: 30px;
-  border-radius: 100%;
+  border-radius: 6px;
   padding: 7px;
   background: var(--white-color);
   border: 1px solid rgba(0, 69, 64, 0.15);
@@ -17915,11 +17908,11 @@ label {
   max-width: 97px;
   height: 97px;
   width: 100%;
-  border-radius: 100%;
+  border-radius: 6px;
 }
 .detail-sidebar .s-widget-wrap .recent-campaigns .campaign .thumb img {
   width: 100%;
-  border-radius: 100%;
+  border-radius: 6px;
 }
 .detail-sidebar .s-widget-wrap .recent-campaigns .campaign .date {
   margin-bottom: 4px;
@@ -17977,7 +17970,7 @@ label {
 }
 .detail-list ul li a:hover {
   color: var(--white-color);
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
 }
 .detail-list ul li a:hover .icon {
   color: var(--theme-color-3);
@@ -18105,7 +18098,7 @@ label {
   border: none;
 }
 .choose-currency-2 .amount.active, .choose-currency-2 .amount:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 .choose-currency-2 .custom-amount {
@@ -18176,7 +18169,7 @@ label {
   height: 20px;
   border: none;
   border-radius: 50%;
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   position: relative;
   cursor: pointer;
   vertical-align: middle;
@@ -18288,12 +18281,12 @@ label {
   max-width: 100px;
   width: 100%;
   height: 100px;
-  border-radius: 100%;
+  border-radius: 6px;
   border: 6px solid var(--white-color);
 }
 .sponsor-info-wrap .thumb img {
   width: 100%;
-  border-radius: 100%;
+  border-radius: 6px;
 }
 .sponsor-info-wrap .name h3 {
   font-family: var(--outfit-font);
@@ -18414,7 +18407,7 @@ label {
   position: absolute;
   top: 7px;
   right: 7px;
-  border-radius: 100%;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18441,7 +18434,7 @@ label {
   transition: all 0.3s linear 0s;
 }
 .categories button:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
   border-color: var(--theme-color-2);
 }
@@ -18525,7 +18518,7 @@ label {
 .blog-card-4 .content .blog-info .view img {
   width: 30px;
   height: 30px;
-  border-radius: 100%;
+  border-radius: 6px;
 }
 .blog-card-4 .content .title h3 {
   font-weight: 600;
@@ -18590,7 +18583,7 @@ label {
 .blog-card-5 .content .blog-info .view img {
   width: 30px;
   height: 30px;
-  border-radius: 100%;
+  border-radius: 6px;
 }
 .blog-card-5 .content .title h3 {
   font-weight: 600;
@@ -18688,7 +18681,7 @@ label {
   transition: all 0.3s linear 0s;
 }
 .blog-tags .tag-wrap .tags button:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
   border-color: var(--theme-color-3);
 }
@@ -18708,12 +18701,12 @@ label {
   justify-content: center;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 6px;
   background: #f8f7f0;
   color: var(--body-color);
 }
 .blog-tags .socials .social-links a:hover {
-  background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%);
+  background: linear-gradient(150deg, var(--theme-color-3) 15%, var(--theme-color-3) 48.85%, var(--theme-color-3) 100%);
   color: #fff;
 }
 

@@ -12,6 +12,17 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CoursesController;
 use App\Http\Controllers\UserController;
 
+use Illuminate\Support\Facades\Artisan;
+
+Route::get('/clear-cache', function() {
+    Artisan::call('cache:clear');
+    Artisan::call('config:clear');
+    Artisan::call('route:clear');
+    Artisan::call('view:clear');
+    return "All Caches Cleared!";
+});
+
+
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('study', [HomeController::class, 'studyInAustralia']);

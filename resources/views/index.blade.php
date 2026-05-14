@@ -57,7 +57,7 @@
 }
 .home-static-hero .hero-content-1 .subtitle {
     margin-bottom: 12px;
-    border-radius: 12px;
+    border-radius: 6px;
     padding: 8px 14px;
 }
 .home-static-hero .hero-content-1 .subtitle span {
@@ -96,18 +96,12 @@
     gap: 14px;
     margin-bottom: 18px;
 }
-.home-static-hero .join-us .e-primary-btn {
-    border-radius: 12px;
-}
-.home-static-hero .join-us .e-primary-btn .icon-wrap {
-    border-radius: 10px;
-}
 .home-static-secondary-btn {
     display: inline-flex;
     align-items: center;
     gap: 14px;
     padding: 5px 5px 5px 24px;
-    border-radius: 12px;
+    border-radius: 6px;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.22);
     color: #fff;
@@ -117,12 +111,12 @@
     transition: all 0.25s ease;
 }
 .home-static-secondary-btn .icon-wrap {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 6px;
     background: #fff;
     color: var(--theme-color-3);
     flex: none;
@@ -158,7 +152,7 @@
     align-items: center;
     gap: 8px;
     padding: 10px 14px;
-    border-radius: 12px;
+    border-radius: 6px;
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.14);
     backdrop-filter: blur(8px);
