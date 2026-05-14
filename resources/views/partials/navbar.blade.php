@@ -722,7 +722,7 @@ span.green { color: var(--theme-color-3); }
 
             <!-- 1) Study in Australia -->
             <li class="has-dropdown has-megamenu">
-              <a href="javascript:void(0);">Study in Australia <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
+              <a href="{{ url('study') }}">Study in Australia <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
               <div class="visa-mega">
                 <div class="visa-mega-inner">
                   <div class="visa-mega-row">
@@ -808,6 +808,7 @@ span.green { color: var(--theme-color-3); }
                           <li><a href="{{ url('visa/employer-nomination-186-trt') }}"><span class="link-icon"></span>Employer Nomination Scheme (Subclass 186) TRT</a></li>
                           <li><a href="{{ url('visa/employer-nomination-186-de') }}"><span class="link-icon"></span>Employer Nomination Direct Entry (Subclass 186)</a></li>
                           <li><a href="{{ url('visa/skilled-employer-sponsored-494') }}"><span class="link-icon"></span>Skilled Employer Sponsored Regional (Subclass 494)</a></li>
+                          <li><a href="{{ url('visa/training-407-employer-sponsored') }}"><span class="link-icon"></span>Training Visa (Subclass 407)</a></li>
                         </ul>
                       </div>
                     </div>
@@ -821,10 +822,9 @@ span.green { color: var(--theme-color-3); }
                         </ul>
                       </div>
                       <div class="visa-mega-section">
-                        <h6 class="visa-mega-section-title">Talent Pathways</h6>
+                        <h6 class="visa-mega-section-title">Talent &amp; Innovation</h6>
                         <ul class="visa-mega-links">
-                          <li><a href="{{ url('visa/distinguished-talent-124') }}"><span class="link-icon"></span>Distinguished Talent Visa Offshore (Subclass 124)</a></li>
-                          <li><a href="{{ url('visa/distinguished-talent-858') }}"><span class="link-icon"></span>Distinguished Talent Visa Onshore (Subclass 858)</a></li>
+                          <li><a href="{{ url('visa/national-innovation-858') }}"><span class="link-icon"></span>National Innovation Visa (Subclass 858)</a></li>
                         </ul>
                       </div>
                     </div>
@@ -1152,6 +1152,7 @@ span.green { color: var(--theme-color-3); }
         <li class="has-dropdown">
           <a href="javascript:void(0);">Study in Australia</a>
           <ul class="sub-menu">
+            <li><a href="{{ url('study') }}">Study in Australia overview</a></li>
             <li><a href="{{ url('education') }}">Education</a></li>
             <li><a href="{{ url('professional-year-programs') }}">Professional Year Programs</a></li>
             <li><a href="{{ url('admission') }}">Admission</a></li>
@@ -1182,11 +1183,11 @@ span.green { color: var(--theme-color-3); }
             <li><a href="{{ url('visa/employer-nomination-186-trt') }}">Employer Nomination Scheme (Subclass 186) TRT</a></li>
             <li><a href="{{ url('visa/employer-nomination-186-de') }}">Employer Nomination Direct Entry (Subclass 186)</a></li>
             <li><a href="{{ url('visa/skilled-employer-sponsored-494') }}">Skilled Employer Sponsored Regional (Subclass 494)</a></li>
+            <li><a href="{{ url('visa/training-407-employer-sponsored') }}">Training Visa (Subclass 407)</a></li>
             <li><a href="{{ url('visa/dama') }}">DAMA</a></li>
             <li><a href="{{ url('visa/temporary-work-400') }}">Temporary Work (Subclass 400)</a></li>
             <li><a href="{{ url('visa/temporary-activity-408') }}">Temporary Activity Visa (Subclass 408)</a></li>
-            <li><a href="{{ url('visa/distinguished-talent-124') }}">Distinguished Talent Visa Offshore (Subclass 124)</a></li>
-            <li><a href="{{ url('visa/distinguished-talent-858') }}">Distinguished Talent Visa Onshore (Subclass 858)</a></li>
+            <li><a href="{{ url('visa/national-innovation-858') }}">National Innovation Visa (Subclass 858)</a></li>
           </ul>
         </li>
 

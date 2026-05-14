@@ -1,3 +1,7 @@
+@php
+    $testiIntroP1 = $testiIntroP1 ?? 'Hear from clients who trusted Visawizer with study, family, sponsored, and migration journeys.';
+    $testiIntroP2 = $testiIntroP2 ?? 'Trusted by clients across student, partner, sponsored, and visitor pathways.';
+@endphp
 <section class="testimonial p-t-100 p-t-xs-80 m-b-50">
         <div class="container">
             <div class="row align-items-center justify-content-between">
@@ -10,8 +14,8 @@
                             <h2>What Clients Say About Us and <span>Our Services</span></h2>
                         </div>
                         <div class="text">
-                            <p>Hear from clients who trusted Visawizer with study, family, sponsored, and migration journeys.</p>
-                            <p class="m-t-20">Trusted by clients across student, partner, sponsored, and visitor pathways.</p>
+                            <p>{{ $testiIntroP1 }}</p>
+                            <p class="m-t-20">{{ $testiIntroP2 }}</p>
                         </div>
                         <div class="cta-btn m-t-30">
                             <a class='e-primary-btn has-icon' href="{{ url('blogs') }}">Read More Success Stories

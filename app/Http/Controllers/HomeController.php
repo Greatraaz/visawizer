@@ -5,8 +5,10 @@ use Illuminate\Support\Facades\Http;
 use App\Models\Seminars;
 use App\Models\Courses;
 use App\Support\StudyTopicData;
+use App\Support\WorkVisaData;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 
 class HomeController extends Controller
@@ -31,6 +33,17 @@ class HomeController extends Controller
         return view('workSkilledMigration', compact('title', 'description', 'keywords'));
     }
 
+    public function workVisaTopicPage(string $slug)
+    {
+        $resolved = WorkVisaData::resolveWithKey('visa/' . ltrim($slug, '/'));
+
+        if (!$resolved) {
+            abort(404);
+        }
+
+        return $this->renderWorkVisaTopicView($resolved['key'], $resolved['page']);
+    }
+
     public function studyTopic($slug)
     {
         return $this->renderStudyTopic($slug);
@@ -45,13 +58,76 @@ class HomeController extends Controller
     {
         $page = StudyTopicData::get($slug);
 
-        if (!$page) {
-            abort(404);
+        if ($page) {
+            $countries = StudyTopicData::countries();
+            return view('studyTopic', compact('page', 'countries'));
         }
 
-        $countries = StudyTopicData::countries();
+        $resolved = WorkVisaData::resolveWithKey($slug);
 
-        return view('studyTopic', compact('page', 'countries'));
+        if ($resolved) {
+            return $this->renderWorkVisaTopicView($resolved['key'], $resolved['page']);
+        }
+
+        abort(404);
+    }
+
+    private function renderWorkVisaTopicView(string $canonicalKey, array $workPage)
+    {
+        $relatedPages = $this->relatedWorkVisaPages($canonicalKey, $workPage);
+        $title = ($workPage['label'] ?? 'Work visa') . ' | Work & Skilled Migration | Visawizer';
+        $rawDescription = $workPage['hero']['subheading'] ?? $workPage['hero']['content'] ?? '';
+        $description = Str::limit(strip_tags($rawDescription), 300, '');
+        $keywords = 'Australia work visa, skilled migration, ' . ($workPage['label'] ?? 'Visawizer');
+
+        return view('workVisaTopic', [
+            'page' => $workPage,
+            'relatedPages' => $relatedPages,
+            'title' => $title,
+            'description' => $description,
+            'keywords' => $keywords,
+        ]);
+    }
+
+    private function relatedWorkVisaPages(string $currentCanonicalKey, array $currentPage): array
+    {
+        $category = $currentPage['category'] ?? null;
+        $related = [];
+
+        foreach (WorkVisaData::pages() as $slug => $page) {
+            if ($slug === $currentCanonicalKey) {
+                continue;
+            }
+            if ($category && ($page['category'] ?? null) === $category) {
+                $related[$slug] = $page;
+            }
+            if (count($related) >= 3) {
+                break;
+            }
+        }
+
+        if (count($related) < 3) {
+            foreach (WorkVisaData::pages() as $slug => $page) {
+                if ($slug === $currentCanonicalKey || isset($related[$slug])) {
+                    continue;
+                }
+                $related[$slug] = $page;
+                if (count($related) >= 3) {
+                    break;
+                }
+            }
+        }
+
+        return array_map(function ($slug, $page) {
+            return [
+                'path' => WorkVisaData::pathSlug($slug),
+                'label' => $page['label'],
+                'subclass' => $page['subclass'] ?? '',
+                'category' => $page['category'] ?? '',
+                'icon' => $page['icon'] ?? 'fa-light fa-circle-arrow-right',
+                'tagline' => $page['hero']['tagline'] ?? '',
+            ];
+        }, array_keys($related), $related);
     }
 
     public function singleCourse(Request $request, $slug)
