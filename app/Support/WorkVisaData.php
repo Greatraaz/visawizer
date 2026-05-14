@@ -26,9 +26,6 @@ class WorkVisaData
         return self::get($slug) !== null;
     }
 
-    /**
-     * URL path segment for work-skilled-migration/{segment} (strips leading "visa/").
-     */
     public static function pathSlug(string $canonicalKey): string
     {
         if (str_starts_with($canonicalKey, 'visa/')) {
@@ -79,6 +76,7 @@ class WorkVisaData
                     'cta' => 'Check 189 Eligibility',
                 ],
                 'suit' => [
+                    'eyebrow' => 'Who this visa may suit',
                     'heading' => 'For skilled applicants without employer sponsorship',
                     'content' => 'Subclass 189 may suit skilled professionals who want a permanent pathway without needing employer sponsorship or state nomination, subject to invitation and eligibility.',
                     'points' => [
@@ -119,6 +117,7 @@ class WorkVisaData
                     'hero' => 'assets/images/services/banner-1.webp',
                     'profile' => 'assets/images/services/image-21.webp',
                     'support' => 'assets/images/services/image-43.webp',
+                    'intro_suit' => 'assets/images/services/banner-3.webp',
                 ],
             ],
 
@@ -144,6 +143,7 @@ class WorkVisaData
                     'content' => 'A strong 190 strategy requires understanding not only federal visa rules, but also state or territory nomination requirements, occupation demand, residency conditions, and invitation competitiveness.',
                 ],
                 'strategy' => [
+                    'eyebrow' => 'Points & profile readiness',
                     'heading' => 'Your profile must be nomination-ready',
                     'points' => [
                         'Skills assessment',
@@ -156,6 +156,7 @@ class WorkVisaData
                     ],
                 ],
                 'challenges' => [
+                    'eyebrow' => 'Common applicant mistakes',
                     'heading' => 'Small errors can affect nomination potential',
                     'content' => 'Applicants often submit EOIs without understanding state criteria, occupation availability, document timing, or evidence requirements. A structured approach improves clarity before submission.',
                 ],
@@ -357,6 +358,7 @@ class WorkVisaData
                     'hero' => 'assets/images/services/banner-6.webp',
                     'profile' => 'assets/images/services/image-23.webp',
                     'support' => 'assets/images/services/image-53.webp',
+                    'suit_planning' => 'assets/images/services/image-53.webp',
                 ],
             ],
 

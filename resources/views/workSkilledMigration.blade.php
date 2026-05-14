@@ -817,5 +817,8 @@
     ])
 </div>
 
+@include('partials.faq')
+@include('partials.blogs')
+
 </div>
 @endsection
