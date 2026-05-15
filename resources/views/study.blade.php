@@ -160,48 +160,36 @@
             <div class="common-title m-b-15" data-aos="fade-up" data-aos-delay="100"><h2>Complete support for your study journey</h2></div>
             <p class="study-s4-intro m-b-0 mx-auto" style="max-width:700px;" data-aos="fade-up" data-aos-delay="200">We help you move from confusion to a structured study and visa action plan.</p>
         </div>
-        <div class="row row-gap-4 study-s4-cards-row justify-content-center" data-aos="fade-up" data-aos-delay="250">
-            <div class="col-xl-4 col-md-6">
-                <div class="study-journey-card">
+        <div class="study-s4-journey-grid" data-aos="fade-up" data-aos-delay="250">
+            <div class="study-journey-card">
                     <div class="journey-icon"><i class="fa-light fa-user-check"></i></div>
                     <div class="journey-no">01</div>
                     <h4>Profile Assessment</h4>
                     <p>We review your academic background, work history, English language readiness, budget, and long-term goals.</p>
-                </div>
             </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="study-journey-card">
+            <div class="study-journey-card">
                     <div class="journey-icon"><i class="fa-light fa-list-check"></i></div>
                     <div class="journey-no">02</div>
                     <h4>Course &amp; Institution Shortlisting</h4>
                     <p>We help identify suitable education options based on your eligibility and career direction.</p>
-                </div>
             </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="study-journey-card">
+            <div class="study-journey-card">
                     <div class="journey-icon"><i class="fa-light fa-file-signature"></i></div>
                     <div class="journey-no">03</div>
                     <h4>Admission Support</h4>
                     <p>We guide you through document preparation, application coordination, and offer letter requirements.</p>
-                </div>
             </div>
-        </div>
-        <div class="row row-gap-4 study-s4-bottom-row" data-aos="fade-up" data-aos-delay="320">
-            <div class="col-xl-4 col-md-6">
-                <div class="study-journey-card">
-                    <div class="journey-icon"><i class="fa-light fa-file-shield"></i></div>
-                    <div class="journey-no">04</div>
-                    <h4>Visa Planning</h4>
-                    <p>We help you understand visa requirements, documentation needs, and application readiness.</p>
-                </div>
+            <div class="study-journey-card">
+                <div class="journey-icon"><i class="fa-light fa-file-shield"></i></div>
+                <div class="journey-no">04</div>
+                <h4>Visa Planning</h4>
+                <p>We help you understand visa requirements, documentation needs, and application readiness.</p>
             </div>
-            <div class="col-xl-4 col-md-6">
-                <div class="study-journey-card">
-                    <div class="journey-icon"><i class="fa-light fa-compass"></i></div>
-                    <div class="journey-no">05</div>
-                    <h4>Post-Study Direction</h4>
-                    <p>We help you think beyond admission by reviewing graduate and future migration possibilities.</p>
-                </div>
+            <div class="study-journey-card">
+                <div class="journey-icon"><i class="fa-light fa-compass"></i></div>
+                <div class="journey-no">05</div>
+                <h4>Post-Study Direction</h4>
+                <p>We help you think beyond admission by reviewing graduate and future migration possibilities.</p>
             </div>
         </div>
     </div>
@@ -257,7 +245,7 @@
                             <div class="col-md-6">
                                 <p class="study-copy-body">Many students realise after arriving in Australia that their course, college, location, or career direction may not be the right fit. Any change should be considered carefully because it can affect academic progress, visa conditions, future eligibility, and long-term planning.</p>
                                 <p class="study-copy-body m-b-20">Visawizer helps students understand their options before making a change.</p>
-                                <a class="e-primary-btn has-icon" href="{{ url('contact-us') }}">
+                                <a class="e-primary-btn has-icon is-hover-white" href="{{ url('contact-us') }}">
                                     Discuss My Study Situation
                                     <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                                 </a>
@@ -326,4 +314,11 @@
         </div>
     </div>
 </section>
+
+@include('partials.blogs')
+
+@include('partials.testi', [
+    'testiIntroP1' => 'Hear from students and families who trusted Visawizer for education planning, admissions guidance, student visa support, and post-study pathway clarity.',
+    'testiIntroP2' => 'Trusted feedback from people who needed clear study options, document support, and practical next-step guidance before making important decisions.',
+])
 @endsection

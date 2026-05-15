@@ -35,7 +35,7 @@
     .wsm-work-page .wsm-band-dark .why-us-content-2 .service p { color: #e2e8f0 !important; }
     .wsm-work-page #wsm-skilled-migration-split .why-us-content-2 .service i {
         color: #fff !important;
-        background: linear-gradient(150deg, #1b7b61 15%, #3dc59d 48.85%, #1b7b61 100%) !important;
+        background: linear-gradient(150deg, var(--theme-color-3) 15%, #da5766 48.85%, var(--theme-color-3) 100%) !important;
     }
 
     .wsm-work-page #wsm-skilled-migration-split.wsm-band-dark.why-us-section-4 {
@@ -306,7 +306,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background: rgba(40, 174, 119, 0.2);
+        background: color-mix(in srgb, var(--theme-color-3) 28%, transparent);
         border: 1px solid rgba(255, 255, 255, 0.24);
         color: #fff;
     }
@@ -330,41 +330,6 @@
         padding: 0;
         flex-shrink: 0;
     }
-    .wsm-work-page #how-visawizer-helps-work .study-s4-cards-row {
-        align-items: stretch;
-    }
-    .wsm-work-page #how-visawizer-helps-work .study-s4-cards-row > [class*="col-"] {
-        display: flex;
-    }
-    .wsm-work-page #how-visawizer-helps-work .study-s4-cards-row .study-journey-card {
-        flex: 1 1 auto;
-        width: 100%;
-        min-height: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .wsm-work-page #how-visawizer-helps-work .study-journey-card p {
-        flex-grow: 1;
-        margin-bottom: 0;
-        max-width: none;
-    }
-    .wsm-work-page #how-visawizer-helps-work .study-s4-cards-row > div:nth-child(2) .study-journey-card {
-        transform: none;
-    }
-    .wsm-work-page #how-visawizer-helps-work .study-s4-cards-row > div:nth-child(2) .study-journey-card:hover {
-        transform: translateY(-8px);
-    }
-    .wsm-work-page #how-visawizer-helps-work .study-s4-cards-row > div:nth-child(2) .study-journey-card::before {
-        background: linear-gradient(90deg, #1b7b61, #3dc59d);
-    }
-    .wsm-work-page #how-visawizer-helps-work .study-s4-cards-row > div:nth-child(2) .study-journey-card .journey-icon {
-        color: #1b7b61;
-        border-color: rgba(27, 123, 97, 0.18);
-        background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(227, 245, 239, 0.95));
-        box-shadow: 0 10px 25px rgba(27, 123, 97, 0.12);
-    }
-
     .wsm-work-page .wsm-innovation-banner {
         position: relative;
         border-radius: 16px;
@@ -788,6 +753,13 @@
     </div>
 </section>
 
+<div class="wsm-testimonials-below-cta">
+    @include('partials.testi', [
+        'testiIntroP1' => 'Hear from clients who trusted Visawizer with skilled migration, employer sponsorship, documentation readiness, and long-term settlement planning.',
+        'testiIntroP2' => 'Trusted feedback from people who needed clear pathway comparisons—not generic advice—before committing to an application strategy.',
+    ])
+</div>
+
 <section class="donate-to-us-section study-s8-banner" style="background-image: url('{{ asset('assets/images/services/big6.webp') }}');">
     <div class="container">
         <div class="donate-to-us-layout">
@@ -809,13 +781,6 @@
         </div>
     </div>
 </section>
-
-<div class="wsm-testimonials-below-cta">
-    @include('partials.testi', [
-        'testiIntroP1' => 'Hear from clients who trusted Visawizer with skilled migration, employer sponsorship, documentation readiness, and long-term settlement planning.',
-        'testiIntroP2' => 'Trusted feedback from people who needed clear pathway comparisons—not generic advice—before committing to an application strategy.',
-    ])
-</div>
 
 @include('partials.faq')
 @include('partials.blogs')

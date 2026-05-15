@@ -12,7 +12,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, rgba(5, 39, 35, 0.25) 0%, rgba(5, 39, 35, 0.7) 100%);
+        background: linear-gradient(180deg, color-mix(in srgb, var(--theme-color-3) 24%, transparent) 0%, color-mix(in srgb, var(--theme-color-3) 68%, #020617) 100%);
     }
     .study-topic-hero .hero-content-5 {
         position: relative;
@@ -27,7 +27,7 @@
         color: rgba(255, 255, 255, 0.88);
         margin-bottom: 14px;
         padding-left: 12px;
-        border-left: 3px solid var(--theme-color-2);
+        border-left: 3px solid var(--theme-color-3);
     }
     .study-topic-hero .title h1 {
         font-size: clamp(2.45rem, 5vw, 4.7rem);
@@ -69,10 +69,10 @@
         z-index: 3;
     }
     .study-topic-hero-band .band-card {
-        background: linear-gradient(135deg, #0d7d57 0%, #129868 100%);
+        background: linear-gradient(135deg, var(--theme-color-3) 0%, #da5766 100%);
         border-radius: 12px;
         padding: 24px 28px;
-        box-shadow: 0 28px 60px rgba(5, 39, 35, 0.18);
+        box-shadow: 0 28px 60px color-mix(in srgb, var(--theme-color-3) 18%, transparent);
     }
     .study-topic-hero-band .band-copy {
         display: flex;
@@ -94,7 +94,7 @@
         height: 160px;
         object-fit: cover;
         border-radius: 12px;
-        box-shadow: 0 18px 40px rgba(5, 39, 35, 0.18);
+        box-shadow: 0 18px 40px color-mix(in srgb, var(--theme-color-3) 18%, transparent);
     }
 
     .study-topic-overview {
@@ -108,7 +108,7 @@
         right: 0;
         top: 38px;
         bottom: 38px;
-        background: linear-gradient(180deg, rgba(18, 152, 104, 0.06) 0%, rgba(18, 152, 104, 0) 100%);
+        background: linear-gradient(180deg, color-mix(in srgb, var(--theme-color-3) 6%, transparent) 0%, transparent 100%);
         pointer-events: none;
     }
     .study-topic-overview .container {
@@ -120,7 +120,7 @@
         height: 100%;
         border-radius: 12px;
         background: #fff;
-        border: 1px solid rgba(13, 125, 87, 0.1);
+        border: 1px solid color-mix(in srgb, var(--theme-color-3) 12%, transparent);
         box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08);
         overflow: hidden;
     }
@@ -128,7 +128,7 @@
         display: flex;
         flex-direction: column;
         padding: 34px;
-        background: linear-gradient(180deg, #ffffff 0%, #f8fcfa 100%);
+        background: linear-gradient(180deg, #ffffff 0%, color-mix(in srgb, var(--theme-color-3) 4%, #fff) 100%);
     }
     .study-topic-section-tag {
         display: inline-flex;
@@ -136,8 +136,8 @@
         gap: 8px;
         padding: 8px 14px;
         border-radius: 12px;
-        background: rgba(18, 152, 104, 0.1);
-        color: #0d7d57;
+        background: color-mix(in srgb, var(--theme-color-3) 10%, transparent);
+        color: var(--theme-color-3);
         font-size: 0.78rem;
         line-height: 1;
         letter-spacing: 0.08em;
@@ -150,8 +150,8 @@
         width: 8px;
         height: 8px;
         border-radius: 8px;
-        background: linear-gradient(135deg, #0d7d57 0%, #129868 100%);
-        box-shadow: 0 0 0 5px rgba(18, 152, 104, 0.12);
+        background: linear-gradient(135deg, var(--theme-color-3) 0%, #da5766 100%);
+        box-shadow: 0 0 0 5px color-mix(in srgb, var(--theme-color-3) 12%, transparent);
     }
     .study-topic-feature-card h3,
     .study-topic-showcase-content h3 {
@@ -165,7 +165,7 @@
         padding: 28px;
         border-radius: 12px;
         background: #ffffff;
-        border: 1px solid rgba(13, 125, 87, 0.1);
+        border: 1px solid color-mix(in srgb, var(--theme-color-3) 12%, transparent);
         box-shadow: 0 20px 45px rgba(15, 23, 42, 0.05);
         display: flex;
         flex-direction: column;
@@ -223,7 +223,7 @@
         padding: 9px 14px;
         border-radius: 12px;
         background: rgba(255, 255, 255, 0.92);
-        color: #0d7d57;
+        color: var(--theme-color-3);
         font-size: 0.76rem;
         line-height: 1;
         letter-spacing: 0.08em;
@@ -236,7 +236,7 @@
         width: 8px;
         height: 8px;
         border-radius: 8px;
-        background: linear-gradient(135deg, #0d7d57 0%, #129868 100%);
+        background: linear-gradient(135deg, var(--theme-color-3) 0%, #da5766 100%);
     }
     .study-topic-feature-body p,
     .study-topic-showcase-copy p {
@@ -258,7 +258,7 @@
         padding: 16px 16px;
         border-radius: 12px;
         background: linear-gradient(180deg, #ffffff 0%, #f8fcfa 100%);
-        border: 1px solid rgba(13, 125, 87, 0.1);
+        border: 1px solid color-mix(in srgb, var(--theme-color-3) 12%, transparent);
     }
     .study-topic-rich-icon {
         width: 38px;
@@ -268,9 +268,9 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        background: rgba(18, 152, 104, 0.1);
-        color: #0d7d57;
-        box-shadow: 0 10px 18px rgba(18, 152, 104, 0.12);
+        background: color-mix(in srgb, var(--theme-color-3) 10%, transparent);
+        color: var(--theme-color-3);
+        box-shadow: 0 10px 18px color-mix(in srgb, var(--theme-color-3) 12%, transparent);
     }
     .study-topic-rich-item span {
         color: #334155;
@@ -281,7 +281,7 @@
         padding: 18px;
         display: flex;
         flex-direction: column;
-        background: linear-gradient(180deg, #ffffff 0%, #f7faf8 100%);
+        background: linear-gradient(180deg, #ffffff 0%, color-mix(in srgb, var(--theme-color-3) 4%, #fff) 100%);
     }
     .study-topic-showcase-media {
         position: relative;
@@ -346,7 +346,7 @@
         padding: 16px 16px;
         border-radius: 12px;
         background: #fff;
-        border: 1px solid rgba(13, 125, 87, 0.1);
+        border: 1px solid color-mix(in srgb, var(--theme-color-3) 12%, transparent);
         box-shadow: 0 14px 30px rgba(15, 23, 42, 0.05);
     }
     .study-topic-point-icon {
@@ -357,9 +357,9 @@
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        background: rgba(18, 152, 104, 0.1);
-        color: #0d7d57;
-        box-shadow: 0 8px 18px rgba(13, 125, 87, 0.12);
+        background: color-mix(in srgb, var(--theme-color-3) 10%, transparent);
+        color: var(--theme-color-3);
+        box-shadow: 0 8px 18px color-mix(in srgb, var(--theme-color-3) 12%, transparent);
     }
     .study-topic-point-card span {
         color: #475569;
@@ -375,9 +375,9 @@
         padding: 46px 38px;
         border-radius: 12px;
         background:
-            linear-gradient(135deg, rgba(7, 43, 36, 0.82) 0%, rgba(11, 61, 51, 0.76) 52%, rgba(6, 33, 28, 0.82) 100%),
+            linear-gradient(135deg, color-mix(in srgb, var(--theme-color-3) 72%, #020617) 0%, color-mix(in srgb, var(--theme-color-3) 56%, #111827) 52%, color-mix(in srgb, var(--theme-color-3) 76%, #020617) 100%),
             var(--study-topic-s4-bg);
-        box-shadow: 0 30px 70px rgba(6, 33, 28, 0.2);
+        box-shadow: 0 30px 70px color-mix(in srgb, var(--theme-color-3) 20%, transparent);
         backdrop-filter: blur(8px);
         background-size: cover;
         background-position: center;
@@ -488,7 +488,7 @@
         backdrop-filter: blur(6px);
     }
     .study-topic-s4-alt .service i {
-        color: #6ee7b7;
+        color: color-mix(in srgb, #fff 72%, var(--theme-color-3));
     }
     .study-topic-s4-alt .service p {
         font-size: 0.96rem;
@@ -496,13 +496,13 @@
         color: rgba(255, 255, 255, 0.9);
     }
     .study-topic-s4-alt .shape-wrapped-thumb::before {
-        background: rgba(110, 231, 183, 0.18);
+        background: color-mix(in srgb, var(--theme-color-3) 18%, transparent);
     }
 
     .study-topic-contact {
         position: relative;
         padding: 95px 0;
-        background: linear-gradient(180deg, #f8fbfa 0%, #f3f7f5 100%);
+        background: linear-gradient(180deg, color-mix(in srgb, var(--theme-color-3) 3%, #f8fafc) 0%, color-mix(in srgb, var(--theme-color-3) 5%, #f8fafc) 100%);
         background-size: cover;
         background-position: center;
         overflow: hidden;
@@ -517,7 +517,7 @@
         content: "";
         position: absolute;
         inset: 0;
-        background: linear-gradient(135deg, rgba(190, 24, 47, 0.08) 0%, rgba(18, 152, 104, 0.08) 55%, rgba(190, 24, 47, 0.07) 100%);
+        background: linear-gradient(135deg, color-mix(in srgb, var(--theme-color-3) 8%, transparent) 0%, color-mix(in srgb, #da5766 7%, transparent) 55%, color-mix(in srgb, var(--theme-color-3) 7%, transparent) 100%);
         pointer-events: none;
     }
     .study-topic-contact .container {
@@ -560,7 +560,7 @@
     }
     .study-topic-contact .contact-form-3 {
         background:
-            linear-gradient(135deg, rgba(190, 24, 47, 0.12) 0%, rgba(18, 152, 104, 0.1) 54%, rgba(190, 24, 47, 0.1) 100%),
+            linear-gradient(135deg, color-mix(in srgb, var(--theme-color-3) 12%, transparent) 0%, color-mix(in srgb, #da5766 9%, transparent) 54%, color-mix(in srgb, var(--theme-color-3) 10%, transparent) 100%),
             rgba(255, 255, 255, 0.76);
         border-radius: 12px;
         padding: 34px 34px 38px;
@@ -590,7 +590,7 @@
     .study-topic-contact .contact-form-3 input:focus,
     .study-topic-contact .contact-form-3 textarea:focus {
         outline: none;
-        border-color: var(--theme-color-2);
+        border-color: var(--theme-color-3);
     }
     .study-topic-contact .contact-form-3 select option {
         color: #111827;
@@ -654,7 +654,7 @@
         right: 0;
         top: 0;
         height: 4px;
-        background: linear-gradient(90deg, rgba(18, 152, 104, 0.85), rgba(190, 24, 47, 0.55));
+        background: linear-gradient(90deg, var(--theme-color-3), #da5766);
         pointer-events: none;
     }
     .study-topic-final .common-subtitle {
@@ -1063,4 +1063,11 @@
         </div>
     </div>
 </section>
+
+@include('partials.testi', [
+    'testiIntroP1' => 'Hear from students and families who trusted Visawizer for study planning, admissions guidance, student visa support, and post-study pathway clarity.',
+    'testiIntroP2' => 'Trusted feedback from people who needed clear course options, document support, and practical next-step guidance before making important study decisions.',
+])
+
+@include('partials.blogs')
 @endsection

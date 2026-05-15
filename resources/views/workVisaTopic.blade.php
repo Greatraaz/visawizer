@@ -5,6 +5,7 @@
     $heroImg = $page['images']['hero'] ?? $page['images']['hero_bg'] ?? 'assets/images/services/banner-1.webp';
     $profileImg = $page['images']['profile'] ?? 'assets/images/services/image-21.webp';
     $supportImg = $page['images']['support'] ?? 'assets/images/services/image-43.webp';
+    $strategyImg = $page['images']['strategy'] ?? $supportImg;
     $wvtSectionIndex = 0;
     $introShowsSuitForMerged = !empty($page['suit']) && !empty($page['planning']);
     $introSingleImg = $introShowsSuitForMerged
@@ -789,6 +790,10 @@
     
 
     .work-visa-topic-page .wvt-pair-col--strategy {
+        display: grid;
+        grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.35fr);
+        gap: clamp(26px, 4vw, 42px);
+        align-items: stretch;
         background:
             radial-gradient(circle at top right,
             rgba(255, 255, 255, 0.06),
@@ -799,6 +804,24 @@
         padding: 42px !important;
         overflow: hidden;
         position: relative;
+    }
+
+    .work-visa-topic-page .wvt-pair-col--strategy .wvt-strategy-figure {
+        position: relative;
+        z-index: 1;
+        min-height: 100%;
+        border-radius: 22px;
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        box-shadow: 0 22px 48px rgba(0, 0, 0, 0.26);
+    }
+
+    .work-visa-topic-page .wvt-pair-col--strategy .wvt-strategy-figure img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        min-height: 280px;
+        object-fit: cover;
     }
 
     .work-visa-topic-page .wvt-pair-col--strategy::before {
@@ -897,6 +920,18 @@
         line-height: 1.6;
         padding-top: 6px;
         margin: 0;
+    }
+
+    @media (max-width: 991px) {
+        .work-visa-topic-page .wvt-pair-col--strategy {
+            grid-template-columns: 1fr;
+            padding: 28px !important;
+        }
+
+        .work-visa-topic-page .wvt-pair-col--strategy .wvt-strategy-figure img {
+            min-height: 240px;
+            max-height: 360px;
+        }
     }
 
     
@@ -1532,8 +1567,11 @@
 <section class="wvt-topic-section wvt-band-dark wvt-section-strategy wvt-approach-split" aria-labelledby="wvt-approach-heading">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-xl-10">
+            <div class="col-12 col-xl-11">
                 <div class="wvt-pair-col wvt-pair-col--strategy">
+                    <div class="wvt-strategy-figure" data-aos="fade-up">
+                        <img src="{{ asset($strategyImg) }}" alt="{{ $page['strategy']['heading'] ?? 'Work visa strategy planning' }}" loading="lazy">
+                    </div>
                     <div class="wvt-approach-copy" data-aos="fade-up">
                         <div class="common-subtitle text-uppercase m-b-10"><span>Approach</span></div>
                         <h2 id="wvt-approach-heading" class="wvt-heading wvt-approach-copy__title m-b-0">{{ $page['strategy']['heading'] ?? '' }}</h2>
@@ -1621,14 +1659,14 @@
 </section>
 @endif
 
-@include('partials.commonCta')
-
 <div class="wvt-page-bottom-stack">
     @include('partials.testi', [
         'testiIntroP1' => 'Hear from clients who trusted Visawizer with skilled migration, employer sponsorship, documentation readiness, and long-term settlement planning.',
         'testiIntroP2' => 'Trusted feedback from people who needed clear pathway comparisons—not generic advice—before committing to an application strategy.',
     ])
 </div>
+
+@include('partials.commonCta')
 
 @include('partials.faq')
 @include('partials.blogs')

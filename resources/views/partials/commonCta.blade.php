@@ -45,7 +45,7 @@
         margin-bottom: 1rem;
     }
     .common-cta-banner .become-volunteer-card .common-subtitle span {
-        color: rgba(255, 255, 255, 0.95);
+        color: #fff !important;
         letter-spacing: 0.14em;
     }
     .common-cta-banner .become-volunteer-card h2 {
