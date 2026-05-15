@@ -33,6 +33,15 @@ class HomeController extends Controller
         return view('workSkilledMigration', compact('title', 'description', 'keywords'));
     }
 
+    public function familyVisas()
+    {
+        $title = 'Family Visa Guidance for Australia | Visawizer';
+        $description = 'Explore partner, parent, child, adoption, carer, orphan relative, and remaining relative visa pathways for Australia with structured family visa guidance from Visawizer.';
+        $keywords = 'family visas Australia, partner visa, parent visa, child visa, adoption visa, carer visa, orphan relative visa, remaining relative visa, Visawizer';
+
+        return view('familyVisas', compact('title', 'description', 'keywords'));
+    }
+
     public function workVisaTopicPage(string $slug)
     {
         $resolved = WorkVisaData::resolveWithKey('visa/' . ltrim($slug, '/'));
