@@ -6,6 +6,7 @@ use App\Models\Seminars;
 use App\Models\Courses;
 use App\Support\StudyTopicData;
 use App\Support\WorkVisaData;
+use App\Support\FamilyVisaData;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
@@ -47,6 +48,10 @@ class HomeController extends Controller
         $resolved = WorkVisaData::resolveWithKey('visa/' . ltrim($slug, '/'));
 
         if (!$resolved) {
+            $resolved = FamilyVisaData::resolveWithKey('visa/' . ltrim($slug, '/'));
+        }
+
+        if (!$resolved) {
             abort(404);
         }
 
@@ -78,15 +83,24 @@ class HomeController extends Controller
             return $this->renderWorkVisaTopicView($resolved['page']);
         }
 
+        $resolved = FamilyVisaData::resolveWithKey($slug);
+
+        if ($resolved) {
+            return $this->renderWorkVisaTopicView($resolved['page']);
+        }
+
         abort(404);
     }
 
     private function renderWorkVisaTopicView(array $workPage)
     {
-        $title = ($workPage['label'] ?? 'Work visa') . ' | Work & Skilled Migration | Visawizer';
+        $sectionTitle = str_contains(strtolower($workPage['category'] ?? ''), 'parent') || str_contains(strtolower($workPage['category'] ?? ''), 'partner') || str_contains(strtolower($workPage['category'] ?? ''), 'relative')
+            ? 'Family Visas'
+            : 'Work & Skilled Migration';
+        $title = ($workPage['label'] ?? 'Visa') . ' | ' . $sectionTitle . ' | Visawizer';
         $rawDescription = $workPage['hero']['subheading'] ?? $workPage['hero']['content'] ?? '';
         $description = Str::limit(strip_tags($rawDescription), 300, '');
-        $keywords = 'Australia work visa, skilled migration, ' . ($workPage['label'] ?? 'Visawizer');
+        $keywords = ($sectionTitle === 'Family Visas' ? 'Australia family visa, partner visa, parent visa, child visa, ' : 'Australia work visa, skilled migration, ') . ($workPage['label'] ?? 'Visawizer');
 
         return view('workVisaTopic', [
             'page' => $workPage,

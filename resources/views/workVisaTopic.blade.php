@@ -21,6 +21,7 @@
         ? ($page['suit']['content'] ?? '')
         : ($page['hero']['content'] ?? '');
     $stackSectionImg = $page['images']['suit_planning'] ?? $page['images']['suit_stack'] ?? $profileImg;
+    $isFamilyVisaTopic = !empty($page['bottom']['cta']['heading']);
 @endphp
 <style type="text/css">
     .work-visa-topic-page .wvt-band-light {
@@ -1314,6 +1315,7 @@
             height: 280px;
             aspect-ratio: auto !important;
         }
+    }
 
     .work-visa-topic-page .wvt-page-bottom-stack {
         background: linear-gradient(180deg, #f1f5f9 0%, #f8fafc 35%, #ffffff 100%);
@@ -1322,9 +1324,270 @@
         margin-bottom: 0;
         padding-bottom: clamp(56px, 7vw, 88px);
     }
+
+    /* Family visa topic pages: custom intro/suitability UI */
+    .family-visa-topic-page .wvt-intro-band {
+        background: linear-gradient(180deg, #fff7fb 0%, #ffffff 58%, #f8fafc 100%) !important;
+        margin-top: 0 !important;
+        padding: clamp(54px, 7vw, 88px) 0 !important;
+    }
+    .family-visa-topic-page .wvt-intro-band__bg,
+    .family-visa-topic-page .wvt-intro-band__tint {
+        display: none;
+    }
+    .family-visa-topic-page .wvt-intro-band__card--suit {
+        position: relative;
+        border-radius: 34px !important;
+        overflow: hidden !important;
+        background:
+            radial-gradient(circle at 8% 14%, color-mix(in srgb, var(--theme-color-3) 12%, transparent), transparent 28%),
+            linear-gradient(135deg, #ffffff 0%, #fff7fb 52%, #ffffff 100%);
+        border: 1px solid color-mix(in srgb, var(--theme-color-3) 16%, transparent);
+        box-shadow: 0 32px 86px rgba(102, 0, 63, 0.12) !important;
+    }
+    .family-visa-topic-page .wvt-intro-band__card--suit::before {
+        display: none;
+    }
+    .family-visa-topic-page .wvt-intro-band__row--suit {
+        flex-direction: row-reverse;
+        min-height: 520px;
+    }
+    .family-visa-topic-page .wvt-intro-band__row--suit .wvt-intro-collage-wrap {
+        background: transparent;
+        padding: clamp(22px, 3vw, 36px) !important;
+        justify-content: stretch;
+    }
+    .family-visa-topic-page .wvt-intro-band__row--suit .wvt-intro-visual {
+        height: 100% !important;
+        min-height: 456px;
+        aspect-ratio: auto !important;
+        border-radius: 28px !important;
+        border: 0;
+        box-shadow: 0 28px 70px rgba(102, 0, 63, 0.18);
+        position: relative;
+        overflow: hidden;
+    }
+    .family-visa-topic-page .wvt-intro-band__row--suit .wvt-intro-visual::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(24, 12, 24, 0.04), rgba(24, 12, 24, 0.28));
+        pointer-events: none;
+    }
+    .family-visa-topic-page .wvt-intro-band__row--suit .wvt-intro-text-col {
+        border-left: 0;
+        display: flex;
+        align-items: center;
+    }
+    .family-visa-topic-page .wvt-intro-panel--suit {
+        width: 100%;
+        background: transparent;
+        border-left: 0;
+        padding: clamp(34px, 5vw, 62px) !important;
+        min-height: auto !important;
+    }
+    .family-visa-topic-page .wvt-intro-panel--suit::after {
+        content: "";
+        position: absolute;
+        left: clamp(34px, 5vw, 62px);
+        bottom: clamp(24px, 3vw, 38px);
+        width: 96px;
+        height: 4px;
+        border-radius: 999px;
+        background: linear-gradient(90deg, var(--theme-color-3), #da5766);
+    }
+    .family-visa-topic-page .wvt-intro-panel--suit .wvt-intro-panel__label {
+        width: fit-content;
+        padding: 9px 18px;
+        background: #fff;
+        box-shadow: 0 10px 28px rgba(102, 0, 63, 0.08);
+    }
+    .family-visa-topic-page .wvt-intro-panel--suit .wvt-intro-panel__title {
+        max-width: 720px;
+        font-size: clamp(2rem, 3.6vw, 3.2rem) !important;
+        line-height: 1.08 !important;
+        margin-bottom: clamp(22px, 2.6vw, 32px) !important;
+    }
+    .family-visa-topic-page .wvt-intro-panel--suit .wvt-intro-panel__body {
+        max-width: 680px;
+        padding: clamp(20px, 2.6vw, 28px);
+        border-radius: 22px;
+        background: rgba(255, 255, 255, 0.74);
+        border: 1px solid rgba(102, 0, 63, 0.12);
+        box-shadow: 0 18px 44px rgba(15, 23, 42, 0.06);
+        color: #475569;
+    }
+    @media (max-width: 991px) {
+        .family-visa-topic-page .wvt-intro-band__row--suit {
+            flex-direction: column;
+            min-height: 0;
+        }
+        .family-visa-topic-page .wvt-intro-band__row--suit .wvt-intro-visual {
+            min-height: 300px;
+        }
+        .family-visa-topic-page .wvt-intro-panel--suit::after {
+            left: 24px;
+        }
+    }
+
+    .family-visa-topic-page .wvt-intro-band__card--suit {
+        border-radius: 34px !important;
+        background:
+            radial-gradient(circle at 88% 12%, rgba(102, 0, 63, 0.08), transparent 30%),
+            linear-gradient(180deg, #ffffff 0%, #fff7fb 100%) !important;
+    }
+    .family-visa-topic-page .wvt-intro-band__row--suit {
+        display: grid !important;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "copy"
+            "image";
+        min-height: 0;
+    }
+    .family-visa-topic-page .wvt-intro-band__row--suit .wvt-intro-text-col {
+        grid-area: copy;
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        display: block;
+    }
+    .family-visa-topic-page .wvt-intro-band__row--suit .wvt-intro-collage-wrap {
+        grid-area: image;
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: 0 0 100% !important;
+        padding: 0 clamp(24px, 4vw, 56px) clamp(26px, 4vw, 56px) !important;
+    }
+    .family-visa-topic-page .wvt-intro-panel--suit {
+        text-align: center;
+        align-items: center;
+        padding: clamp(34px, 5vw, 60px) clamp(24px, 6vw, 84px) clamp(24px, 4vw, 38px) !important;
+    }
+    .family-visa-topic-page .wvt-intro-panel--suit::after {
+        display: none;
+    }
+    .family-visa-topic-page .wvt-intro-panel--suit .wvt-intro-panel__title {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 860px;
+    }
+    .family-visa-topic-page .wvt-intro-panel--suit .wvt-intro-panel__body {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 820px;
+    }
+    .family-visa-topic-page .wvt-intro-band__row--suit .wvt-intro-visual {
+        min-height: 0;
+        height: clamp(260px, 34vw, 420px) !important;
+        aspect-ratio: auto !important;
+        border-radius: 26px !important;
+        box-shadow: 0 26px 70px rgba(102, 0, 63, 0.16);
+    }
+
+    .family-visa-topic-page .wvt-intro-band__card,
+    .family-visa-topic-page .wvt-planning-stack-card,
+    .family-visa-topic-page .wvt-planning-copy__panel,
+    .family-visa-topic-page .wvt-strategy-card,
+    .family-visa-topic-page .wvt-challenge-card,
+    .family-visa-topic-page .wvt-support-figure,
+    .family-visa-topic-page .wvt-intro-visual,
+    .family-visa-topic-page .wvt-stack-overlap-visual,
+    .family-visa-topic-page .wvt-strategy-figure,
+    .family-visa-topic-page .wvt-point-card,
+    .family-visa-topic-page .wvt-planning-rail,
+    .family-visa-topic-page .wvt-planning-panel,
+    .family-visa-topic-page .wvt-planning-visual-shell {
+        border-radius: 12px !important;
+    }
+    .family-visa-topic-page .e-primary-btn,
+    .family-visa-topic-page .e-primary-btn::before,
+    .family-visa-topic-page .e-primary-btn .icon-wrap,
+    .family-visa-topic-page .wvt-intro-panel__label,
+    .family-visa-topic-page .wvt-planning-copy__eyebrow,
+    .family-visa-topic-page .wvt-intro-fit-chip,
+    .family-visa-topic-page .wvt-point-ico {
+        border-radius: 8px !important;
+    }
+    .family-visa-topic-page .wvt-suit-planning-stack--planning-only .wvt-planning-stack-card::before,
+    .family-visa-topic-page .wvt-intro-panel--suit::after {
+        border-radius: 5px !important;
+    }
+
+    .family-visa-topic-page .wvt-reality-standalone.wvt-section-challenges {
+        background:
+            radial-gradient(circle at 10% 20%, rgba(102, 0, 63, 0.08), transparent 26%),
+            linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+    }
+    .family-visa-topic-page .wvt-reality-standalone .wvt-pair-col--challenges {
+        padding: 0 !important;
+        overflow: hidden;
+        background: #ffffff !important;
+        border: 1px solid rgba(102, 0, 63, 0.14) !important;
+        box-shadow: 0 24px 60px rgba(15, 23, 42, 0.08) !important;
+        border-radius: 12px !important;
+    }
+    .family-visa-topic-page .wvt-reality-standalone .wvt-pair-col--challenges::before {
+        display: none;
+    }
+    .family-visa-topic-page .wvt-reality-standalone .wvt-reality-head {
+        display: grid;
+        grid-template-columns: minmax(190px, 0.34fr) minmax(0, 1fr);
+        grid-template-rows: auto auto;
+        gap: 0;
+        padding: 0 !important;
+        text-align: left !important;
+    }
+    .family-visa-topic-page .wvt-reality-standalone .wvt-reality-head .common-subtitle {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        align-self: stretch;
+        justify-content: center !important;
+        align-items: center;
+        margin: 0 !important;
+        padding: clamp(26px, 3vw, 42px) 24px;
+        background-image:
+            linear-gradient(180deg, rgba(24, 12, 24, 0.42), rgba(102, 0, 63, 0.46)),
+            url('{{ asset($strategyImg) }}');
+        background-size: cover;
+        background-position: center;
+    }
+    .family-visa-topic-page .wvt-reality-standalone .wvt-reality-head .common-subtitle span {
+        display: none;
+    }
+    .family-visa-topic-page .wvt-reality-standalone .wvt-reality-head .wvt-heading {
+        grid-column: 2;
+        padding: clamp(28px, 3vw, 44px) clamp(28px, 4vw, 54px) 0;
+        color: #111827;
+        text-align: left !important;
+        font-size: clamp(1.65rem, 2.8vw, 2.4rem);
+    }
+    .family-visa-topic-page .wvt-reality-standalone .wvt-reality-head .wvt-reality-lead {
+        grid-column: 2;
+        padding: 14px clamp(28px, 4vw, 54px) clamp(28px, 3vw, 44px);
+        margin: 0;
+        color: #475569;
+        text-align: left !important;
+        max-width: 920px;
+    }
+    .family-visa-topic-page .wvt-reality-standalone .wvt-pair-col--challenges .wvt-challenge-grid {
+        padding: 0 clamp(28px, 4vw, 54px) clamp(28px, 3vw, 44px);
+    }
+    @media (max-width: 767px) {
+        .family-visa-topic-page .wvt-reality-standalone .wvt-reality-head {
+            grid-template-columns: 1fr;
+        }
+        .family-visa-topic-page .wvt-reality-standalone .wvt-reality-head .common-subtitle,
+        .family-visa-topic-page .wvt-reality-standalone .wvt-reality-head .wvt-heading,
+        .family-visa-topic-page .wvt-reality-standalone .wvt-reality-head .wvt-reality-lead {
+            grid-column: 1;
+            grid-row: auto;
+        }
+    }
+
+
 </style>
 
-<div class="wsm-work-page work-visa-topic-page">
+<div class="wsm-work-page work-visa-topic-page{{ $isFamilyVisaTopic ? ' family-visa-topic-page' : '' }}">
 
 <section class="work-visa-hero wvt-hero hero-section-5" style="background-image: url('{{ asset($heroImg) }}');">
     <div class="container">
@@ -1661,12 +1924,20 @@
 
 <div class="wvt-page-bottom-stack">
     @include('partials.testi', [
-        'testiIntroP1' => 'Hear from clients who trusted Visawizer with skilled migration, employer sponsorship, documentation readiness, and long-term settlement planning.',
-        'testiIntroP2' => 'Trusted feedback from people who needed clear pathway comparisons—not generic advice—before committing to an application strategy.',
+        'testiIntroP1' => $page['bottom']['testimonials']['intro1'] ?? 'Hear from clients who trusted Visawizer with skilled migration, employer sponsorship, documentation readiness, and long-term settlement planning.',
+        'testiIntroP2' => $page['bottom']['testimonials']['intro2'] ?? 'Trusted feedback from people who needed clear pathway comparisons—not generic advice—before committing to an application strategy.',
     ])
 </div>
 
-@include('partials.commonCta')
+@include('partials.commonCta', [
+    'ctaEyebrow' => $page['bottom']['cta']['eyebrow'] ?? 'Plan before you apply',
+    'ctaHeading' => $page['bottom']['cta']['heading'] ?? 'Not sure which work visa pathway fits your profile?',
+    'ctaLead' => $page['bottom']['cta']['lead'] ?? 'Speak to Visawizer and get a clearer view of your skilled, sponsored, regional, training, or innovation visa options.',
+    'ctaPrimaryLabel' => $page['bottom']['cta']['primaryLabel'] ?? 'Book Work Visa Consultation',
+    'ctaPrimaryUrl' => $page['bottom']['cta']['primaryUrl'] ?? url('book-appointment'),
+    'ctaSecondaryLabel' => $page['bottom']['cta']['secondaryLabel'] ?? 'Contact Visawizer',
+    'ctaSecondaryUrl' => $page['bottom']['cta']['secondaryUrl'] ?? url('contact-us'),
+])
 
 @include('partials.faq')
 @include('partials.blogs')
