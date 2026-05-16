@@ -8,6 +8,7 @@ use App\Support\StudyTopicData;
 use App\Support\WorkVisaData;
 use App\Support\FamilyVisaData;
 use App\Support\VisitorVisaData;
+use App\Support\ProtectionAppealData;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
@@ -51,6 +52,15 @@ class HomeController extends Controller
         $keywords = 'visitor visa Australia, short stay visa Australia, ETA 601, eVisitor 651, visitor visa 600, transit visa 771, working holiday visa, Visawizer';
 
         return view('visitorShortStay', compact('title', 'description', 'keywords'));
+    }
+
+    public function protectionAppealsHumanitarian()
+    {
+        $title = 'Protection, Appeals & Humanitarian Immigration Guidance | Visawizer';
+        $description = 'Confidential guidance for ART review matters, visa refusals, cancellations, Protection Visa Subclass 866, and sensitive humanitarian immigration concerns in Australia.';
+        $keywords = 'protection visa Australia, ART review, visa refusal appeal, visa cancellation review, Protection Visa 866, humanitarian visa guidance, Visawizer';
+
+        return view('protectionAppealsHumanitarian', compact('title', 'description', 'keywords'));
     }
 
     public function workVisaTopicPage(string $slug)
@@ -109,6 +119,12 @@ class HomeController extends Controller
             return $this->renderWorkVisaTopicView($resolved['page']);
         }
 
+        $resolved = ProtectionAppealData::resolveWithKey($slug);
+
+        if ($resolved) {
+            return $this->renderProtectionMatterPage($resolved['page']);
+        }
+
         abort(404);
     }
 
@@ -133,6 +149,15 @@ class HomeController extends Controller
             'description' => $description,
             'keywords' => $keywords,
         ]);
+    }
+
+    private function renderProtectionMatterPage(array $page)
+    {
+        $title = $page['title'];
+        $description = $page['description'];
+        $keywords = $page['keywords'];
+
+        return view('protectionMatterPage', compact('page', 'title', 'description', 'keywords'));
     }
 
     public function singleCourse(Request $request, $slug)
