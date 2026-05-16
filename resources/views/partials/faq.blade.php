@@ -1,4 +1,4 @@
-<section class="faq-section p-b-50" style="background-image: url({{ asset('assets/img/bg/why-us-bg.webp')  }})">
+<section class="faq-section p-b-50 p-t-60" style="background-image: url({{ asset('assets/img/bg/why-us-bg.webp')  }})">
     <div class="container">
         <div class="row faq">
             <div class="col-xl-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
@@ -102,11 +102,12 @@
             <!-- Right Side: Section Title & Info -->
             <div class="col-xl-5" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                 <div class="common-subtitle">
-                    <span>FAQ</span>
+                    <span class="bg-p">FAQ</span>
                 </div>
                 <div class="common-title text-start">
                     <h2>Questions people often ask before they begin</h2>
                 </div>
+                <div class="b-line"></div>
                 <div class="text">
                     <p>A few common questions that can help you move forward with more confidence.</p>
                 </div>

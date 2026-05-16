@@ -1,8 +1,3 @@
-<style type="text/css">
-.mega-menu .detail-list ul li {
-    width: 100%;
-}
-</style>
 <div class="mega-menu">
     <div class="row">
       <div class="col-md-8">
@@ -29,7 +24,7 @@
                     </li>
                   </ul>
                 </div>
-                <img src="http://localhost/visawizer/public/assets/images/services/image-52.webp" class="rounded-3 mt-3" style="height: 250px;width: 100%;object-fit: cover;">
+                <img src="https://visawizer.com.au/wp-content/uploads/2022/01/about2-1.jpg" class="rounded-3 mt-3" style="height: 220px;width: 100%;object-fit: cover;object-position: top;">
               </div>
             </div>
           </div>
@@ -79,8 +74,8 @@
 
           <!-- Column 3: Humanitarian Pathways -->
           <div class="col-md-4">
-            <div class="detail-sidebar servaa mw-100">
-              <div class="s-widget-wrap p-4">
+            <div class="detail-sidebar servaa mw-100 h-100">
+              <div class="s-widget-wrap p-4 h-100">
                 <div class="w-title">
                   <h3>Humanitarian Pathways</h3>
                   <div class="bar-wrap mb-4">
@@ -111,36 +106,26 @@
         </div>
       </div>
 
-      <!-- Promo / Featured Panel -->
-      <div class="col-md-4" style="background-image: linear-gradient(#00000073, #00000073), url('{{ asset('assets/images/area/image-31.webp') }}');background-size: cover;">
-        <div class="hero-section-4">
-          <div class="row">
-            <div class="col-xxl-12 col-xl-12 col-lg-12">
-              <div class="hero-content-4 p-0">
-                <div class="detail-sidebar mw-100">
-                  <div class="s-widget-wrap mb-3" style="background: transparent;padding-bottom: 0px;padding-left: 25px;">
-                    <div class="w-title">
-                      <h3 class="text-white">Support for Complex Immigration Matters</h3>
-                      <div class="bar-wrap mb-4">
-                        <div class="bar-1" style="    border-bottom: 2px solid rgb(255 255 255 / 39%);"></div>
-                        <div class="bar-2" style="background: #fff;"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="p-4">
-                  <div class="text text-white">
-                    <p>Appeals, protection, and humanitarian pathways handled with sensitivity and expertise. We help you move from confusion to a structured study and visa action plan.</p>
-                  </div>
-                  <div class="mt-3">
-                    <a href="{{ url('contact/confidential-advice') }}" class="btn-gold px-4 py-3">
-                      <i class="fa-solid fa-shield-halved me-2"></i>Get Confidential Advice
-                      <span class="icon"><i class="fa-regular fa-arrow-up-right"></i></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+      <div class="col-md-4">
+        <div class="featured-panel">
+          <div>
+            <div class="featured-img-wrap h-184">
+              <img src="https://visawizer.com.au/wp-content/uploads/2022/01/about-1-1.png" alt="Students studying in Australia">
+              <span class="featured-badge">✦ Get Expert Support</span>
             </div>
+
+            <div class="featured-heading">
+              Support for Complex Immigration Matters
+            </div>
+            <div class="featured-text">
+              Appeals, protection, and humanitarian pathways handled with sensitivity and expertise. We help you move from confusion to a structured study and visa action plan.
+            </div>
+          </div>
+
+          <div class="featured-ctas">
+            <a href="{{ url('contact-us') }}" class="btn-gold">
+              <i class="fa-solid fa-calendar-check"></i> Get Confidential Advice
+            </a>
           </div>
         </div>
       </div>

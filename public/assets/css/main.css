@@ -16384,7 +16384,7 @@ label {
   align-items: center;
   font-size: 30px;
   color: var(--theme-color-2);
-  background: linear-gradient(161.69deg, #006039 12.43%, #e7b23b 251.81%);
+  background: var(--theme-color-3);
   box-shadow: 0 15px 32.2px -9px rgba(0, 24, 25, 0.2);
   margin-bottom: 10px;
   border-radius: 6px;

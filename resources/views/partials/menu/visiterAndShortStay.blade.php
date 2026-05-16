@@ -1,8 +1,3 @@
-<style type="text/css">
-.mega-menu .detail-list ul li {
-    width: 100%;
-}
-</style>
 <div class="mega-menu">
     <div class="row">
       <div class="col-md-4">
@@ -85,12 +80,38 @@
                   </div>
                 </div>
                 <div class="text">
-                  <p>Mentoring at <span class="green">Ethics<span class="golden">4</span>Work</span>goes beyond traditional advice. You receive continuous support from seasoned professionals who help shape your mindset, refine your skills, and guide you through real-world challenges.</p>
+                  <p style="padding: 6px;">Guiding your journey to new beginnings in Australia with expert education and migration assistance. Committed to providing tailored solutions to navigate visa processes and education pathways seamlessly.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="thumb"><img alt="thumb" src="{{ asset('assets/images/menu/services.webp') }}"></div>
+          <div class="thumb">
+            <div class="card border-0 shadow-lg overflow-hidden">
+              <div class="position-relative">
+                <img src="https://visawizer.com.au/wp-content/uploads/2022/01/about2.jpg" class="card-img" alt="Services" style="height: 410px; object-fit: cover; filter: brightness(0.55);">
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
+                  <div style="background: #66003fbd;padding: 30px;border-radius: 10px;">
+                    <i class="fa-solid fa-headset fa-2x text-white mb-3"></i>
+                    <h4 class="text-white fw-bold mb-1">Schedule An Appointment</h4>
+                    <div class="promo-divider mb-3"></div>
+                    <p class="text-white mb-3" style="font-size: 0.9rem;">
+                      Whether you want to study, work, reunite with family, or settle in Australia, the right advice can save time, stress, and costly mistakes. At Visawizer, we help individuals and families understand their options, prepare strong applications, and take the next step with more confidence.
+                    </p>
+                    <div class="hero-content-1">
+                      <div class="join-us">
+                        <a class="e-primary-btn has-icon" href="{{ url('contact-us') }}" style="width: fit-content;border: 1px solid #606060;">
+                            Book Appointment
+                            <span class="icon-wrap">
+                                <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
+                            </span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
