@@ -212,5 +212,6 @@ Route::get('visa/{slug}', [HomeController::class, 'studyVisaTopic']);
 Route::get('work-skilled-migration', [HomeController::class, 'workSkilledMigration']);
 Route::get('work-skilled-migration/{slug}', [HomeController::class, 'workVisaTopicPage']);
 Route::get('family-visas', [HomeController::class, 'familyVisas']);
+Route::get('visitor-short-stay', [HomeController::class, 'visitorShortStay']);
 Route::get('{slug}', [HomeController::class, 'studyTopic']);
 
