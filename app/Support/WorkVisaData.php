@@ -68,6 +68,9 @@ class WorkVisaData
                 'subclass' => '189',
                 'category' => 'Skilled Migration',
                 'icon' => 'fa-light fa-user-graduate',
+                'aliases' => [
+                    'skilled-independent-visa-189',
+                ],
                 'hero' => [
                     'tagline' => 'Skilled Independent Visa',
                     'heading' => 'Skilled Independent Visa Subclass 189 guidance',
@@ -126,6 +129,9 @@ class WorkVisaData
                 'subclass' => '190',
                 'category' => 'Skilled Migration',
                 'icon' => 'fa-light fa-map-location-dot',
+                'aliases' => [
+                    'skilled-nominated-visa-190',
+                ],
                 'hero' => [
                     'tagline' => 'State-nominated skilled visa',
                     'heading' => 'Skilled Nominated Visa Subclass 190 guidance',
@@ -177,6 +183,9 @@ class WorkVisaData
                 'subclass' => '491',
                 'category' => 'Skilled Migration',
                 'icon' => 'fa-light fa-map',
+                'aliases' => [
+                    'skilled-work-regional-visa-491',
+                ],
                 'hero' => [
                     'tagline' => 'Regional skilled pathway',
                     'heading' => 'Skilled Work Regional Visa Subclass 491 guidance',
@@ -218,6 +227,9 @@ class WorkVisaData
                 'subclass' => '191',
                 'category' => 'Skilled Migration',
                 'icon' => 'fa-light fa-house-flag',
+                'aliases' => [
+                    'permanent-residence-skilled-regional-191',
+                ],
                 'hero' => [
                     'tagline' => 'Regional PR pathway',
                     'heading' => 'Permanent Residence Skilled Regional Visa Subclass 191 guidance',
@@ -269,6 +281,9 @@ class WorkVisaData
                 'subclass' => '482',
                 'category' => 'Employer Sponsored',
                 'icon' => 'fa-light fa-building',
+                'aliases' => [
+                    'skills-in-demand-visa-482',
+                ],
                 'hero' => [
                     'tagline' => 'Employer-sponsored work visa',
                     'heading' => 'Skills in Demand Visa Subclass 482 guidance',
@@ -317,6 +332,9 @@ class WorkVisaData
                 'subclass' => '186 TRT',
                 'category' => 'Employer Sponsored',
                 'icon' => 'fa-light fa-handshake',
+                'aliases' => [
+                    'employer-nomination-scheme-186-trt',
+                ],
                 'hero' => [
                     'tagline' => 'Employer-sponsored PR',
                     'heading' => 'Employer Nomination Scheme Subclass 186 TRT guidance',
@@ -367,6 +385,9 @@ class WorkVisaData
                 'subclass' => '186 DE',
                 'category' => 'Employer Sponsored',
                 'icon' => 'fa-light fa-arrow-right-to-bracket',
+                'aliases' => [
+                    'employer-nomination-direct-entry-186',
+                ],
                 'hero' => [
                     'tagline' => 'Direct employer-nominated PR',
                     'heading' => 'Employer Nomination Scheme Subclass 186 Direct Entry guidance',
@@ -415,6 +436,9 @@ class WorkVisaData
                 'subclass' => '494',
                 'category' => 'Employer Sponsored',
                 'icon' => 'fa-light fa-tractor',
+                'aliases' => [
+                    'skilled-employer-sponsored-regional-494',
+                ],
                 'hero' => [
                     'tagline' => 'Regional employer-sponsored visa',
                     'heading' => 'Skilled Employer Sponsored Regional Visa Subclass 494 guidance',
@@ -465,6 +489,7 @@ class WorkVisaData
                 'icon' => 'fa-light fa-chalkboard-user',
                 'aliases' => [
                     'visa/training-407-work',
+                    'training-407-employer-sponsored',
                 ],
                 'hero' => [
                     'tagline' => 'Workplace training pathway',
@@ -517,6 +542,9 @@ class WorkVisaData
                 'subclass' => 'DAMA',
                 'category' => 'Regional & Special Streams',
                 'icon' => 'fa-light fa-file-contract',
+                'aliases' => [
+                    'designated-area-migration-agreements-dama',
+                ],
                 'hero' => [
                     'tagline' => 'Regional labour agreement pathway',
                     'heading' => 'DAMA visa guidance for regional workforce needs',
@@ -565,6 +593,9 @@ class WorkVisaData
                 'subclass' => '400',
                 'category' => 'Regional & Special Streams',
                 'icon' => 'fa-light fa-clock',
+                'aliases' => [
+                    'temporary-work-short-stay-specialist-400',
+                ],
                 'hero' => [
                     'tagline' => 'Short-term specialist work',
                     'heading' => 'Temporary Work Visa Subclass 400 guidance',
@@ -613,6 +644,9 @@ class WorkVisaData
                 'subclass' => '408',
                 'category' => 'Regional & Special Streams',
                 'icon' => 'fa-light fa-calendar-star',
+                'aliases' => [
+                    'temporary-activity-visa-408',
+                ],
                 'hero' => [
                     'tagline' => 'Activity-based temporary stay',
                     'heading' => 'Temporary Activity Visa Subclass 408 guidance',
@@ -667,6 +701,7 @@ class WorkVisaData
                 'icon' => 'fa-light fa-lightbulb-on',
                 'aliases' => [
                     'visa/distinguished-talent-858',
+                    'distinguished-talent-visa-onshore-858',
                 ],
                 'hero' => [
                     'tagline' => 'Exceptional talent pathway',

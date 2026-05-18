@@ -24,15 +24,32 @@ Route::get('/clear-cache', function() {
 
 
 
-Route::get('/', [HomeController::class, 'index']);
-Route::get('study', [HomeController::class, 'studyInAustralia']);
-Route::get('book-appointment', [HomeController::class, 'bookAppointment']);
-Route::get('contact/book-appointment', [HomeController::class, 'bookAppointment']);
-Route::get('contact-us', [HomeController::class, 'contactUs']);
-Route::get('about-us', [HomeController::class, 'aboutus']);
-Route::get('blogs', [HomeController::class, 'blogs']);
-Route::get('blog/{slug}', [HomeController::class, 'blogSingle']);
-Route::get('blog/category/{slug}', [HomeController::class, 'blogsByCategory']);
+Route::controller(HomeController::class)->group(function () {
+    Route::get('/', 'index')->name('home');
+
+    Route::get('study', 'studyInAustralia')->name('study.index');
+    Route::get('work-skilled-migration', 'workSkilledMigration')->name('work-skilled-migration.index');
+    Route::get('family-visas', 'familyVisas')->name('family-visas.index');
+    Route::get('visitor-short-stay', 'visitorShortStay')->name('visitor-short-stay.index');
+    Route::get('protection-appeals-humanitarian', 'protectionAppealsHumanitarian')->name('protection-appeals-humanitarian.index');
+
+    Route::get('book-appointment', 'bookAppointment')->name('book-appointment');
+    Route::get('contact/book-appointment', 'bookAppointment')->name('contact.book-appointment');
+    Route::get('contact-us', 'contactUs')->name('contact-us');
+    Route::get('about-us', 'aboutUs')->name('about-us');
+
+    Route::get('blogs', 'blogs')->name('blogs.index');
+    Route::get('blog/{slug}', 'blogSingle')->name('blogs.show');
+    Route::get('blog/category/{slug}', 'blogsByCategory')->name('blogs.category');
+});
+
+Route::redirect('about', 'about-us')->name('about.redirect');
+Route::redirect('contact', 'contact-us')->name('contact.redirect');
+Route::redirect('contact/confidential-advice', 'contact-us')->name('contact.confidential-advice');
+Route::redirect('contact/speak-to-expert', 'contact-us')->name('contact.speak-to-expert');
+Route::redirect('resources/blogs', 'blogs')->name('resources.blogs.redirect');
+Route::redirect('resources/webinars', 'webinars')->name('resources.webinars.redirect');
+Route::redirect('resources/podcast', 'podcast')->name('resources.podcast.redirect');
 
 Route::get('services', [HomeController::class, 'services']);
 Route::get('service/advisory-consulting', [HomeController::class, 'advisoryConsulting']);
@@ -60,7 +77,7 @@ Route::get('sustainability-esg', [HomeController::class, 'sustainabilityEsg']);
 Route::get('giving-voice-to-values', [HomeController::class, 'givingVoiceToValues']);
 
 Route::get('seminars', [HomeController::class, 'seminars']);
-Route::get('webinars', [HomeController::class, 'webinars']);
+Route::get('webinars', [HomeController::class, 'webinars'])->name('webinars');
 Route::get('event-details/{slug}', [HomeController::class, 'eventSingle']);
 Route::get('courses', [HomeController::class, 'courses']);
 Route::get('course/{slug}', [HomeController::class, 'singleCourse']);
@@ -81,8 +98,9 @@ Route::get('diagnostic-quiz', [HomeController::class, 'quiz']);
 Route::get('quiz/{slug}', [HomeController::class, 'singleQuiz']);
 Route::get('ethics4Work-framework', [HomeController::class, 'framework']);
 
-Route::get('case-studies', [HomeController::class, 'caseStudies']);
-Route::get('podcasts-practitioner-interviews', [HomeController::class, 'ppi']);
+Route::get('case-studies', [HomeController::class, 'caseStudies'])->name('case-studies');
+Route::get('podcast', [HomeController::class, 'podcasts'])->name('podcast');
+Route::get('podcasts-practitioner-interviews', [HomeController::class, 'podcasts'])->name('podcasts-practitioner-interviews');
 Route::get('recommended-books', [HomeController::class, 'recommendedBooks']);
 Route::get('tools-frameworks', [HomeController::class, 'toolsFrameworks']);
 Route::get('reports-newsletters', [HomeController::class, 'reportsNewsletters']);
@@ -91,9 +109,9 @@ Route::get('current-events', [HomeController::class, 'globalEvents']);
 Route::get('centre-for-business-society', [HomeController::class, 'centreForBusinessSociety']);
 Route::get('coaching-mentoring-personality-development', [HomeController::class, 'cmpd']);
 
-Route::get('privacy-policy', [HomeController::class, 'privacyPolicy']);
-Route::get('faq', [HomeController::class, 'faq']);
-Route::get('code-of-conduct', [HomeController::class, 'codeOfConduct']);
+Route::get('privacy-policy', [HomeController::class, 'privacyPolicy'])->name('privacy-policy');
+Route::get('faq', [HomeController::class, 'faq'])->name('faq');
+Route::get('code-of-conduct', [HomeController::class, 'codeOfConduct'])->name('code-of-conduct');
 Route::get('return-and-refund', [HomeController::class, 'returnRefund']);
 Route::get('terms-and-conditions', [HomeController::class, 'termsConditions']);
 
@@ -210,11 +228,6 @@ Route::get('clear-cache', function () {
     return "All cache cleared!";
 });
 
-Route::get('visa/{slug}', [HomeController::class, 'studyVisaTopic']);
-Route::get('work-skilled-migration', [HomeController::class, 'workSkilledMigration']);
-Route::get('work-skilled-migration/{slug}', [HomeController::class, 'workVisaTopicPage']);
-Route::get('family-visas', [HomeController::class, 'familyVisas']);
-Route::get('visitor-short-stay', [HomeController::class, 'visitorShortStay']);
-Route::get('protection-appeals-humanitarian', [HomeController::class, 'protectionAppealsHumanitarian']);
-Route::get('{slug}', [HomeController::class, 'studyTopic']);
+Route::get('visa/{slug}', [HomeController::class, 'showVisaTopic'])->name('visa.topic');
+Route::get('{slug}', [HomeController::class, 'showHeaderTopic'])->name('header.topic');
 

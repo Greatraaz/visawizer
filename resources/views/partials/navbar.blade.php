@@ -63,7 +63,7 @@
 
             <!-- 3) Family Visas -->
             <li class="has-dropdown has-megamenu">
-              <a href="javascript:void(0);">Family Visas <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
+              <a href="{{ url('family-visas') }}">Family Visas <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
               <div class="visa-mega">
                 @include('partials.menu.familyVisas')
               </div>
@@ -71,7 +71,7 @@
 
             <!-- 4) Visitor & Short Stay -->
             <li class="has-dropdown has-megamenu">
-              <a href="javascript:void(0);">Visitor &amp; Short Stay <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
+              <a href="{{ url('visitor-short-stay') }}">Visitor &amp; Short Stay <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
               <div class="visa-mega">
                 @include('partials.menu.visiterAndShortStay')
               </div>
@@ -79,7 +79,7 @@
 
             <!-- 5) Protection, Appeals & Humanitarian -->
             <li class="has-dropdown has-megamenu">
-              <a href="javascript:void(0);">Protection, Appeals &amp; Humanitarian <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
+              <a href="{{ url('protection-appeals-humanitarian') }}">Protection, Appeals &amp; Humanitarian <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
               <div class="visa-mega">
                 @include('partials.menu.protection')
               </div>
@@ -233,8 +233,9 @@
         </li>
 
         <li class="has-dropdown">
-          <a href="javascript:void(0);">Family Visas</a>
+          <a href="{{ url('family-visas') }}">Family Visas</a>
           <ul class="sub-menu">
+            <li><a href="{{ url('family-visas') }}">Family Visas overview</a></li>
             <li><a href="{{ url('visa/partner-820-801') }}">Partner Visa (Subclass 820/801)</a></li>
             <li><a href="{{ url('visa/partner-309-100') }}">Partner Visa (Subclass 309/100)</a></li>
             <li><a href="{{ url('visa/prospective-marriage-300') }}">Prospective Marriage Visa (Subclass 300)</a></li>
@@ -254,8 +255,9 @@
         </li>
 
         <li class="has-dropdown">
-          <a href="javascript:void(0);">Visitor &amp; Short Stay</a>
+          <a href="{{ url('visitor-short-stay') }}">Visitor &amp; Short Stay</a>
           <ul class="sub-menu">
+            <li><a href="{{ url('visitor-short-stay') }}">Visitor &amp; Short Stay overview</a></li>
             <li><a href="{{ url('visa/visitor-600') }}">Visitor Visa (Subclass 600)</a></li>
             <li><a href="{{ url('visa/e-visitor-651') }}">E-Visitor Visa (Subclass 651)</a></li>
             <li><a href="{{ url('visa/eta-601') }}">Electronic Travel Authority (Subclass 601)</a></li>
@@ -266,8 +268,9 @@
         </li>
 
         <li class="has-dropdown">
-          <a href="javascript:void(0);">Protection, Appeals &amp; Humanitarian</a>
+          <a href="{{ url('protection-appeals-humanitarian') }}">Protection, Appeals &amp; Humanitarian</a>
           <ul class="sub-menu">
+            <li><a href="{{ url('protection-appeals-humanitarian') }}">Protection, Appeals &amp; Humanitarian overview</a></li>
             <li><a href="{{ url('art-review-appeals') }}">ART Review Appeals</a></li>
             <li><a href="{{ url('visa/protection-866') }}">Protection Visa (Subclass 866)</a></li>
             <li><a href="{{ url('visa/temporary-protection-785') }}">Temporary Protection Visa (Subclass 785)</a></li>

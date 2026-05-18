@@ -74,88 +74,94 @@ class HomeController extends Controller
         return view('protectionAppealsHumanitarian', compact('title', 'description', 'keywords'));
     }
 
-    public function workVisaTopicPage(string $slug)
-    {
-        $resolved = WorkVisaData::resolveWithKey('visa/' . ltrim($slug, '/'));
-
-        if (!$resolved) {
-            $resolved = FamilyVisaData::resolveWithKey('visa/' . ltrim($slug, '/'));
-        }
-
-        if (!$resolved) {
-            $resolved = VisitorVisaData::resolveWithKey('visa/' . ltrim($slug, '/'));
-        }
-
-        if (!$resolved) {
-            abort(404);
-        }
-
-        return $this->renderWorkVisaTopicView($resolved['page']);
-    }
-
-    public function studyTopic($slug)
-    {
-        return $this->renderStudyTopic($slug);
-    }
-
-    public function studyVisaTopic($slug)
-    {
-        return $this->renderStudyTopic('visa/' . $slug);
-    }
-
-    private function renderStudyTopic(string $slug)
+    public function showHeaderTopic(string $slug)
     {
         $page = StudyTopicData::get($slug);
 
         if ($page) {
-            $countries = StudyTopicData::countries();
-            return view('studyTopic', compact('page', 'countries'));
+            return $this->renderStudyTopicPage($page);
         }
 
-        $resolved = WorkVisaData::resolveWithKey($slug);
+        $resolved = $this->resolveVisaTopic($slug);
 
         if ($resolved) {
-            return $this->renderWorkVisaTopicView($resolved['page']);
-        }
-
-        $resolved = FamilyVisaData::resolveWithKey($slug);
-
-        if ($resolved) {
-            return $this->renderWorkVisaTopicView($resolved['page']);
-        }
-
-        $resolved = VisitorVisaData::resolveWithKey($slug);
-
-        if ($resolved) {
-            return $this->renderWorkVisaTopicView($resolved['page']);
-        }
-
-        $resolved = ProtectionAppealData::resolveWithKey($slug);
-
-        if ($resolved) {
-            return $this->renderProtectionMatterPage($resolved['page']);
+            return $this->renderVisaTopic($resolved);
         }
 
         abort(404);
     }
 
-    private function renderWorkVisaTopicView(array $workPage)
+    public function showVisaTopic(string $slug)
     {
-        $category = strtolower($workPage['category'] ?? '');
+        $slug = 'visa/' . ltrim($slug, '/');
+        $page = StudyTopicData::get($slug);
+
+        if ($page) {
+            return $this->renderStudyTopicPage($page);
+        }
+
+        $resolved = $this->resolveVisaTopic($slug);
+
+        if ($resolved) {
+            return $this->renderVisaTopic($resolved);
+        }
+
+        abort(404);
+    }
+
+    private function renderStudyTopicPage(array $page)
+    {
+        $countries = StudyTopicData::countries();
+
+        return view('studyTopic', compact('page', 'countries'));
+    }
+
+    private function resolveVisaTopic(string $slug): ?array
+    {
+        $supportFiles = [
+            'work' => WorkVisaData::class,
+            'family' => FamilyVisaData::class,
+            'visitor' => VisitorVisaData::class,
+            'protection' => ProtectionAppealData::class,
+        ];
+
+        foreach ($supportFiles as $type => $supportFile) {
+            $resolved = $supportFile::resolveWithKey($slug);
+
+            if ($resolved) {
+                return ['type' => $type, 'page' => $resolved['page']];
+            }
+        }
+
+        return null;
+    }
+
+    private function renderVisaTopic(array $resolved)
+    {
+        if ($resolved['type'] === 'protection') {
+            return $this->renderProtectionMatterPage($resolved['page']);
+        }
+
+        return $this->renderVisaTopicPage($resolved['page']);
+    }
+
+    private function renderVisaTopicPage(array $visaPage)
+    {
+        $category = strtolower($visaPage['category'] ?? '');
         $isFamily = str_contains($category, 'parent') || str_contains($category, 'partner') || str_contains($category, 'relative') || str_contains($category, 'family');
         $isVisitor = str_contains($category, 'visitor') || str_contains($category, 'short stay');
         $sectionTitle = $isFamily ? 'Family Visas' : ($isVisitor ? 'Visitor & Short Stay' : 'Work & Skilled Migration');
-        $title = ($workPage['label'] ?? 'Visa') . ' | ' . $sectionTitle . ' | Visawizer';
-        $rawDescription = $workPage['hero']['subheading'] ?? $workPage['hero']['content'] ?? '';
+        $title = ($visaPage['label'] ?? 'Visa') . ' | ' . $sectionTitle . ' | Visawizer';
+        $rawDescription = $visaPage['hero']['subheading'] ?? $visaPage['hero']['content'] ?? '';
         $description = Str::limit(strip_tags($rawDescription), 300, '');
         $keywords = match ($sectionTitle) {
             'Family Visas' => 'Australia family visa, partner visa, parent visa, child visa, ',
             'Visitor & Short Stay' => 'Australia visitor visa, short stay visa, ETA, eVisitor, transit visa, working holiday visa, ',
             default => 'Australia work visa, skilled migration, ',
-        } . ($workPage['label'] ?? 'Visawizer');
+        } . ($visaPage['label'] ?? 'Visawizer');
 
         return view('workVisaTopic', [
-            'page' => $workPage,
+            'page' => $visaPage,
             'title' => $title,
             'description' => $description,
             'keywords' => $keywords,
@@ -281,7 +287,7 @@ class HomeController extends Controller
 
 
 
-    public function ppi()
+    public function podcasts()
     {
         return view('podcasts');
     }
@@ -362,7 +368,7 @@ class HomeController extends Controller
     }
 
     
-    public function aboutus()
+    public function aboutUs()
     {
         return view('aboutUs');
     }
