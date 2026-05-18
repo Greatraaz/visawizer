@@ -9,6 +9,7 @@ use App\Support\WorkVisaData;
 use App\Support\FamilyVisaData;
 use App\Support\VisitorVisaData;
 use App\Support\ProtectionAppealData;
+use App\Support\BookAppointmentData;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
@@ -25,6 +26,16 @@ class HomeController extends Controller
     public function studyInAustralia()
     {
         return view('study');
+    }
+
+    public function bookAppointment()
+    {
+        $appointmentPage = BookAppointmentData::page();
+        $title = $appointmentPage['meta']['title'];
+        $description = $appointmentPage['meta']['description'];
+        $keywords = $appointmentPage['meta']['keywords'];
+
+        return view('bookAppointment', compact('appointmentPage', 'title', 'description', 'keywords'));
     }
 
     public function workSkilledMigration()
