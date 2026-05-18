@@ -8,11 +8,12 @@
                 <div class="col-xl-4 m-b-lg-60 m-b-md-60 m-b-xs-60">
                     <div class="testimonial-content" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                         <div class="common-subtitle">
-                             <span>Testimonials</span>
+                             <span class="bg-p">Testimonials</span>
                         </div>
-                        <div class="common-title text-start">
+                        <div class="common-title text-start mb-3">
                             <h2>What Clients Say About Us and <span>Our Services</span></h2>
                         </div>
+                        <div class="b-line"></div>
                         <div class="text">
                             <p>{{ $testiIntroP1 }}</p>
                             <p class="m-t-20">{{ $testiIntroP2 }}</p>
@@ -38,7 +39,7 @@
                                             </div>
                                             <div class="review">
                                                 <p>"Had a great experience with them. Always available on one call, provided relevant and accurate information."</p>
-                                                <p class="small mt-2 mb-0 text-muted"><strong>Nishchay Sharma</strong></p>
+                                                <p class="small mt-2 mb-0 text-white"><strong>Nishchay Sharma</strong></p>
                                             </div>
                                         </div>
                                     </div>
@@ -54,7 +55,7 @@
                                             </div>
                                             <div class="review">
                                                 <p>"We are extremely pleased with the professional services provided by Visawizer. They guided us throughout the visa process with clarity and efficiency."</p>
-                                                <p class="small mt-2 mb-0 text-muted"><strong>Kamaljeet Kaur</strong></p>
+                                                <p class="small mt-2 mb-0 text-white"><strong>Kamaljeet Kaur</strong></p>
                                             </div>
                                         </div>
                                     </div>
@@ -70,7 +71,7 @@
                                             </div>
                                             <div class="review">
                                                 <p>"I had an amazing experience working with Visawizer for my wife&apos;s visa application… A 100% recommended for anyone trying for a visa no matter how complicated it is."</p>
-                                                <p class="small mt-2 mb-0 text-muted"><strong>Monish Kumar</strong></p>
+                                                <p class="small mt-2 mb-0 text-white"><strong>Monish Kumar</strong></p>
                                             </div>
                                         </div>
                                     </div>

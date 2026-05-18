@@ -129,8 +129,16 @@
     /*--------------------------------------------------------------
     07 Fancybox Video Popup JS
     --------------------------------------------------------------*/
-   if (typeof Fancybox !== 'undefined' && jQuery('[data-fancybox]').length > 0) {
-        Fancybox.bind('[data-fancybox]', {});
+    if (jQuery("[data-fancybox]").length > 0) {
+        Fancybox.bind('[data-fancybox]', {
+            Html: {
+                youtube: {
+                    controls: 0,
+                    rel: 0,
+                    fs: 0
+                }
+            }
+        });
     }
 
 

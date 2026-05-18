@@ -294,7 +294,9 @@
                         <h1>Australian visas, study pathways, and migration guidance made simpler</h1>
                     </div>
 
-                    <p class="home-static-hero-subheading">From student admissions to skilled migration, employer-sponsored visas, family pathways, and appeals, Visawizer helps you move forward with confidence and a clear plan.</p>
+                    <p class="home-static-hero-subheading mb-2">From student admissions to skilled migration, employer-sponsored visas, family pathways, and appeals, Visawizer helps you move forward with confidence and a clear plan.</p>
+
+                    <div class="w-line"></div>
 
                     <div class="home-static-hero-body">
                         <p>Whether you want to study, work, reunite with family, or settle in Australia, the right advice can save time, stress, and costly mistakes. At Visawizer, we help individuals and families understand their options, prepare strong applications, and take the next step with more confidence.</p>
@@ -373,9 +375,10 @@
                     <div class="common-subtitle">
                         <span>Why Visawizer</span>
                     </div>
-                    <div class="common-title text-start">
+                    <div class="common-title text-start mb-3">
                         <h2>Practical migration guidance built around real goals</h2>
                     </div>
+                    <div class="b-line"></div>
                     <p class="m-t-15 m-b-15" style="font-size: 20px; font-weight: 600; line-height: 1.5;">Not just forms and documents. Advice that connects your visa, study, work, and settlement plans.</p>
                     <p class="m-b-25">Every migration journey is different. Some clients need help choosing the right course and institution. Others need support with employer sponsorship, partner visas, regional pathways, or appeal matters. Our approach is to understand your situation first, then guide you with clarity, transparency, and a practical action plan.</p>
                     <div class="services">
@@ -520,12 +523,12 @@
 --}}
 
     <!-- what-we-do-section start -->
-    <section id="home-visa-pathways" class="what-we-do-section m-t-80 p-t-100 p-b-120 p-b-md-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #000000e0), url({{ asset('assets/images/banner.jpg') }})">
+    <section id="home-visa-pathways" class="what-we-do-section p-t-100 p-b-120 p-b-md-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #000000e0), url({{ asset('assets/images/banner.jpg') }})">
         <div class="container">
             <div class="section-top-2">
                 <div class="left">
                     <div class="common-subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                        <span>Solutions</span>
+                        <span class="bg-p">Solutions</span>
                     </div>
                     <div class="common-title text-start" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                         <h2>Start with the pathway that fits your goal</h2>
@@ -690,11 +693,12 @@
                 <div class="col-xl-12">
                     <div class="text-center">
                         <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <span>Study</span>
+                            <span class="bg-p">Study</span>
                         </div>
-                        <div class="common-title mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <div class="common-title mb-3" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                             <h2>Build your future through education in Australia</h2>
                         </div>
+                        <div class="b-line m-auto"></div>
                         <p class="m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">From admissions and course selection to student visas and post-study planning, we help students make informed moves.</p>
                         <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">Australia offers strong academic opportunities, international exposure, and real career potential. We support students with admissions guidance, education planning, OSHC, change of course or institution support, and visa pathways that align with long-term goals.</p>
                     </div>
@@ -764,7 +768,7 @@
                                                     <h3>Post-Study<br> Planning</h3>
                                                 </div>
                                                 <div class="text">
-                                                    <p>Explore graduate visa options and next steps after study.</p>
+                                                    <p>Explore graduate visa pathways and post-study opportunities for your future career.</p>
                                                 </div>
                                             </div>
                                             <!-- <div class="mb-3 ms-3">
@@ -832,18 +836,19 @@
         <div class="container">
             <div class="text-center m-b-50 m-b-xs-40">
                 <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <span>Work in Australia</span>
+                    <span class="bg-p">Work in Australia</span>
                 </div>
-                <div class="common-title mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                <div class="common-title mb-3" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     <h2>Skilled and employer-sponsored migration pathways, explained clearly</h2>
                 </div>
+                <div class="b-line m-auto"></div>
                 <p class="m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">Whether you are applying independently or through an employer, we help you understand the pathway, process, and next action.</p>
                 <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">Australian migration can feel complex when visa subclasses, regional conditions, nominations, and sponsorship rules overlap. We simplify the picture by helping you understand which pathway matches your profession, employer opportunity, location, and long-term residency goals.</p>
             </div>
 
             <div class="row row-gap-4 justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                 <div class="col-xl-6 col-md-6">
-                    <div class="service-card">
+                    <div class="service-card" style="background-image: linear-gradient(90deg, rgb(102 0 63), rgba(0, 0, 0, 0)), url(https://visawizer.com.au/wp-content/uploads/2022/01/hero-1.jpg);background-size: cover;background-position: center;">
                         <div class="service-top">
                             <h4>Skilled Migration</h4>
                             <i><img alt="icon" src="{{ asset('assets/images/icon/workplace-business.svg') }}"></i>
@@ -854,13 +859,13 @@
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-6">
-                    <div class="service-card">
+                    <div class="service-card" style="background-image: linear-gradient(90deg, rgb(0, 0, 0, 0), rgba(102 0 63)), url(https://visawizer.com.au/wp-content/uploads/2023/10/Untitled-design-1.jpg);background-size: cover;background-position: center;">
                         <div class="service-top">
-                            <h4>Employer Sponsored</h4>
                             <i><img alt="icon" src="{{ asset('assets/images/icon/corporate-governance.svg') }}"></i>
+                            <h4 class="text-end">Employer Sponsored</h4>
                         </div>
                         <div class="service-content">
-                            <p>For applicants and employers looking at 482, 186, 494, DAMA, short-stay specialist options, and related sponsorship pathways.</p>
+                            <p class="text-end" style="margin-left: auto;">For applicants and employers looking at 482, 186, 494, DAMA, short-stay specialist options, and related sponsorship pathways.</p>
                         </div>
                     </div>
                 </div>
@@ -879,138 +884,22 @@
     </section>
     <!-- skilled-sponsored-section end -->
 
-    <!-- volunteer-section start -->
-    <!-- <section class="volunteer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80">
-        <div class="container">
-            <div class="text-center m-b-50 m-b-xs-40">
-                <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <span>Where We Do the Work</span>
-                </div>
-                <div class="common-title mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                    <h2>Ethics across functions, sectors, and society</h2>
-                </div>
-            </div>
-            
-            <div class="row row-gap-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-card">
-                        <div class="service-top">
-                            <h4>Workplace & Business</h4>
-                            <i><img alt="icon" src="{{ asset('assets/images/icon/workplace-business.svg') }}"></i>
-                        </div>
-                        <div class="service-content">
-                            <p>Exploring leadership, teamwork, innovation, and workplace transformation strategies.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-card">
-                        <div class="service-top">
-                            <h4>AI & Technology</h4>
-                            <i><img alt="icon" src="{{ asset('assets/images/icon/ai-technology.svg') }}"></i>
-                        </div>
-                        <div class="service-content">
-                            <p>Advancing automation, data intelligence, and the digital future responsibly.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-card">
-                        <div class="service-top">
-                            <h4>Environment & Sustainability</h4>
-                            <i><img alt="icon" src="{{ asset('assets/images/icon/environment.svg') }}"></i>
-                        </div>
-                        <div class="service-content">
-                            <p>Promoting green innovation, climate action, and sustainable growth worldwide.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-card">
-                        <div class="service-top">
-                            <h4>Marketing & Sales</h4>
-                            <i><img alt="icon" src="{{ asset('assets/images/icon/marketing-sales.svg') }}"></i>
-                        </div>
-                        <div class="service-content">
-                            <p>Empowering brands through strategy, creativity, and customer engagement.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-card">
-                        <div class="service-top">
-                            <h4>Corporate Governance</h4>
-                            <i><img alt="icon" src="{{ asset('assets/images/icon/corporate-governance.svg') }}"></i>
-                        </div>
-                        <div class="service-content">
-                            <p>Ensuring ethics, accountability, and transparency in business leadership.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-card">
-                        <div class="service-top">
-                            <h4>Research & Publications</h4>
-                            <i><img alt="icon" src="{{ asset('assets/images/icon/research.svg') }}"></i>
-                        </div>
-                        <div class="service-content">
-                            <p>Sharing data-driven insights, reports, and academic knowledge.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-card">
-                        <div class="service-top">
-                            <h4>Finance & Risk</h4>
-                            <i><img alt="icon" src="{{ asset('assets/images/icon/finance-risk.svg') }}"></i>
-                        </div>
-                        <div class="service-content">
-                            <p>Managing growth, compliance, and emerging risks in finance.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-card">
-                        <div class="service-top">
-                            <h4>Media & Journalism</h4>
-                            <i><img alt="icon" src="{{ asset('assets/images/icon/media.svg') }}"></i>
-                        </div>
-                        <div class="service-content">
-                            <p>Delivering truthful, ethical, and impactful stories globally.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-4 col-md-6">
-                    <div class="service-card">
-                        <div class="service-top">
-                            <h4>Supply Chain & Procurement</h4>
-                            <i><img alt="icon" src="{{ asset('assets/images/icon/scp.svg') }}"></i>
-                        </div>
-                        <div class="service-content">
-                            <p>Creating efficient, ethical, and resilient global supply networks.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- volunteer-section end -->
-
     <!-- completed-project start -->
     <section class="completed-project-section">
-        <div class="completed-project-top" style="background-image: linear-gradient(45deg, #0060399e), url({{ asset('assets/images/home-banner-3.webp') }}">
+        <div class="completed-project-top" style="background-image: linear-gradient(45deg, #66003f78), url({{ asset('assets/images/home-banner-3.webp') }}">
             <div class="container">
-                <div class="row align-items-end m-b-60 m-b-xs-40">
-                    <div class="col-xl-6 col-lg-6 col-md-7">
+                <div class="row align-items-center m-b-60 m-b-xs-40">
+                    <div class="col-md-9">
                         <div class="common-subtitle style-color-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <span class="text-white">More pathways, one trusted team</span>
+                            <span class="text-white"><strong>More pathways, one trusted team</strong></span>
                         </div>
                         <div class="common-title style-color-light text-start m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                            <h2 class="fs-1">Support for family visas, visitor visas, and complex matters</h2>
+                            <h2 class="fs-1 pb-3">Support for family visas, visitor visas, and complex matters</h2>
+                            <div class="w-line"></div>
                             <p class="text-white m-t-15" style="max-width: 90%;">Some applications are emotional. Some are urgent. Some are complicated. All of them deserve careful guidance.</p>
                         </div>
                     </div>
-                    <div class="col-xl-6 col-lg-6 col-md-5 text-md-end">
+                    <div class="col-md-3 text-md-end">
                         <a class='e-primary-btn has-icon active' data-aos-delay='600' data-aos-duration='1000' data-aos='fade-up' href="{{ url('contact-us') }}">Speak to a Visa Expert
                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                     </div>
@@ -1043,7 +932,7 @@
                                 <a href="#"><img alt="thumb-11" src="{{ asset('assets/images/stories-image-2.webp') }}" style="object-fit: none;object-position: -10px -6rem;"></a>
                                 <div class="content">
                                     <h5>Visitor Visas</h5>
-                                    <p>Visitor, holiday, ETA, eVisitor, and transit support for short-term travel plans.</p>
+                                    <p>Visitor, holiday, ETA, eVisitor, and transit support for seamless short-term travel plans.</p>
                                     <div class="details-btn">
                                         <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact-us') }}">Learn More
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
@@ -1073,152 +962,6 @@
     </section>
     <!-- completed-project end -->
 
-   <!-- work-process-section start -->
-{{--<section class="work-process p-t-100 p-b-120 p-b-md-100 p-t-xs-80 p-b-xs-80">
-    <div class="container">
-
-        <!-- Section Header -->
-        <div class="text-center m-b-50 m-b-xs-40">
-            <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                <span>Your Journey With <span class="green">Ethics<span class="golden">4</span>Work</span></span>
-            </div>
-            <div class="common-title m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                <h2>A Pathway to Ethical Excellence</h2>
-            </div>
-        </div>
-
-        <div class="row row-gap-4 row-gap-md-5 align-items-center">
-
-            <div class="col-xl-6">
-                <img src="{{ asset('assets/images/contact.jpg') }}" class="rounded-3" style="height: 639px;width: 100%;object-fit: cover;">
-            </div>
-
-            <!-- Right-Side Form -->
-            <div class="col-xl-6">
-                <div class="contact-form-3" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-                    <div class="form-content">
-
-                        <h3>Fill the form below</h3>
-                        <p style="max-width: 100%;">Connect with our team to explore programs, consulting support, or ethical leadership pathways tailored to your needs.</p>
-
-                        <form id="contactForm" class="homeForm">
-                            @csrf
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <input class="form-control" name="name" placeholder="Full Name" type="text">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <input class="form-control" name="email" placeholder="Email Address" type="email">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <input class="form-control" name="phone" placeholder="Contact Number" type="number">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="mb-3">
-                                        <select class="form-control" name="course">
-                                            <option value="">Select Topic</option>
-                                            <option>Two-Day MDP on Business Ethics</option>
-                                            <option>Foundational Certificate in Business Ethics</option>
-                                            <option>Ethical Leadership Consulting</option>
-                                            <option>Workshops, Seminars & Capacity Building</option>
-                                            <option>Campus & Institutional Initiatives</option>
-                                            <option>Other</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mb-3">
-                                <textarea class="form-control" name="message" placeholder="How can we support you?" rows="4"></textarea>
-                            </div>
-                            <input type="text" name="bot_field" class="d-none">
-                            <input type="hidden" name="formName" value="Home Page">
-                            <div class="mb-3 text-white">
-                                <input type="checkbox" required=""> By submitting,I confirm my acceptance of the T & C and Privacy Policy.<br>
-                                <input type="checkbox"> i'm excited to receive updates via Call/SMS/RCS/WhatsApp
-                            </div>
-                            <button class="e-primary-btn has-icon active" type="submit">
-                                <span class="btext">Click</span>
-                                <span class="icon-wrap">
-                                    <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
-                                </span>
-                            </button>
-                        </form>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>--}}
-<!-- work-process-section end -->
-
-    <!-- <section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #0060399e), url('assets/images/home-banner-1.webp')">
-        <div class="container">
-            <div class="text-center m-b-50 m-b-xs-40">
-                <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <span>Learn It. Live It. Teach It</span>
-                </div>
-                <div class="common-title m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                    <h2>University courses, executive modules, and certifications</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="service-slider-active" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                @php 
-                                use App\Models\Courses;
-                                $courses = Courses::orderBy('id', 'desc')->get();
-                                @endphp
-                                @forelse ($courses as $node)
-                                <div class="swiper-slide">
-                                    <div class="service-card-3 coyrs">
-                                        <div class="thumb">
-                                            <a href="{{ url('course/'.$node->slug) }}"><img src="{{ asset($node->image) }}" alt="{{ $node->title }}"></a>
-                                        </div>
-                                        <div class="content">
-                                            <div class="donation-wrap">
-                                                <div class="content-top">
-                                                    <div class="title">
-                                                        <h3><a href="{{ url('course/'.$node->slug) }}">{{ $node->title }}</a></h3>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p>{{ Str::limit(strip_tags($node->description), 80) }}</p>
-                                                    </div>
-                                                </div>
-                                                <a class='e-primary-btn has-icon d-btn' href="{{ url('course/'.$node->slug) }}">View Details <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                @empty
-                                <p>No courses found.</p>
-                                @endforelse
-                            </div>
-                        </div>
-                        <div class="service-pagination-wrap">
-                            <div class="service-pagination"></div>
-                        </div>
-                        <div class="service-button-prev">
-                            <i class="fa-regular fa-arrow-left"></i>
-                        </div>
-                        <div class="service-button-next">
-                            <i class="fa-regular fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
     <!-- how-we-work-section start -->
     <section class="services-section-3 p-t-100 p-b-100 p-t-xs-80 p-b-xs-80">
@@ -1227,11 +970,12 @@
                 <div class="col-xl-12">
                     <div class="section-top-9 text-center">
                         <div class="common-subtitle text-uppercase" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <span>Process</span>
+                            <span class="bg-p">Process</span>
                         </div>
-                        <div class="common-title m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                        <div class="common-title mb-3" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                             <h2>A clearer way to move through the visa journey</h2>
                         </div>
+                        <div class="b-line m-auto"></div>
                         <p class="m-t-20 m-b-0" style="font-size: 20px; font-weight: 600; line-height: 1.5;">
                             We make the process easier by breaking it into practical, manageable steps.
                         </p>
@@ -1240,7 +984,7 @@
             </div>
             <div class="row row-gap-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="service-card-3">
+                    <div class="service-card-3 h-100">
                         <div class="service-top">
                             <h4>Consultation</h4>
                             <i class="fa-light fa-comments"></i>
@@ -1254,7 +998,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="service-card-3">
+                    <div class="service-card-3 h-100">
                         <div class="service-top">
                             <h4>Pathway Review</h4>
                             <i class="fa-light fa-route"></i>
@@ -1268,7 +1012,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="service-card-3">
+                    <div class="service-card-3 h-100">
                         <div class="service-top">
                             <h4>Documentation &amp; Preparation</h4>
                             <i class="fa-light fa-file-lines"></i>
@@ -1282,7 +1026,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-lg-6 col-md-6">
-                    <div class="service-card-3">
+                    <div class="service-card-3 h-100">
                         <div class="service-top">
                             <h4>Submission &amp; Ongoing Guidance</h4>
                             <i class="fa-light fa-circle-check"></i>
@@ -1297,7 +1041,7 @@
                 </div>
             </div>
             <div class="text-center m-t-40">
-                <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">
+                <p style="font-size: 16px; font-weight: 400; line-height: 1.75;" class="bg-p">
                     No guesswork. No confusing jargon. Just a more structured path forward.
                 </p>
             </div>
@@ -1308,30 +1052,31 @@
     <!-- why-clients-choose-section start -->
     <section class="services-section-3 p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-color: #f8f7f0;">
         <div class="container">
-            <div class="row row-gap-5 align-items-start">
+            <div class="row row-gap-5 align-items-center">
                 <div class="col-xl-5 col-lg-5">
-                    <div class="section-top-9 sticky-top" style="top: 110px;">
+                    <div class="section-top-9" style="background-image: linear-gradient(#66003f63), url('{{ asset('img/trust.png')  }}'); max-height: 600px;padding: 20px;background-size: cover;background-position: center;border-radius: 10px;">
                         <div class="common-subtitle text-uppercase" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                            <span>Trust</span>
+                            <span class="bg-p">Trust</span>
                         </div>
-                        <div class="common-title m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                            <h2>Guidance that is responsive, practical, and focused on outcomes</h2>
+                        <div class="common-title mb-3" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                            <h2 class="text-white">Guidance that is responsive, practical, and focused on outcomes</h2>
                         </div>
-                        <p class="m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">
+                        <div class="w-line m-auto"></div>
+                        <p class="m-t-20 m-b-10 text-white" style="font-size: 20px; font-weight: 600; line-height: 1.5;">
                             Clients come to us for clarity. They stay with us because they feel supported at every stage.
                         </p>
-                        <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #6b6b6b;">
+                        <p style="font-size: 16px; font-weight: 400; line-height: 1.75; color: #fff;">
                             Migration decisions affect education, family, work, and future plans. That is why our clients value responsiveness, straightforward guidance, and a process that feels more personal than transactional.
                         </p>
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-7">
-                    <div class="row row-gap-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+                    <div class="row row-gap-4 singla" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                         <div class="col-md-6">
                             <div class="service-card-3">
                                 <div class="service-top">
                                     <h4>Clear Communication</h4>
-                                    <i class="fa-light fa-comments"></i>
+                                    <i class="fa-light fa-comments" style="background: var(--theme-color-3);"></i>
                                 </div>
                                 <div class="service-content">
                                     <p>Understand what matters, what is needed, and what comes next.</p>
@@ -1343,7 +1088,7 @@
                             <div class="service-card-3">
                                 <div class="service-top">
                                     <h4>Tailored Advice</h4>
-                                    <i class="fa-light fa-user-pen"></i>
+                                    <i class="fa-light fa-user-pen" style="background: var(--theme-color-3);"></i>
                                 </div>
                                 <div class="service-content">
                                     <p>Recommendations shaped around your case, not generic assumptions.</p>
@@ -1355,7 +1100,7 @@
                             <div class="service-card-3">
                                 <div class="service-top">
                                     <h4>Broad Pathway Coverage</h4>
-                                    <i class="fa-light fa-route"></i>
+                                    <i class="fa-light fa-route" style="background: var(--theme-color-3);"></i>
                                 </div>
                                 <div class="service-content">
                                     <p>Support across study, family, skilled, sponsored, visitor, and review matters.</p>
@@ -1367,7 +1112,7 @@
                             <div class="service-card-3">
                                 <div class="service-top">
                                     <h4>Action-Focused Guidance</h4>
-                                    <i class="fa-light fa-bullseye-arrow"></i>
+                                    <i class="fa-light fa-bullseye-arrow" style="background: var(--theme-color-3);"></i>
                                 </div>
                                 <div class="service-content">
                                     <p>We help turn confusion into a practical next step.</p>
@@ -1383,15 +1128,16 @@
     <!-- why-clients-choose-section end -->
 
     <!-- resources-knowledge-hub-section start -->
-    <section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #006039e0), url('{{ asset('assets/images/home-banner-1.webp') }}');">
+    <section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #66003f78), url('{{ asset('assets/images/home-banner-1.webp') }}');">
         <div class="container">
             <div class="text-center m-b-50 m-b-xs-40">
                 <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <span class="text-white">Resources</span>
                 </div>
-                <div class="common-title style-color-light m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+                <div class="common-title style-color-light mb-3" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     <h2>Learn before you apply</h2>
                 </div>
+                <div class="w-line m-auto"></div>
                 <p class="text-white m-t-20 m-b-10" style="font-size: 20px; font-weight: 600; line-height: 1.5;">
                     Explore useful guidance, updates, and practical information to make better migration decisions.
                 </p>
@@ -1400,7 +1146,7 @@
                 </p>
             </div>
 
-            <div class="row row-gap-4" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
+            <div class="row row-gap-4 dbla" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                 <div class="col-xl-3 col-md-6">
                     <div class="service-card-3">
                         <div class="service-top">
@@ -1450,16 +1196,11 @@
                     </div>
                 </div>
             </div>
-
-            <div class="text-center m-t-40">
-                <a class='e-primary-btn has-icon active' href="{{ url('reports-newsletters') }}">
-                    Explore Resources
-                    <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
-                </a>
-            </div>
         </div>
     </section>
     <!-- resources-knowledge-hub-section end -->
+
+    @include('partials.testi')
 
     @include('partials.commonCta', [
         'ctaEyebrow' => 'Plan before you apply',
@@ -1471,7 +1212,6 @@
         'ctaSecondaryUrl' => url('contact-us'),
     ])
 
-    @include('partials.testi')
     @include('partials.faq')
     @include('partials.blogs')
 

@@ -1,5 +1,5 @@
 @php
-    $ctaBg = $ctaBg ?? asset('assets/images/services/big6.webp');
+    $ctaBg = $ctaBg ?? asset('img/cta.png');
     $ctaEyebrow = $ctaEyebrow ?? 'Plan before you apply';
     $ctaHeading = $ctaHeading ?? 'Not sure which work visa pathway fits your profile?';
     $ctaLead = $ctaLead ?? 'Speak to Visawizer and get a clearer view of your skilled, sponsored, regional, training, or innovation visa options.';
@@ -12,11 +12,11 @@
 @once
 <style type="text/css">
     .common-cta-banner.study-s8-banner {
-        padding: 70px 0 110px;
+        padding: 70px 0;
     }
     @media (max-width: 767px) {
         .common-cta-banner.study-s8-banner {
-            padding: 50px 0 90px;
+            padding: 50px 0;
         }
     }
     .common-cta-banner .donate-to-us-layout {
@@ -29,9 +29,8 @@
         background: #0000006e;
         backdrop-filter: blur(0);
         text-align: center;
-        max-width: 720px;
-        margin-left: auto;
-        margin-right: auto;
+        max-width: 800px;
+        margin: auto;
     }
     .common-cta-banner .become-volunteer-card .study-s8-lead {
         color: rgba(255, 255, 255, 0.92);
@@ -57,27 +56,13 @@
         flex-wrap: wrap;
         gap: 14px;
         justify-content: center;
-        margin-top: 1.5rem;
-    }
-    .common-cta-banner .e-primary-btn,
-    .common-cta-banner .e-primary-btn:before,
-    .common-cta-banner .e-primary-btn .icon-wrap {
-        border-radius: 12px !important;
-    }
-    .common-cta-banner .e-primary-btn .icon-wrap {
-        border-radius: 10px !important;
     }
     .common-cta-banner .study-btn-ghost-dark {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
-        padding: 14px 26px;
-        border: 2px solid #1f2937;
-        color: #1f2937;
-        font-weight: 600;
-        border-radius: 6px;
-        text-decoration: none;
-        transition: background 0.2s, color 0.2s;
+    padding: 12px 26px;
+    border: 2px solid #1f2937;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
     }
     .common-cta-banner .study-btn-ghost-dark:hover {
         background: #1f2937;
@@ -104,7 +89,8 @@
                 </div>
                 <div class="common-subtitle text-uppercase justify-content-center m-b-10"><span>{{ $ctaEyebrow }}</span></div>
                 <h2>{{ $ctaHeading }}</h2>
-                <p class="study-s8-lead">{{ $ctaLead }}</p>
+                <div class="w-line m-auto"></div>
+                <p class="study-s8-lead pt-3">{{ $ctaLead }}</p>
                 <div class="study-final-actions">
                     <a class="e-primary-btn has-icon" href="{{ $ctaPrimaryUrl }}">
                         {{ $ctaPrimaryLabel }}

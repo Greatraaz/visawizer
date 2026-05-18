@@ -1,12 +1,4 @@
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-65KXEF6Q6C"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-65KXEF6Q6C');
-    </script>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
     <title>{{ $title ?? 'Study, Work, and Travel Across Australia | Discover endless opportunities in Australia' }}</title>
@@ -31,6 +23,7 @@
 
     <link rel="stylesheet" href="{{ asset('assets/css/spacing.css') }}"/>
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}"/>
+    <link rel="stylesheet" href="{{ asset('assets/css/vj.css') }}"/>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
     <meta name="csrf-token" content="{{ csrf_token() }}">
