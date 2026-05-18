@@ -694,10 +694,6 @@
     box-shadow: 0 24px 56px rgba(0, 0, 0, 0.45);
     border: 1px solid rgba(255, 255, 255, 0.14);
 }
-.founder-page .founder-impact-photo {
-    margin-top: clamp(2rem, 4vw, 2.75rem);
-    text-align: center;
-}
 .founder-page .founder-message-grid {
     display: grid;
     gap: clamp(1.75rem, 4vw, 2.5rem);
@@ -785,23 +781,59 @@
     border: 1px solid color-mix(in srgb, var(--theme-color-3) 14%, rgba(15, 19, 24, 0.08));
     box-shadow: 0 20px 56px rgba(15, 19, 24, 0.1);
 }
+.founder-page .founder-section--band-dark .founder-about__intro h2,
 .founder-page .founder-section--band-dark .founder-about__copy h2 {
     color: #fff;
 }
+.founder-page .founder-section--band-dark .founder-about__body p,
 .founder-page .founder-section--band-dark .founder-about__copy p {
     color: #c4cbd4;
 }
+.founder-page .founder-section--band-dark .founder-about__intro .founder-section-kicker,
 .founder-page .founder-section--band-dark .founder-about__copy .founder-section-kicker {
     color: var(--founder-accent-soft);
+}
+.founder-page .founder-section--band-dark .founder-about__intro .founder-cm-goal {
+    color: #e8ecf1;
+}
+.founder-page .founder-about__intro.founder-section-head {
+    max-width: min(58rem, 100%);
+}
+.founder-page .founder-about__intro .founder-cm-goal {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+.founder-page .founder-about__body .founder-about__rule {
+    display: block;
+    width: min(7.5rem, 28%);
+    height: 2px;
+    margin: 1.35rem 0;
+    border: 0;
+    border-radius: 1px;
+    background: rgba(255, 255, 255, 0.88);
+}
+.founder-page .founder-about__body p {
+    margin: 0 0 1.1rem;
+}
+.founder-page .founder-about__body p:last-child {
+    margin-bottom: 0;
 }
 .founder-page .founder-section--band-dark .founder-quote-mark {
     color: color-mix(in srgb, var(--founder-accent) 35%, transparent);
 }
-.founder-page .founder-section--band-light .founder-vision__copy .founder-section-head h2 {
+.founder-page .founder-section--band-light .founder-vision__intro h2 {
     color: var(--founder-ink);
 }
-.founder-page .founder-section--band-light .founder-vision__copy .founder-section-head p {
-    color: var(--founder-muted);
+.founder-page .founder-vision__intro.founder-section-head {
+    max-width: min(58rem, 100%);
+}
+.founder-page .founder-vision__intro .founder-cm-manifesto--sub {
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+.founder-page .founder-vision__body p {
+    margin: 0 0 1rem;
 }
 .founder-page .founder-section--band-light .founder-belief {
     background: linear-gradient(145deg, #f8f9fc 0%, #f0f2f7 100%);
@@ -1795,10 +1827,6 @@
     padding: 30px 20px;
 }
 
-.founder-page .founder-impact-photo {
-    display: none;
-}
-
 /* ===============================
    CTA — minimal, clean
 ================================ */
@@ -2161,10 +2189,6 @@
 }
 
 /* IMPACT: clean stat cards */
-.founder-page .founder-impact-photo {
-    display: none !important;
-}
-
 .founder-page .founder-stats {
     grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
     gap: 18px !important;
@@ -2382,9 +2406,8 @@
     text-align: left !important;
 }
 
-.founder-page .founder-vision__copy .founder-section-head {
+.founder-page .founder-vision__copy .founder-vision__body {
     max-width: 38rem;
-    text-align: left;
     margin-left: 0;
     margin-right: 0;
 }
@@ -2473,29 +2496,6 @@
     display: block;
 }
 
-/* Impact */
-.founder-page .founder-impact-photo {
-    display: block !important;
-    margin-top: clamp(2rem, 4vw, 2.75rem);
-    max-width: min(var(--founder-photo-rail), 100%);
-    margin-inline: auto;
-}
-
-.founder-page .founder-impact-photo .founder-cm-portrait__frame {
-    overflow: hidden;
-    border-radius: var(--founder-photo-radius);
-}
-
-.founder-page .founder-impact-photo .founder-cm-portrait__frame > img {
-    width: 100%;
-    aspect-ratio: var(--founder-portrait-ar);
-    height: auto;
-    max-height: 400px;
-    object-fit: cover;
-    object-position: center 20%;
-    display: block;
-}
-
 /* CTA */
 .founder-page .founder-cta__grid {
     grid-template-columns: minmax(0, 1fr) minmax(240px, min(30vw, 300px)) !important;
@@ -2556,12 +2556,17 @@
     }
 
     .founder-page .founder-vision__copy,
-    .founder-page .founder-vision__copy .founder-section-head {
+    .founder-page .founder-vision__intro {
         text-align: center !important;
     }
 
-    .founder-page .founder-vision__copy .founder-section-head {
+    .founder-page .founder-vision__intro {
         max-width: none;
+        margin-inline: auto;
+    }
+
+    .founder-page .founder-vision__copy .founder-vision__body {
+        max-width: 40rem;
         margin-inline: auto;
     }
 
@@ -2618,7 +2623,6 @@
 .founder-page .founder-trust-list .check,
 .founder-page .founder-message-panel,
 .founder-page .founder-stat,
-.founder-page .founder-impact-photo .founder-cm-portrait__frame,
 .founder-page .founder-cta__visual .founder-cm-portrait__frame,
 .founder-page .founder-cta__linkbox a,
 .founder-page .founder-photo-frame,
@@ -2736,6 +2740,11 @@
 
     <section class="founder-section founder-section--band-dark" aria-labelledby="founder-about-title">
         <div class="container">
+            <div class="founder-section-head founder-section-head--center founder-about__intro">
+                <p class="founder-section-kicker" id="founder-about-title">About Ankur Saini</p>
+                <h2 class="mb-3">A Founder Who Understands the Journey Because He Has Lived It</h2>
+                <p class="founder-cm-goal"><strong>Goal:</strong> To offer transparent, structured, and client-focused migration guidance so every visa pathway feels clear, compliant, and achievable.</p>
+            </div>
             <div class="founder-about-grid">
                 <div class="founder-about__figure">
                     <div class="founder-cm-portrait founder-cm-portrait--wide">
@@ -2747,12 +2756,13 @@
                     </div>
                 </div>
                 <div class="founder-about__copy">
-                    <p class="founder-section-kicker" id="founder-about-title">About Ankur Saini</p>
-                    <h2 class="mb-3">A Founder Who Understands the Journey Because He Has Lived It</h2>
-                    <p class="founder-cm-goal"><strong>Goal:</strong> To offer transparent, structured, and client-focused migration guidance so every visa pathway feels clear, compliant, and achievable.</p>
-                    <p>Ankur Saini is not only a migration professional — he is someone who has personally lived the emotions, uncertainty, preparation, and determination involved in moving to Australia.</p>
-                    <p>His own migration journey gave him a deep understanding of the questions people face: which visa pathway is right, how documents should be prepared, what mistakes to avoid, and how a dream becomes a practical, compliant, and achievable plan.</p>
-                    <p>With this understanding, he founded Visawizer Education &amp; Migration Services to offer transparent, structured, and client-focused migration guidance. His approach is built on clarity, honest advice, careful documentation, and consistent support from consultation to outcome.</p>
+                    <div class="founder-about__body">
+                        <p>Ankur Saini is not only a migration professional — he is someone who has personally lived the emotions, uncertainty, preparation, and determination involved in moving to Australia.</p>
+                        <span class="founder-about__rule" aria-hidden="true"></span>
+                        <p>His own migration journey gave him a deep understanding of the questions people face: which visa pathway is right, how documents should be prepared, what mistakes to avoid, and how a dream becomes a practical, compliant, and achievable plan.</p>
+                        <span class="founder-about__rule" aria-hidden="true"></span>
+                        <p>With this understanding, he founded Visawizer Education &amp; Migration Services to offer transparent, structured, and client-focused migration guidance. His approach is built on clarity, honest advice, careful documentation, and consistent support from consultation to outcome.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2760,6 +2770,11 @@
 
     <section class="founder-section founder-section--band-light" aria-labelledby="founder-vision-title">
         <div class="container">
+            <div class="founder-section-head founder-section-head--center founder-vision__intro">
+                <p class="founder-section-kicker" id="founder-vision-title">Vision</p>
+                <h2>Making Australian Migration Simpler, Clearer, and More Human</h2>
+                <p class="founder-cm-manifesto--sub">Plain-language guidance, practical pathways, and advice you can trust.</p>
+            </div>
             <div class="founder-vision-split">
                 <div class="founder-vision__img">
                     <div class="founder-cm-portrait founder-cm-portrait--inline">
@@ -2770,10 +2785,7 @@
                     </div>
                 </div>
                 <div class="founder-vision__copy">
-                    <div class="founder-section-head founder-cm-manifesto">
-                        <p class="founder-section-kicker" id="founder-vision-title">Vision</p>
-                        <h2>Making Australian Migration Simpler, Clearer, and More Human</h2>
-                        <p class="founder-cm-manifesto--sub">Plain-language guidance, practical pathways, and advice you can trust.</p>
+                    <div class="founder-vision__body">
                         <p>Ankur&apos;s vision is to make migration advice more accessible, practical, and trustworthy for people planning their future in Australia. At Visawizer, the focus is not only on submitting applications — it is on understanding every client&apos;s circumstances, identifying the most suitable pathway, explaining the process in plain language, and helping clients move forward with confidence.</p>
                     </div>
                     <div class="founder-belief">
@@ -2995,14 +3007,6 @@
                 <div class="founder-stat" data-aos="fade-up" data-aos-duration="600" data-aos-delay="180">
                     <p class="founder-stat__val">Melbourne-Based</p>
                     <p class="founder-stat__lbl">Australian education &amp; migration services</p>
-                </div>
-            </div>
-            <div class="founder-impact-photo m-t-40" data-aos="fade-up">
-                <div class="founder-cm-portrait founder-cm-portrait--inline">
-                    <div class="founder-cm-portrait__blob founder-cm-portrait__blob--light" aria-hidden="true"></div>
-                    <div class="founder-cm-portrait__frame">
-                        <img src="{{ $founderImg('ankur-saini-impact.jpeg') }}" width="640" height="800" alt="Visawizer Australian migration and education services Melbourne" loading="lazy" decoding="async">
-                    </div>
                 </div>
             </div>
         </div>
