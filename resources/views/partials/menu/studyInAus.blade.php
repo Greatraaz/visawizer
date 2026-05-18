@@ -357,7 +357,7 @@
       <div class="featured-panel">
         <div>
           <div class="featured-img-wrap">
-            <img src="{{ asset('assets/images/services/image-43.webp') }}" alt="Students studying in Australia">
+            <img src="{{ asset('assets/imgs/study/s3-life.webp') }}" alt="Students studying in Australia">
             <span class="featured-badge">✦ Expert Guidance</span>
           </div>
 

@@ -1044,7 +1044,7 @@
     </div>
 </section>
 
-<section class="donate-to-us-section study-topic-final" style="--study-topic-final-bg: url('{{ asset($page['images']['hero_bg']) }}');">
+<section class="donate-to-us-section study-topic-final" style="--study-topic-final-bg: url('{{ asset($page['images']['final_bg'] ?? $page['images']['hero_bg']) }}');">
     <div class="container">
         <div class="donate-to-us-layout">
             <div class="become-volunteer-card mb-0">
