@@ -302,12 +302,89 @@
     .study-s3-mission {
         padding-top: 40px !important;
     }
+    .study-s3-mission .thumb {
+        min-height: 520px;
+        padding: 0 !important;
+        width: 100%;
+    }
+    .study-s3-mission .thumb .thumb-1,
+    .study-s3-mission .thumb .thumb-2,
+    .study-s3-mission .thumb .thumb-3 {
+        position: absolute;
+        margin: 0;
+        text-align: initial;
+    }
+    .study-s3-mission .thumb .thumb-1 {
+        top: 0;
+        right: 36px;
+        width: 72%;
+        z-index: 1;
+    }
+    .study-s3-mission .thumb .thumb-2 {
+        top: 150px;
+        left: 0;
+        width: 78%;
+        z-index: 3;
+    }
+    .study-s3-mission .thumb .thumb-3 {
+        right: 0;
+        bottom: 0;
+        width: 46%;
+        z-index: 2;
+    }
+    .study-s3-mission .thumb img,
+    .study-s3-mission .thumb .shape-wrapped-thumb {
+        width: 100%;
+        display: block;
+        border-radius: 14px;
+        object-fit: cover;
+        box-shadow: 0 22px 48px rgba(15, 23, 42, 0.16);
+    }
+    .study-s3-mission .thumb .thumb-1 > img {
+        height: 260px;
+    }
+    .study-s3-mission .thumb .thumb-2 > img {
+        height: 300px;
+        border: 6px solid #fff;
+    }
+    .study-s3-mission .thumb .thumb-3 img {
+        height: 210px;
+        border: 6px solid #fff;
+    }
     @media (max-width: 767px) {
         .study-s2-services {
             padding-bottom: 24px !important;
         }
         .study-s3-mission {
             padding-top: 24px !important;
+        }
+    }
+    @media (max-width: 1199px) {
+        .study-s3-mission .thumb {
+            min-height: 500px;
+            max-width: 620px;
+            margin: 0 auto;
+        }
+    }
+    @media (max-width: 767px) {
+        .study-s3-mission .thumb {
+            min-height: auto;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 16px;
+            max-width: 100%;
+        }
+        .study-s3-mission .thumb .thumb-1,
+        .study-s3-mission .thumb .thumb-2,
+        .study-s3-mission .thumb .thumb-3 {
+            position: static;
+            width: 100%;
+        }
+        .study-s3-mission .thumb .thumb-1 > img,
+        .study-s3-mission .thumb .thumb-2 > img,
+        .study-s3-mission .thumb .thumb-3 img {
+            height: 230px;
+            border: 0;
         }
     }
 

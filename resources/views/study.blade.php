@@ -4,7 +4,7 @@
 
 
 {{-- Section 1: Hero --}}
-<section class="hero-section-5 study-s1-hero" style="background-image: url('{{ asset('assets/images/services/banner-2.webp') }}');">
+<section class="hero-section-5 study-s1-hero" style="background-image: url('{{ asset('assets/imgs/study/s1-bg.webp') }}');">
     <div class="container">
         <div class="hero-content-5">
             <div class="study-hero-tag" data-aos="fade-up" data-aos-delay="100">Your Australian study journey starts here</div>
@@ -25,7 +25,7 @@
                 <a class="study-btn-outline-light" href="#study-visa-support">Explore Student Visa Options</a>
             </div>
         </div>
-        <div class="shape"><img alt="" src="{{ asset('assets/img/shapes/shape-39.webp') }}"></div>
+        <div class="shape"><img alt="" src="{{ asset('assets/imgs/study/s1-shape.webp') }}"></div>
     </div>
 </section>
 
@@ -39,7 +39,7 @@
         </div>
         <div class="row row-gap-4 study-s2-visual-grid" data-aos="fade-up" data-aos-delay="150">
             <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="study-path-visual-card" style="background-image: url('{{ asset('assets/images/cmpd.webp') }}');">
+                <div class="study-path-visual-card" style="background-image: url('{{ asset('assets/imgs/study/s2-edu.webp') }}');">
                     <div class="study-path-visual-inner">
                         <div class="study-path-icon"><i class="fa-light fa-graduation-cap"></i></div>
                         <h3>Education Counselling</h3>
@@ -48,7 +48,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="study-path-visual-card" style="background-image: url('{{ asset('assets/images/services/banner-3.webp') }}');">
+                <div class="study-path-visual-card" style="background-image: url('{{ asset('assets/imgs/study/s2-admit.webp') }}');">
                     <div class="study-path-visual-inner">
                         <div class="study-path-icon"><i class="fa-light fa-building-columns"></i></div>
                         <h3>Admissions Support</h3>
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="study-path-visual-card" style="background-image: url('{{ asset('assets/images/services/image-21.webp') }}');">
+                <div class="study-path-visual-card" style="background-image: url('{{ asset('assets/imgs/study/s2-visa.webp') }}');">
                     <div class="study-path-visual-inner">
                         <div class="study-path-icon"><i class="fa-light fa-passport"></i></div>
                         <h3>Student Visa Guidance</h3>
@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="study-path-visual-card" style="background-image: url('{{ asset('assets/images/services/image-52.webp') }}');">
+                <div class="study-path-visual-card" style="background-image: url('{{ asset('assets/imgs/study/s2-oshc.webp') }}');">
                     <div class="study-path-visual-inner">
                         <div class="study-path-icon"><i class="fa-light fa-heart-pulse"></i></div>
                         <h3>OSHC Assistance</h3>
@@ -75,7 +75,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="study-path-visual-card" style="background-image: url('{{ asset('assets/images/services/image-43.webp') }}');">
+                <div class="study-path-visual-card" style="background-image: url('{{ asset('assets/imgs/study/s2-change.webp') }}');">
                     <div class="study-path-visual-inner">
                         <div class="study-path-icon"><i class="fa-light fa-arrows-rotate"></i></div>
                         <h3>Course &amp; College Change</h3>
@@ -84,7 +84,7 @@
                 </div>
             </div>
             <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="study-path-visual-card" style="background-image: url('{{ asset('assets/images/area/image-31.webp') }}');">
+                <div class="study-path-visual-card" style="background-image: url('{{ asset('assets/imgs/study/s2-grad.webp') }}');">
                     <div class="study-path-visual-inner">
                         <div class="study-path-icon"><i class="fa-light fa-route"></i></div>
                         <h3>Graduate Pathways</h3>
@@ -103,11 +103,11 @@
             <div class="col-xl-6">
                 <div class="thumb px-xl-5 left" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <div class="thumb-1">
-                        <img src="{{ asset('assets/images/services/image-21.webp') }}" alt="Study planning">
+                        <img src="{{ asset('assets/imgs/study/s3-plan.webp') }}" alt="Study planning">
                     </div>
-                    <div class="thumb-2"><img src="{{ asset('assets/images/services/image-52.webp') }}" alt="Learning environment"></div>
+                    <div class="thumb-2"><img src="{{ asset('assets/imgs/study/s3-life.webp') }}" alt="Learning environment"></div>
                     <div class="thumb-3">
-                        <div class="shape-wrapped-thumb"><img src="{{ asset('assets/images/services/image-43.webp') }}" alt="Student support"></div>
+                        <div class="shape-wrapped-thumb"><img src="{{ asset('assets/imgs/study/s3-support.webp') }}" alt="Student support"></div>
                     </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@
             </div>
         </div>
     </div>
-    <div class="shape"><img alt="" src="{{ asset('assets/img/shapes/shape-40.webp') }}"></div>
+    <div class="shape"><img alt="" src="{{ asset('assets/imgs/study/s3-shape.webp') }}"></div>
 </section>
 
 {{-- Section 4: Journey steps — dark band + service-card-3 grid (reference: featured / training mix) --}}
@@ -233,7 +233,7 @@
         <div class="make-donate-layout" data-aos="fade-up" data-aos-duration="1000">
             <div class="row align-items-center">
                 <div class="col-xl-5">
-                    <div class="donate-left" style="background-image: url('{{ asset('assets/img/shapes/shape-43.webp') }}');">
+                    <div class="donate-left" style="background-image: url('{{ asset('assets/imgs/study/s6-bg.webp') }}');">
                         <div class="common-subtitle m-b-15" style="color: rgba(255,255,255,0.9);"><span>Already studying in Australia?</span></div>
                         <h4 class="text-white m-b-20">Support for course changes, college changes, and study decisions</h4>
                         <p class="m-b-0">If your current course, provider, or study direction no longer fits your goal, we can help you review your options carefully.</p>
@@ -251,7 +251,7 @@
                                 </a>
                             </div>
                             <div class="col-md-6 m-t-xs-30">
-                                <img src="{{ asset('assets/images/services/side6.webp') }}" alt="Students reviewing study options in Australia">
+                                <img src="{{ asset('assets/imgs/study/s6-side.webp') }}" alt="Students reviewing study options in Australia">
                             </div>
                         </div>
                     </div>
@@ -267,7 +267,7 @@
         <div class="row row-gap-5 align-items-center">
             <div class="col-xl-6 order-xl-2" data-aos="fade-up" data-aos-delay="150">
                 <div class="study-grad-thumb">
-                    <img src="{{ asset('assets/images/area/image-31.webp') }}" alt="Graduate planning next steps in Australia">
+                    <img src="{{ asset('assets/imgs/study/s7-grad.webp') }}" alt="Graduate planning next steps in Australia">
                 </div>
             </div>
             <div class="col-xl-6 order-xl-1" data-aos="fade-up">
@@ -292,7 +292,7 @@
 </section>
 
 {{-- Section 8: donate-to-us banner CTA (reference: collaborations bottom / recommended-books) --}}
-<section class="donate-to-us-section study-s8-banner" style="background-image: url('{{ asset('assets/images/services/big6.webp') }}');">
+<section class="donate-to-us-section study-s8-banner" style="background-image: url('{{ asset('assets/imgs/study/s8-bg.webp') }}');">
     <div class="container">
         <div class="donate-to-us-layout">
             <div class="become-volunteer-card mb-0" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
@@ -310,7 +310,7 @@
                     <a class="study-btn-ghost-dark is-on-dark" href="{{ url('contact-us') }}">Contact Visawizer</a>
                 </div>
             </div>
-            <div class="icon-shape-1"><img alt="" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000" src="{{ asset('assets/img/shapes/shape-44.webp') }}"></div>
+            <div class="icon-shape-1"><img alt="" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000" src="{{ asset('assets/imgs/study/s8-shape.webp') }}"></div>
         </div>
     </div>
 </section>
