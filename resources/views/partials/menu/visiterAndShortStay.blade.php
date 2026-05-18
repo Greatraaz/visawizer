@@ -20,7 +20,7 @@
                 </li>
                 <li>
                   <a href="{{ url('visa/e-visitor-651') }}">
-                    E-Visitor Visa (Subclass 651)
+                    Visitor Visa (Subclass 651)
                     <span class="icon"><i class="fa-regular fa-arrow-up-right"></i></span>
                   </a>
                 </li>
@@ -64,7 +64,7 @@
                     <div class="detail-list">
                       <ul>
                         <li>
-                          <a href="{{ url('visa/work-holiday-417') }}">
+                          <a href="{{ url('service/visa/work-holiday-417') }}">
                             Work and Holiday Visa (Subclass 417)
                             <span class="icon"><i class="fa-regular fa-arrow-up-right"></i></span>
                           </a>
