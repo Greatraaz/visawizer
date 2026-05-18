@@ -160,7 +160,7 @@
     }
     @media (max-width: 991px) {
         .work-visa-topic-page .work-visa-hero.wvt-hero.hero-section-5 {
-            padding: 64px 0 96px !important;
+            padding: 75px 0 95px !important;
         }
         .work-visa-topic-page .work-visa-hero .hero-content-5 {
             max-width: 94%;
@@ -793,11 +793,12 @@
 
     
 
+    /* Approach — premium process flow (no wide hero image dependency) */
     .work-visa-topic-page .wvt-pair-col--strategy {
-        display: grid;
-        grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.35fr);
-        gap: clamp(26px, 4vw, 42px);
+        display: flex;
+        flex-direction: column;
         align-items: stretch;
+        gap: 0;
         background:
             radial-gradient(circle at top right,
             rgba(255, 255, 255, 0.06),
@@ -811,21 +812,7 @@
     }
 
     .work-visa-topic-page .wvt-pair-col--strategy .wvt-strategy-figure {
-        position: relative;
-        z-index: 1;
-        min-height: 100%;
-        border-radius: 22px;
-        overflow: hidden;
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        box-shadow: 0 22px 48px rgba(0, 0, 0, 0.26);
-    }
-
-    .work-visa-topic-page .wvt-pair-col--strategy .wvt-strategy-figure img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        min-height: 280px;
-        object-fit: cover;
+        display: none;
     }
 
     .work-visa-topic-page .wvt-pair-col--strategy::before {
@@ -928,13 +915,7 @@
 
     @media (max-width: 991px) {
         .work-visa-topic-page .wvt-pair-col--strategy {
-            grid-template-columns: 1fr;
             padding: 28px !important;
-        }
-
-        .work-visa-topic-page .wvt-pair-col--strategy .wvt-strategy-figure img {
-            min-height: 240px;
-            max-height: 360px;
         }
     }
 
@@ -962,31 +943,15 @@
 
     
 
+    /* Reality check — alert / checklist (clean contrast vs Approach) */
     .work-visa-topic-page .wvt-pair-col--challenges {
         position: relative;
         overflow: hidden;
-        background:
-            radial-gradient(ellipse 100% 70% at 100% -10%, rgba(177, 0, 115, 0.07) 0%, transparent 52%),
-            radial-gradient(ellipse 80% 50% at -5% 100%, rgba(122, 0, 70, 0.06) 0%, transparent 48%),
-            linear-gradient(168deg, #ffffff 0%, #fefbfd 38%, #f5f0fa 72%, #faf8fc 100%);
+        background: #ffffff;
         border-radius: 28px !important;
         padding: 42px !important;
-        border: 1px solid rgba(177, 0, 115, 0.14) !important;
-        box-shadow:
-            0 20px 50px rgba(15, 23, 42, 0.06),
-            0 0 0 1px rgba(255, 255, 255, 0.65) inset;
-    }
-
-    .work-visa-topic-page .wvt-pair-col--challenges::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        width: 6px;
-        background: linear-gradient(180deg, #e11d8c 0%, #b10073 38%, #7a0046 72%, #4a0a32 100%);
-        border-radius: 28px 0 0 28px;
-        pointer-events: none;
+        border: 1px solid #eadff0 !important;
+        box-shadow: 0 20px 50px rgba(15, 23, 42, 0.05);
     }
 
     .work-visa-topic-page .wvt-pair-col--challenges > * {
@@ -1165,13 +1130,13 @@
 
     
     .work-visa-topic-page .work-visa-hero.wvt-hero.hero-section-5 {
-        padding: 64px 0 104px !important;
+        padding: 95px 0 115px !important;
         min-height: 0 !important;
         overflow: visible;
     }
 
     .work-visa-topic-page .work-visa-hero .hero-content-5 {
-        max-width: min(100%, 1240px);
+        max-width: min(100%, 820px);
     }
 
     .work-visa-topic-page .work-visa-hero h1 {
@@ -1181,14 +1146,14 @@
 
     .work-visa-topic-page .work-visa-hero .hero-sub,
     .work-visa-topic-page .work-visa-hero .hero-body {
-        max-width: 100%;
+        max-width: min(100%, 700px);
         line-height: 1.65;
     }
 
     
     .work-visa-topic-page .wvt-intro-band {
-        margin-top: clamp(24px, 4vw, 48px) !important;
-        padding: clamp(16px, 2.5vw, 28px) 0 64px !important;
+        margin-top: -58px !important;
+        padding: 0 0 64px !important;
     }
 
     .work-visa-topic-page .wvt-intro-band__card {
@@ -1295,7 +1260,7 @@
     
     @media (max-width: 991px) {
         .work-visa-topic-page .work-visa-hero.wvt-hero.hero-section-5 {
-            padding: 64px 0 96px !important;
+            padding: 75px 0 95px !important;
         }
 
         .work-visa-topic-page .wvt-topic-section {

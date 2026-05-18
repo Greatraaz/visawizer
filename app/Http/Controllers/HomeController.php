@@ -373,6 +373,15 @@ class HomeController extends Controller
         return view('aboutUs');
     }
 
+    public function founderAnkurSaini()
+    {
+        $title = 'Ankur Saini | Founder of Visawizer | Registered Migration Agent Melbourne';
+        $description = 'Meet Ankur Saini, Founder of Visawizer Education & Migration Services and Registered Migration Agent MARN 2117640. Based in Melbourne, Ankur helps students, skilled migrants, families, and employers with trusted Australian migration guidance.';
+        $keywords = 'Ankur Saini, Visawizer founder, registered migration agent Melbourne, MARN 2117640, Australian migration, student visa, skilled migration, employer sponsored visa';
+
+        return view('founder', compact('title', 'description', 'keywords'));
+    }
+
     public function ethicalLeadership()
     {
         return view('ethicalLeadership');

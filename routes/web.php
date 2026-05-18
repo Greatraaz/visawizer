@@ -37,6 +37,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('contact/book-appointment', 'bookAppointment')->name('contact.book-appointment');
     Route::get('contact-us', 'contactUs')->name('contact-us');
     Route::get('about-us', 'aboutUs')->name('about-us');
+    Route::get('ankur-saini-founder-visawizer', 'founderAnkurSaini')->name('founder.ankur');
 
     Route::get('blogs', 'blogs')->name('blogs.index');
     Route::get('blog/{slug}', 'blogSingle')->name('blogs.show');
