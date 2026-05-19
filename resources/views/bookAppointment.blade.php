@@ -19,9 +19,17 @@
     }
     .appointment-page .appointment-hero {
         padding: clamp(70px, 8vw, 110px) 0;
-        background:
-            linear-gradient(110deg, rgba(7, 16, 25, 0.92), rgba(7, 16, 25, 0.7)),
-            url('{{ asset('assets/images/banner/breadcrumb-bg.webp') }}') center / cover;
+        background-image:
+            linear-gradient(
+                165deg,
+                color-mix(in srgb, var(--theme-color-3) 72%, transparent) 0%,
+                color-mix(in srgb, var(--theme-color-3) 88%, #060308) 45%,
+                color-mix(in srgb, var(--theme-color-3) 94%, #030204) 100%
+            ),
+            url('{{ asset('assets/imgs/study/study-visas/hero-bg.webp') }}');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         color: #ffffff;
         text-align: center;
     }
@@ -40,27 +48,59 @@
     .appointment-page .appointment-section {
         padding: clamp(64px, 7vw, 98px) 0;
     }
-    .appointment-page .appointment-light {
-        background: #ffffff;
+
+    .appointment-page .appointment-section--alt-light {
+        background: linear-gradient(180deg, #f5f7fb 0%, #ffffff 72%);
     }
-    .appointment-page .appointment-soft {
-        background:
-            linear-gradient(90deg, rgba(7, 16, 25, 0.03) 1px, transparent 1px),
-            linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
-        background-size: 42px 42px, auto;
+
+    .appointment-page .appointment-section--alt-dark {
+        background: linear-gradient(
+            175deg,
+            color-mix(in srgb, var(--theme-color-3) 86%, #060308) 0%,
+            color-mix(in srgb, var(--theme-color-3) 92%, #030205) 55%,
+            color-mix(in srgb, var(--theme-color-3) 88%, #0a0710) 100%
+        );
+        color: rgba(255, 255, 255, 0.92);
     }
-    .appointment-page .appointment-dark {
-        background:
-            radial-gradient(circle at 14% 18%, color-mix(in srgb, var(--appointment-accent) 18%, transparent), transparent 28%),
-            radial-gradient(circle at 86% 78%, rgba(215, 166, 66, 0.18), transparent 28%),
-            linear-gradient(145deg, #071019 0%, #132235 58%, #101827 100%);
+
+    .appointment-page .appointment-section--alt-dark h2 {
         color: #ffffff;
+    }
+
+    .appointment-page .appointment-section--alt-dark .appointment-section-head p,
+    .appointment-page .appointment-section--alt-dark .appointment-lead {
+        color: rgba(255, 255, 255, 0.78);
+    }
+
+    .appointment-page .appointment-section--alt-dark .appointment-eyebrow {
+        color: rgba(255, 255, 255, 0.94);
+    }
+
+    .appointment-page .appointment-section--alt-dark .appointment-eyebrow::before {
+        background: rgba(255, 255, 255, 0.45);
     }
     .appointment-page .appointment-intro-grid {
         display: grid;
-        grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
-        gap: clamp(28px, 5vw, 72px);
+        grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+        gap: clamp(28px, 5vw, 48px);
         align-items: center;
+    }
+
+    .appointment-page .appointment-intro-photo {
+        margin: 0;
+        border-radius: 9px;
+        overflow: hidden;
+        box-shadow: 0 18px 44px rgba(9, 32, 79, 0.1);
+        border: 1px solid color-mix(in srgb, var(--theme-color-3) 14%, #d8e0ef);
+        line-height: 0;
+    }
+
+    .appointment-page .appointment-intro-photo img {
+        width: 100%;
+        height: clamp(280px, 32vw, 400px);
+        display: block;
+        object-fit: cover;
+        object-position: center top;
     }
     .appointment-page .appointment-eyebrow {
         display: inline-flex;
@@ -369,17 +409,40 @@
         color: var(--appointment-gold);
         margin-right: 8px;
     }
-    .appointment-page .appointment-soft .appointment-back-link {
-        color: var(--appointment-ink);
+    .appointment-page .appointment-section--alt-dark .appointment-back-link,
+    .appointment-page .appointment-section--alt-dark .appointment-schedule-title {
+        color: #ffffff;
     }
-    .appointment-page .appointment-soft .appointment-schedule-title {
-        color: var(--appointment-ink);
+
+    .appointment-page .appointment-section--alt-dark .appointment-highlight-card {
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.16);
+        color: #ffffff;
+        box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
     }
-    .appointment-page .appointment-soft .appointment-highlight-card {
+
+    .appointment-page .appointment-section--alt-dark .appointment-highlight-card i {
+        color: rgba(255, 255, 255, 0.85);
+    }
+
+    .appointment-page .appointment-testi-wrap .testimonial,
+    .appointment-page .appointment-testi-wrap .testimonial.p-t-100 {
+        padding-top: 0 !important;
+        margin-bottom: 0 !important;
+    }
+
+    .appointment-page .appointment-blogs-wrap .latest-blog-section {
+        padding-top: 0 !important;
+        background: transparent;
+    }
+
+    .appointment-page .appointment-blogs-wrap .common-title h2,
+    .appointment-page .appointment-blogs-wrap .common-subtitle span {
+        color: #ffffff;
+    }
+
+    .appointment-page .appointment-blogs-wrap .blog-card {
         background: #ffffff;
-        border: 1px solid var(--appointment-border);
-        color: var(--appointment-ink);
-        box-shadow: 0 14px 32px rgba(15, 23, 42, 0.07);
     }
     @media (max-width: 991px) {
         .appointment-page .appointment-intro-grid,
@@ -420,22 +483,30 @@
         </div>
     </section>
 
-    <section class="appointment-section appointment-light">
+    <section class="appointment-section appointment-section--alt-light">
         <div class="container">
             <div class="appointment-intro-grid">
-                <div data-aos="fade-up">
+                <div class="appointment-intro-copy" data-aos="fade-up">
                     <div class="appointment-eyebrow">{{ $hero['eyebrow'] }}</div>
                     <h2>{{ $hero['heading'] }}</h2>
-                </div>
-                <div data-aos="fade-up" data-aos-delay="120">
                     <p class="appointment-lead">{{ $hero['subheading'] }}</p>
                     <p class="appointment-lead m-t-15">{{ $hero['content'] }}</p>
                 </div>
+                <figure class="appointment-intro-photo" data-aos="fade-up" data-aos-delay="120">
+                    <img
+                        src="{{ asset('assets/imgs/study/career-guidance/hero-bg.webp') }}"
+                        alt="Professional visa and migration consultation to explore Australian visa pathways."
+                        width="960"
+                        height="1080"
+                        loading="lazy"
+                        decoding="async"
+                    />
+                </figure>
             </div>
         </div>
     </section>
 
-    <section class="appointment-section appointment-soft" id="select-appointment">
+    <section class="appointment-section appointment-section--alt-dark" id="select-appointment">
         <div class="container">
             <div id="appointment-list-panel" class="appointment-panel">
                 <div class="appointment-section-head" data-aos="fade-up">
@@ -534,8 +605,13 @@
         </div>
     </section>
 
-    @include('partials.testi')
-    @include('partials.blogs')
+    <div class="appointment-section appointment-section--alt-light appointment-testi-wrap">
+        @include('partials.testi')
+    </div>
+
+    <div class="appointment-section appointment-section--alt-dark appointment-blogs-wrap">
+        @include('partials.blogs')
+    </div>
 </div>
 
 <script>
