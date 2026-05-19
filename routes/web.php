@@ -33,6 +33,8 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('visitor-short-stay', 'visitorShortStay')->name('visitor-short-stay.index');
     Route::get('protection-appeals-humanitarian', 'protectionAppealsHumanitarian')->name('protection-appeals-humanitarian.index');
 
+    Route::get('visa-guide', 'visaGuide')->name('visa-guide');
+
     Route::get('book-appointment', 'bookAppointment')->name('book-appointment');
     Route::get('contact/book-appointment', 'bookAppointment')->name('contact.book-appointment');
     Route::get('contact-us', 'contactUs')->name('contact-us');

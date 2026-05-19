@@ -28,6 +28,15 @@ class HomeController extends Controller
         return view('study');
     }
 
+    public function visaGuide()
+    {
+        $title = 'Australian Visa Guide | Visawizer Education & Migration Services';
+        $description = 'Explore Australian visa pathways with Visawizer. Compare student, skilled, employer sponsored, visitor, partner, family, protection and appeal options with clear guidance from Melbourne-based migration professionals.';
+        $keywords = 'Australian visa guide, student visa Australia, skilled migration, partner visa, visitor visa, employer sponsored visa, migration agent Melbourne, Visawizer';
+
+        return view('partials.visa-guide-main', compact('title', 'description', 'keywords'));
+    }
+
     public function bookAppointment()
     {
         $appointmentPage = BookAppointmentData::page();

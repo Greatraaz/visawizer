@@ -1,0 +1,1260 @@
+/* Visa guide — scoped to .visa-guide-page; uses --theme-color-3 from main.css */
+
+    .visa-guide-page {
+      --vw-navy: #1a0d14;
+      --vw-blue: var(--theme-color-3);
+      --vw-sky: color-mix(in srgb, var(--theme-color-3) 12%, #ffffff);
+      --vw-gold: #85bf18;
+      --vw-orange: var(--theme-color-3);
+      --vw-text: #24324b;
+      --vw-muted: #6d7890;
+      --vw-border: #dfe8f5;
+      --vw-white: #ffffff;
+      --vw-light: #f8fbff;
+      --vw-green: #16a36a;
+      --vw-shadow: 0 18px 45px rgba(9, 32, 79, 0.12);
+      --vw-radius: 22px;
+      font-family: var(--dm-sans-font), system-ui, sans-serif;
+      color: var(--vw-text);
+      background: var(--vw-white);
+      line-height: 1.6;
+    }
+
+    .visa-guide-page h1,
+    .visa-guide-page h2,
+    .visa-guide-page h3 {
+      font-family: var(--outfit-font), system-ui, sans-serif;
+    }
+
+    .visa-guide-page a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .visa-guide-page .vw-page {
+      overflow-x: hidden;
+      overflow-y: visible;
+    }
+
+    .visa-guide-page .vw-container {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .visa-guide-page .vw-btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+      margin-top: 28px;
+    }
+
+    .visa-guide-page .vw-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: all 0.25s ease;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .visa-guide-page .vw-btn-primary {
+      color: var(--theme-color-3);
+      background: var(--vw-white);
+      border-color: rgba(255, 255, 255, 0.65);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.22);
+    }
+
+    .visa-guide-page .vw-btn-primary:hover {
+      transform: translateY(-2px);
+      background: #f4f6fb;
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.26);
+    }
+
+    .visa-guide-page .vw-btn-secondary {
+      color: var(--vw-navy);
+      background: var(--vw-white);
+      border-color: rgba(255, 255, 255, 0.55);
+    }
+
+    .visa-guide-page .vw-btn-outline {
+      color: var(--vw-navy);
+      background: transparent;
+      border-color: var(--vw-border);
+    }
+
+    .visa-guide-page .vw-section {
+      padding: 86px 0;
+      position: relative;
+    }
+
+    .visa-guide-page .vw-section-small {
+      padding: 64px 0;
+    }
+
+    .visa-guide-page .vw-section--under-hero.vw-section-small {
+      padding-top: calc(64px + clamp(40px, 5vw, 56px));
+      padding-bottom: 64px;
+    }
+
+    .visa-guide-page .vw-intro-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+      gap: clamp(28px, 5vw, 52px);
+      align-items: center;
+    }
+
+    .visa-guide-page .vw-intro-copy .vw-subheading {
+      max-width: none;
+      margin: 0;
+    }
+
+    .visa-guide-page .vw-intro-photo {
+      margin: 0;
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: 0 18px 44px rgba(9, 32, 79, 0.12);
+      border: 1px solid color-mix(in srgb, var(--theme-color-3) 14%, #d8e0ef);
+      line-height: 0;
+    }
+
+    .visa-guide-page .vw-intro-photo img {
+      width: 100%;
+      height: clamp(240px, 28vw, 340px);
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    /* Alternating section themes (content below hero) */
+    .visa-guide-page .vw-section.vw-section--alt-light {
+      background: linear-gradient(180deg, #f5f7fb 0%, #ffffff 72%);
+    }
+
+    .visa-guide-page .vw-section.vw-section--alt-dark {
+      background: linear-gradient(
+        175deg,
+        color-mix(in srgb, var(--theme-color-3) 86%, #060308) 0%,
+        color-mix(in srgb, var(--theme-color-3) 92%, #030205) 55%,
+        color-mix(in srgb, var(--theme-color-3) 88%, #0a0710) 100%
+      );
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .visa-guide-page .vw-section.vw-section--alt-dark .vw-heading {
+      color: #ffffff;
+    }
+
+    .visa-guide-page .vw-section.vw-section--alt-dark .vw-subheading {
+      color: rgba(255, 255, 255, 0.78);
+    }
+
+    .visa-guide-page .vw-section.vw-section--alt-dark .vw-eyebrow {
+      background: rgba(255, 255, 255, 0.12);
+      color: rgba(255, 255, 255, 0.94);
+    }
+
+    /* Pathway comparison table */
+    .visa-guide-page .vw-compare-header {
+      margin-bottom: clamp(32px, 5vw, 44px);
+    }
+
+    .visa-guide-page .vw-compare-table-wrap {
+      overflow-x: auto;
+      border-radius: 9px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: 0 20px 48px rgba(0, 0, 0, 0.22);
+      background: #ffffff;
+    }
+
+    .visa-guide-page .vw-compare-table {
+      width: 100%;
+      min-width: 920px;
+      border-collapse: collapse;
+      background: #ffffff;
+    }
+
+    .visa-guide-page .vw-compare-table thead th {
+      padding: 16px 18px;
+      text-align: left;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #ffffff;
+      background: linear-gradient(
+        135deg,
+        var(--theme-color-3),
+        color-mix(in srgb, var(--theme-color-3) 72%, #0a0610)
+      );
+      border-bottom: 1px solid color-mix(in srgb, #ffffff 16%, var(--theme-color-3));
+    }
+
+    .visa-guide-page .vw-compare-table thead th:first-child {
+      border-radius: 8px 0 0 0;
+    }
+
+    .visa-guide-page .vw-compare-table thead th:last-child {
+      border-radius: 0 8px 0 0;
+    }
+
+    .visa-guide-page .vw-compare-table tbody td {
+      padding: 18px;
+      vertical-align: top;
+      color: var(--vw-muted);
+      font-size: 15px;
+      line-height: 1.55;
+      border-bottom: 1px solid color-mix(in srgb, var(--theme-color-3) 10%, #e8edf5);
+      background: #ffffff;
+    }
+
+    .visa-guide-page .vw-compare-table tbody tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .visa-guide-page .vw-compare-table tbody tr:nth-child(even) td {
+      background: color-mix(in srgb, var(--theme-color-3) 3%, #ffffff);
+    }
+
+    .visa-guide-page .vw-compare-path {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 170px;
+    }
+
+    .visa-guide-page .vw-compare-num {
+      flex: 0 0 auto;
+      width: 36px;
+      height: 36px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9px;
+      font-size: 12px;
+      font-weight: 900;
+      color: #ffffff;
+      background: linear-gradient(
+        145deg,
+        var(--theme-color-3),
+        color-mix(in srgb, var(--theme-color-3) 68%, #0a0610)
+      );
+    }
+
+    .visa-guide-page .vw-compare-path strong {
+      color: var(--vw-navy);
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .visa-guide-page .vw-compare-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .visa-guide-page .vw-compare-tags span {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 9px;
+      border-radius: 999px;
+      color: var(--theme-color-3);
+      background: color-mix(in srgb, var(--theme-color-3) 10%, #ffffff);
+      border: 1px solid color-mix(in srgb, var(--theme-color-3) 18%, #dfe8f5);
+    }
+
+    .visa-guide-page .vw-compare-next {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 9px;
+      color: var(--vw-navy);
+      font-weight: 700;
+      background: color-mix(in srgb, var(--theme-color-3) 8%, #f7f9fd);
+      border: 1px solid color-mix(in srgb, var(--theme-color-3) 14%, #dfe8f5);
+    }
+
+    .visa-guide-page .vw-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 13px;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--theme-color-3) 14%, transparent);
+      color: var(--vw-blue);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .visa-guide-page .vw-heading {
+      color: var(--vw-navy);
+      font-size: clamp(32px, 4vw, 54px);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      margin-bottom: 18px;
+    }
+
+    .visa-guide-page .vw-subheading {
+      color: var(--vw-muted);
+      font-size: 18px;
+      max-width: 770px;
+    }
+
+    .visa-guide-page .vw-center {
+      text-align: center;
+    }
+
+    .visa-guide-page .vw-center .vw-subheading {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Hero — rectangular band: photo + theme gradient only (no clip shape) */
+    .visa-guide-page .vw-hero {
+      position: relative;
+      color: var(--vw-white);
+      background: transparent;
+      padding: 0;
+      overflow: visible;
+    }
+
+    .visa-guide-page .vw-hero__bg {
+      background-image:
+        linear-gradient(
+          165deg,
+          color-mix(in srgb, var(--theme-color-3) 72%, transparent) 0%,
+          color-mix(in srgb, var(--theme-color-3) 88%, #060308) 45%,
+          color-mix(in srgb, var(--theme-color-3) 94%, #030204) 100%
+        ),
+        url('../imgs/study/study-visas/hero-bg.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      padding: clamp(72px, 10vw, 96px) 0 clamp(64px, 9vw, 88px);
+    }
+
+    .visa-guide-page .vw-hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      gap: 50px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .visa-guide-page .vw-hero .vw-eyebrow {
+      background: rgba(255, 255, 255, 0.14);
+      color: rgba(255, 255, 255, 0.95);
+    }
+
+    .visa-guide-page .vw-hero h1 {
+      font-size: clamp(42px, 5.7vw, 72px);
+      line-height: 0.98;
+      letter-spacing: -0.055em;
+      margin-bottom: 22px;
+      color: #ffffff;
+    }
+
+    .visa-guide-page .vw-hero p {
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 19px;
+      max-width: 680px;
+    }
+
+    .visa-guide-page .vw-hero .vw-btn-secondary {
+      color: rgba(255, 255, 255, 0.96);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.42);
+    }
+
+    .visa-guide-page .vw-hero .vw-btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: rgba(255, 255, 255, 0.55);
+    }
+
+    .visa-guide-page .vw-hero-card {
+      background: rgba(255, 255, 255, 0.11);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 9px;
+      padding: 26px;
+      backdrop-filter: blur(14px);
+      box-shadow: 0 24px 70px rgba(0, 0, 0, 0.18);
+    }
+
+    .visa-guide-page .vw-finder-box {
+      background: var(--vw-white);
+      color: var(--vw-text);
+      border-radius: 9px;
+      padding: 24px;
+    }
+
+    .visa-guide-page .vw-finder-box h3 {
+      color: var(--vw-navy);
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .visa-guide-page .vw-finder-list {
+      display: grid;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .visa-guide-page .vw-finder-item {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      padding: 12px;
+      background: var(--vw-light);
+      border: 1px solid var(--vw-border);
+      border-radius: 9px;
+    }
+
+    .visa-guide-page .vw-hero-trust-outer {
+      position: relative;
+      z-index: 4;
+      margin-top: clamp(-44px, -5vw, -56px);
+      margin-bottom: clamp(-44px, -5vw, -56px);
+    }
+
+    .visa-guide-page .vw-trust-strip {
+      position: relative;
+      z-index: 2;
+      margin-top: 0;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .visa-guide-page .vw-trust-item {
+      border: 1px solid color-mix(in srgb, #ffffff 32%, var(--theme-color-3));
+      border-radius: 9px;
+      padding: 18px;
+      box-shadow: 0 14px 36px rgba(0, 0, 0, 0.18);
+    }
+
+    .visa-guide-page .vw-trust-item:nth-child(1) {
+      background: linear-gradient(
+        145deg,
+        color-mix(in srgb, var(--theme-color-3) 88%, #07040a),
+        color-mix(in srgb, var(--theme-color-3) 58%, #141018)
+      );
+    }
+
+    .visa-guide-page .vw-trust-item:nth-child(2) {
+      background: linear-gradient(
+        155deg,
+        color-mix(in srgb, var(--theme-color-3) 82%, #0a060c),
+        color-mix(in srgb, var(--theme-color-3) 52%, #18121c)
+      );
+    }
+
+    .visa-guide-page .vw-trust-item:nth-child(3) {
+      background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--theme-color-3) 90%, #050308),
+        color-mix(in srgb, var(--theme-color-3) 62%, #121018)
+      );
+    }
+
+    .visa-guide-page .vw-trust-item:nth-child(4) {
+      background: linear-gradient(
+        165deg,
+        color-mix(in srgb, var(--theme-color-3) 78%, #0c0810),
+        color-mix(in srgb, var(--theme-color-3) 48%, #1a1420)
+      );
+    }
+
+    .visa-guide-page .vw-finder-item .vw-icon {
+      width: 38px;
+      height: 38px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9px;
+      background: var(--vw-sky);
+      color: var(--vw-blue);
+      font-weight: 900;
+      flex: 0 0 auto;
+    }
+
+    .visa-guide-page .vw-trust-item strong {
+      display: block;
+      font-size: 23px;
+      color: var(--vw-white);
+      margin-bottom: 4px;
+    }
+
+    .visa-guide-page .vw-trust-item span {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 14px;
+    }
+
+    /* Guide cards */
+    .visa-guide-page .vw-card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 42px;
+    }
+
+    .visa-guide-page .vw-guide-card {
+      background: var(--vw-white);
+      border: 1px solid var(--vw-border);
+      border-radius: var(--vw-radius);
+      padding: 26px;
+      box-shadow: 0 12px 35px rgba(9, 32, 79, 0.06);
+      transition: all 0.25s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .visa-guide-page .vw-guide-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(
+        90deg,
+        var(--theme-color-3),
+        color-mix(in srgb, var(--theme-color-3) 68%, #050308)
+      );
+    }
+
+    .visa-guide-page .vw-guide-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--vw-shadow);
+    }
+
+    .visa-guide-page .vw-guide-card h3 {
+      color: var(--vw-navy);
+      font-size: 23px;
+      margin: 18px 0 10px;
+    }
+
+    .visa-guide-page .vw-guide-card p {
+      color: var(--vw-muted);
+      margin-bottom: 18px;
+    }
+
+    .visa-guide-page .vw-tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 18px 0 22px;
+    }
+
+    .visa-guide-page .vw-tag {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 7px 10px;
+      border-radius: 999px;
+      color: var(--vw-blue);
+      background: var(--vw-sky);
+    }
+
+    .visa-guide-page .vw-link {
+      color: var(--vw-blue);
+      font-weight: 800;
+    }
+
+    /* Decision support — pathway picker */
+    .visa-guide-page .vw-section.vw-decision.vw-section--alt-light {
+      background: linear-gradient(
+        165deg,
+        color-mix(in srgb, var(--theme-color-3) 6%, #eef1f8) 0%,
+        #ffffff 55%,
+        color-mix(in srgb, var(--theme-color-3) 4%, #f4f6fb) 100%
+      );
+      position: relative;
+    }
+
+    .visa-guide-page .vw-decision-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .visa-guide-page .vw-decision-header {
+      margin-bottom: clamp(32px, 5vw, 48px);
+    }
+
+    .visa-guide-page .vw-decision-layout {
+      display: grid;
+      grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.15fr);
+      gap: clamp(22px, 4vw, 36px);
+      align-items: stretch;
+    }
+
+    .visa-guide-page .vw-decision-left {
+      display: flex;
+      flex-direction: column;
+      gap: clamp(14px, 2vw, 18px);
+      min-width: 0;
+      height: 100%;
+    }
+
+    .visa-guide-page .vw-decision-aside {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .visa-guide-page .vw-decision-photo {
+      margin: 0;
+      flex: 0 0 auto;
+      max-height: clamp(128px, 14vw, 168px);
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(9, 32, 79, 0.1);
+      border: 1px solid color-mix(in srgb, var(--theme-color-3) 14%, #d8e0ef);
+      line-height: 0;
+    }
+
+    .visa-guide-page .vw-decision-photo img {
+      width: 100%;
+      height: clamp(128px, 14vw, 168px);
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .visa-guide-page .vw-decision-aside-card {
+      position: sticky;
+      top: 88px;
+      flex: 1;
+      border-radius: 9px;
+      padding: clamp(24px, 3.5vw, 34px);
+      background: linear-gradient(
+        155deg,
+        color-mix(in srgb, var(--theme-color-3) 92%, #050308),
+        color-mix(in srgb, var(--theme-color-3) 76%, #100818)
+      );
+      color: #ffffff;
+      box-shadow:
+        0 24px 56px rgba(0, 0, 0, 0.26),
+        0 0 0 1px rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      justify-content: space-between;
+    }
+
+    .visa-guide-page .vw-decision-aside-kicker {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.62);
+    }
+
+    .visa-guide-page .vw-decision-aside-title {
+      margin: 0;
+      font-size: clamp(22px, 2.4vw, 28px);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      font-family: var(--outfit-font), system-ui, sans-serif;
+    }
+
+    .visa-guide-page .vw-decision-aside-text {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    .visa-guide-page .vw-decision-aside-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+    }
+
+    .visa-guide-page .vw-decision-aside-meta span {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: rgba(255, 255, 255, 0.9);
+    }
+
+    .visa-guide-page .vw-decision-aside-btn {
+      margin-top: 8px;
+      align-self: flex-start;
+    }
+
+    .visa-guide-page .vw-path-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      height: 100%;
+    }
+
+    .visa-guide-page .vw-path-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: clamp(14px, 2.5vw, 20px);
+      align-items: flex-start;
+      padding: 18px 20px;
+      border-radius: 9px;
+      border: 1px solid color-mix(in srgb, var(--theme-color-3) 16%, #d8e0ef);
+      box-shadow: 0 12px 36px rgba(9, 32, 79, 0.08);
+      background: linear-gradient(
+        125deg,
+        #ffffff 0%,
+        color-mix(in srgb, var(--theme-color-3) 6%, #ffffff) 100%
+      );
+    }
+
+    .visa-guide-page .vw-path-item:nth-child(even) {
+      background: linear-gradient(
+        125deg,
+        color-mix(in srgb, var(--theme-color-3) 8%, #f7f9fd) 0%,
+        #ffffff 100%
+      );
+    }
+
+    .visa-guide-page .vw-path-num {
+      flex-shrink: 0;
+      width: 40px;
+      height: 40px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 9px;
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      background: linear-gradient(
+        145deg,
+        var(--theme-color-3),
+        color-mix(in srgb, var(--theme-color-3) 68%, #0a0610)
+      );
+      box-shadow: 0 8px 20px color-mix(in srgb, var(--theme-color-3) 28%, transparent);
+    }
+
+    .visa-guide-page .vw-path-body {
+      min-width: 0;
+    }
+
+    .visa-guide-page .vw-path-title {
+      display: block;
+      color: var(--vw-navy);
+      font-size: 17px;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+
+    .visa-guide-page .vw-path-desc {
+      margin: 0;
+      color: var(--vw-muted);
+      font-size: 15px;
+      line-height: 1.55;
+    }
+
+    /* Process */
+    .visa-guide-page .vw-process-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      margin-top: 42px;
+      counter-reset: step;
+    }
+
+    .visa-guide-page .vw-process-card {
+      background: var(--vw-white);
+      border: 1px solid var(--vw-border);
+      border-radius: 22px;
+      padding: 22px;
+      position: relative;
+    }
+
+    .visa-guide-page .vw-process-card::before {
+      counter-increment: step;
+      content: "0" counter(step);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      background: var(--vw-navy);
+      color: var(--vw-white);
+      font-weight: 900;
+      margin-bottom: 18px;
+    }
+
+    .visa-guide-page .vw-process-card h3 {
+      color: var(--vw-navy);
+      font-size: 19px;
+      margin-bottom: 8px;
+    }
+
+    .visa-guide-page .vw-process-card p {
+      color: var(--vw-muted);
+      font-size: 15px;
+    }
+
+    /* Checklist — light theme */
+    .visa-guide-page .vw-checklist-wrap {
+      background: linear-gradient(
+        145deg,
+        #ffffff 0%,
+        color-mix(in srgb, var(--theme-color-3) 5%, #f7f9fd) 100%
+      );
+      color: var(--vw-text);
+      border-radius: 9px;
+      border: 1px solid color-mix(in srgb, var(--theme-color-3) 12%, #dfe8f5);
+      padding: clamp(28px, 4vw, 42px);
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      gap: clamp(24px, 4vw, 40px);
+      align-items: center;
+      box-shadow: 0 16px 42px rgba(9, 32, 79, 0.08);
+    }
+
+    .visa-guide-page .vw-checklist-heading {
+      font-size: clamp(28px, 3vw, 42px);
+      line-height: 1.1;
+      letter-spacing: -0.035em;
+      margin-bottom: 14px;
+      color: var(--vw-navy);
+    }
+
+    .visa-guide-page .vw-checklist-text {
+      color: var(--vw-muted);
+      font-size: 17px;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .visa-guide-page .vw-checklist-btn {
+      color: #ffffff;
+      background: linear-gradient(
+        135deg,
+        var(--theme-color-3),
+        color-mix(in srgb, var(--theme-color-3) 72%, #0a0610)
+      );
+      border-color: transparent;
+      box-shadow: 0 12px 28px color-mix(in srgb, var(--theme-color-3) 28%, transparent);
+    }
+
+    .visa-guide-page .vw-checklist-btn:hover {
+      background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--theme-color-3) 88%, #ffffff),
+        var(--theme-color-3)
+      );
+      box-shadow: 0 16px 34px color-mix(in srgb, var(--theme-color-3) 34%, transparent);
+    }
+
+    .visa-guide-page .vw-check-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .visa-guide-page .vw-check-list li {
+      background: #ffffff;
+      border: 1px solid color-mix(in srgb, var(--theme-color-3) 14%, #dfe8f5);
+      border-radius: 9px;
+      padding: 14px 14px 14px 42px;
+      position: relative;
+      color: var(--vw-navy);
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 1.45;
+      box-shadow: 0 8px 22px rgba(9, 32, 79, 0.05);
+    }
+
+    .visa-guide-page .vw-check-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 14px;
+      top: 14px;
+      color: var(--theme-color-3);
+      font-weight: 900;
+    }
+
+    /* Why section */
+    .visa-guide-page .vw-why-header {
+      margin-bottom: clamp(32px, 5vw, 44px);
+    }
+
+    .visa-guide-page .vw-why-layout {
+      display: grid;
+      grid-template-columns: minmax(260px, 0.88fr) minmax(0, 1.12fr);
+      gap: clamp(24px, 4vw, 40px);
+      align-items: stretch;
+    }
+
+    .visa-guide-page .vw-why-photo {
+      margin: 0;
+      height: 100%;
+      min-height: 100%;
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: 0 18px 44px rgba(9, 32, 79, 0.1);
+      border: 1px solid color-mix(in srgb, var(--theme-color-3) 14%, #d8e0ef);
+      line-height: 0;
+    }
+
+    .visa-guide-page .vw-why-photo img {
+      width: 100%;
+      height: 100%;
+      min-height: clamp(360px, 42vw, 480px);
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .visa-guide-page .vw-why-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(14px, 2vw, 18px);
+      align-content: stretch;
+    }
+
+    .visa-guide-page .vw-why-card {
+      background: var(--vw-white);
+      border: 1px solid color-mix(in srgb, var(--theme-color-3) 12%, #dfe8f5);
+      border-radius: 9px;
+      padding: clamp(20px, 2.5vw, 24px);
+      box-shadow: 0 10px 28px rgba(9, 32, 79, 0.06);
+    }
+
+    .visa-guide-page .vw-why-card .vw-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 9px;
+      background: color-mix(in srgb, var(--theme-color-3) 12%, #ffffff);
+      color: var(--theme-color-3);
+      font-weight: 900;
+      font-size: 14px;
+    }
+
+    .visa-guide-page .vw-why-card h3 {
+      color: var(--vw-navy);
+      font-size: 18px;
+      margin: 14px 0 8px;
+    }
+
+    .visa-guide-page .vw-why-card p {
+      color: var(--vw-muted);
+      font-size: 15px;
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    /* Resource cards */
+    .visa-guide-page .vw-resource-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 42px;
+    }
+
+    .visa-guide-page .vw-resource-card {
+      min-height: 260px;
+      border-radius: 26px;
+      padding: 26px;
+      background: linear-gradient(145deg, #ffffff, var(--vw-sky));
+      border: 1px solid var(--vw-border);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .visa-guide-page .vw-resource-card h3 {
+      color: var(--vw-navy);
+      font-size: 24px;
+      line-height: 1.18;
+      margin-bottom: 10px;
+    }
+
+    .visa-guide-page .vw-resource-card p {
+      color: var(--vw-muted);
+    }
+
+    /* FAQ */
+    .visa-guide-page .vw-faq-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+      gap: clamp(28px, 5vw, 44px);
+      align-items: stretch;
+    }
+
+    .visa-guide-page .vw-faq-intro {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+    }
+
+    .visa-guide-page .vw-faq-intro .vw-subheading {
+      max-width: none;
+      margin: 0;
+    }
+
+    .visa-guide-page .vw-faq-photo {
+      flex: 1;
+      margin: clamp(20px, 3vw, 28px) 0 0;
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: 0 16px 40px rgba(9, 32, 79, 0.1);
+      border: 1px solid color-mix(in srgb, var(--theme-color-3) 14%, #d8e0ef);
+      line-height: 0;
+    }
+
+    .visa-guide-page .vw-faq-photo img {
+      width: 100%;
+      height: 100%;
+      min-height: clamp(220px, 26vw, 320px);
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .visa-guide-page .vw-faq-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .visa-guide-page .vw-faq-item {
+      background: var(--vw-white);
+      border: 1px solid var(--vw-border);
+      border-radius: 18px;
+      padding: 20px;
+    }
+
+    .visa-guide-page .vw-faq-item h3 {
+      color: var(--vw-navy);
+      font-size: 18px;
+      margin-bottom: 7px;
+    }
+
+    .visa-guide-page .vw-faq-item p {
+      color: var(--vw-muted);
+    }
+
+    /* CTA */
+    .visa-guide-page .vw-final-cta {
+      padding: 80px 0;
+      background: linear-gradient(
+        135deg,
+        color-mix(in srgb, var(--theme-color-3) 86%, #060308) 0%,
+        color-mix(in srgb, var(--theme-color-3) 92%, #030205) 55%,
+        color-mix(in srgb, var(--theme-color-3) 88%, #0a0710) 100%
+      );
+      color: var(--vw-white);
+    }
+
+    .visa-guide-page .vw-final-cta-box {
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(280px, 0.92fr);
+      gap: clamp(28px, 5vw, 48px);
+      align-items: center;
+    }
+
+    .visa-guide-page .vw-final-cta h2 {
+      font-size: clamp(32px, 4vw, 54px);
+      line-height: 1.06;
+      letter-spacing: -0.04em;
+      margin-bottom: 14px;
+      color: #ffffff;
+    }
+
+    .visa-guide-page .vw-final-cta p {
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 18px;
+      max-width: 760px;
+    }
+
+    .visa-guide-page .vw-final-cta .vw-btn-secondary {
+      color: rgba(255, 255, 255, 0.96);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.42);
+    }
+
+    .visa-guide-page .vw-final-cta .vw-btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: rgba(255, 255, 255, 0.55);
+    }
+
+    .visa-guide-page .vw-final-cta-photo {
+      margin: 0;
+      border-radius: 9px;
+      overflow: hidden;
+      box-shadow: 0 22px 52px rgba(0, 0, 0, 0.28);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      line-height: 0;
+    }
+
+    .visa-guide-page .vw-final-cta-photo img {
+      width: 100%;
+      height: clamp(260px, 30vw, 360px);
+      display: block;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .visa-guide-page .vw-note {
+      margin-top: 24px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.66);
+    }
+
+    @media (max-width: 1024px) {
+      .visa-guide-page .vw-hero-grid,
+      .visa-guide-page .vw-intro-grid,
+      .visa-guide-page .vw-decision-layout,
+      .visa-guide-page .vw-why-layout,
+      .visa-guide-page .vw-checklist-wrap,
+      .visa-guide-page .vw-faq-grid,
+      .visa-guide-page .vw-final-cta-box {
+        grid-template-columns: 1fr;
+      }
+
+      .visa-guide-page .vw-decision-aside-card {
+        position: relative;
+        top: auto;
+      }
+
+      .visa-guide-page .vw-card-grid,
+      .visa-guide-page .vw-resource-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .visa-guide-page .vw-process-grid,
+      .visa-guide-page .vw-trust-strip {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .visa-guide-page .vw-final-cta-box {
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .visa-guide-page .vw-section {
+        padding: 64px 0;
+      }
+
+      .visa-guide-page .vw-hero {
+        padding-top: 66px;
+      }
+
+      .visa-guide-page .vw-card-grid,
+      .visa-guide-page .vw-resource-grid,
+      .visa-guide-page .vw-process-grid,
+      .visa-guide-page .vw-why-grid,
+      .visa-guide-page .vw-trust-strip,
+      .visa-guide-page .vw-check-list {
+        grid-template-columns: 1fr;
+      }
+
+      .visa-guide-page .vw-path-item {
+        grid-template-columns: 1fr;
+      }
+
+      .visa-guide-page .vw-path-num {
+        width: 36px;
+        height: 36px;
+      }
+
+      .visa-guide-page .vw-checklist-wrap {
+        padding: 28px;
+        border-radius: 9px;
+      }
+
+      .visa-guide-page .vw-btn {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .visa-guide-page .vw-compare-table-wrap {
+        overflow-x: visible;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+      }
+
+      .visa-guide-page .vw-compare-table {
+        min-width: 0;
+      }
+
+      .visa-guide-page .vw-compare-table thead {
+        display: none;
+      }
+
+      .visa-guide-page .vw-compare-table tbody tr {
+        display: block;
+        margin-bottom: 14px;
+        border-radius: 9px;
+        overflow: hidden;
+        border: 1px solid color-mix(in srgb, var(--theme-color-3) 12%, #dfe8f5);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+      }
+
+      .visa-guide-page .vw-compare-table tbody td {
+        display: grid;
+        grid-template-columns: minmax(110px, 34%) 1fr;
+        gap: 10px 14px;
+        padding: 14px 16px;
+        border-bottom: 1px solid color-mix(in srgb, var(--theme-color-3) 10%, #e8edf5);
+      }
+
+      .visa-guide-page .vw-compare-table tbody td::before {
+        content: attr(data-label);
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: color-mix(in srgb, var(--theme-color-3) 72%, #24324b);
+      }
+
+      .visa-guide-page .vw-compare-table tbody td[data-label="Visa Pathway"] {
+        background: linear-gradient(
+          135deg,
+          var(--theme-color-3),
+          color-mix(in srgb, var(--theme-color-3) 72%, #0a0610)
+        );
+        color: #ffffff;
+        grid-template-columns: 1fr;
+      }
+
+      .visa-guide-page .vw-compare-table tbody td[data-label="Visa Pathway"]::before {
+        display: none;
+      }
+
+      .visa-guide-page .vw-compare-table tbody td[data-label="Visa Pathway"] .vw-compare-path strong {
+        color: #ffffff;
+      }
+
+      .visa-guide-page .vw-compare-table tbody tr:last-child td:last-child {
+        border-bottom: 0;
+      }
+    }
+  
