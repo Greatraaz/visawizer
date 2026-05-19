@@ -350,7 +350,7 @@
 }
 .founder-page .founder-hero__portrait {
     position: relative;
-    border-radius: 8px 32px 8px 32px;
+    border-radius: 7px;
     overflow: hidden;
     box-shadow:
         0 0 0 2px var(--founder-accent),
@@ -382,7 +382,7 @@
     margin-bottom: 0.35rem;
 }
 .founder-page .founder-cm-portrait--hero .founder-hero__portrait {
-    border-radius: 22px;
+    border-radius: 7px;
     box-shadow: none;
     border: none;
 }
@@ -407,7 +407,7 @@
     position: relative;
     z-index: 1;
     padding: 7px;
-    border-radius: 32px;
+    border-radius: 7px;
     background: linear-gradient(165deg, #ffffff 0%, #f3f5f9 100%);
     box-shadow:
         0 2px 0 rgba(255, 255, 255, 0.65) inset,
@@ -425,7 +425,7 @@
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 26px;
+    border-radius: 7px;
 }
 .founder-page .founder-cm-badge {
     position: absolute;
@@ -583,11 +583,11 @@
 }
 .founder-page .founder-cm-portrait--cta .founder-cm-portrait__frame {
     padding: 5px;
-    border-radius: 28px;
+    border-radius: 7px;
     background: linear-gradient(165deg, #ffffff 0%, #eef1f6 100%);
 }
 .founder-page .founder-cm-portrait--cta .founder-cm-portrait__frame > img {
-    border-radius: 22px;
+    border-radius: 7px;
 }
 .founder-page .founder-about__figure .founder-quote-mark {
     left: 0.15rem;
@@ -596,7 +596,7 @@
 }
 .founder-page .founder-snapshot__media {
     position: relative;
-    border-radius: 26px;
+    border-radius: 7px;
     overflow: hidden;
     line-height: 0;
 }
@@ -610,7 +610,7 @@
     width: 38%;
     max-width: 168px;
     aspect-ratio: 3 / 4;
-    border-radius: 10px 24px 10px 24px;
+    border-radius: 7px;
     overflow: hidden;
     border: 3px solid #fff;
     box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45);
@@ -678,7 +678,7 @@
     max-width: min(100%, 400px);
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;
+    border-radius: 7px;
     overflow: hidden;
     line-height: 0;
 }
@@ -714,6 +714,15 @@
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(255, 255, 255, 0.14);
     color: #fff;
+}
+.founder-page .founder-message-panel .founder-message__rule {
+    display: block;
+    width: min(7.5rem, 28%);
+    height: 2px;
+    margin: 1.25rem 0;
+    border: 0;
+    border-radius: 1px;
+    background: rgba(255, 255, 255, 0.88);
 }
 .founder-page .founder-message-panel p {
     margin: 0 0 1rem;
@@ -825,10 +834,11 @@
     color: var(--founder-ink);
 }
 .founder-page .founder-vision__intro.founder-section-head {
-    max-width: min(58rem, 100%);
+    max-width: 100%;
+    width: 100%;
 }
 .founder-page .founder-vision__intro .founder-cm-manifesto--sub {
-    max-width: 42rem;
+    max-width: min(48rem, 100%);
     margin-left: auto;
     margin-right: auto;
 }
@@ -882,7 +892,7 @@
     }
 }
 .founder-page .founder-cta__visual {
-    border-radius: 20px;
+    border-radius: 0;
     overflow: visible;
     max-width: none;
     margin-left: auto;
@@ -1226,11 +1236,11 @@
 .founder-page .founder-trust {
     display: grid;
     gap: 2.5rem;
-    align-items: center;
+    align-items: start;
 }
 @media (min-width: 992px) {
     .founder-page .founder-trust {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: min(var(--founder-photo-rail), 100%) minmax(0, 1fr);
     }
 }
 .founder-page .founder-trust__img {
@@ -1241,6 +1251,24 @@
     .founder-page .founder-trust__img {
         margin-inline: 0;
     }
+}
+.founder-page .founder-trust__copy {
+    width: 100%;
+    max-width: none;
+    margin-inline: 0;
+}
+.founder-page .founder-trust__intro.founder-section-head {
+    max-width: none;
+    width: 100%;
+}
+.founder-page .founder-trust__lead {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--founder-muted);
+    margin: 0;
+    max-width: none;
+    width: 100%;
+    text-align: center;
 }
 .founder-page .founder-trust-list {
     list-style: none;
@@ -1278,12 +1306,8 @@
     line-height: 1.55;
     color: var(--founder-muted);
 }
-.founder-page .founder-trust h2 {
-    font-size: clamp(1.75rem, 3.2vw, 2.65rem);
-    font-weight: 800;
-    letter-spacing: -0.02em;
-    line-height: 1.18;
-    color: var(--founder-ink);
+.founder-page .founder-trust__copy .founder-trust-list {
+    margin: 0;
 }
 .founder-page .founder-stats {
     display: grid;
@@ -1326,20 +1350,195 @@
     color: var(--founder-muted);
     margin: 0;
 }
+
+/* Impact — editorial cards on light band (same layout, light surround) */
+.founder-page .founder-section--impact {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse 88% 60% at 50% -30%, color-mix(in srgb, var(--founder-accent) 14%, transparent), transparent 52%),
+        radial-gradient(ellipse 55% 45% at 100% 65%, color-mix(in srgb, var(--theme-color-3) 9%, transparent), transparent 46%),
+        linear-gradient(180deg, #f8f9fc 0%, #eef1f6 48%, #f5f6fa 100%);
+}
+
+.founder-page .founder-section--impact::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        repeating-linear-gradient(
+            -18deg,
+            transparent,
+            transparent 72px,
+            rgba(15, 19, 24, 0.022) 72px,
+            rgba(15, 19, 24, 0.022) 73px
+        );
+    pointer-events: none;
+    opacity: 1;
+}
+
+.founder-page .founder-section--impact .container {
+    position: relative;
+    z-index: 1;
+}
+
+.founder-page .founder-section--impact .founder-stats--glance {
+    gap: clamp(1rem, 2.2vw, 1.35rem);
+    align-items: stretch;
+}
+
+.founder-page .founder-section--impact .founder-stat--glance {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    min-height: clamp(11.5rem, 20vw, 13.25rem);
+    padding: clamp(1.35rem, 2.5vw, 1.65rem) clamp(1.25rem, 2.2vw, 1.45rem) clamp(1.45rem, 2.5vw, 1.75rem);
+    border-radius: var(--founder-ui-radius);
+    border: 1px solid rgba(15, 19, 24, 0.09);
+    background:
+        radial-gradient(ellipse 120% 80% at 100% 0%, color-mix(in srgb, var(--founder-accent) 14%, transparent), transparent 55%),
+        radial-gradient(ellipse 90% 70% at 0% 100%, color-mix(in srgb, var(--theme-color-3) 8%, #faf8f5) 0%, transparent 58%),
+        linear-gradient(168deg, #ffffff 0%, var(--founder-cream) 40%, #f3f0eb 100%);
+    box-shadow:
+        0 2px 6px rgba(15, 19, 24, 0.05),
+        0 14px 36px rgba(15, 19, 24, 0.08);
+    transition:
+        transform 0.3s cubic-bezier(0.33, 1, 0.68, 1),
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+    cursor: default;
+    overflow: hidden;
+}
+
+.founder-page .founder-section--impact .founder-stat--glance:hover,
+.founder-page .founder-section--impact .founder-stat--glance:focus-visible {
+    transform: translateY(-5px);
+    border-color: color-mix(in srgb, var(--founder-accent) 28%, rgba(15, 19, 24, 0.12));
+    box-shadow:
+        0 10px 22px rgba(15, 19, 24, 0.09),
+        0 24px 48px color-mix(in srgb, var(--founder-accent) 12%, rgba(15, 19, 24, 0.06));
+    outline: none;
+}
+
+.founder-page .founder-section--impact .founder-stat--glance:focus-visible {
+    box-shadow:
+        0 0 0 3px color-mix(in srgb, var(--founder-accent) 28%, #ffffff),
+        0 12px 28px rgba(15, 19, 24, 0.1);
+}
+
+.founder-page .founder-section--impact .founder-stat--glance:active {
+    transform: translateY(-2px);
+    transition-duration: 0.12s;
+}
+
+.founder-page .founder-section--impact .founder-stat--glance .founder-stat__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-bottom: 1.15rem;
+}
+
+.founder-page .founder-section--impact .founder-stat__watermark {
+    flex-shrink: 0;
+    font-family: var(--outfit-font);
+    font-size: clamp(2.6rem, 4.8vw, 3.35rem);
+    font-weight: 800;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+    color: rgba(20, 24, 31, 0.08);
+    user-select: none;
+}
+
+.founder-page .founder-section--impact .founder-stat--glance .founder-stat__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin: 0;
+    border-radius: calc(var(--founder-ui-radius) + 4px);
+    font-size: 1.1rem;
+    line-height: 1;
+    flex-shrink: 0;
+    transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1), box-shadow 0.3s ease;
+}
+
+.founder-page .founder-section--impact .founder-stat--glance-icon-solid .founder-stat__icon {
+    color: #fff;
+    background: linear-gradient(145deg, var(--founder-accent-deep) 0%, var(--founder-accent) 100%);
+    border: 1px solid color-mix(in srgb, var(--founder-accent-deep) 40%, transparent);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.founder-page .founder-section--impact .founder-stat--glance:not(.founder-stat--glance-icon-solid) .founder-stat__icon {
+    color: #0a0a0a;
+    background: linear-gradient(180deg, #ffffff 0%, #faf7f2 100%);
+    border: 2px solid color-mix(in srgb, var(--founder-accent-deep) 72%, #1a1a1a);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.founder-page .founder-section--impact .founder-stat--glance:hover .founder-stat__icon,
+.founder-page .founder-section--impact .founder-stat--glance:focus-visible .founder-stat__icon {
+    transform: scale(1.05);
+}
+
+.founder-page .founder-section--impact .founder-stat--glance .founder-stat__title {
+    margin: 0 0 0.65rem;
+    font-size: clamp(1.15rem, 2.1vw, 1.35rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.25;
+    color: #0a0a0a;
+}
+
+.founder-page .founder-section--impact .founder-stat--glance .founder-stat__title::after {
+    content: "";
+    display: block;
+    width: 2.35rem;
+    height: 2px;
+    margin-top: 0.45rem;
+    background: #0a0a0a;
+    border-radius: 1px;
+}
+
+.founder-page .founder-section--impact .founder-stat--glance .founder-stat__lbl {
+    margin: 0;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: #0a0a0a;
+    opacity: 0.88;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .founder-page .founder-section--impact .founder-stat--glance,
+    .founder-page .founder-section--impact .founder-stat--glance .founder-stat__icon {
+        transition: none;
+    }
+
+    .founder-page .founder-section--impact .founder-stat--glance:hover,
+    .founder-page .founder-section--impact .founder-stat--glance:focus-visible,
+    .founder-page .founder-section--impact .founder-stat--glance:active {
+        transform: none;
+    }
+}
+
 .founder-page .founder-cta {
     position: relative;
-    padding: clamp(3.25rem, 7vw, 4.75rem) 0;
+    padding: clamp(2rem, 4vw, 2.75rem) 0;
     background:
-        radial-gradient(ellipse 60% 80% at 10% 50%, rgba(255, 255, 255, 0.08), transparent 45%),
-        linear-gradient(120deg, var(--founder-accent-deep) 0%, color-mix(in srgb, var(--founder-accent) 72%, black) 42%, var(--founder-accent) 100%);
-    color: #fff;
+        radial-gradient(ellipse 65% 50% at 100% 0%, color-mix(in srgb, var(--founder-accent) 10%, transparent), transparent 52%),
+        linear-gradient(180deg, #ffffff 0%, #eef1f6 100%);
+    color: var(--founder-ink);
     overflow: hidden;
+    border-top: 1px solid rgba(15, 19, 24, 0.06);
 }
 .founder-page .founder-cta::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23ffffff' fill-opacity='0.06'/%3E%3C/svg%3E");
+    background: url("data:image/svg+xml,%3Csvg width='40' height='40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='1' cy='1' r='1' fill='%23101522' fill-opacity='0.04'/%3E%3C/svg%3E");
     opacity: 1;
     pointer-events: none;
 }
@@ -1349,69 +1548,119 @@
 }
 .founder-page .founder-cta__grid {
     display: grid;
-    gap: 2rem;
+    gap: clamp(1.1rem, 2.5vw, 1.6rem);
     align-items: center;
 }
 @media (min-width: 992px) {
     .founder-page .founder-cta__grid {
-        grid-template-columns: 1.12fr 0.92fr;
-        align-items: start;
+        grid-template-columns: 1fr minmax(300px, 400px);
+        align-items: stretch;
     }
+}
+.founder-page .founder-cta__intro {
+    max-width: 44rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.founder-page .founder-cta__intro .founder-cta__lede {
+    margin-bottom: 0;
+}
+.founder-page .founder-cta__intro .founder-cta__actions {
+    margin-top: 1.15rem;
+    width: 100%;
+    max-width: min(100%, 28rem);
+}
+.founder-page .founder-cta .founder-eyebrow {
+    color: color-mix(in srgb, var(--founder-accent) 82%, var(--founder-ink));
+    margin-bottom: 0.6rem;
+}
+.founder-page .founder-cta .founder-eyebrow::before {
+    background: linear-gradient(90deg, var(--founder-accent), color-mix(in srgb, var(--founder-accent) 20%, transparent));
 }
 .founder-page .founder-cta__aside {
     display: flex;
     flex-direction: column;
-    gap: 1.15rem;
+    gap: 0;
 }
 .founder-page .founder-cta h2 {
-    color: #fff;
-    font-size: clamp(1.85rem, 3.5vw, 2.75rem);
+    color: var(--founder-ink);
+    font-size: clamp(1.65rem, 3vw, 2.35rem);
     font-weight: 800;
-    margin: 0 0 0.85rem;
+    margin: 0 0 0.65rem;
     letter-spacing: -0.02em;
-    line-height: 1.15;
+    line-height: 1.18;
 }
-.founder-page .founder-cta > .container > .founder-cta__grid > div:first-child p {
+.founder-page .founder-cta__lede {
     margin: 0;
-    font-size: 1.05rem;
-    line-height: 1.65;
-    color: rgba(255, 255, 255, 0.9);
+    font-size: 1rem;
+    line-height: 1.62;
+    color: var(--founder-muted);
     max-width: 40rem;
+}
+.founder-page .founder-cta .founder-cta__visual {
+    border-radius: 0;
+    overflow: visible;
+    max-width: 100%;
+    margin: 0;
 }
 .founder-page .founder-cta__actions {
     display: flex;
     flex-direction: column;
-    gap: 0.85rem;
+    gap: 0.6rem;
+    width: 100%;
 }
 .founder-page .founder-cta__actions .e-primary-btn {
     justify-content: center;
-    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.22);
+    box-shadow: 0 8px 26px color-mix(in srgb, var(--founder-accent) 22%, rgba(15, 19, 24, 0.08));
+}
+.founder-page .founder-cta .founder-btn-outline {
+    border-width: 1.5px;
+    border-color: rgba(15, 19, 24, 0.16);
+    color: var(--founder-ink);
+    background: transparent;
+}
+.founder-page .founder-cta .founder-btn-outline:hover {
+    background: color-mix(in srgb, var(--founder-accent) 9%, #fff);
+    border-color: color-mix(in srgb, var(--founder-accent) 42%, rgba(15, 19, 24, 0.15));
+    color: var(--founder-ink);
+    box-shadow: 0 6px 20px rgba(15, 19, 24, 0.06);
 }
 .founder-page .founder-cta__linkbox {
     display: grid;
-    gap: 0.65rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
 }
 .founder-page .founder-cta__linkbox a {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 0.65rem;
-    padding: 0.85rem 1rem;
-    border-radius: 14px;
-    background: rgba(255, 255, 255, 0.12);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    color: #fff;
+    gap: 0.45rem;
+    padding: 0.55rem 0.55rem;
+    border-radius: calc(var(--founder-ui-radius, 20px) - 6px);
+    background: rgba(255, 255, 255, 0.72);
+    border: 1px solid rgba(15, 19, 24, 0.08);
+    color: var(--founder-ink);
     text-decoration: none;
     font-weight: 700;
-    transition: background 0.2s ease;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 .founder-page .founder-cta__linkbox a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
+    background: #fff;
+    border-color: color-mix(in srgb, var(--founder-accent) 28%, rgba(15, 19, 24, 0.1));
+    box-shadow: 0 6px 16px rgba(15, 19, 24, 0.06);
+    color: var(--founder-ink);
 }
 .founder-page .founder-cta__linkbox i {
-    width: 40px;
+    flex-shrink: 0;
+    width: 1.75rem;
     text-align: center;
-    opacity: 0.9;
+    opacity: 0.88;
+    color: var(--founder-accent);
+    font-size: 0.95rem;
+    margin-bottom: 0;
 }
 
 /* ===============================
@@ -1443,8 +1692,7 @@
 }
 
 .founder-page .founder-section-head h2,
-.founder-page .founder-about__copy h2,
-.founder-page .founder-trust h2 {
+.founder-page .founder-about__copy h2 {
     font-size: clamp(2rem, 3.2vw, 3rem) !important;
     line-height: 1.08 !important;
     letter-spacing: -0.04em;
@@ -1540,12 +1788,12 @@
 }
 
 .founder-page .founder-cm-portrait__frame {
-    border-radius: 40px;
+    border-radius: 7px;
 }
 
 .founder-page .founder-cm-portrait__frame > img,
 .founder-page .founder-hero__portrait {
-    border-radius: 34px !important;
+    border-radius: 7px !important;
 }
 
 .founder-page .founder-cm-badge {
@@ -1644,22 +1892,8 @@
 }
 
 /* ===============================
-   VISION — quote card style
+   VISION — layout in UNIQUE layer (split + centered copy)
 ================================ */
-
-.founder-page .founder-vision-split {
-    grid-template-columns: 1fr !important;
-}
-
-.founder-page .founder-vision__img {
-    display: none;
-}
-
-.founder-page .founder-vision__copy {
-    max-width: 940px;
-    margin: auto;
-    text-align: center;
-}
 
 .founder-page .founder-belief {
     max-width: 820px;
@@ -1757,11 +1991,7 @@
     grid-template-columns: 1fr !important;
 }
 
-.founder-page .founder-trust__img {
-    display: none;
-}
-
-.founder-page .founder-trust > div:last-child {
+.founder-page .founder-trust__copy {
     max-width: 980px;
     margin: auto;
 }
@@ -1825,34 +2055,6 @@
 .founder-page .founder-stat {
     border-radius: 28px;
     padding: 30px 20px;
-}
-
-/* ===============================
-   CTA — minimal, clean
-================================ */
-
-.founder-page .founder-cta {
-    padding: 72px 0 !important;
-}
-
-.founder-page .founder-cta__grid {
-    grid-template-columns: 1fr !important;
-    text-align: center;
-    max-width: 900px;
-    margin: auto;
-}
-
-.founder-page .founder-cta__visual {
-    display: none;
-}
-
-.founder-page .founder-cta__actions {
-    max-width: 620px;
-    margin: auto;
-}
-
-.founder-page .founder-cta__linkbox {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 /* ===============================
@@ -2039,32 +2241,6 @@
     background: linear-gradient(135deg, color-mix(in srgb, var(--founder-accent) 32%, transparent), rgba(255, 255, 255, 0.06)) !important;
 }
 
-/* VISION: centered manifesto */
-.founder-page .founder-vision-split {
-    grid-template-columns: 1fr !important;
-}
-
-.founder-page .founder-vision__img {
-    display: none !important;
-}
-
-.founder-page .founder-vision__copy {
-    max-width: 920px;
-    margin: auto;
-    text-align: center;
-}
-
-.founder-page .founder-belief {
-    max-width: 820px;
-    margin: 34px auto 0 !important;
-    border-left: 0 !important;
-    border-radius: 34px !important;
-    padding: 38px !important;
-    background:
-        radial-gradient(circle at top left, color-mix(in srgb, var(--founder-accent) 13%, transparent), transparent 35%),
-        #fff !important;
-}
-
 /* JOURNEY: horizontal timeline cards */
 .founder-page .founder-timeline-cm {
     max-width: 100% !important;
@@ -2136,11 +2312,7 @@
     grid-template-columns: 1fr !important;
 }
 
-.founder-page .founder-trust__img {
-    display: none !important;
-}
-
-.founder-page .founder-trust > div:last-child {
+.founder-page .founder-trust__copy {
     max-width: 980px;
     margin: auto;
 }
@@ -2199,29 +2371,10 @@
     padding: 34px 22px !important;
 }
 
-/* CTA: clean conversion block */
-.founder-page .founder-cta {
-    padding: 78px 0 !important;
-}
-
-.founder-page .founder-cta__grid {
-    grid-template-columns: 1fr !important;
-    max-width: 900px;
-    margin: auto;
-    text-align: center;
-}
-
-.founder-page .founder-cta__visual {
-    display: none !important;
-}
-
-.founder-page .founder-cta__actions {
-    max-width: 640px;
-    margin: auto;
-}
-
-.founder-page .founder-cta__linkbox {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+.founder-page .founder-section--impact .founder-stat--glance {
+    padding: clamp(1.35rem, 2.5vw, 1.65rem) clamp(1.25rem, 2.2vw, 1.45rem) clamp(1.45rem, 2.5vw, 1.75rem) !important;
+    border-radius: var(--founder-ui-radius) !important;
+    text-align: left !important;
 }
 
 /* Responsive */
@@ -2366,11 +2519,12 @@
     display: block;
 }
 
-/* Vision: narrow photo rail + copy */
+/* Vision: wide centered band (matches container width; portrait scales with column) */
 .founder-page .founder-vision-split {
-    grid-template-columns: min(var(--founder-photo-rail), 100%) minmax(0, 1fr) !important;
-    gap: clamp(2rem, 5vw, 3.5rem) !important;
+    grid-template-columns: minmax(300px, min(42%, 440px)) minmax(0, 1fr) !important;
+    gap: clamp(1.5rem, 3.5vw, 2.75rem) !important;
     align-items: center !important;
+    width: 100%;
 }
 
 .founder-page .founder-vision__img {
@@ -2381,7 +2535,7 @@
 
 .founder-page .founder-vision__img .founder-cm-portrait {
     width: 100%;
-    max-width: var(--founder-photo-rail);
+    max-width: min(100%, 440px);
     margin: 0 auto;
 }
 
@@ -2394,7 +2548,7 @@
     width: 100%;
     aspect-ratio: var(--founder-portrait-ar);
     height: auto;
-    max-height: 440px;
+    max-height: min(520px, 62vh);
     object-fit: cover;
     object-position: center 18%;
     display: block;
@@ -2403,18 +2557,33 @@
 .founder-page .founder-vision__copy {
     max-width: none !important;
     margin: 0 !important;
-    text-align: left !important;
+    text-align: center !important;
 }
 
 .founder-page .founder-vision__copy .founder-vision__body {
-    max-width: 38rem;
-    margin-left: 0;
-    margin-right: 0;
+    max-width: min(52rem, 100%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.founder-page .founder-section--band-light .founder-vision__copy .founder-belief {
+    max-width: min(52rem, 100%);
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: clamp(1.35rem, 3vw, 1.85rem);
+    text-align: center;
+    border-left: none;
+    border-top: 4px solid var(--founder-accent);
+    padding-top: clamp(1.35rem, 2.5vw, 1.75rem);
+}
+
+.founder-page .founder-section--band-light .founder-vision__copy .founder-belief__label {
+    text-align: center;
 }
 
 .founder-page .founder-belief {
-    max-width: 38rem;
-    margin-left: 0 !important;
+    max-width: min(52rem, 100%);
+    margin-left: auto !important;
     margin-right: auto !important;
 }
 
@@ -2423,11 +2592,12 @@
     grid-row: auto !important;
 }
 
-/* Trust: photo rail + copy, vertically centered */
+/* Trust: photo rail + checklist, top-aligned */
 .founder-page .founder-trust {
     grid-template-columns: min(var(--founder-photo-rail), 100%) minmax(0, 1fr) !important;
     gap: clamp(2rem, 4vw, 3.5rem) !important;
-    align-items: center !important;
+    align-items: start !important;
+    justify-items: stretch !important;
 }
 
 .founder-page .founder-trust__img {
@@ -2457,21 +2627,23 @@
     display: block;
 }
 
-.founder-page .founder-trust > div:last-child {
+.founder-page .founder-trust__copy {
     max-width: none !important;
     margin: 0 !important;
 }
 
-/* Message: top-align text with photo top */
+/* Message: photo rail matches panel height on desktop */
 .founder-page .founder-message-grid {
     grid-template-columns: min(var(--founder-photo-rail), 100%) minmax(0, 1fr) !important;
     gap: clamp(1.75rem, 4vw, 2.75rem) !important;
-    align-items: start !important;
+    align-items: stretch !important;
 }
 
 .founder-page .founder-message-grid__figure {
     display: flex !important;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 0;
 }
 
 .founder-page .founder-message-grid__figure .founder-cm-portrait {
@@ -2490,20 +2662,61 @@
     width: 100%;
     aspect-ratio: var(--founder-portrait-ar);
     height: auto;
-    max-height: 420px;
+    max-height: min(560px, 70vh);
     object-fit: cover;
     object-position: center 22%;
     display: block;
 }
 
-/* CTA */
+@media (min-width: 992px) {
+    .founder-page .founder-message-grid__figure {
+        align-items: stretch;
+    }
+
+    .founder-page .founder-message-grid__figure .founder-cm-portrait {
+        flex: 1 1 auto !important;
+        display: flex !important;
+        flex-direction: column !important;
+        min-height: 0 !important;
+        height: 100% !important;
+        max-width: var(--founder-photo-rail) !important;
+    }
+
+    .founder-page .founder-message-grid__figure .founder-cm-portrait__frame {
+        flex: 1 1 auto !important;
+        min-height: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .founder-page .founder-message-grid__figure .founder-cm-portrait__frame > img {
+        flex: 1 1 auto !important;
+        width: 100% !important;
+        min-height: 0 !important;
+        height: 100% !important;
+        max-height: none !important;
+        aspect-ratio: unset !important;
+        object-fit: cover !important;
+        object-position: center 22% !important;
+    }
+}
+
+/* CTA — copy + actions left, portrait right */
+.founder-page .founder-cta {
+    padding: clamp(2rem, 4vw, 2.75rem) 0 !important;
+}
+
 .founder-page .founder-cta__grid {
-    grid-template-columns: minmax(0, 1fr) minmax(240px, min(30vw, 300px)) !important;
-    max-width: none !important;
-    margin: 0 !important;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, min(38vw, 400px)) !important;
+    max-width: min(1180px, 100%) !important;
+    margin-inline: auto !important;
     text-align: left !important;
-    align-items: center !important;
-    gap: clamp(2rem, 5vw, 3rem) !important;
+    align-items: stretch !important;
+    gap: clamp(1rem, 2.6vw, 1.5rem) !important;
+}
+
+.founder-page .founder-cta__intro {
+    align-self: center;
 }
 
 .founder-page .founder-cta__visual {
@@ -2513,11 +2726,20 @@
 .founder-page .founder-cta__aside {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.25rem;
+    align-items: stretch;
+    gap: 0;
     justify-self: end;
+    align-self: center;
     width: 100%;
-    max-width: 300px;
+    max-width: 400px;
+}
+
+.founder-page .founder-cta__intro .founder-cta__actions .e-primary-btn {
+    width: 100%;
+}
+
+.founder-page .founder-cta__intro .founder-btn-outline {
+    width: 100%;
 }
 
 .founder-page .founder-cta__visual .founder-cm-portrait--cta {
@@ -2527,14 +2749,15 @@
 
 .founder-page .founder-cta__visual .founder-cm-portrait__frame {
     overflow: hidden;
-    border-radius: 24px;
+    border: 1px solid rgba(15, 19, 24, 0.08);
+    box-shadow: 0 14px 40px rgba(15, 19, 24, 0.1);
 }
 
 .founder-page .founder-cta__visual .founder-cm-portrait__frame > img {
     width: 100%;
-    aspect-ratio: var(--founder-portrait-ar);
+    aspect-ratio: 440 / 550;
     object-fit: cover;
-    object-position: center 15%;
+    object-position: center 18%;
     display: block;
 }
 
@@ -2556,33 +2779,46 @@
     }
 
     .founder-page .founder-vision__copy,
-    .founder-page .founder-vision__intro {
+    .founder-page .founder-vision__intro,
+    .founder-page .founder-trust__intro {
         text-align: center !important;
     }
 
-    .founder-page .founder-vision__intro {
+    .founder-page .founder-vision__intro,
+    .founder-page .founder-trust__intro {
         max-width: none;
         margin-inline: auto;
     }
 
     .founder-page .founder-vision__copy .founder-vision__body {
-        max-width: 40rem;
+        max-width: min(48rem, 100%);
         margin-inline: auto;
     }
 
     .founder-page .founder-belief {
         margin-left: auto !important;
         margin-right: auto !important;
-        max-width: 40rem;
+        max-width: min(48rem, 100%);
     }
 
     .founder-page .founder-cta__grid {
         text-align: center !important;
     }
 
+    .founder-page .founder-cta__intro {
+        align-items: center;
+        max-width: 40rem;
+        margin-inline: auto;
+    }
+
+    .founder-page .founder-cta__intro .founder-cta__actions {
+        max-width: min(100%, 24rem);
+        margin-inline: auto;
+    }
+
     .founder-page .founder-cta__aside {
         justify-self: center;
-        max-width: 280px;
+        max-width: min(100%, 400px);
     }
 
     .founder-page .founder-about__figure {
@@ -2627,6 +2863,14 @@
 .founder-page .founder-cta__linkbox a,
 .founder-page .founder-photo-frame,
 .founder-page .e-primary-btn {
+    border-radius: var(--founder-ui-radius) !important;
+}
+
+.founder-page .founder-cm-portrait__frame > img,
+.founder-page .founder-hero__portrait img,
+.founder-page .founder-hero__inset img,
+.founder-page .founder-photo-frame img,
+.founder-page .founder-snapshot__media img {
     border-radius: var(--founder-ui-radius) !important;
 }
 
@@ -2919,6 +3163,11 @@
 
     <section class="founder-section founder-section--band-light" aria-labelledby="founder-trust-title">
         <div class="container">
+            <div class="founder-section-head founder-section-head--center founder-trust__intro">
+                <p class="founder-section-kicker" id="founder-trust-title">Why clients trust Ankur</p>
+                <h2 class="mb-0">Built on Lived Experience and Professional Knowledge</h2>
+                <p class="founder-trust__lead mt-3 mb-0">Clients choose Ankur and Visawizer because guidance combines personal understanding with professional migration knowledge. Visawizer highlights positive client experiences around responsiveness, clear explanation, timely support, careful application handling, and complex case guidance.</p>
+            </div>
             <div class="founder-trust">
                 <div class="founder-trust__img">
                     <div class="founder-cm-portrait founder-cm-portrait--inline">
@@ -2928,10 +3177,7 @@
                         </div>
                     </div>
                 </div>
-                <div>
-                    <p class="founder-section-kicker" id="founder-trust-title">Why clients trust Ankur</p>
-                    <h2 class="mb-0">Built on Lived Experience and Professional Knowledge</h2>
-                    <p class="mt-3 mb-0" style="font-size: 1.05rem; line-height: 1.7; color: var(--founder-muted);">Clients choose Ankur and Visawizer because guidance combines personal understanding with professional migration knowledge. Visawizer highlights positive client experiences around responsiveness, clear explanation, timely support, careful application handling, and complex case guidance.</p>
+                <div class="founder-trust__copy">
                     <ul class="founder-trust-list">
                         <li>
                             <span class="check" aria-hidden="true"><i class="fa-solid fa-check"></i></span>
@@ -2976,8 +3222,10 @@
                 </div>
                 <div class="founder-message-panel">
                     <p>When I began my own journey in Australia, I understood how important the right guidance is. Migration is not only about forms and files. It is about decisions that affect careers, families, finances, and the future.</p>
+                    <span class="founder-message__rule" aria-hidden="true"></span>
                     <p>Visawizer was created with one purpose — to make this journey clearer, more transparent, and more achievable for people who dream of building their future in Australia.</p>
                     <p>Whether you are a student planning your education, a skilled professional exploring permanent residency, a family hoping to reunite, or someone facing a complex visa situation, our role is to guide you with honesty, care, and professional responsibility.</p>
+                    <span class="founder-message__rule" aria-hidden="true"></span>
                     <p>Your dream deserves direction.<br>Your application deserves attention.<br>Your journey deserves the right guidance.</p>
                     <p class="founder-message__tag">— Ankur Saini</p>
                 </div>
@@ -2985,29 +3233,45 @@
         </div>
     </section>
 
-    <section class="founder-section founder-section--band-light" aria-labelledby="founder-impact-title">
+    <section class="founder-section founder-section--band-light founder-section--impact" aria-labelledby="founder-impact-title">
         <div class="container">
             <div class="founder-section-head founder-section-head--center">
                 <p class="founder-section-kicker">Impact</p>
                 <h2 id="founder-impact-title">Visawizer at a Glance</h2>
             </div>
-            <div class="founder-stats">
-                <div class="founder-stat" data-aos="fade-up" data-aos-duration="600">
-                    <p class="founder-stat__val"><em>2K+</em></p>
+            <div class="founder-stats founder-stats--glance">
+                <article class="founder-stat founder-stat--glance founder-stat--glance-icon-solid" data-aos="fade-up" data-aos-duration="600" tabindex="0">
+                    <div class="founder-stat__top">
+                        <span class="founder-stat__icon" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></span>
+                        <span class="founder-stat__watermark" aria-hidden="true">01</span>
+                    </div>
+                    <h3 class="founder-stat__title">2K+</h3>
                     <p class="founder-stat__lbl">Successful cases</p>
-                </div>
-                <div class="founder-stat" data-aos="fade-up" data-aos-duration="600" data-aos-delay="60">
-                    <p class="founder-stat__val">Registered</p>
+                </article>
+                <article class="founder-stat founder-stat--glance" data-aos="fade-up" data-aos-duration="600" data-aos-delay="60" tabindex="0">
+                    <div class="founder-stat__top">
+                        <span class="founder-stat__icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></span>
+                        <span class="founder-stat__watermark" aria-hidden="true">02</span>
+                    </div>
+                    <h3 class="founder-stat__title">Registered</h3>
                     <p class="founder-stat__lbl">Migration agent guidance</p>
-                </div>
-                <div class="founder-stat" data-aos="fade-up" data-aos-duration="600" data-aos-delay="120">
-                    <p class="founder-stat__val"><em>Multiple Visa Categories</em></p>
-                    <p class="founder-stat__lbl">student, skilled, employer, family, visitor &amp; review matters</p>
-                </div>
-                <div class="founder-stat" data-aos="fade-up" data-aos-duration="600" data-aos-delay="180">
-                    <p class="founder-stat__val">Melbourne-Based</p>
+                </article>
+                <article class="founder-stat founder-stat--glance" data-aos="fade-up" data-aos-duration="600" data-aos-delay="120" tabindex="0">
+                    <div class="founder-stat__top">
+                        <span class="founder-stat__icon" aria-hidden="true"><i class="fa-solid fa-passport"></i></span>
+                        <span class="founder-stat__watermark" aria-hidden="true">03</span>
+                    </div>
+                    <h3 class="founder-stat__title">Multiple visa categories</h3>
+                    <p class="founder-stat__lbl">Student, skilled, employer, family, visitor &amp; review matters</p>
+                </article>
+                <article class="founder-stat founder-stat--glance" data-aos="fade-up" data-aos-duration="600" data-aos-delay="180" tabindex="0">
+                    <div class="founder-stat__top">
+                        <span class="founder-stat__icon" aria-hidden="true"><i class="fa-solid fa-location-dot"></i></span>
+                        <span class="founder-stat__watermark" aria-hidden="true">04</span>
+                    </div>
+                    <h3 class="founder-stat__title">Melbourne-based</h3>
                     <p class="founder-stat__lbl">Australian education &amp; migration services</p>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -3015,10 +3279,18 @@
     <section class="founder-cta" aria-labelledby="founder-cta-title">
         <div class="container">
             <div class="founder-cta__grid">
-                <div>
-                    <p class="founder-eyebrow" style="color: var(--founder-accent-wash);">Start your journey</p>
+                <div class="founder-cta__intro">
+                    <p class="founder-eyebrow">Start your journey</p>
                     <h2 id="founder-cta-title">Start Your Australian Journey with the Right Guidance</h2>
-                    <p>Every successful migration journey begins with the right conversation. Speak with Ankur Saini and the Visawizer team to understand your options, eligibility, documentation needs, and next steps.</p>
+                    <p class="founder-cta__lede">Every successful migration journey begins with the right conversation. Speak with Ankur Saini and the Visawizer team to understand your options, eligibility, documentation needs, and next steps.</p>
+                    <div class="founder-cta__actions">
+                        <a href="{{ url('book-appointment') }}" class="e-primary-btn has-icon text-center">Book Appointment with Ankur<span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span></span></a>
+                        <div class="founder-cta__linkbox">
+                            <a href="tel:+61451951561"><i class="fa-regular fa-phone" aria-hidden="true"></i><span>Call / SMS: 0451&nbsp;951&nbsp;561</span></a>
+                            <a href="mailto:info@visawizer.com.au"><i class="fa-regular fa-envelope" aria-hidden="true"></i><span>Email: info@visawizer.com.au</span></a>
+                        </div>
+                        <a href="{{ url('study') }}" class="founder-btn-outline justify-content-center"><i class="fa-regular fa-passport" aria-hidden="true"></i> Explore pathways</a>
+                    </div>
                 </div>
                 <div class="founder-cta__aside">
                     <div class="founder-cta__visual">
@@ -3027,14 +3299,6 @@
                                 <img src="{{ $founderImg('ankur-saini-hero-portrait.jpeg') }}" width="440" height="550" alt="Book consultation with Ankur Saini Visawizer registered migration agent" loading="lazy" decoding="async">
                             </div>
                         </div>
-                    </div>
-                    <div class="founder-cta__actions">
-                        <a href="{{ url('book-appointment') }}" class="e-primary-btn has-icon text-center">Book Appointment with Ankur<span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span></span></a>
-                        <div class="founder-cta__linkbox">
-                            <a href="tel:+61451951561"><i class="fa-regular fa-phone"></i> Call / SMS: 0451 951 561</a>
-                            <a href="mailto:info@visawizer.com.au"><i class="fa-regular fa-envelope"></i> Email: info@visawizer.com.au</a>
-                        </div>
-                        <a href="{{ url('study') }}" class="founder-btn-outline justify-content-center">Explore pathways</a>
                     </div>
                 </div>
             </div>
