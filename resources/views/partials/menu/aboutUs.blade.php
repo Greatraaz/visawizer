@@ -60,7 +60,7 @@
         <span class="link-text2">Blogs</span>
       </a>
 
-      <a href="{{ url('resources/videos') }}" class="mega-link">
+      <a href="{{ url('/videos') }}" class="mega-link">
         <span class="link-icon2"><i class="fa-solid fa-film"></i></span>
         <span class="link-text2">Videos</span>
       </a>

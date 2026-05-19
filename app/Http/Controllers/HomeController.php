@@ -10,6 +10,8 @@ use App\Support\FamilyVisaData;
 use App\Support\VisitorVisaData;
 use App\Support\ProtectionAppealData;
 use App\Support\BookAppointmentData;
+use App\Support\TestimonialData;
+use App\Services\YouTubeChannelService;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Str;
@@ -211,6 +213,34 @@ class HomeController extends Controller
     public function faq()
     {
         return view('faq');
+    }
+
+    public function testimonials()
+    {
+        $testimonials = TestimonialData::all();
+
+        return view('testimonials', compact('testimonials'));
+    }
+
+    public function videos(YouTubeChannelService $youtube)
+    {
+        $videos = $youtube->getVideos();
+        $featuredVideo = $videos[0] ?? null;
+        $leftVideos = array_slice($videos, 1, 2);
+        $centerBelowVideo = $videos[3] ?? null;
+        $rightVideos = array_slice($videos, 4, 2);
+        $moreVideos = array_slice($videos, 6);
+        $channelUrl = $youtube->channelUrl();
+
+        return view('videos', compact(
+            'featuredVideo',
+            'leftVideos',
+            'centerBelowVideo',
+            'rightVideos',
+            'moreVideos',
+            'channelUrl',
+            'videos'
+        ));
     }
 
     public function codeOfConduct()

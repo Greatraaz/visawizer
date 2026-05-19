@@ -36,5 +36,10 @@ return [
         'secret' => env('RAZORPAY_KEY_SECRET'),
     ],
 
+    'youtube' => [
+        'channel_id' => env('YOUTUBE_CHANNEL_ID', 'UCTqoRPKy4KHXlmgl1m5Cttw'),
+        'channel_handle' => env('YOUTUBE_CHANNEL_HANDLE', 'visawizer'),
+        'cache_ttl' => env('YOUTUBE_CACHE_TTL', 3600),
+    ],
 
 ];

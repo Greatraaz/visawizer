@@ -114,6 +114,8 @@ Route::get('coaching-mentoring-personality-development', [HomeController::class,
 
 Route::get('privacy-policy', [HomeController::class, 'privacyPolicy'])->name('privacy-policy');
 Route::get('faq', [HomeController::class, 'faq'])->name('faq');
+Route::get('testimonials', [HomeController::class, 'testimonials'])->name('testimonials');
+Route::get('videos', [HomeController::class, 'videos'])->name('videos');
 Route::get('code-of-conduct', [HomeController::class, 'codeOfConduct'])->name('code-of-conduct');
 Route::get('return-and-refund', [HomeController::class, 'returnRefund']);
 Route::get('terms-and-conditions', [HomeController::class, 'termsConditions']);
