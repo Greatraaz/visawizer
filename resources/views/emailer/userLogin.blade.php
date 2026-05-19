@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Welcome to Ethics4Work</title>
+    <title>Welcome to Visawizer</title>
 </head>
 <body style="margin:0; padding:0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
     <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; padding: 20px 0;">
@@ -13,7 +13,7 @@
                     <!-- Header -->
                     <tr>
                         <td style="background-color: #1e3a8a; padding: 20px; text-align: center; color: #ffffff;">
-                            <h1 style="margin: 0; font-size: 28px;">Welcome to Ethics4Work!</h1>
+                            <h1 style="margin: 0; font-size: 28px;">Welcome to Visawizer!</h1>
                         </td>
                     </tr>
 
@@ -22,7 +22,7 @@
                         <td style="padding: 30px; color: #333333;">
                             <h2 style="color: #1e3a8a;">Hello {{ $name }},</h2>
                             <p style="font-size: 16px; line-height: 1.5;">
-                                Your account has been created successfully. We are excited to have you onboard at <strong>Ethics4Work</strong>.
+                                Your account has been created successfully. We are excited to have you onboard at <strong>Visawizer</strong>.
                             </p>
 
                             <p style="font-size: 16px; line-height: 1.5;">
@@ -46,7 +46,7 @@
 
                             <p style="font-size: 16px; line-height: 1.5;">
                                 Thank you,<br>
-                                <strong>Ethics4Work Team</strong>
+                                <strong>Visawizer Team</strong>
                             </p>
                         </td>
                     </tr>
@@ -54,7 +54,7 @@
                     <!-- Footer -->
                     <tr>
                         <td style="background-color: #f0f0f0; text-align: center; padding: 15px; font-size: 12px; color: #777777;">
-                            &copy; {{ date('Y') }} Ethics4Work. All rights reserved.
+                            &copy; {{ date('Y') }} Visawizer. All rights reserved.
                         </td>
                     </tr>
 

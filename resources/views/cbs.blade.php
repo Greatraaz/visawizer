@@ -158,7 +158,7 @@
 							<h2>Trusted Partner for Corporate Responsibility</h2>
 						</div>
 						<div class="text">
-							<p>At <span class="green">Ethics<span class="golden">4</span>Work</span>, we guide organizations in building integrity-driven cultures. We provide expert consultation, compliance training, and actionable ethical frameworks to foster accountability, transparency, and responsible workplace practices across industries.</p>
+							<p>At Visawizer, we guide organizations in building integrity-driven cultures. We provide expert consultation, compliance training, and actionable ethical frameworks to foster accountability, transparency, and responsible workplace practices across industries.</p>
 						</div>
 						<div class="services">
 							<div class="service-left">

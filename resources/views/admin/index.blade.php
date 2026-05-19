@@ -34,11 +34,11 @@ p.mb-0.mt-1 a {
                             <div class="float-start mini-stat-img me-4">
                                 <img src="https://themesbrand.com/veltrix/layouts/assets/images/services-icon/02.png">
                             </div>
-                            <h5 class="font-size-16 text-uppercase text-white-50">Courses</h5>
-                            <h4 class="fw-medium font-size-24">{{ $courses }}</h4>
+                            <h5 class="font-size-16 text-uppercase text-white-50">White Papers</h5>
+                            <h4 class="fw-medium font-size-24">{{ $papers }}</h4>
                         </div>
                         <div class="pt-2">
-                            <p class="mb-0 mt-1"><a class="text-white" href="{{url('admin/courses')}}">View Courses</a></p>
+                            <p class="mb-0 mt-1"><a class="text-white" href="{{url('admin/white-papers')}}">View White Paper</a></p>
                         </div>
                     </div>
                 </div>
@@ -50,11 +50,11 @@ p.mb-0.mt-1 a {
                             <div class="float-start mini-stat-img me-4">
                                 <img src="https://themesbrand.com/veltrix/layouts/assets/images/services-icon/02.png">
                             </div>
-                            <h5 class="font-size-16 text-uppercase text-white-50">Events</h5>
-                            <h4 class="fw-medium font-size-24">{{ $seminars }}</h4>
+                            <h5 class="font-size-16 text-uppercase text-white-50">Resources</h5>
+                            <h4 class="fw-medium font-size-24">{{ $resources }}</h4>
                         </div>
                         <div class="pt-2">
-                            <p class="mb-0 mt-1"><a class="text-white" href="{{url('admin/seminars')}}">View Seminars</a></p>
+                            <p class="mb-0 mt-1"><a class="text-white" href="{{url('admin/download-resources')}}">View Download Resources</a></p>
                         </div>
                     </div>
                 </div>
@@ -66,11 +66,27 @@ p.mb-0.mt-1 a {
                             <div class="float-start mini-stat-img me-4">
                                 <img src="https://themesbrand.com/veltrix/layouts/assets/images/services-icon/02.png">
                             </div>
-                            <h5 class="font-size-16 text-uppercase text-white-50">Facilitators</h5>
-                            <h4 class="fw-medium font-size-24">{{ $facilitators }}</h4>
+                            <h5 class="font-size-16 text-uppercase text-white-50">Webinars</h5>
+                            <h4 class="fw-medium font-size-24">{{ $webinars }}</h4>
                         </div>
                         <div class="pt-2">
-                            <p class="mb-0 mt-1"><a class="text-white" href="{{url('admin/dashboard/facilitators')}}">View Facilitators</a></p>
+                            <p class="mb-0 mt-1"><a class="text-white" href="{{url('admin/webinars')}}">View Webinars</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+                <div class="card mini-stat bg-primary text-white">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <div class="float-start mini-stat-img me-4">
+                                <img src="https://themesbrand.com/veltrix/layouts/assets/images/services-icon/02.png">
+                            </div>
+                            <h5 class="font-size-16 text-uppercase text-white-50">Case Study</h5>
+                            <h4 class="fw-medium font-size-24">{{ $caseStudy }}</h4>
+                        </div>
+                        <div class="pt-2">
+                            <p class="mb-0 mt-1"><a class="text-white" href="{{url('admin/dashboard/case-study')}}">View Case Study</a></p>
                         </div>
                     </div>
                 </div>
@@ -99,63 +115,16 @@ p.mb-0.mt-1 a {
                             <div class="float-start mini-stat-img me-4">
                                 <img src="https://themesbrand.com/veltrix/layouts/assets/images/services-icon/02.png">
                             </div>
-                            <h5 class="font-size-16 text-uppercase text-white-50">Users</h5>
-                            <h4 class="fw-medium font-size-24">{{ $users }}</h4>
+                            <h5 class="font-size-16 text-uppercase text-white-50">Testimonials</h5>
+                            <h4 class="fw-medium font-size-24">{{ $testimonials }}</h4>
                         </div>
                         <div class="pt-2">
-                            <p class="mb-0 mt-1"><a class="text-white" href="{{url('admin/users')}}">View Users</a></p>
+                            <p class="mb-0 mt-1"><a class="text-white" href="{{url('admin/testimonials')}}">View Testimonials</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-3 col-md-6">
-                <div class="card mini-stat bg-primary text-white">
-                    <div class="card-body">
-                        <div class="mb-4">
-                            <div class="float-start mini-stat-img me-4">
-                                <img src="https://themesbrand.com/veltrix/layouts/assets/images/services-icon/02.png">
-                            </div>
-                            <h5 class="font-size-16 text-uppercase text-white-50">Orders</h5>
-                            <h4 class="fw-medium font-size-24">{{ $orders }}</h4>
-                        </div>
-                        <div class="pt-2">
-                            <p class="mb-0 mt-1"><a class="text-white" href="{{url('admin/orders')}}">View Orders</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-                <div class="card mini-stat bg-primary text-white">
-                    <div class="card-body">
-                        <div class="mb-4">
-                            <div class="float-start mini-stat-img me-4">
-                                <img src="https://themesbrand.com/veltrix/layouts/assets/images/services-icon/02.png">
-                            </div>
-                            <h5 class="font-size-16 text-uppercase text-white-50">Invoices</h5>
-                            <h4 class="fw-medium font-size-24">{{ $invoice }}</h4>
-                        </div>
-                        <div class="pt-2">
-                            <p class="mb-0 mt-1"><a class="text-white" href="{{url('admin/invoices')}}">View Invoices</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-                <div class="card mini-stat bg-primary text-white">
-                    <div class="card-body">
-                        <div class="mb-4">
-                            <div class="float-start mini-stat-img me-4">
-                                <img src="https://themesbrand.com/veltrix/layouts/assets/images/services-icon/02.png">
-                            </div>
-                            <h5 class="font-size-16 text-uppercase text-white-50">Quiz</h5>
-                            <h4 class="fw-medium font-size-24">{{ $quiz }}</h4>
-                        </div>
-                        <div class="pt-2">
-                            <p class="mb-0 mt-1"><a class="text-white" href="{{url('admin/quiz')}}">View Questions</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
         </div>
 
     </div> <!-- container-fluid -->

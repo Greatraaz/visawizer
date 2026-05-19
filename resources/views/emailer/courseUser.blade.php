@@ -14,7 +14,7 @@
                 <!-- Header -->
                 <tr>
                     <td style="background:#0d6efd; padding:20px; text-align:center; color:#ffffff;">
-                        <h2 style="margin:0;">Ethics4Work</h2>
+                        <h2 style="margin:0;">Visawizer</h2>
                         <p style="margin:5px 0 0;">Course Purchase Successful</p>
                     </td>
                 </tr>
@@ -25,7 +25,7 @@
                         <p style="font-size:16px;">Hello <strong>{{ $name }}</strong>,</p>
 
                         <p style="font-size:15px; color:#444;">
-                            Thank you for purchasing the course with <strong>Ethics4Work</strong>.
+                            Thank you for purchasing the course with <strong>Visawizer</strong>.
                             We’re excited to have you on this learning journey 
                         </p>
 
@@ -50,7 +50,7 @@
 
                         <p style="margin-top:30px; font-size:14px;">
                             Warm regards,<br>
-                            <strong>Team Ethics4Work</strong>
+                            <strong>Team Visawizer</strong>
                         </p>
                     </td>
                 </tr>
@@ -58,7 +58,7 @@
                 <!-- Footer -->
                 <tr>
                     <td style="background:#f1f1f1; padding:15px; text-align:center; font-size:12px; color:#777;">
-                        © {{ date('Y') }} Ethics4Work. All rights reserved.
+                        © {{ date('Y') }} Visawizer. All rights reserved.
                     </td>
                 </tr>
 

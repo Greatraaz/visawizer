@@ -5,7 +5,7 @@
     padding: 20px;
     border-radius: 20px;
     margin-bottom: -70px;
-    background: linear-gradient(180deg, var(--theme-color-3), #0060399e);
+    background: linear-gradient(180deg, var(--theme-color-3), #66003f9e);
 }
 .cImg img {
     position: relative;
@@ -42,7 +42,7 @@
 .details-title {
     padding: 10px;
     border-radius: 10px;
-    background-image: linear-gradient(180deg, var(--theme-color-3), #0060399e);
+    background-image: linear-gradient(180deg, var(--theme-color-3), #66003f9e);
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
     z-index: 1;
     position: relative;
@@ -102,7 +102,7 @@
                             <span>Empowering Ethical Leadership for Every Workplace</span>
                         </div>
                         <div class="common-title m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                            <h2>Why Choose <span class="green">Ethics<span class="golden">4</span>Work</span></h2>
+                            <h2>Why Choose Visawizer</h2>
                         </div>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                             <i class="fa-light fa-chalkboard-teacher"></i>
                         </div>
                         <div class="service-content">
-                            <p><span class="green">Ethics<span class="golden">4</span>Work</span> courses are designed and delivered by industry experts who understand real workplace challenges. Each module focuses on practical that employees can immediately apply in their day-to-day decision-making.</p>
+                            <p>Visawizer courses are designed and delivered by industry experts who understand real workplace challenges. Each module focuses on practical that employees can immediately apply in their day-to-day decision-making.</p>
                         </div>
                         <div class="i-shape">
                             <h1>01</h1>
@@ -143,7 +143,7 @@
                             <i class="fa-light fa-sliders-h"></i>
                         </div>
                         <div class="service-content">
-                            <p>Every organization is different—and so are its ethical challenges. <span class="green">Ethics<span class="golden">4</span>Work</span> offers flexible and customizable training programs that can be tailored to your industry, team size, and specific compliance or leadership goals.</p>
+                            <p>Every organization is different—and so are its ethical challenges. Visawizer offers flexible and customizable training programs that can be tailored to your industry, team size, and specific compliance or leadership goals.</p>
                         </div>
                         <div class="i-shape">
                             <h1>03</h1>
@@ -159,7 +159,7 @@
             <div class="make-donate-layout">
                 <div class="row align-items-center">
                     <div class="col-xl-12">
-                        <p style="font-size: 22px;color: #fff;text-align: center;"><span class="green">Ethics<span class="golden">4</span>Work</span> is not just a training initiative; it is a movement that empowers organizations to rise beyond compliance and embrace integrity as a way of life. It inspires leaders to make decisions with courage, teams to act with responsibility, and workplaces to grow with transparency and respect</p>
+                        <p style="font-size: 22px;color: #fff;text-align: center;">Visawizer is not just a training initiative; it is a movement that empowers organizations to rise beyond compliance and embrace integrity as a way of life. It inspires leaders to make decisions with courage, teams to act with responsibility, and workplaces to grow with transparency and respect</p>
                     </div>
                 </div>
             </div>

@@ -37,7 +37,7 @@
             <div class="col-xl-6">
                 <div class="why-us-content why-us-content-3" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     <div class="common-subtitle">
-                         <span>Why <span class="green">Ethics<span class="golden">4</span>Work</span></span>
+                         <span>Why Visawizer</span>
                     </div>
                     <div class="common-title text-start">
                         <h2>Empowering Organizations Through Ethical Practices</h2>
@@ -86,7 +86,7 @@
                      <span>Work Process</span>
                 </div>
                 <div class="common-title m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                    <h2>How to Engage with <span class="green">Ethics<span class="golden">4</span>Work</span></h2>
+                    <h2>How to Engage with Visawizer</h2>
                 </div>
             </div>
 
@@ -100,7 +100,7 @@
                             <h4 class="circled-heading">01</h4>
                         </div>
                         <div class="service-content">
-                            <p>Discover <span class="green">Ethics<span class="golden">4</span>Work</span>and explore our ethics programs, resources, and insights designed to help individuals and organizations navigate complex ethical challenges.</p>
+                            <p>Discover Visawizerand explore our ethics programs, resources, and insights designed to help individuals and organizations navigate complex ethical challenges.</p>
                         </div>
                     </div>
                 </div>
@@ -152,7 +152,7 @@
                             <h4 class="circled-heading">05</h4>
                         </div>
                         <div class="service-content">
-                            <p>Stay engaged with <span class="green">Ethics<span class="golden">4</span>Work</span>through continuous learning, updates, and exclusive resources that strengthen your ethical confidence.</p>
+                            <p>Stay engaged with Visawizerthrough continuous learning, updates, and exclusive resources that strengthen your ethical confidence.</p>
                         </div>
                     </div>
                 </div>

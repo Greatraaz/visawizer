@@ -11,7 +11,7 @@
                     <span>Testimonials</span>
                 </div>
                 <div class="common-title m-b-0 style-color-3 text-start" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                    <h2>Why Leaders Trust <span class="green">Ethics<span class="golden">4</span>Work</span></h2>
+                    <h2>Why Leaders Trust Visawizer</h2>
                 </div>
             </div>
             <div class="col-xl-6 col-md-5 text-md-end">
@@ -25,7 +25,7 @@
                     </div>
                     <div class="card-content">
                         <div class="review">
-                            <p><span class="green">Ethics<span class="golden">4</span>Work</span>truly transformed the way our team approaches compliance and ethical decisions. Their training sessions were not only insightful but incredibly practical. I finally feel confident that our organization is moving in the right direction.</p>
+                            <p>Visawizertruly transformed the way our team approaches compliance and ethical decisions. Their training sessions were not only insightful but incredibly practical. I finally feel confident that our organization is moving in the right direction.</p>
                         </div>
                         <div class="author-details">
                             <h5>Neha Sharma</h5>
@@ -42,7 +42,7 @@
                     </div>
                     <div class="card-content">
                         <div class="review">
-                            <p>The consultants at <span class="green">Ethics<span class="golden">4</span>Work</span>are experts who genuinely care. Their guidance helped our team handle sensitive situations with clarity and fairness. Their approach is modern, practical, and perfectly tailored to today’s corporate challenges.</p>
+                            <p>The consultants at Visawizerare experts who genuinely care. Their guidance helped our team handle sensitive situations with clarity and fairness. Their approach is modern, practical, and perfectly tailored to today’s corporate challenges.</p>
                         </div>
                         <div class="author-details">
                             <h5>Shivam Gupta</h5>
@@ -59,7 +59,7 @@
                     </div>
                     <div class="card-content">
                         <div class="review">
-                            <p>We struggled with internal communication, but after partnering with <span class="green">Ethics<span class="golden">4</span>Work</span>, everything became structured and transparent. Their ethical frameworks are easy to implement and made a real difference in our daily processes.</p>
+                            <p>We struggled with internal communication, but after partnering with Visawizer, everything became structured and transparent. Their ethical frameworks are easy to implement and made a real difference in our daily processes.</p>
                         </div>
                         <div class="author-details">
                             <h5>Aditi Mehra</h5>
@@ -76,7 +76,7 @@
                     </div>
                     <div class="card-content">
                         <div class="review">
-                            <p>I was impressed with their deep understanding of workplace ethics. The customised compliance training they provided elevated our entire department’s performance. <span class="green">Ethics<span class="golden">4</span>Work</span>is not just a service provider they are growth partners.</p>
+                            <p>I was impressed with their deep understanding of workplace ethics. The customised compliance training they provided elevated our entire department’s performance. Visawizeris not just a service provider they are growth partners.</p>
                         </div>
                         <div class="author-details">
                             <h5>Laxman Singh</h5>

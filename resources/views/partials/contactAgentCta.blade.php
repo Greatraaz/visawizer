@@ -45,7 +45,7 @@
         justify-content: center;
         font-size: 1.65rem;
         color: var(--theme-color-2, #e7b23b);
-        background: linear-gradient(161.69deg, #006039 12.43%, #0a4d32 100%);
+        background: linear-gradient(161.69deg, #66003f 12.43%, #0a4d32 100%);
         border-radius: 50%;
         box-shadow: 0 12px 28px -12px rgba(0, 96, 57, 0.45);
     }
@@ -74,7 +74,7 @@
         font-weight: 500;
     }
     .contact-page-agent-card__links a {
-        color: #006039;
+        color: #66003f;
         text-decoration: none;
     }
     .contact-page-agent-card__links a:hover {

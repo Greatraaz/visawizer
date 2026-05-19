@@ -5,10 +5,10 @@
         <div class="page-title-box">
             <div class="row align-items-center">
                 <div class="col-md-8">
-                    <h6 class="page-title">Course Enquiries</h6>
+                    <h6 class="page-title">Enquiries</h6>
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item">{{ config('site.siteTitle') }}</li>
-                        <li class="breadcrumb-item"> Course Enquiries </li>
+                        <li class="breadcrumb-item"> Enquiries </li>
                         <li class="breadcrumb-item active" aria-current="page">List</li>
                     </ol>
                 </div>

@@ -14,6 +14,12 @@ textarea.form-control, .form-control {
 .contact-form-3 p {
     max-width: 100%;
 }
+.detail-sidebar .s-widget-wrap {
+    background: #e5e5e5;
+}
+.detail-sidebar .s-widget-wrap .organizer-info-wrap .date, .detail-sidebar .s-widget-wrap .organizer-info-wrap .location {
+    justify-content: left;
+}
 </style>
 @include('partials.breadcrumb')
 
@@ -73,7 +79,7 @@ textarea.form-control, .form-control {
                                         <input type="hidden" name="event" value="{{ $event->title }}">
                                         <div class="hero-content-1">
                                             <div class="join-us">       
-                                                <button class="e-primary-btn has-icon is-hover-white" type="submit"><span class="btext">Click</span> <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
+                                                <button class="e-primary-btn has-icon is-hover-white" type="submit"><span class="btext">Register Now</span> <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                                                 </button>
                                             </div>
                                         </div>
@@ -96,14 +102,14 @@ textarea.form-control, .form-control {
                                     </div>
                                     <div class="organizer-info-wrap">
                                         <div class="thumb">
-                                            <img src="{{ asset('assets/images/logo.png') }}" alt="thumb"/ style="height: 100%;object-fit: contain;    border-radius: 0;padding: 6px;">
+                                            <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="thumb"/ style="height: 100%;object-fit: contain;    border-radius: 0;padding: 6px;">
                                         </div>
                                         <div class="name">
                                             <h3>{{ $event->speaker }}</h3>
                                         </div>
                                         <div class="text">
                                             <p>
-                                                “Improve your scientific skills including research”
+                                                “Committed to providing tailored solutions”
                                             </p>
                                         </div>
                                         <div class="divider"></div>

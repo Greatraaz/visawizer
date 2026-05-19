@@ -76,7 +76,7 @@ ye homepage pr contact form tha
         <!-- Section Header -->
         <div class="text-center m-b-50 m-b-xs-40">
             <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                <span>Your Journey With <span class="green">Ethics<span class="golden">4</span>Work</span></span>
+                <span>Your Journey With Visawizer</span>
             </div>
             <div class="common-title m-b-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                 <h2>A Pathway to Ethical Excellence</h2>

@@ -65,7 +65,7 @@
                     <div class="details-layout-wrap align-items-center">
                         <div class="details-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                             <div class="details-title m-b-15">
-                                <h3>What is Ethics4Work and for whom?</h3>
+                                <h3>What is Visawizer and for whom?</h3>
                             </div>
 
                             <ul class="achee">

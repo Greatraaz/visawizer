@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-    <title>Admin Login | Ethics4work</title>
+    <title>Admin Login | {{ config('site.siteTitle') }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/admin/auth/css/bootstrap.min.css') }}">
@@ -12,9 +12,9 @@
     <link type="text/css" rel="stylesheet" href="{{ asset('assets/admin/auth/css/style.css') }}">
 <style type="text/css">
 .login-31 {
-    background-image: url({{ asset('assets/admin/images/bg.webp') }});
-    background-size: contain;
-    background-position: right;
+    background-image: url({{ asset('img/bg.png') }});
+    background-size: cover;
+    background-position: center;
 }
 </style>
 </head>
@@ -54,10 +54,10 @@
                 <div class="col-lg-6 col-md-12 col-sm-12 col-pad-0 bg-img align-self-center">
                     <div class="inner">
                         <a href="{{ url('/') }}">
-                            <img src="{{ asset('assets/images/favicon.svg') }}" alt="logo" class="logo" width="100">
+                            <img src="{{ asset('assets/images/visa_favicon.png') }}" alt="logo" class="logo" width="100">
                         </a>
-                        <h3 class="animate-charcter">Ethics4work</h3>
-                        <p class="mb-0"><span class="green">Ethics<span class="golden">4</span>Work</span>is your partner in creating transparent, responsible and culture-driven organizations.</p>
+                        <h3 class="animate-charcter">{{ config('site.siteTitle') }}</h3>
+                        <p class="mb-0">Visawizeris your partner in creating transparent, responsible and culture-driven organizations.</p>
                         <div class="clearfix"></div>
                     </div>
                 </div>

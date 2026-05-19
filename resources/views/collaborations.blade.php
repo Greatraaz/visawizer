@@ -164,13 +164,13 @@
             <div class="col-xl-6">
                 <div class="why-us-content-2" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     <div class="common-subtitle text-uppercase">
-                        <span>About <span class="green">Ethics<span class="golden">4</span>Work</span></span>
+                        <span>About Visawizer</span>
                     </div>
                     <div class="common-title text-start">
                         <h2>Collaborating for Ethical Impact Across Industries</h2>
                     </div>
                     <div class="text">
-                        <p>At <span class="green">Ethics<span class="golden">4</span>Work</span>, we partner with organizations, businesses, and institutions to foster a culture of integrity, accountability, and transparency. Our programs focus on promoting ethical leadership, compliance, and socially responsible practices across sectors.</p>
+                        <p>At Visawizer, we partner with organizations, businesses, and institutions to foster a culture of integrity, accountability, and transparency. Our programs focus on promoting ethical leadership, compliance, and socially responsible practices across sectors.</p>
                     </div>
                     <div class="services">
                         <div class="service-left">

@@ -5,10 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Seminars;
-use App\Models\Courses;
-use App\Models\User;
-use App\Models\Order;
-use App\Models\Invoice;
+use App\Models\CaseStudy;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Cache;
@@ -22,15 +19,13 @@ class AdminController extends Controller
     
     public function index()
     {
-        $courses = Courses::count();
-        $seminars = Seminars::count();
-        $users = User::count();
-        $orders = Order::count();
-        $invoice = Invoice::count();
+        $papers = \DB::table('white_papers')->count();
+        $testimonials = \DB::table('testimonials')->count();
+        $resources = \DB::table('resources')->count();
+        $webinars = Seminars::count();
+        $caseStudy = CaseStudy::count();
         $enquiries = \DB::table('contactus')->count();
-        $facilitators = \DB::table('facilitators')->count();
-        $quiz = \DB::table('quiz')->count();
-        return view('admin.index', compact('seminars', 'courses', 'enquiries', 'facilitators', 'users', 'orders', 'invoice', 'quiz'));
+        return view('admin.index', compact('papers', 'resources', 'enquiries', 'caseStudy', 'testimonials', 'webinars'));
     }
 
     public function enquiries()
@@ -275,96 +270,5 @@ class AdminController extends Controller
 
         return redirect('admin/dashboard/testimonials')->with('success', 'Record deleted successfully.');
     }
-    
-    public function facilitators()
-    {
-        $facilitators = DB::table('facilitators')->orderBy('id', 'desc')->get();
-        return view('admin.list.facilitators', compact('facilitators'));
-    }
-
-    public function editFacilitator($id)
-    {
-        $facilitator = DB::table('facilitators')->where('id', $id)->first();
-        return view('admin.update.facilitators', compact('facilitator'));
-    }
-
-    public function saveFacilitator(Request $request)
-    {
-        $data = $request->validate([
-            'name'         => 'required|string|max:255',
-            'designation'  => 'nullable|string|max:255',
-            'about'  => 'required|string',
-            'status'       => 'required',
-            'image'        => 'required|image|mimes:jpg,jpeg,png,webp|max:1024',
-        ]);
-
-        if ($request->hasFile('image')) {
-            $path = public_path('assets/uploads/facilitators/');
-            if (!file_exists($path)) {
-                mkdir($path, 0777, true);
-            }
-
-            $fileName = uniqid() . '.' . $request->image->extension();
-            $request->image->move($path, $fileName);
-
-            $data['image'] = 'assets/uploads/facilitators/' . $fileName;
-        }
-
-        DB::table('facilitators')->insert($data);
-        return response()->json(['status' => 1, 'message' => 'Facilitator added successfully']);
-    }
-
-    public function updateFacilitator(Request $request)
-    {
-        $data = $request->validate([
-            'id'           => 'required|integer',
-            'name'         => 'required|string|max:255',
-            'designation'  => 'nullable|string|max:255',
-            'about'  => 'required|string',
-            'status'       => 'required',
-            'image'        => 'nullable|image|mimes:jpg,jpeg,png,webp|max:1024',
-        ]);
-
-        $facilitator = DB::table('facilitators')->where('id', $data['id'])->first();
-
-        if (!$facilitator) {
-            return response()->json(['status' => 0, 'message' => 'Facilitator not found']);
-        }
-
-        if ($request->hasFile('image')) {
-            $path = public_path('assets/uploads/facilitators/');
-            if (!file_exists($path)) {
-                mkdir($path, 0777, true);
-            }
-
-            $fileName = uniqid() . '.' . $request->image->extension();
-            $request->image->move($path, $fileName);
-
-            if (!empty($facilitator->image) && file_exists(public_path($facilitator->image))) {
-                unlink(public_path($facilitator->image));
-            }
-
-            $data['image'] = 'assets/uploads/facilitators/' . $fileName;
-        }
-
-        DB::table('facilitators')->where('id', $data['id'])->update($data);
-
-        return response()->json(['status' => 1, 'message' => 'Facilitator updated successfully']);
-    }
-
-    public function deleteFacilitator($id)
-    {
-        $facilitator = DB::table('facilitators')->where('id', $id)->first();
-
-        if (!$facilitator) {
-            return response()->json(['status' => 0, 'message' => 'Facilitator not found']);
-        }
-
-        if (!empty($facilitator->image) && file_exists(public_path($facilitator->image))) {
-            unlink(public_path($facilitator->image));
-        }
-
-        DB::table('facilitators')->where('id', $id)->delete();
-        return redirect('admin/dashboard/facilitators')->with('success', 'Record deleted successfully.');
-    }
+   
 }    

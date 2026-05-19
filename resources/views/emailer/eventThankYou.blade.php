@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Ethics4Work - Thank You</title>
+    <title>Visawizer - Thank You</title>
 </head>
 <body style="margin:0; padding:0; background:#f4f4f4; font-family:Arial, sans-serif;">
 
@@ -21,7 +21,7 @@
             </p>
 
             <p style="font-size:16px; line-height:1.6;">
-                Your registration has been successfully completed for the event <strong>{{ $event }}</strong> with <strong><span class="green">Ethics<span class="golden">4</span>Work</span></strong>.
+                Your registration has been successfully completed for the event <strong>{{ $event }}</strong> with <strong>Visawizer</strong>.
                 We are excited to have you join us for this upcoming session.
             </p>
 
@@ -32,10 +32,10 @@
 
             <p style="font-size:16px; line-height:1.6;">
                 Warmly,<br>
-                <strong>Team <span class="green">Ethics<span class="golden">4</span>Work</span></strong><br>
+                <strong>Team Visawizer</strong><br>
                 Ethics that Works at Work<br>
                 Email: <a href="mailto:{{ config('site.email1') }}" style="color:var(--theme-color-3);">{{ config('site.email1') }}</a><br>
-                Web: <a href="https://ethics4work.com" style="color:var(--theme-color-3);">https://ethics4work.com</a>
+                Web: <a href="https://Visawizer.com" style="color:var(--theme-color-3);">https://Visawizer.com</a>
             </p>
 
         </div>

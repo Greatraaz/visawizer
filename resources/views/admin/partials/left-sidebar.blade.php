@@ -7,41 +7,9 @@
                 <li><a href="{{url('admin/dashboard')}}" class="waves-effect"><i class="ti-home"></i><span>Dashboard</span></a></li>
 
                 <li>
-                    <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="ti-archive"></i><span> Courses </span></a>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="ti-archive"></i><span> Events/Webinars </span></a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{url('admin/courses')}}">Courses</a></li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="ti-archive"></i><span> Orders </span></a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{url('admin/orders')}}">Orders</a></li>
-                        <li><a href="{{url('admin/invoices')}}">Invoices</a></li>
-                        <li><a href="{{url('admin/payments')}}">Payments</a></li>
-                        <li><a href="{{url('admin/users')}}">Users</a></li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="ti-archive"></i><span> Events/Seminars </span></a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{url('admin/seminars')}}">Events and Seminars</a></li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="ti-archive"></i><span> Facilitators </span></a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{url('admin/dashboard/facilitators')}}">Facilitators</a></li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="ti-package"></i><span>Enquiries</span></a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{url('admin/enquiries')}}">Course Enquiries</a></li>
-                        <li><a href="{{url('admin/event-enquiries')}}">Event Enquiries</a></li>
+                        <li><a href="{{url('admin/webinars')}}">Events and Webinars</a></li>
                     </ul>
                 </li>
 
@@ -55,10 +23,19 @@
                 </li>
 
                 <li>
-                    <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="ti-package"></i><span>Quiz</span></a>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="ti-package"></i><span>Utilities</span></a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{url('admin/quiz-category')}}">Quiz Name</a></li>
-                        <li><a href="{{url('admin/quiz')}}">Quiz Questions</a></li>
+                        <li><a href="{{url('admin/white-papers')}}">White papers</a></li>
+                        <li><a href="{{url('admin/case-study')}}">Case Study</a></li>
+                        <li><a href="{{url('admin/download-resources')}}">Download Resources</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow waves-effect"><i class="ti-package"></i><span>Enquiries</span></a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="{{url('admin/enquiries')}}">Website Enquiries</a></li>
+                        <li><a href="{{url('admin/event-enquiries')}}">Webinar Enquiries</a></li>
                     </ul>
                 </li>
             </ul>

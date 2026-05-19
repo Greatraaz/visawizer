@@ -57,10 +57,10 @@
 
         <!-- Decorative tip box -->
         <div style="margin-top:1.4rem;background:rgba(33,150,243,0.08);border:1px solid rgba(33,150,243,0.2);border-radius:10px;padding:0.85rem 1rem;">
-          <div style="font-size:0.7rem;color:var(--theme-color-3);font-weight:600;margin-bottom:4px;display:flex;align-items:center;gap:6px; transform: translateX(18px) scale(1.2);">
+          <div style="font-size:1rem;color:var(--theme-color-3);font-weight:600;margin-bottom:4px;display:flex;align-items:center;gap:6px; transform: translateX(18px) scale(1.2);">
             <i class="fa-solid fa-circle-info"></i> OSHC Required
           </div>
-          <p style="font-size:0.72rem;color:#000000;line-height:1.5;margin:0;">
+          <p style="font-size:0.9rem;color:#000000;line-height:1.5;margin:0;">
             All international students must maintain valid OSHC for the duration of their visa.
           </p>
         </div>
@@ -113,9 +113,9 @@
         <div style="margin-top:1.4rem;">
           <div style="font-size:0.68rem;color:var(--muted);font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:.7rem;">Most Applied</div>
           <div class="d-flex flex-wrap gap-2">
-            <span style="background:rgba(232,160,32,0.12);border:1px solid rgba(232,160,32,0.3);color:var(--theme-color-3);font-size:0.68rem;padding:3px 10px;border-radius:4px;font-weight:600;">Subclass 500</span>
-            <span style="background:rgba(232,160,32,0.12);border:1px solid rgba(232,160,32,0.3);color:var(--theme-color-3);font-size:0.68rem;padding:3px 10px;border-radius:4px;font-weight:600;">Subclass 485</span>
-            <span style="background:rgba(232,160,32,0.12);border:1px solid rgba(232,160,32,0.3);color:var(--theme-color-3);font-size:0.68rem;padding:3px 10px;border-radius:4px;font-weight:600;">OSHC</span>
+            <span style="background:rgba(232,160,32,0.12);border:1px solid rgba(232,160,32,0.3);color:var(--theme-color-3);font-size:0.8rem;padding:3px 10px;border-radius:4px;font-weight:600;">Subclass 500</span>
+            <span style="background:rgba(232,160,32,0.12);border:1px solid rgba(232,160,32,0.3);color:var(--theme-color-3);font-size:0.8rem;padding:3px 10px;border-radius:4px;font-weight:600;">Subclass 485</span>
+            <span style="background:rgba(232,160,32,0.12);border:1px solid rgba(232,160,32,0.3);color:var(--theme-color-3);font-size:0.8rem;padding:3px 10px;border-radius:4px;font-weight:600;">OSHC</span>
           </div>
         </div>
       </div>
@@ -123,7 +123,7 @@
       <div class="featured-panel">
         <div>
           <div class="featured-img-wrap">
-            <img src="{{ asset('assets/images/services/image-43.webp') }}" alt="Students studying in Australia">
+            <img src="{{ asset('img/map.png') }}" alt="Students studying in Australia">
             <span class="featured-badge">✦ Expert Guidance</span>
           </div>
 

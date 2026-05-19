@@ -7,7 +7,7 @@
 </head>
 <body style="margin:0; padding:0; background:#f4f7f6; font-family:Arial, sans-serif; color:#1f2937;">
     <div style="max-width:640px; margin:32px auto; background:#ffffff; border-radius:12px; overflow:hidden; box-shadow:0 10px 30px rgba(15,23,42,0.08);">
-        <div style="background:linear-gradient(135deg, #006039 0%, #be182f 100%); padding:28px 32px; color:#ffffff; text-align:center;">
+        <div style="background:linear-gradient(135deg, #66003f 0%, #be182f 100%); padding:28px 32px; color:#ffffff; text-align:center;">
             <h1 style="margin:0; font-size:28px; line-height:1.2;">Thank you for contacting Visawizer</h1>
         </div>
 
@@ -36,8 +36,8 @@
             <p style="margin:24px 0 0; font-size:16px; line-height:1.7;">
                 Regards,<br>
                 <strong>Team Visawizer</strong><br>
-                Email: <a href="mailto:{{ config('site.email1') }}" style="color:#006039; text-decoration:none;">{{ config('site.email1') }}</a><br>
-                Phone: <a href="tel:{{ trim(config('site.phone1')) }}" style="color:#006039; text-decoration:none;">{{ trim(config('site.phone1')) }}</a><br>
+                Email: <a href="mailto:{{ config('site.email1') }}" style="color:#66003f; text-decoration:none;">{{ config('site.email1') }}</a><br>
+                Phone: <a href="tel:{{ trim(config('site.phone1')) }}" style="color:#66003f; text-decoration:none;">{{ trim(config('site.phone1')) }}</a><br>
                 Address: {{ config('site.address1') }}
             </p>
         </div>

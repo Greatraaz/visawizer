@@ -16,13 +16,13 @@
     min-height: 70px;
 }
 </style>
-<section class="latest-blog-section p-t-100 p-t-xs-80 p-b-60 p-b-xs-20 p-b-md-20 p-b-lg-20 p-b-xl-20">
+<section class="latest-blog-section p-t-50 p-b-50" style="background: #e1e1e1;">
     <div class="container">
-        <div class="row justify-content-between align-items-center m-b-150 m-b-xl-120 m-b-lg-100 m-b-md-80 m-b-xs-80">
+        <div class="row justify-content-between align-items-center m-b-50">
             <div class="col-md-6">
                 <div class="latest-blog-content" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <div class="common-subtitle">
-                        <span>News & Blog</span>
+                        <span class="bg-p">News & Blog</span>
                     </div>
                     <div class="common-title text-start">
                         <h2>Check Latest Blog Post</h2>
@@ -63,7 +63,7 @@
                                             </div>
                                         </div>
                                         <div class="content">
-                                            <div class="content-top p-0 m-b-20">
+                                            <div class="content-top pt-3 m-b-20">
                                                 <div class="title">
                                                     <h3><a href="{{ url('blog/' . $slug) }}">{!! $title !!}</a></h3>
                                                 </div>

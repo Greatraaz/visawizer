@@ -44,8 +44,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background:
-        linear-gradient(90deg, rgba(7, 27, 24, 0.9) 0%, rgba(7, 27, 24, 0.76) 36%, rgba(7, 27, 24, 0.52) 68%, rgba(7, 27, 24, 0.22) 100%);
+    background: linear-gradient(90deg, rgb(7 27 24 / 0%) 0%, rgb(7 27 24 / 0%) 36%, rgb(7 27 24 / 27%) 68%, rgba(7, 27, 24, 0.22) 100%);
 }
 .home-static-hero .container {
     position: relative;
@@ -281,7 +280,7 @@
 <!-- hero-section end -->
 
 <!-- hero-section start -->
-<section class="home-static-hero hero-side hero-slider-active-1" style="background-image: linear-gradient(135deg, rgba(7, 27, 24, 0.16) 0%, rgba(7, 27, 24, 0.1) 100%), url('{{ asset('assets/images/banner.jpg') }}');">
+<section class="home-static-hero hero-side hero-slider-active-1" style="background-image: linear-gradient(135deg, rgba(7, 27, 24, 0.16) 0%, rgba(7, 27, 24, 0.1) 100%), url('{{ asset('img/banner.png') }}');">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -303,7 +302,7 @@
                     </div>
 
                     <div class="join-us">
-                        <a class="e-primary-btn has-icon" href="{{ url('contact-us') }}">
+                        <a class="e-primary-btn has-icon" href="{{ url('book-appointment') }}">
                             Book Appointment
                             <span class="icon-wrap">
                                 <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -355,13 +354,13 @@
             <div class="col-xl-6">
                 <div class="thumb px-xl-5 left" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <div class="thumb-1">
-                        <img alt="thumb-1" src="{{ asset('assets/images/principles-image-1.webp') }}">
+                        <img alt="thumb-1" src="{{ asset('img/img1.png') }}">
                         <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-14.webp') }}"></div>
                     </div>
-                    <div class="thumb-2"><img alt="thumb-2" src="{{ asset('assets/images/principles-image-2.webp') }}"></div>
+                    <div class="thumb-2"><img alt="thumb-2" src="{{ asset('img/img2.png') }}"></div>
                     <div class="thumb-3">
                         <div class="shape-wrapped-thumb">
-                            <img alt="thumb-3" src="{{ asset('assets/images/principles-image-3.webp') }}">
+                            <img alt="thumb-3" src="{{ asset('img/img3.png') }}">
                             <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-13.webp') }}"></div>
                             <div class="s-shape-2"><img alt="shape-2" src="{{ asset('assets/img/shapes/shape-15.webp') }}"></div>
                         </div>
@@ -373,7 +372,7 @@
             <div class="col-xl-6">
                 <div class="why-us-content" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     <div class="common-subtitle">
-                        <span>Why Visawizer</span>
+                        <span class="bg-p">Why Visawizer</span>
                     </div>
                     <div class="common-title text-start mb-3">
                         <h2>Practical migration guidance built around real goals</h2>
@@ -472,7 +471,7 @@
                             <div class="tab-pane fade show active" id="c-tab-1-pane" role="tabpanel" aria-labelledby="c-tab-1" tabindex="0">
                                 <div class="text">
                                     <p>
-                                        <span class="green"><span class="green">Ethics<span class="golden">4</span>Work</span></span> is a community of educators, researchers, business leaders, and ethics practitioners committed to embedding ethical thinking into everyday decision-making. 
+                                        <span class="green">Visawizer</span> is a community of educators, researchers, business leaders, and ethics practitioners committed to embedding ethical thinking into everyday decision-making. 
                                         We bring together academic rigor, responsible leadership practice, and real-world insights to strengthen integrity, accountability, and human dignity across institutions by:
                                     </p>
                                 </div>
@@ -543,7 +542,7 @@
                     <div class="project-card">
                         <div class="thumb">
                             <a href="{{ url('service/advisory-consulting') }}">
-                                <img src="{{ asset('assets/images/from-policy-to-practice/1.webp') }}" alt="thumb-14"/>
+                                <img src="{{ asset('img/study-in-australia.png') }}" alt="thumb-14"/>
                             </a>
                             <div class="content">
                                 <h5>Study in Australia</h5>
@@ -564,7 +563,7 @@
                     <div class="project-card">
                         <div class="thumb">
                             <a href="{{ url('service/training-workshops') }}">
-                                <img src="{{ asset('assets/images/from-policy-to-practice/2.jpg') }}" alt="thumb-15"/>
+                                <img src="{{ asset('img/visit-autraliya.png') }}" alt="thumb-15"/>
                             </a>
                             <div class="content">
                                 <h5>Visit Australia</h5>
@@ -585,7 +584,7 @@
                     <div class="project-card">
                         <div class="thumb">
                             <a href="{{ url('service/certification-programs') }}">
-                                <img src="{{ asset('assets/images/from-policy-to-practice/3.webp') }}" alt="thumb-16"/>
+                                <img src="{{ asset('img/skilled-migration.png') }}" alt="thumb-16"/>
                             </a>
                             <div class="content">
                                 <h5>Skilled Migration</h5>
@@ -606,7 +605,7 @@
                     <div class="project-card">
                         <div class="thumb">
                             <a href="{{ url('service/measure-maintain') }}">
-                                <img src="{{ asset('assets/images/from-policy-to-practice/4.jpg') }}" alt="thumb-14"/>
+                                <img src="{{ asset('img/employer-sponsored.png') }}" alt="thumb-14"/>
                             </a>
                             <div class="content">
                                 <h5>Employer Sponsored</h5>
@@ -627,7 +626,7 @@
                     <div class="project-card">
                         <div class="thumb">
                             <a href="{{ url('service/centres-accreditation') }}">
-                                <img src="{{ asset('assets/images/from-policy-to-practice/5.webp') }}" alt="thumb-15"/>
+                                <img src="{{ asset('img/family-visas.png') }}" alt="thumb-15"/>
                             </a>
                             <div class="content">
                                 <h5>Family Visas</h5>
@@ -648,7 +647,7 @@
                     <div class="project-card">
                         <div class="thumb">
                             <a href="{{ url('service/coaching-mentoring') }}">
-                                <img src="{{ asset('assets/images/from-policy-to-practice/6.jpg') }}" alt="thumb-16"/>
+                                <img src="{{ asset('img/appeals-protection.png') }}" alt="thumb-16"/>
                             </a>
                             <div class="content">
                                 <h5>Appeals & Protection</h5>
@@ -712,7 +711,7 @@
                                 <div class="swiper-slide">
                                     <div class="camping-card">
                                         <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('assets/images/ethical-theories.webp') }}">
+                                            <img alt="thumb-2" src="{{ asset('img/admission-support.png') }}">
                                         </div>
                                         <div class="content">
                                             <div class="content-top">
@@ -723,20 +722,13 @@
                                                     <p>Find suitable colleges, universities, and programs based on your profile and budget.</p>
                                                 </div>
                                             </div>
-                                            <!-- <div class="mb-3 ms-3">
-                                                <div class="d-bottom">
-                                                    <a class='e-primary-btn has-icon d-btn' href="#">Read More
-                                                        <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
-                                                    </a>
-                                                </div>
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="camping-card">
                                         <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('assets/images/stakeholder-managemt.webp') }}">
+                                            <img alt="thumb-2" src="{{ asset('img/student-visa.png') }}">
                                         </div>
                                         <div class="content">
                                             <div class="content-top">
@@ -747,20 +739,13 @@
                                                     <p>Support for Student Visa 500, Student Guardian 590, and Training Visa 407 pathways.</p>
                                                 </div>
                                             </div>
-                                            <!-- <div class="mb-3 ms-3">
-                                                <div class="d-bottom">
-                                                    <a class='e-primary-btn has-icon d-btn' href="#">Read More
-                                                        <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
-                                                    </a>
-                                                </div>
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="camping-card">
                                         <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('assets/images/csr-sustainability.webp') }}">
+                                            <img alt="thumb-2" src="{{ asset('img/post-study.png') }}">
                                         </div>
                                         <div class="content">
                                             <div class="content-top">
@@ -771,20 +756,13 @@
                                                     <p>Explore graduate visa pathways and post-study opportunities for your future career.</p>
                                                 </div>
                                             </div>
-                                            <!-- <div class="mb-3 ms-3">
-                                                <div class="d-bottom">
-                                                    <a class='e-primary-btn has-icon d-btn' href="#">Read More
-                                                        <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
-                                                    </a>
-                                                </div>
-                                            </div> -->
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
                                     <div class="camping-card">
                                         <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('assets/images/giving-voice.webp') }}">
+                                            <img alt="thumb-2" src="{{ asset('img/student-support.png') }}">
                                         </div>
                                         <div class="content">
                                             <div class="content-top">
@@ -831,6 +809,155 @@
     </section>
     <!-- our-camping end -->
 
+<style>
+.hero-section {
+  position: relative;
+  padding: 80px 0;
+}
+.hero-bg {
+  position: absolute; inset: 0;
+  background-image: linear-gradient(#66003fb3), url('{{ asset('img/banner1.png') }}');
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+}
+.hero-content { position: relative; z-index: 2; }
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(39,174,112,0.12);
+    border: 1px solid #fff;
+    color: #fff;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 7px;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+.hero-title {
+    font-size: clamp(2.4rem, 5.5vw, 3.2rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+.hero-title .accent {
+    color: #ffffff;
+    border-bottom: 1px solid;
+}
+.hero-desc {
+  font-size: 1.08rem;
+  line-height: 1.4;
+  color: rgba(255,255,255,1);
+  max-width: 560px;
+  margin-bottom: 1rem;
+}
+.hero-img-block {
+  position: relative;
+  z-index: 2;
+}
+.hero-img-main {
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 8px 48px rgba(0,0,0,0.28);
+}
+.hero-img-main img {
+    width: 100%;
+    height: 550px;
+    display: block;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: top;
+}
+.hero-float-card {
+  position: absolute;
+  bottom: -24px;
+  left: -24px;
+  background: #305139;
+  color: #fff;
+  border-radius: 12px;
+  padding: 20px 24px;
+  box-shadow: 0 12px 40px rgba(39,174,112,0.35);
+  min-width: 200px;
+}
+.hero-float-card .num { font-size: 2rem; font-weight: 700; }
+.hero-float-card .lbl { font-size: 0.8rem; opacity: 0.85; margin-top: 2px; }
+.hero-float-card2 {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #fff;
+    color: #1a1f2e;
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    min-width: 180px;
+    border: 4px solid #79375e;
+    z-index: 99999999;
+}
+.hero-float-card2 .icon-wrap {
+  width: 38px; height: 38px;
+  background: #d4edda;
+  border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  color: #66003f;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.hero-float-card2 .lbl2 { font-size: 0.78rem; color: #6b7280; }
+.hero-float-card2 .val { font-size: 1rem; font-weight: 700; color: #1a1f2e; }    
+    </style>
+
+    <section class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="row align-items-center">
+            <div class="col-lg-6 hero-content">
+                <div class="hero-badge">
+                <i class="fa fa-globe"></i> Founder, Visawizer Education & Migration Services
+                </div>
+                <h2 class="hero-title">
+                From <span class="accent"> Migrant Journey </span> to Migration Guidance
+                </h2>
+                <p class="hero-desc">
+                Ankur Saini’s story began with a dream many people carry — to build a better future in Australia. Having personally experienced the journey of moving to Australia, understanding the migration system, and navigating the pathway toward settlement, Ankur transformed his experience into a professional mission.
+                </p>
+                <p class="hero-desc" style="font-size:0.93rem; margin-bottom:2rem;">
+                Today, as the Founder of Visawizer Education & Migration Services and a Registered Migration Agent, he helps students, professionals, families, and skilled migrants make informed, confident, and legally guided decisions for their Australian journey.
+                </p>
+                <div class="hero-content-1">    
+                    <div class="join-us">
+                        <a class="e-primary-btn has-icon" href="{{ url('book-appointment') }}">
+                            Book Appointment
+                            <span class="icon-wrap">
+                                <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
+                            </span>
+                        </a>
+                        <a class="home-static-secondary-btn" href="{{ url('ankur-saini-founder-visawizer') }}">
+                            Know More
+                            <span class="icon-wrap">
+                                <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 hero-img-block ps-lg-5 mt-5 mt-lg-0">
+                <div class="hero-img-main" style="position:relative;">
+                <img src="{{ url('img/ankur2.jpeg') }}" alt="Resilient minds" loading="eager" fetchpriority="high" decoding="async">
+                <div class="hero-float-card2">
+                    <div class="icon-wrap"><i class="fa fa-user"></i></div>
+                    <div class="lbl2">Registered Migration Agent</div>
+                    <div class="val">Ankur Saini</div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
     <!-- skilled-sponsored-section start -->
     <section class="volunteer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80">
         <div class="container">
@@ -848,7 +975,7 @@
 
             <div class="row row-gap-4 justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                 <div class="col-xl-6 col-md-6">
-                    <div class="service-card" style="background-image: linear-gradient(90deg, rgb(102 0 63), rgba(0, 0, 0, 0)), url(https://visawizer.com.au/wp-content/uploads/2022/01/hero-1.jpg);background-size: cover;background-position: center;">
+                    <div class="service-card" style="background-image: linear-gradient(90deg, rgb(102 0 63), rgba(0, 0, 0, 0)), url({{ asset('img/bg4.jpg') }});background-size: cover;background-position: center;">
                         <div class="service-top">
                             <h4>Skilled Migration</h4>
                             <i><img alt="icon" src="{{ asset('assets/images/icon/workplace-business.svg') }}"></i>
@@ -859,7 +986,7 @@
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-6">
-                    <div class="service-card" style="background-image: linear-gradient(90deg, rgb(0, 0, 0, 0), rgba(102 0 63)), url(https://visawizer.com.au/wp-content/uploads/2023/10/Untitled-design-1.jpg);background-size: cover;background-position: center;">
+                    <div class="service-card" style="background-image: linear-gradient(90deg, rgb(0, 0, 0, 0), rgba(102 0 63)), url({{ asset('img/bg3.png') }});background-size: cover;background-position: center;">
                         <div class="service-top">
                             <i><img alt="icon" src="{{ asset('assets/images/icon/corporate-governance.svg') }}"></i>
                             <h4 class="text-end">Employer Sponsored</h4>
@@ -886,7 +1013,7 @@
 
     <!-- completed-project start -->
     <section class="completed-project-section">
-        <div class="completed-project-top" style="background-image: linear-gradient(45deg, #66003f78), url({{ asset('assets/images/home-banner-3.webp') }}">
+        <div class="completed-project-top" style="background-image: linear-gradient(45deg, #66003f78), url({{ asset('img/why-choose.png') }}">
             <div class="container">
                 <div class="row align-items-center m-b-60 m-b-xs-40">
                     <div class="col-md-9">
@@ -914,7 +1041,7 @@
                     <div class="col-md-4">
                         <div class="project-card">
                             <div class="thumb">
-                                <a href="#"><img alt="thumb-11" src="{{ asset('assets/images/stories-image-1.webp') }}" style="object-fit: none;object-position: -20px -3rem;"></a>
+                                <a href="#"><img alt="thumb-11" src="{{ asset('img/family-visa1.png') }}"></a>
                                 <div class="content">
                                     <h5>Family Visas</h5>
                                     <p>Partner, parent, child, and relative visa pathways handled with clarity and care.</p>
@@ -929,7 +1056,7 @@
                     <div class="col-md-4">
                         <div class="project-card">
                             <div class="thumb">
-                                <a href="#"><img alt="thumb-11" src="{{ asset('assets/images/stories-image-2.webp') }}" style="object-fit: none;object-position: -10px -6rem;"></a>
+                                <a href="#"><img alt="thumb-11" src="{{ asset('img/visitor-visa1.png') }}"></a>
                                 <div class="content">
                                     <h5>Visitor Visas</h5>
                                     <p>Visitor, holiday, ETA, eVisitor, and transit support for seamless short-term travel plans.</p>
@@ -944,7 +1071,7 @@
                     <div class="col-md-4">
                         <div class="project-card">
                             <div class="thumb">
-                                <a href="#"><img alt="thumb-11" src="{{ asset('assets/images/stories-image-3.webp') }}" style="object-fit: none;object-position: -52px -12rem;"></a>
+                                <a href="#"><img alt="thumb-11" src="{{ asset('img/appeals.png') }}"></a>
                                 <div class="content">
                                     <h5>Appeals &amp; Protection</h5>
                                     <p>Guidance for review matters and other complex visa situations where careful strategy matters.</p>
@@ -1050,7 +1177,7 @@
     <!-- how-we-work-section end -->
 
     <!-- why-clients-choose-section start -->
-    <section class="services-section-3 p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-color: #f8f7f0;">
+    <section class="services-section-3 p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-color: #e5e5e5;">
         <div class="container">
             <div class="row row-gap-5 align-items-center">
                 <div class="col-xl-5 col-lg-5">
@@ -1128,7 +1255,7 @@
     <!-- why-clients-choose-section end -->
 
     <!-- resources-knowledge-hub-section start -->
-    <section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #66003f78), url('{{ asset('assets/images/home-banner-1.webp') }}');">
+    <section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #66003f78), url('{{ asset('img/bg.png') }}');background-position: bottom;">
         <div class="container">
             <div class="text-center m-b-50 m-b-xs-40">
                 <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">

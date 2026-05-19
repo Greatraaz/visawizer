@@ -14,12 +14,12 @@
     </div>
     <div class="d-flex flex-column gap-1">
 
-      <a href="{{ url('about') }}" class="mega-link">
+      <a href="{{ url('about-us') }}" class="mega-link">
         <span class="link-icon2"><i class="fa-solid fa-building-columns"></i></span>
         <span class="link-text2">About Us</span>
       </a>
 
-      <a href="{{ url('contact') }}" class="mega-link">
+      <a href="{{ url('contact-us') }}" class="mega-link">
         <span class="link-icon2"><i class="fa-solid fa-phone-flip"></i></span>
         <span class="link-text2">Contact</span>
       </a>
@@ -55,32 +55,32 @@
     </div>
     <div class="d-flex flex-column gap-1 ps-2">
 
-      <a href="{{ url('resources/blogs') }}" class="mega-link">
+      <a href="{{ url('blogs') }}" class="mega-link">
         <span class="link-icon2"><i class="fa-solid fa-pen-nib"></i></span>
         <span class="link-text2">Blogs</span>
       </a>
 
-      <a href="{{ url('/videos') }}" class="mega-link">
+      <a href="{{ url('videos') }}" class="mega-link">
         <span class="link-icon2"><i class="fa-solid fa-film"></i></span>
         <span class="link-text2">Videos</span>
       </a>
 
-      <a href="{{ url('resources/podcast') }}" class="mega-link">
+      <a href="{{ url('podcast') }}" class="mega-link">
         <span class="link-icon2"><i class="fa-solid fa-microphone-lines"></i></span>
         <span class="link-text2">Podcast</span>
       </a>
 
-      <a href="{{ url('resources/webinars') }}" class="mega-link">
+      <a href="{{ url('webinars') }}" class="mega-link">
         <span class="link-icon2"><i class="fa-solid fa-laptop-file"></i></span>
         <span class="link-text2">Webinars</span>
       </a>
 
-      <a href="{{ url('resources/white-papers') }}" class="mega-link">
+      <a href="{{ url('white-papers') }}" class="mega-link">
         <span class="link-icon2"><i class="fa-solid fa-file-lines"></i></span>
         <span class="link-text2">White Papers</span>
       </a>
 
-      <a href="{{ url('resources/contact-us') }}" class="mega-link">
+      <a href="{{ url('contact-us') }}" class="mega-link">
         <span class="link-icon2"><i class="fa-solid fa-phone"></i></span>
         <span class="link-text2">Get Expert Advice</span>
       </a>
@@ -95,17 +95,17 @@
     </div>
     <div class="d-flex flex-column gap-1 ps-2">
 
-      <a href="{{ url('resources/visa-guides') }}" class="mega-link">
+      <a href="{{ url('visa-guides') }}" class="mega-link">
         <span class="link-icon2"><i class="fa-solid fa-book-open"></i></span>
         <span class="link-text2">Visa Guides</span>
       </a>
 
-      <a href="{{ url('resources/checklists') }}" class="mega-link">
+      <a href="{{ url('checklists') }}" class="mega-link">
         <span class="link-icon2"><i class="fa-solid fa-list-check"></i></span>
         <span class="link-text2">Checklists</span>
       </a>
 
-      <a href="{{ url('resources/downloads') }}" class="mega-link">
+      <a href="{{ url('downloads') }}" class="mega-link">
         <span class="link-icon2"><i class="fa-solid fa-download"></i></span>
         <span class="link-text2">Downloads</span>
       </a>
@@ -131,7 +131,7 @@
   <!-- PROMO CARD -->
   <div class="col-lg-3 col-md-12">
     <div class="promo-card h-100">
-      <img src="https://visawizer.com.au/wp-content/uploads/2022/01/about-2-1.jpg" class="w-100 rounded-top" style="height:138px;object-fit:cover;" alt="Visawizer Team"/>
+      <img src="{{ url('img/why-choose.png') }}" class="w-100 rounded-top" style="height:138px;object-fit:cover;" alt="Visawizer Team"/>
       <div class="p-3 d-flex flex-column gap-2" style="position:relative;z-index:1;">
         <h3 class="promo-heading mb-0">Why Choose Visawizer?</h3>
         <div class="promo-divider"></div>

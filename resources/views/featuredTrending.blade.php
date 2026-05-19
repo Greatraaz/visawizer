@@ -33,7 +33,7 @@
                         <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="c-tab-mission-pane" role="tabpanel" tabindex="0">
                                 <div class="text">
-                                    <span class="green">Ethics<span class="golden">4</span>Work</span> brings you fresh perspectives and in-depth guidance on the evolving world of workplace ethics. From emerging compliance trends to innovative culture-building strategies, our featured insights help leaders stay informed, make principled decisions, and create environments where integrity thrives.
+                                    Visawizer brings you fresh perspectives and in-depth guidance on the evolving world of workplace ethics. From emerging compliance trends to innovative culture-building strategies, our featured insights help leaders stay informed, make principled decisions, and create environments where integrity thrives.
                                 </div>
                             </div>
                         </div>
@@ -79,7 +79,7 @@
             <div class="col-md-4">
                 <div class="service-card-3">
                     <div class="service-top">
-                        <h4>The <span class="green">Ethics<span class="golden">4</span>Work</span> Compliance Toolkit</h4>
+                        <h4>The Visawizer Compliance Toolkit</h4>
                         <i class="fa-light fa-building-columns"></i>
                     </div>
                     <div class="service-content">

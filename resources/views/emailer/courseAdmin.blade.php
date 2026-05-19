@@ -14,7 +14,7 @@
                 <!-- Header -->
                 <tr>
                     <td style="background:#198754; padding:20px; text-align:center; color:#ffffff;">
-                        <h2 style="margin:0;">Ethics4Work</h2>
+                        <h2 style="margin:0;">Visawizer</h2>
                         <p style="margin:5px 0 0;">New Course Purchase Alert</p>
                     </td>
                 </tr>
@@ -61,7 +61,7 @@
                 <!-- Footer -->
                 <tr>
                     <td style="background:#f1f1f1; padding:15px; text-align:center; font-size:12px; color:#777;">
-                        © {{ date('Y') }} Ethics4Work. Admin Notification
+                        © {{ date('Y') }} Visawizer. Admin Notification
                     </td>
                 </tr>
 

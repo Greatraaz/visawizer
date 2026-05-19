@@ -79,9 +79,9 @@
 
             <!-- 5) Protection, Appeals & Humanitarian -->
             <li class="has-dropdown has-megamenu">
-              <a href="{{ url('protection-appeals-humanitarian') }}">Protection, Appeals &amp; Humanitarian <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
+              <a href="{{ url('protection-appeals-humanitarian') }}">Appeals & Reviews <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
               <div class="visa-mega">
-                @include('partials.menu.protection')
+                @include('partials.menu.appeals')
               </div>
             </li>
 
@@ -130,7 +130,7 @@
       <p>Your trusted partner for Australian visas, education, and migration services.</p>
     </div>
     <div class="off-canvas-thumb m-b-40">
-      <img src="{{ asset('assets/img/thumbs/thumb-3.webp') }}" alt="thumb"/>
+      <img src="{{ asset('img/sidebar.png') }}" alt="thumb"/>
     </div>
     <div class="off-canvas-contact m-b-40">
       <a href="#" class="off-canvas-contact-item">
@@ -151,7 +151,7 @@
           <p>{{ config('site.email1') }}</p>
         </div>
       </a>
-      <a href="tel:+70264566579" class="off-canvas-contact-item">
+      <a href="tel:{{ config('site.phone1') }}" class="off-canvas-contact-item">
         <div class="icon">
           <i class="fa-solid fa-phone-arrow-up-right"></i>
         </div>

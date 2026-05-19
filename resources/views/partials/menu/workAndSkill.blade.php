@@ -145,11 +145,11 @@
       </div>
 
       <div class="featured-ctas">
-        <a href="/check-eligibility-work-visa" class="btn-gold">
-          <i class="fa-solid fa-clipboard-check"></i> Check Eligibility
+        <a href="{{ url('visa-guide') }}" class="btn-gold">
+          <!-- <i class="fa-solid fa-clipboard-check"></i> --> Check Eligibility
         </a>
-        <a href="/book-appointment" class="btn-outline-gold">
-          <i class="fa-solid fa-calendar-check"></i> Book Appointment
+        <a href="{{ url('book-appointment') }}" class="btn-outline-gold">
+          <!-- <i class="fa-solid fa-calendar-check"></i> --> Book Appointment
         </a>
       </div>
     </div>

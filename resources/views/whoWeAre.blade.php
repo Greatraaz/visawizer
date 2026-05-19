@@ -58,7 +58,7 @@
                             <div class="tab-pane fade show active" id="c-tab-1-pane" role="tabpanel" tabindex="0">
                                 <div class="text">
                                     <p>
-                                        <span class="green">Ethics<span class="golden">4</span>Work</span>was founded with a single belief: ethical decision-making is not an optional value but a core leadership competency. What began as a knowledge initiative has grown into a platform empowering individuals, teams, and organizations to navigate work with integrity, clarity, and purpose.
+                                        Visawizerwas founded with a single belief: ethical decision-making is not an optional value but a core leadership competency. What began as a knowledge initiative has grown into a platform empowering individuals, teams, and organizations to navigate work with integrity, clarity, and purpose.
                                     </p>
                                 </div>
                                 <div class="benefits">

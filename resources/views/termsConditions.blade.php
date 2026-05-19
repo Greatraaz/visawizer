@@ -16,7 +16,7 @@
       <h1 class="text-success mb-3 fs-1">Terms & Conditions</h1>
       <p class="text-muted">Last updated: <strong>December 03, 2025</strong></p>
 
-      <p>Welcome to Evolvia Consultants and Advisors OPC Pvt Ltd By accessing or using our website <strong>https://ethics4work.com</strong> and our services, you agree to comply with and be bound by the following Terms & Conditions. Please read them carefully.</p>
+      <p>Welcome to Evolvia Consultants and Advisors OPC Pvt Ltd By accessing or using our website <strong>https://Visawizer.com</strong> and our services, you agree to comply with and be bound by the following Terms & Conditions. Please read them carefully.</p>
 
       <h5 class="mt-4">1. Use of Website</h5>
       <ul>

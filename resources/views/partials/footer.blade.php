@@ -1,11 +1,11 @@
 </main>
 
 <!-- footer-section start -->
-<footer class="footer-section footer-section-2 p-t-125 p-t-md-100 p-t-xs-80 p-b-50" style="background-image: linear-gradient(45deg, #0000009e), url({{ asset('assets/images/principles-image-3.webp')  }});z-index: 1;position: relative;">
+<footer class="footer-section footer-section-2 p-t-80 p-b-30" style="background-image: linear-gradient(45deg, #0000009e), url({{ asset('img/footer.png')  }});z-index: 1;position: relative;background-position: center;">
     <div class="container">
 
    
-<div class="row justify-content-between row-gap-md-5 row-gap-4 p-b-80">
+<div class="row justify-content-between row-gap-md-5 row-gap-4 p-b-40">
     <div class="col-md-3">
         <div class="footer-widget">
             <div class="about-widget">
@@ -15,12 +15,6 @@
                     </a>
                 </div>
                 <p class="text-white">Guiding your journey to new beginnings in Australia with expert education and migration assistance. Committed to providing tailored solutions to navigate visa processes and education pathways seamlessly.</p>
-                <div class="social-links">
-                    <a href="{{ config('site.facebook') }}"><i class="fab fa-facebook-f"></i></a>
-                    <a href="{{ config('site.twitter') }}"><i class="fab fa-x-twitter"></i></a>
-                    <a href="{{ config('site.instagram') }}"><i class="fab fa-instagram"></i></a>
-                    <a href="{{ config('site.linkedin') }}"><i class="fab fa-linkedin-in"></i></a>
-                </div>
             </div>
         </div>
     </div>
@@ -30,25 +24,24 @@
             <h3 class="w-title">Quick Links</h3>
             <ul>
                 <li><a href="{{ url('about-us') }}">About Us</a></li>
-                <li><a href="{{ url('what-we-do') }}">What We Do</a></li>
-                <li><a href="{{ url('mission-vision') }}">Mission & Vision</a></li>
-                <li><a href="{{ url('advisory-board') }}">Advisory Board</a></li>
-                <li><a href="{{ url('collaborations') }}">Collaborations</a></li>
-                <li><a href="{{ url('featured-and-trending') }}">Featured and Trending</a></li>
+                <li><a href="{{ url('education') }}">Education</a></li>
+                <li><a href="{{ url('professional-year-programs') }}">Professional Year Programs</a></li>
+                <li><a href="{{ url('admission') }}">Admission</a></li>
+                <li><a href="{{ url('popular-courses-australia') }}">Popular Courses Australia</a></li>
+                <li><a href="{{ url('career-guidance') }}">Career Guidan</a></li>
             </ul>
         </div>
     </div>
 
     <div class="col-md-3">
         <div class="footer-widget">
-            <h3 class="w-title">Our Services</h3>
+            <h3 class="w-title">Visitor Options</h3>
             <ul>
-                <li><a href="{{ url('service/advisory-consulting') }}">Advisory & Consulting</a></li>
-                <li><a href="{{ url('service/training-workshops') }}">Training & Workshops</a></li>
-                <li><a href="{{ url('service/certification-programs') }}">Certification Programs</a></li>
-                <li><a href="{{ url('service/measure-maintain') }}">Measure & Maintain</a></li>
+                <li><a href="{{ url('visa/visitor-600') }}">Visitor Visa (Subclass 600)</a></li>
+                <li><a href="{{ url('visa/e-visitor-651') }}">E-Visitor Visa (Subclass 651)</a></li>
+                <li><a href="{{ url('visa/eta-601') }}">Electronic Travel Authority (Subclass 601)</a></li>
+                <li><a href="{{ url('visa/transit-771') }}">Transit Visa (Subclass 771)</a></li>
                 <li><a href="{{ url('service/centres-accreditation') }}">Centres & Accreditation</a></li>
-                <li><a href="{{ url('service/coaching-mentoring') }}">Coaching & Mentoring</a></li>
             </ul>
         </div>
     </div>
@@ -84,6 +77,14 @@
                         <p>{{ config('site.phone1') }}</p>
                     </div>
                 </a>
+                <div class="about-widget">
+                    <div class="social-links mt-0">
+                        <a href="{{ config('site.facebook') }}"><i class="fab fa-facebook-f"></i></a>
+                        <a href="{{ config('site.twitter') }}"><i class="fab fa-x-twitter"></i></a>
+                        <a href="{{ config('site.instagram') }}"><i class="fab fa-instagram"></i></a>
+                        <a href="{{ config('site.linkedin') }}"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
 
             </div>
         </div>

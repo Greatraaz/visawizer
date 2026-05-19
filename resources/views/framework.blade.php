@@ -245,7 +245,7 @@
     <div class="container position-relative">
         <div class="row align-items-center">
             <div class="col-lg-8 mx-auto text-center">
-                <h1 class="display-3 fw-bold mb-4 text-white">Ethics4Work Framework</h1>
+                <h1 class="display-3 fw-bold mb-4 text-white">Visawizer Framework</h1>
                 <p class="lead mb-4">A holistic certification and capacity-building program designed to help organizations establish, nurture, and sustain ethical workplace cultures.</p>
             </div>
         </div>
@@ -258,7 +258,7 @@
         <div class="row g-4">
             <div class="col-xl-12 text-center">
                 <h2 class="section-title mb-3">About the Framework</h2>
-                <p class="text-center lead mb-2">The Ethics4Work Framework provides a structured pathway from initial awareness to full integration of ethical practices, leadership, and governance systems.</p>
+                <p class="text-center lead mb-2">The Visawizer Framework provides a structured pathway from initial awareness to full integration of ethical practices, leadership, and governance systems.</p>
             </div>
             <div class="col-md-6">
                 <div class="card-custom card p-5">
@@ -288,7 +288,7 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <h2 class="section-title mb-3">Framework Structure</h2>
-                <h3 class="text-center mb-5">The Ethics4Work Journey: 5-Phase Approach</h3>
+                <h3 class="text-center mb-5">The Visawizer Journey: 5-Phase Approach</h3>
             </div>
         </div>
         <div class="card phase-card card-custom">
@@ -562,10 +562,10 @@
     <div class="container">
         <div class="card phase-card card-custom" style="background: linear-gradient(150deg, var(--theme-color-3) 15%, #28ae77 48.85%, var(--theme-color-3) 100%);">
             <div class="card-header">
-                <i class="fas fa-certificate me-2"></i> Phase 4: Certification - Ethics4Work Validation (Months 19-24)
+                <i class="fas fa-certificate me-2"></i> Phase 4: Certification - Visawizer Validation (Months 19-24)
             </div>
             <div class="card-body">
-                <h5 class="mb-4 text-white"><strong>Objective:</strong> Achieve formal Ethics4Work certification through rigorous assessment</h5>
+                <h5 class="mb-4 text-white"><strong>Objective:</strong> Achieve formal Visawizer certification through rigorous assessment</h5>
                 
                 <h6 class="fw-bold mt-4 mb-3 text-white">Certification Criteria (8 Pillars):</h6>
                 
@@ -671,7 +671,7 @@
                                     <li>Employee focus groups</li>
                                     <li>Stakeholder surveys</li>
                                     <li>Independent verification</li>
-                                    <li>Certification decision by the Ethics4Work Board</li>
+                                    <li>Certification decision by the Visawizer Board</li>
                                 </ul>
                             </div>
                         </div>
@@ -681,11 +681,11 @@
                             <div class="text-white">
                                 <h5 class="fw-bold text-white">Deliverables:</h5>
                                 <ul>
-                                    <li>Ethics4Work Certification (3-year validity)</li>
+                                    <li>Visawizer Certification (3-year validity)</li>
                                     <li>Public certification badge and certificate</li>
                                     <li>Detailed assessment report</li>
                                     <li>Recognition ceremony and media announcement</li>
-                                    <li>Listing in the Ethics4Work directory</li>
+                                    <li>Listing in the Visawizer directory</li>
                                 </ul>
                             </div>
                         </div>
@@ -780,9 +780,9 @@
                             <div class="mb-4">
                                 <h6 class="fw-bold">(C) Community of Practice</h6>
                                 <ul>
-                                    <li>Ethics4Work certified organization network</li>
+                                    <li>Visawizer certified organization network</li>
                                     <li>Peer learning exchanges</li>
-                                    <li>Annual Ethics4Work Summit</li>
+                                    <li>Annual Visawizer Summit</li>
                                     <li>Collaborative research and case studies</li>
                                     <li>Mentorship for organizations beginning their journey</li>
                                 </ul>
@@ -824,7 +824,7 @@
                                 <ul>
                                     <li>Maintained certification status</li>
                                     <li>Published case studies and learnings</li>
-                                    <li>Active participation in the Ethics4Work community</li>
+                                    <li>Active participation in the Visawizer community</li>
                                     <li>Demonstrated year-over-year improvement</li>
                                     <li>Recognition as an ethical employer of choice</li>
                                 </ul>
@@ -1025,7 +1025,7 @@
 <section class="py-5 bg-white">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="fw-bold">Ethics4Work Commitment</h2>
+      <h2 class="fw-bold">Visawizer Commitment</h2>
       <p class="text-muted mt-2">As stewards of this framework, we hold ourselves to the highest standards</p>
     </div>
 
@@ -1079,7 +1079,7 @@
 <section class="py-5" style="background:linear-gradient(150deg, var(--theme-color-3) 15%, #28ae77 48.85%, var(--theme-color-3) 100%)">
   <div class="container">
     <div class="text-center text-white">
-      <h2 class="fw-bold text-white">Join the Ethics4Work Movement</h2>
+      <h2 class="fw-bold text-white">Join the Visawizer Movement</h2>
       <p class="mt-3 mx-auto" style="max-width:700px;">Transform your organization into a beacon of ethical excellence. Whether you're just beginning your ethics journey or ready to achieve certification, we're here to guide you every step of the way.</p>
       <a href="{{ url('contact-us') }}" class="btn btn-light btn-lg mt-3 px-5">Schedule Your Complimentary Consultation</a>
       <blockquote class="blockquote mt-4">
@@ -1094,7 +1094,7 @@
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="fw-bold">Frequently Asked Questions</h2>
-      <p class="text-muted mt-2">Clear answers to common questions about Ethics4Work</p>
+      <p class="text-muted mt-2">Clear answers to common questions about Visawizer</p>
     </div>
 
     <div class="accordion accordion-flush" id="faqAccordion">
@@ -1107,7 +1107,7 @@
         </h2>
         <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body text-muted">
-            Compliance focuses on meeting minimum legal requirements. Ethics4Work goes beyond compliance to create cultures where people want to do the right thing, not just avoid penalties.
+            Compliance focuses on meeting minimum legal requirements. Visawizer goes beyond compliance to create cultures where people want to do the right thing, not just avoid penalties.
           </div>
         </div>
       </div>
@@ -1159,7 +1159,7 @@
         </h2>
         <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
           <div class="accordion-body text-muted">
-            Certified organizations commit to annual health checks, recertification every 3 years, and participation in the Ethics4Work community.
+            Certified organizations commit to annual health checks, recertification every 3 years, and participation in the Visawizer community.
           </div>
         </div>
       </div>
@@ -1186,7 +1186,7 @@
   <div class="container">
     <div class="text-center mb-5">
       <h2 class="fw-bold">Appendices</h2>
-      <p class="text-muted mt-2">Supporting resources included in the Ethics4Work framework</p>
+      <p class="text-muted mt-2">Supporting resources included in the Visawizer framework</p>
     </div>
 
     <div class="row g-4">

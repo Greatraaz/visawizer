@@ -5,7 +5,7 @@
     <meta content="{{ config('site.siteTitle') }}" name="description">
     <meta content="{{ config('site.siteTitle') }}" name="author">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <link rel="shortcut icon" href="{{ asset('assets/images/favicon.svg') }}" />
+    <link rel="shortcut icon" href="{{ asset('img/favicon.png') }}" />
     <link href="{{ asset('assets/admin/libs/chartist/chartist.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/admin/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet" >
     <link href="{{ asset('assets/admin/css/icons.min.css') }}" rel="stylesheet" >

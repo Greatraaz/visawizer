@@ -14,7 +14,7 @@
                     <span>Our Advisory Board</span>
                 </div>
                 <div class="common-title text-start" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
-                    <h2>Guiding Ethical Leadership Since the Inception of <span class="green">Ethics<span class="golden">4</span>Work</span></h2>
+                    <h2>Guiding Ethical Leadership Since the Inception of Visawizer</h2>
                 </div>
             </div>
             <div class="right" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">

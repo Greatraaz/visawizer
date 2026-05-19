@@ -95,7 +95,7 @@
     </div>
 </section>
 
-<section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80 m-b-80" style="background-image: linear-gradient(45deg, #0060399e), url('assets/images/home-banner-1.webp')">
+<section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80 m-b-80" style="background-image: linear-gradient(45deg, #66003f9e), url('assets/images/home-banner-1.webp')">
     <div class="container">
         <div class="text-center m-b-50 m-b-xs-40">
             <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
