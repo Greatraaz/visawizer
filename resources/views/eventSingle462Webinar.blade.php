@@ -1068,6 +1068,9 @@
         padding: 36px 20px 28px;
     }
 }
+button.accordion-button {
+    font-weight: 600 !important;
+}
 </style>
 
 @php
@@ -1130,7 +1133,21 @@
     ];
 @endphp
 
-@include('partials.breadcrumb')
+<section class="breadcrumb-section" style="background-image: url({{ url('img/banner/webinar.png') }}); background-size: cover;">
+    <div class="container-fluid">
+        <div class="breadcrumb-content">
+            <div class="breadcrumb-nav">
+                <ul>
+                    <li><a href="{{ url('/') }}">Home</a></li>
+                    <li><a href="javascript:void(0);">{{ Str::headline(last(Request::segments())) }}</a></li>
+                </ul>
+            </div>
+            <div class="breadcrumb-title">
+                <h2>{{ Str::headline(last(Request::segments())) }}</h2>
+            </div>
+        </div>
+    </div>
+</section>
 
 <div class="ev462-page">
     <section class="services-details-section p-t-120 p-t-lg-80 p-t-md-80 p-t-xs-60">
@@ -1336,7 +1353,7 @@
 
                 </div>
 
-                <section class="ev462-faq-band ev462-band" data-aos="fade-up">
+                <section class="ev462-faq-band ev462-band mt-5" data-aos="fade-up">
                     <div class="row align-items-start g-4">
                         <div class="col-lg-6 order-lg-1">
                             <div class="common-subtitle text-uppercase"><span>Questions</span></div>
@@ -1400,14 +1417,14 @@
                                         </div>
                                         <div class="col-md-6">
                                             <div class="mb-3">
-                                                <label for="ev462-email">Email Address <span class="req" aria-hidden="true">*</span></label>
-                                                <input type="email" id="ev462-email" class="form-control" name="email" placeholder="Enter Email Address" autocomplete="email" required>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="mb-3">
                                                 <label for="ev462-phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
                                                 <input type="tel" id="ev462-phone" class="form-control" name="phone" placeholder="Enter Phone Number" autocomplete="tel" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="ev462-email">Email Address <span class="req" aria-hidden="true">*</span></label>
+                                                <input type="email" id="ev462-email" class="form-control" name="email" placeholder="Enter Email Address" autocomplete="email" required>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
