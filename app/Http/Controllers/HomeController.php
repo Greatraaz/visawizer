@@ -294,6 +294,11 @@ class HomeController extends Controller
     public function eventSingle(Request $request, $slug)
     {
         $event = Seminars::where('slug', $slug)->firstOrFail();
+
+        if ($slug === '462-work-and-holiday-visa-webinar') {
+            return view('eventSingle462Webinar', compact('event'));
+        }
+
         return view('eventSingle', compact('event'));
     }
 
