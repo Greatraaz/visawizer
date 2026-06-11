@@ -31,8 +31,8 @@
 .ev462-page .study-s5-visa .visa-lead,
 .ev462-page .ev462-s5-band .study-support-list li,
 .ev462-page .study-support-list li,
-.ev462-page .ev462-faq-item .study-copy-sub,
-.ev462-page .ev462-faq-item .study-copy-body,
+.ev462-page .ev462-faq-accordion .accordion-body,
+.ev462-page .ev462-faq-intro,
 .ev462-page .ev462-fee .study-copy-body,
 .ev462-page .ev462-agenda-band .study-s4-intro,
 .ev462-page .ev462-agenda-item__body h4,
@@ -281,19 +281,141 @@
     color: rgba(255, 255, 255, 0.9);
 }
 
-.ev462-page .ev462-faq-item {
-    padding: 16px 0;
-    border-bottom: 1px solid #e2e8f0;
+.ev462-page .ev462-faq-band {
+    padding: clamp(8px, 1.5vw, 16px) 0;
 }
 
-.ev462-page .ev462-faq-item:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
+.ev462-page .ev462-faq-intro {
+    color: #64748b;
+    margin: 0 0 22px;
+    max-width: 36rem;
 }
 
-.ev462-page .ev462-faq-item .study-copy-sub {
+.ev462-page .ev462-faq-accordion .accordion-item {
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+}
+
+.ev462-page .ev462-faq-accordion .accordion-item:last-child {
+    margin-bottom: 0;
+}
+
+.ev462-page .ev462-faq-accordion .accordion-button {
+    font-size: var(--ev462-body);
+    line-height: 1.45;
+    font-weight: 600;
     color: #0f172a;
-    margin-bottom: 6px;
+    padding: 16px 18px;
+}
+
+.ev462-page .ev462-faq-accordion .accordion-body {
+    color: #475569;
+    padding: 0 18px 16px;
+}
+
+.ev462-page .ev462-faq-collage {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+    grid-template-rows: 228px 148px 204px;
+    gap: 12px;
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .ev462-page .ev462-faq-visual-col {
+        padding-top: clamp(3.85rem, 8.5vw, 0.5rem);
+    }
+
+    .ev462-page .ev462-faq-collage {
+        margin: 0 0 0 auto;
+    }
+}
+
+.ev462-page .ev462-faq-collage__cell {
+    margin: 0;
+    height: 100%;
+    min-height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+}
+
+.ev462-page .ev462-faq-collage__cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ev462-page .ev462-faq-collage__cell--landmark {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.ev462-page .ev462-faq-collage__cell--landmark img {
+    object-position: center center;
+}
+
+.ev462-page .ev462-faq-collage__cell--travel {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.ev462-page .ev462-faq-collage__cell--travel img {
+    object-position: center center;
+}
+
+.ev462-page .ev462-faq-collage__cell--docs {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.ev462-page .ev462-faq-collage__cell--docs img {
+    object-position: center 40%;
+}
+
+.ev462-page .ev462-faq-collage__cell--experience {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+}
+
+.ev462-page .ev462-faq-collage__cell--experience img {
+    object-position: center center;
+}
+
+@media (max-width: 991px) {
+    .ev462-page .ev462-faq-collage {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: 230px 155px 175px;
+        max-width: 100%;
+        margin-top: 8px;
+    }
+
+    .ev462-page .ev462-faq-collage__cell--landmark {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+    .ev462-page .ev462-faq-collage__cell--travel {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .ev462-page .ev462-faq-collage__cell--docs {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .ev462-page .ev462-faq-collage__cell--experience {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
 }
 
 .ev462-page .ev462-band {
@@ -699,26 +821,251 @@
     padding-bottom: clamp(12px, 2vw, 20px) !important;
 }
 
-.ev462-page .contact-form-3 {
+.ev462-page .ev462-register-band {
     margin-top: clamp(24px, 3vw, 40px);
-    margin-bottom: 0;
-    border-radius: 12px;
-    box-shadow: 0 24px 58px rgba(0, 69, 64, 0.22);
 }
 
-.ev462-page .contact-form-3 p {
-    max-width: 100%;
+.ev462-page .ev462-register-included {
+    height: 100%;
 }
 
-.ev462-page #eventForm .text-danger,
-.ev462-page textarea.form-control,
-.ev462-page .form-control {
-    color: #fff !important;
+.ev462-page .ev462-register-included__card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    background: linear-gradient(180deg, var(--theme-color-3) 0%, #2a2b6a 52%, #1a1b4f 100%);
+    box-shadow: 0 20px 48px rgba(15, 23, 42, 0.14);
+    padding: 0 0 22px;
+}
+
+.ev462-page .ev462-register-included__visual {
+    margin: 0 0 18px;
+    border-radius: 0;
+    overflow: hidden;
+    width: 100%;
+    height: clamp(240px, 32vw, 300px);
+    flex: 0 0 auto;
+    background: #1a1b4f;
+}
+
+.ev462-page .ev462-register-included__visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 28%;
+    transform: scale(1.12);
+    transform-origin: center center;
+    display: block;
+}
+
+.ev462-page .ev462-register-included__body {
+    flex: 0 0 auto;
+    padding: 0 20px;
+}
+
+.ev462-page .ev462-register-included__quote {
+    margin: 0;
+}
+
+.ev462-page .ev462-register-included__quote p {
+    margin: 0 0 10px;
+    font-size: var(--ev462-body);
+    line-height: var(--ev462-body-line);
+    font-weight: 600;
+    font-style: italic;
+    color: #fff;
+}
+
+.ev462-page .ev462-register-included__quote cite {
+    display: block;
+    font-style: normal;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.72);
+}
+
+.ev462-page .ev462-register-form-card {
+    height: 100%;
+    background: #f3f4f6;
+    border-radius: 16px;
+    padding: clamp(22px, 3vw, 34px) clamp(20px, 3vw, 36px) clamp(24px, 3vw, 36px);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
+    border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.ev462-page .ev462-register-form-card label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #334155;
+}
+
+.ev462-page .ev462-register-form-card label .req {
+    color: #dc3545;
+    font-weight: 600;
+    margin-left: 3px;
+}
+
+.ev462-page .ev462-register-form-card .mb-3 {
+    margin-bottom: 22px !important;
+}
+
+.ev462-page .ev462-register-form-card #eventForm > .row {
+    --bs-gutter-x: 1.35rem;
+    row-gap: 4px;
+}
+
+.ev462-page .ev462-register-form-card .mb-3:last-child {
+    margin-bottom: 0 !important;
+}
+
+.ev462-page .ev462-register-form-card input,
+.ev462-page .ev462-register-form-card textarea {
+    width: 100%;
+    background: #fff;
+    border: 1px solid rgba(148, 163, 184, 0.35);
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: #0f172a;
+    font-size: var(--ev462-body);
+    line-height: 1.4;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ev462-page .ev462-register-form-card input::placeholder,
+.ev462-page .ev462-register-form-card textarea::placeholder {
+    color: #94a3b8;
+}
+
+.ev462-page .ev462-register-form-card input:focus,
+.ev462-page .ev462-register-form-card textarea:focus {
+    outline: none;
+    border-color: var(--theme-color-3);
+    box-shadow: 0 0 0 3px rgba(63, 65, 152, 0.12);
+}
+
+.ev462-page .ev462-register-form-card input[readonly] {
+    background: #eef1f5;
+    color: #475569;
+    cursor: default;
+}
+
+.ev462-page .ev462-register-form-card input.is-invalid,
+.ev462-page .ev462-register-form-card textarea.is-invalid {
+    border-color: #dc3545;
+}
+
+.ev462-page .ev462-register-form-card textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.ev462-page .ev462-register-form-card .form-group-btn {
+    margin-top: 14px;
+}
+
+.ev462-page .ev462-register-form-card .ev462-register-submit {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 168px;
+    padding: 13px 28px;
+    border: none;
+    border-radius: 8px;
+    background: var(--theme-color-3);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.2;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.ev462-page .ev462-register-form-card .ev462-register-submit:hover {
+    background: color-mix(in srgb, var(--theme-color-3) 88%, #000);
+    color: #fff;
+}
+
+.ev462-page .ev462-register-form-card .ev462-register-submit:disabled {
+    opacity: 0.72;
+    cursor: not-allowed;
+}
+
+.ev462-page #eventForm small.text-danger {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.82rem;
+    color: #dc3545 !important;
+}
+
+@media (max-width: 991px) {
+    .ev462-page .ev462-register-included {
+        margin-bottom: 8px;
+    }
 }
 
 @media (max-width: 767px) {
     .ev462-page .ev462-content {
         padding: 24px 20px;
+    }
+}
+
+/* Breadcrumb — anchor text overlay to top-left corner */
+.breadcrumb-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.breadcrumb-section .breadcrumb-title h2::before {
+    display: none;
+}
+
+.breadcrumb-section::after {
+    content: "";
+    position: absolute;
+    right: clamp(48px, 6.5vw, 88px);
+    top: 0;
+    width: 20px;
+    height: 100%;
+    background: var(--theme-color-2);
+    transform: skewX(28deg);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.breadcrumb-section .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.breadcrumb-section .breadcrumb-content {
+    position: relative;
+    z-index: 1;
+    width: fit-content;
+    max-width: min(92%, 1080px);
+    margin: 0;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: clamp(28px, 4vw, 44px) clamp(28px, 5vw, 56px) 24px clamp(14px, 3vw, 40px);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.28) 68%, transparent 100%);
+}
+
+@media (max-width: 767px) {
+    .breadcrumb-section::after {
+        display: none;
+    }
+
+    .breadcrumb-section .breadcrumb-content {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        min-height: 200px;
+        padding: 36px 20px 28px;
     }
 }
 </style>
@@ -771,6 +1118,15 @@
         ['q' => 'Is the webinar useful for Indian applicants?', 'a' => 'Yes. The session will include a special focus on Indian applicants and the ballot process.'],
         ['q' => 'Will I be able to ask questions?', 'a' => 'Yes. A short Q&A section will be included at the end of the session.'],
         ['q' => 'Can parents attend?', 'a' => 'Yes. Parents who want to understand the pathway before supporting the applicant are welcome to attend.'],
+    ];
+
+    $wh462Img = 'assets/imgs/visitor/work-holiday-462';
+
+    $faqGallery = [
+        ['src' => $wh462Img.'/hero-bg.webp', 'alt' => 'Young travellers at Sydney Harbour — Australia work and holiday pathway', 'slot' => 'landmark'],
+        ['src' => $wh462Img.'/profile.webp', 'alt' => 'Young applicant reviewing Work and Holiday visa plans', 'slot' => 'travel'],
+        ['src' => $wh462Img.'/strategy.webp', 'alt' => 'Document preparation and planning for subclass 462', 'slot' => 'docs'],
+        ['src' => 'assets/imgs/visitor/vv-work-holiday.webp', 'alt' => 'Working holiday and travel experience in Australia', 'slot' => 'experience'],
     ];
 @endphp
 
@@ -978,48 +1334,102 @@
                         <p class="visa-lead visa-highlight m-b-0">This webinar is for general awareness and education only. It does not replace personalised migration advice. Every applicant’s situation is different, and eligibility must be assessed individually before making any visa decision.</p>
                     </div>
 
-                    <div class="ev462-section">
-                        <div class="common-subtitle text-uppercase"><span>Questions</span></div>
-                        <div class="common-title text-start m-b-20"><h2>FAQ</h2></div>
-                        @foreach ($faqs as $faq)
-                        <div class="ev462-faq-item">
-                            <p class="study-copy-sub m-b-0">{{ $faq['q'] }}</p>
-                            <p class="study-copy-body m-b-0">{{ $faq['a'] }}</p>
-                        </div>
-                        @endforeach
-                    </div>
                 </div>
 
-                <div class="contact-form-3" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
-                    <div class="form-content">
-                        <h3>Register Now</h3>
-                        <p>Register for the 462 Work and Holiday Visa awareness webinar with {{ $event->speaker }}.</p>
-                        <form id="eventForm">
-                            @csrf
-                            <div class="mb-3">
-                                <input class="form-control" name="name" placeholder="Full Name" type="text">
+                <section class="ev462-faq-band ev462-band" data-aos="fade-up">
+                    <div class="row align-items-start g-4">
+                        <div class="col-lg-6 order-lg-1">
+                            <div class="common-subtitle text-uppercase"><span>Questions</span></div>
+                            <div class="common-title text-start m-b-15"><h2>Frequently Asked Questions</h2></div>
+                            <p class="ev462-faq-intro m-b-0">Common questions about the 462 Work and Holiday Visa awareness webinar, registration and what to expect from the session.</p>
+                            <div class="accordion faq-accordion ev462-faq-accordion" id="ev462FaqAccordion">
+                                @foreach ($faqs as $index => $faq)
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="ev462-faq-head-{{ $index }}">
+                                        <button class="accordion-button {{ $index === 0 ? '' : 'collapsed' }}" type="button" data-bs-toggle="collapse" data-bs-target="#ev462-faq-{{ $index }}" aria-expanded="{{ $index === 0 ? 'true' : 'false' }}" aria-controls="ev462-faq-{{ $index }}">
+                                            <span class="accordion-title">{{ $index + 1 }}.</span>{{ $faq['q'] }}
+                                            <span class="icon"><span class="icon-plus"></span><span class="icon-minus"></span></span>
+                                        </button>
+                                    </h2>
+                                    <div id="ev462-faq-{{ $index }}" class="accordion-collapse collapse {{ $index === 0 ? 'show' : '' }}" aria-labelledby="ev462-faq-head-{{ $index }}" data-bs-parent="#ev462FaqAccordion">
+                                        <div class="accordion-body">{{ $faq['a'] }}</div>
+                                    </div>
+                                </div>
+                                @endforeach
                             </div>
-                            <div class="mb-3">
-                                <input class="form-control" name="email" placeholder="Email Address" type="email">
+                        </div>
+                        <div class="col-lg-6 order-lg-2 ev462-faq-visual-col">
+                            <div class="ev462-faq-collage" aria-hidden="true">
+                                @foreach ($faqGallery as $cell)
+                                <figure class="ev462-faq-collage__cell ev462-faq-collage__cell--{{ $cell['slot'] }}">
+                                    <img src="{{ asset($cell['src']) }}" alt="{{ $cell['alt'] }}" loading="lazy" width="520" height="360">
+                                </figure>
+                                @endforeach
                             </div>
-                            <div class="mb-3">
-                                <input class="form-control" name="phone" placeholder="10 Digit Phone No." type="number">
-                            </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" name="message" placeholder="Any message/comment..." rows="4"></textarea>
-                            </div>
-                            <input type="text" name="bot_field" class="d-none">
-                            <input type="hidden" name="seminarId" value="{{ $event->id }}">
-                            <input type="hidden" name="event" value="{{ $event->title }}">
-                            <div class="hero-content-1">
-                                <div class="join-us">
-                                    <button class="e-primary-btn has-icon is-hover-white" type="submit">
-                                        <span class="btext">Register Now</span>
-                                        <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
-                                    </button>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="ev462-register-band" data-aos="fade-up" data-aos-delay="800" data-aos-duration="1000">
+                    <div class="row justify-content-center align-items-stretch g-4">
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="ev462-register-included w-100">
+                                <div class="ev462-register-included__card">
+                                    <figure class="ev462-register-included__visual">
+                                        <img src="{{ asset('assets/imgs/founder/ankur-saini-founder-message.jpeg') }}" alt="{{ $event->speaker }} — Visa Wizer migration advisory" loading="lazy" width="640" height="480">
+                                    </figure>
+                                    <div class="ev462-register-included__body">
+                                        <blockquote class="ev462-register-included__quote">
+                                            <p>&ldquo;Clear guidance, practical preparation and responsible visa awareness &mdash; so you understand the pathway before you apply.&rdquo;</p>
+                                            <cite>{{ $event->speaker }}, Visa Wizer</cite>
+                                        </blockquote>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
+                        <div class="col-lg-8 col-md-12 d-flex">
+                            <div class="ev462-register-form-card w-100">
+                                <form id="eventForm">
+                                    @csrf
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="ev462-name">Name <span class="req" aria-hidden="true">*</span></label>
+                                                <input type="text" id="ev462-name" class="form-control" name="name" placeholder="Enter Your Name" autocomplete="name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="ev462-email">Email Address <span class="req" aria-hidden="true">*</span></label>
+                                                <input type="email" id="ev462-email" class="form-control" name="email" placeholder="Enter Email Address" autocomplete="email" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="ev462-phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
+                                                <input type="tel" id="ev462-phone" class="form-control" name="phone" placeholder="Enter Phone Number" autocomplete="tel" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="mb-3">
+                                                <label for="ev462-message">Message</label>
+                                                <textarea class="form-control" id="ev462-message" rows="4" name="message" placeholder="Enter your comments"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <input type="text" name="bot_field" class="d-none">
+                                            <input type="hidden" name="seminarId" value="{{ $event->id }}">
+                                            <input type="hidden" name="event" value="{{ $event->title }}">
+                                            <div class="form-group-btn mb-0">
+                                                <button type="submit" class="ev462-register-submit" id="form-submit">
+                                                    <span class="btext">Register Now</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
