@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>New Course Purchase</title>
+    <title>New Website Enquiry</title>
 </head>
 <body style="margin:0; padding:0; background:#f4f6f8; font-family:Arial, sans-serif;">
 
@@ -15,16 +15,13 @@
                 <tr>
                     <td style="background:#198754; padding:20px; text-align:center; color:#ffffff;">
                         <h2 style="margin:0;">Visawizer</h2>
-                        <p style="margin:5px 0 0;">New Course Purchase Alert</p>
+                        <p style="margin:5px 0 0;">New Website Enquiry Alert</p>
                     </td>
                 </tr>
 
                 <!-- Body -->
                 <tr>
                     <td style="padding:30px;">
-                        <p style="font-size:16px;">
-                            A new course has been purchased successfully.
-                        </p>
 
                         <table width="100%" cellpadding="10" cellspacing="0" style="background:#f8f9fa; border-radius:6px; margin:20px 0;">
                             <tr>
@@ -41,8 +38,26 @@
                             </tr>
                             <tr>
                                 <td style="font-size:14px;">
-                                    <strong>Course Name:</strong><br>
-                                    {{ $course }}
+                                    <strong>Course Phone:</strong><br>
+                                    {{ $phone }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size:14px;">
+                                    <strong>Enquiry For:</strong><br>
+                                    {{ $topic }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size:14px;">
+                                    <strong>User City:</strong><br>
+                                    {{ $city }}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="font-size:14px;">
+                                    <strong>User Message:</strong><br>
+                                    {{ $messageText }}
                                 </td>
                             </tr>
                         </table>

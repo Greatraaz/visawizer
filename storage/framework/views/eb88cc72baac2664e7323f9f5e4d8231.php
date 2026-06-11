@@ -1,5 +1,4 @@
-@extends('layouts.frontend')
-@section('content') 
+<?php $__env->startSection('content'); ?> 
 <style type="text/css">
 .homeForm .text-danger{
     color: #fff !important;
@@ -219,71 +218,11 @@
     opacity: 0.7;
 }
 </style>
-   {{-- Dynamic banner disabled in favor of a single static homepage hero.
-<section class="hero-slider-active-1">
-    <div class="swiper">
-        <div class="swiper-wrapper">
-            @foreach ($banners as $b)
-            <div class="swiper-slide">
-                <div class="hero-side" style="background-image: url({{ asset($b->image) }})">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-12">
-                                <div class="hero-content-1">
-
-                                    <div class="title" data-animation="animate__fadeInUp" data-delay="0.4s">
-                                        <h2>{{ $b->heading }}</h2>
-                                    </div>
-
-                                    <div class="text" data-animation="animate__fadeInUp" data-delay="0.5s">
-                                        <p>{{ $b->description }}</p>
-                                    </div>
-
-                                    <div class="join-us" data-animation="animate__fadeInUp" data-delay="0.6s">
-                                        <a class="e-primary-btn has-icon" href="{{ $b->link }}">
-                                            {{ $b->button }}
-                                            <span class="icon-wrap">
-                                                <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
-                                            </span>
-                                        </a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="group-shape-1">
-                        <img src="{{ asset('assets/img/shapes/group-shape-1.webp') }}" alt="Visitor Visa Subclass 600 Australia"/>
-                    </div>
-                    <div class="s-shape-1">
-                        <img src="{{ asset('assets/img/shapes/shape-2.webp') }}" alt="s-shape-1"/>
-                    </div>
-                </div>
-            </div>
-            @endforeach
-        </div>
-    </div>
-
-    <div class="hero-slider-pagination-1"></div>
-
-    <!-- Social Icons -->
-    <div class="hero-slider-social">
-        <div class="social-links">
-            <a href="{{ config('site.facebook') }}"><i class="fab fa-facebook-f"></i></a>
-            <a href="{{ config('site.twitter') }}"><i class="fab fa-x-twitter"></i></a>
-            <a href="{{ config('site.instagram') }}"><i class="fab fa-instagram"></i></a>
-            <a href="{{ config('site.linkedin') }}"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <div class="text">Join Social:</div>
-    </div>
-
-</section>
---}}
+   
 <!-- hero-section end -->
 
 <!-- hero-section start -->
-<section class="home-static-hero hero-side hero-slider-active-1" style="background-image: linear-gradient(135deg, rgba(7, 27, 24, 0.16) 0%, rgba(7, 27, 24, 0.1) 100%), url('{{ asset('img/main-banner.png') }}');">
+<section class="home-static-hero hero-side hero-slider-active-1" style="background-image: linear-gradient(135deg, rgba(7, 27, 24, 0.16) 0%, rgba(7, 27, 24, 0.1) 100%), url('<?php echo e(asset('img/main-banner.png')); ?>');">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -305,7 +244,7 @@
                     </div>
 
                     <div class="join-us">
-                        <a class="e-primary-btn has-icon" href="{{ url('book-appointment') }}">
+                        <a class="e-primary-btn has-icon" href="<?php echo e(url('book-appointment')); ?>">
                             Book Appointment
                             <span class="icon-wrap">
                                 <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -331,22 +270,22 @@
 
     <div class="hero-slider-social">
         <div class="social-links">
-            <a href="{{ config('site.facebook') }}"><i class="fab fa-facebook-f"></i></a>
-            <a href="{{ config('site.twitter') }}"><i class="fab fa-x-twitter"></i></a>
-            <a href="{{ config('site.instagram') }}"><i class="fab fa-instagram"></i></a>
-            <a href="{{ config('site.linkedin') }}"><i class="fab fa-linkedin-in"></i></a>
+            <a href="<?php echo e(config('site.facebook')); ?>"><i class="fab fa-facebook-f"></i></a>
+            <a href="<?php echo e(config('site.twitter')); ?>"><i class="fab fa-x-twitter"></i></a>
+            <a href="<?php echo e(config('site.instagram')); ?>"><i class="fab fa-instagram"></i></a>
+            <a href="<?php echo e(config('site.linkedin')); ?>"><i class="fab fa-linkedin-in"></i></a>
         </div>
         <div class="text">Join Social:</div>
     </div>
 
     <div class="group-shape-1">
-        <img src="{{ asset('assets/img/shapes/group-shape-1.webp') }}" alt="Visitor Visa Subclass 600 Australia"/>
+        <img src="<?php echo e(asset('assets/img/shapes/group-shape-1.webp')); ?>" alt="group-shape-1"/>
     </div>
 </section>
 <!-- hero-section end -->
 
 <!-- why-visawizer-section start -->
-<section class="why-us-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: url({{ asset('assets/img/bg/why-us-bg.webp') }})">
+<section class="why-us-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: url(<?php echo e(asset('assets/img/bg/why-us-bg.webp')); ?>)">
     <div class="container">
         <div class="row row-gap-5 align-items-center">
 
@@ -354,15 +293,15 @@
             <div class="col-xl-6">
                 <div class="thumb px-xl-5 left" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <div class="thumb-1">
-                        <img alt="thumb-1" src="{{ asset('img/img1.png') }}" alt="Australia Student Visa Consultant Melbourne">
-                        <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-14.webp') }}"></div>
+                        <img alt="thumb-1" src="<?php echo e(asset('img/img1.png')); ?>">
+                        <div class="s-shape-1"><img alt="shape-1" src="<?php echo e(asset('assets/img/shapes/shape-14.webp')); ?>"></div>
                     </div>
-                    <div class="thumb-2"><img alt="thumb-2" src="{{ asset('img/img2.png') }}" alt="Registered Migration Agent Melbourne"></div>
+                    <div class="thumb-2"><img alt="thumb-2" src="<?php echo e(asset('img/img2.png')); ?>"></div>
                     <div class="thumb-3">
                         <div class="shape-wrapped-thumb">
-                            <img alt="thumb-3" src="{{ asset('img/img3.png') }}" alt="Skilled Migration Australia Visa Services">
-                            <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-13.webp') }}"></div>
-                            <div class="s-shape-2"><img alt="shape-2" src="{{ asset('assets/img/shapes/shape-15.webp') }}"></div>
+                            <img alt="thumb-3" src="<?php echo e(asset('img/img3.png')); ?>">
+                            <div class="s-shape-1"><img alt="shape-1" src="<?php echo e(asset('assets/img/shapes/shape-13.webp')); ?>"></div>
+                            <div class="s-shape-2"><img alt="shape-2" src="<?php echo e(asset('assets/img/shapes/shape-15.webp')); ?>"></div>
                         </div>
                     </div>
                 </div>
@@ -411,115 +350,7 @@
 <!-- why-visawizer-section end -->
 
 
-{{-- about-us-section start
-<section class="about-us-section m-t-120 m-t-md-100 m-t-xs-80">
-    <div class="container">
-        <div class="row align-items-center">
 
-            <div class="col-xl-6">
-                <div class="shape-wrapped-thumb-1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-                    <img src="{{ asset('assets/images/about-image-1.webp') }}" alt="about-image-1" class="w-100" style="transform: translateY(30px);">
-                    <div class="box-shape">
-                        <img src="{{ asset('assets/img/shapes/shape-14.webp') }}" alt="Visitor Visa Subclass 600 Australia"/>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Right Content Area -->
-            <div class="col-xl-6">
-                <div class="about-us-content px-xxl-5 px-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-
-                    <!-- Subtitle -->
-                    <div class="common-subtitle">
-                        <span>About Us</span>
-                    </div>
-
-                    <!-- Title -->
-                    <div class="common-title text-start">
-                        <h2>Ethics, Leadership & Responsible Business for a Better World</h2>
-                    </div>
-
-                    <!-- Tabs -->
-                    <div class="c-tabs-wrapper">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="c-tab-1" data-bs-toggle="tab"
-                                        data-bs-target="#c-tab-1-pane" type="button" role="tab"
-                                        aria-controls="c-tab-1-pane" aria-selected="true">
-                                    Who We Are
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="c-tab-2" data-bs-toggle="tab"
-                                        data-bs-target="#c-tab-2-pane" type="button" role="tab"
-                                        aria-controls="c-tab-2-pane" aria-selected="false">
-                                    Our Mission
-                                </button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="c-tab-3" data-bs-toggle="tab"
-                                        data-bs-target="#c-tab-3-pane" type="button" role="tab"
-                                        aria-controls="c-tab-3-pane" aria-selected="false">
-                                    Our Vision
-                                </button>
-                            </li>
-                        </ul>
-
-                        <div class="tab-content" id="myTabContent">
-
-                            <!-- TAB 1: Who We Are -->
-                            <div class="tab-pane fade show active" id="c-tab-1-pane" role="tabpanel" aria-labelledby="c-tab-1" tabindex="0">
-                                <div class="text">
-                                    <p>
-                                        <span class="green">Visawizer</span> is a community of educators, researchers, business leaders, and ethics practitioners committed to embedding ethical thinking into everyday decision-making. 
-                                        We bring together academic rigor, responsible leadership practice, and real-world insights to strengthen integrity, accountability, and human dignity across institutions by:
-                                    </p>
-                                </div>
-                                <div class="benefits">
-                                    <ul>
-                                        <li><i class="fa fa-check-circle"></i> Integrating ethics into leadership, governance, and organizational culture</li>
-                                        <li><i class="fa fa-check-circle"></i> Bridging theory and practice through research, tools, and experiential learning</li>
-                                        <li><i class="fa fa-check-circle"></i> Empowering individuals and institutions to make values-led decisions</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- TAB 2: Mission -->
-                            <div class="tab-pane fade" id="c-tab-2-pane" role="tabpanel" aria-labelledby="c-tab-2" tabindex="0">
-                                <div class="text">
-                                    <p>
-                                        Our mission is to make ethics actionable. We equip individuals and organizations to move from knowing what is right to doing what is right—through education, collaboration, and applied engagement.
-                                        We help leaders institutionalize ethics, strengthen governance systems, and promote accountability across value chains.
-                                    </p>
-                                </div>
-                                <div class="benefits">
-                                    <ul>
-                                        <li><i class="fa fa-check-circle"></i> Enabling purpose-driven leadership rooted in integrity</li>
-                                        <li><i class="fa fa-check-circle"></i> Building ethical cultures through engagement and empowerment</li>
-                                        <li><i class="fa fa-check-circle"></i> Supporting responsible business aligned with ESG, SDGs, and societal expectations</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- TAB 3: Vision -->
-                            <div class="tab-pane fade" id="c-tab-3-pane" role="tabpanel" aria-labelledby="c-tab-3" tabindex="0">
-                                <div class="text">
-                                    <p>
-                                        Our vision is to create a world where businesses, leaders, and institutions act as forces for good—balancing profit with purpose and ensuring that ethical integrity becomes central to progress, sustainability, and human well-being.
-                                    </p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-<!-- about-us-section end -->
---}}
 
     <!-- what-we-do-section start -->
     <section id="home-visa-pathways" class="what-we-do-section p-t-80 p-b-80" style="background: #e1e1e1">
@@ -541,14 +372,14 @@
                 <div class="col-xl-4 col-md-6 col-sm-12">
                     <div class="project-card">
                         <div class="thumb">
-                            <a href="{{ url('study') }}">
-                                <img src="{{ asset('img/study-in-australia.png') }}" alt="study-in-Australia"/>
+                            <a href="<?php echo e(url('study')); ?>">
+                                <img src="<?php echo e(asset('img/study-in-australia.png')); ?>" alt="thumb-14"/>
                             </a>
                             <div class="content">
                                 <h5>Study in Australia</h5>
                                 <p>Admissions, course guidance, student visas, and post-study options.</p>
                                 <div class="details-btn">
-                                    <a class='e-primary-btn has-icon is-hover-white' href="{{ url('study') }}">
+                                    <a class='e-primary-btn has-icon is-hover-white' href="<?php echo e(url('study')); ?>">
                                         Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -562,14 +393,14 @@
                 <div class="col-xl-4 col-md-6 col-sm-12">
                     <div class="project-card">
                         <div class="thumb">
-                            <a href="{{ url('visitor-short-stay') }}">
-                                <img src="{{ asset('img/visit-autraliya.png') }}" alt="visit-austrailia"/>
+                            <a href="<?php echo e(url('visitor-short-stay')); ?>">
+                                <img src="<?php echo e(asset('img/visit-autraliya.png')); ?>" alt="thumb-15"/>
                             </a>
                             <div class="content">
                                 <h5>Visit Australia</h5>
                                 <p>Tourist, ETA, eVisitor, transit, and holiday visa support.</p>
                                 <div class="details-btn">
-                                    <a class='e-primary-btn has-icon is-hover-white' href="{{ url('visitor-short-stay') }}">
+                                    <a class='e-primary-btn has-icon is-hover-white' href="<?php echo e(url('visitor-short-stay')); ?>">
                                         Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -583,14 +414,14 @@
                 <div class="col-xl-4 col-md-6 col-sm-12">
                     <div class="project-card">
                         <div class="thumb">
-                            <a href="{{ url('work-skilled-migration') }}">
-                                <img src="{{ asset('img/skilled-migration.png') }}" alt="work skilled migration"/>
+                            <a href="<?php echo e(url('work-skilled-migration')); ?>">
+                                <img src="<?php echo e(asset('img/skilled-migration.png')); ?>" alt="thumb-16"/>
                             </a>
                             <div class="content">
                                 <h5>Skilled Migration</h5>
                                 <p>Independent, nominated, and regional migration pathways.</p>
                                 <div class="details-btn">
-                                    <a class='e-primary-btn has-icon is-hover-white' href="{{ url('work-skilled-migration') }}">
+                                    <a class='e-primary-btn has-icon is-hover-white' href="<?php echo e(url('work-skilled-migration')); ?>">
                                         Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -604,14 +435,14 @@
                 <div class="col-xl-4 col-md-6 col-sm-12">
                     <div class="project-card">
                         <div class="thumb">
-                            <a href="{{ url('skilled-employer-sponsored-regional-494') }}">
-                                <img src="{{ asset('img/employer-sponsored.png') }}" alt="skilled employer"/>
+                            <a href="<?php echo e(url('skilled-employer-sponsored-regional-494')); ?>">
+                                <img src="<?php echo e(asset('img/employer-sponsored.png')); ?>" alt="thumb-14"/>
                             </a>
                             <div class="content">
                                 <h5>Employer Sponsored</h5>
                                 <p>482, 186, 494, DAMA, and other employer-led visa options.</p>
                                 <div class="details-btn">
-                                    <a class='e-primary-btn has-icon is-hover-white' href="{{ url('skilled-employer-sponsored-regional-494') }}">
+                                    <a class='e-primary-btn has-icon is-hover-white' href="<?php echo e(url('skilled-employer-sponsored-regional-494')); ?>">
                                         Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -625,14 +456,14 @@
                 <div class="col-xl-4 col-md-6 col-sm-12">
                     <div class="project-card">
                         <div class="thumb">
-                            <a href="{{ url('family-visas') }}">
-                                <img src="{{ asset('img/family-visas.png') }}" alt="family visa"/>
+                            <a href="<?php echo e(url('family-visas')); ?>">
+                                <img src="<?php echo e(asset('img/family-visas.png')); ?>" alt="thumb-15"/>
                             </a>
                             <div class="content">
                                 <h5>Family Visas</h5>
                                 <p>Partner, parent, child, and relative visa pathways.</p>
                                 <div class="details-btn">
-                                    <a class='e-primary-btn has-icon is-hover-white' href="{{ url('family-visas') }}">
+                                    <a class='e-primary-btn has-icon is-hover-white' href="<?php echo e(url('family-visas')); ?>">
                                         Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -646,14 +477,14 @@
                 <div class="col-xl-4 col-md-6 col-sm-12">
                     <div class="project-card">
                         <div class="thumb">
-                            <a href="{{ url('appeals-and-reviews') }}">
-                                <img src="{{ asset('img/appeals-protection.png') }}" alt="appeals"/>
+                            <a href="<?php echo e(url('appeals-and-reviews')); ?>">
+                                <img src="<?php echo e(asset('img/appeals-protection.png')); ?>" alt="thumb-16"/>
                             </a>
                             <div class="content">
                                 <h5>Appeals & Reviews</h5>
                                 <p>Support for complex matters, review pathways, and migration assistance.</p>
                                 <div class="details-btn">
-                                    <a class='e-primary-btn has-icon is-hover-white' href="{{ url('appeals-and-reviews') }}">
+                                    <a class='e-primary-btn has-icon is-hover-white' href="<?php echo e(url('appeals-and-reviews')); ?>">
                                         Learn More
                                         <span class="icon-wrap">
                                             <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -666,7 +497,7 @@
                 </div>
             </div>
             <div class="text-center m-t-40" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">
-                <a class='e-primary-btn has-icon is-hover-white' href="{{ url('contact-us') }}">
+                <a class='e-primary-btn has-icon is-hover-white' href="<?php echo e(url('contact-us')); ?>">
                     Find My Pathway
                     <span class="icon-wrap">
                         <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -705,7 +536,7 @@
                                 <div class="swiper-slide">
                                     <div class="camping-card">
                                         <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('img/admission-support.png') }}" alt="Australia PR Consultation Services">
+                                            <img alt="thumb-2" src="<?php echo e(asset('img/admission-support.png')); ?>">
                                         </div>
                                         <div class="content">
                                             <div class="content-top">
@@ -722,7 +553,7 @@
                                 <div class="swiper-slide">
                                     <div class="camping-card">
                                         <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('img/student-visa.png') }}" alt="Student visa">
+                                            <img alt="thumb-2" src="<?php echo e(asset('img/student-visa.png')); ?>">
                                         </div>
                                         <div class="content">
                                             <div class="content-top">
@@ -739,7 +570,7 @@
                                 <div class="swiper-slide">
                                     <div class="camping-card">
                                         <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('img/post-study.png') }}" alt="post study">
+                                            <img alt="thumb-2" src="<?php echo e(asset('img/post-study.png')); ?>">
                                         </div>
                                         <div class="content">
                                             <div class="content-top">
@@ -756,7 +587,7 @@
                                 <div class="swiper-slide">
                                     <div class="camping-card">
                                         <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('img/student-support.png') }}" alt="Student support">
+                                            <img alt="thumb-2" src="<?php echo e(asset('img/student-support.png')); ?>">
                                         </div>
                                         <div class="content">
                                             <div class="content-top">
@@ -792,7 +623,7 @@
                 </div>
             </div>
             <div class="text-center m-t-40">
-                <a class='e-primary-btn has-icon is-hover-white' href="{{ url('contact-us') }}">
+                <a class='e-primary-btn has-icon is-hover-white' href="<?php echo e(url('contact-us')); ?>">
                     Explore Study Pathways
                     <span class="icon-wrap">
                         <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -917,13 +748,13 @@
                 <p class="hero-desc" style="font-size:0.93rem; margin-bottom:2rem;">
                 Today, as the Founder of Visawizer Education & Migration Services and a Registered Migration Agent, he helps students, professionals, families, and skilled migrants make informed, confident, and legally guided decisions for their Australian journey.
                 </p>
-                <a class="e-primary-btn has-icon mb-3" href="{{ url('book-appointment') }}">
+                <a class="e-primary-btn has-icon mb-3" href="<?php echo e(url('book-appointment')); ?>">
                     Book Appointment
                     <span class="icon-wrap">
                         <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                     </span>
                 </a>
-                <a class="home-static-secondary-btn" href="{{ url('ankur-saini-founder-visawizer') }}">
+                <a class="home-static-secondary-btn" href="<?php echo e(url('ankur-saini-founder-visawizer')); ?>">
                     Know More
                     <span class="icon-wrap">
                         <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -932,7 +763,7 @@
             </div>
             <div class="col-lg-6 hero-img-block ps-lg-5 mt-5 mt-lg-0">
                 <div class="hero-img-main" style="position:relative;">
-                <img src="{{ url('img/ankur-saini.jpeg') }}" alt="Resilient minds" loading="eager" fetchpriority="high" decoding="async">
+                <img src="<?php echo e(url('img/ankur-saini.jpeg')); ?>" alt="Resilient minds" loading="eager" fetchpriority="high" decoding="async">
                 <div class="hero-float-card2 d-lg-block d-none">
                     <div class="icon-wrap"><i class="fa fa-user"></i></div>
                     <!-- <div class="lbl2">Registered Migration Agent</div> -->
@@ -961,10 +792,10 @@
 
             <div class="row row-gap-4 justify-content-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                 <div class="col-xl-6 col-md-6">
-                    <div class="service-card" style="background-image: linear-gradient(90deg, var(--theme-color-3), rgba(0, 0, 0, 0)), url({{ asset('img/bg4.jpg') }});background-size: cover;background-position: center;">
+                    <div class="service-card" style="background-image: linear-gradient(90deg, var(--theme-color-3), rgba(0, 0, 0, 0)), url(<?php echo e(asset('img/bg4.jpg')); ?>);background-size: cover;background-position: center;">
                         <div class="service-top">
                             <h4>Skilled Migration</h4>
-                            <i><img alt="icon" src="{{ asset('assets/images/icon/workplace-business.svg') }}"></i>
+                            <i><img alt="icon" src="<?php echo e(asset('assets/images/icon/workplace-business.svg')); ?>"></i>
                         </div>
                         <div class="service-content">
                             <p>For applicants exploring independent, nominated, or regional pathways including 189, 190, 491, 191, and 887 options.</p>
@@ -972,9 +803,9 @@
                     </div>
                 </div>
                 <div class="col-xl-6 col-md-6">
-                    <div class="service-card" style="background-image: linear-gradient(90deg, rgb(0, 0, 0, 0), var(--theme-color-3)), url({{ asset('img/bg3.png') }});background-size: cover;background-position: center;">
+                    <div class="service-card" style="background-image: linear-gradient(90deg, rgb(0, 0, 0, 0), var(--theme-color-3)), url(<?php echo e(asset('img/bg3.png')); ?>);background-size: cover;background-position: center;">
                         <div class="service-top">
-                            <i><img alt="icon" src="{{ asset('assets/images/icon/corporate-governance.svg') }}"></i>
+                            <i><img alt="icon" src="<?php echo e(asset('assets/images/icon/corporate-governance.svg')); ?>"></i>
                             <h4 class="text-end">Employer Sponsored</h4>
                         </div>
                         <div class="service-content">
@@ -986,7 +817,7 @@
 
             <div class="text-center m-t-40">
                 <p class="m-b-25">Need help choosing between skilled and sponsored options? We help compare routes based on eligibility, timelines, and long-term goals.</p>
-                <a class='e-primary-btn has-icon is-hover-white' href="{{ url('contact-us') }}">
+                <a class='e-primary-btn has-icon is-hover-white' href="<?php echo e(url('contact-us')); ?>">
                     Check Your Options
                     <span class="icon-wrap">
                         <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -999,7 +830,7 @@
 
     <!-- completed-project start -->
     <section class="completed-project-section">
-        <div class="completed-project-top" style="background-image: linear-gradient(45deg, #66003f78), url({{ asset('img/why-choose.png') }}">
+        <div class="completed-project-top" style="background-image: linear-gradient(45deg, #66003f78), url(<?php echo e(asset('img/why-choose.png')); ?>">
             <div class="container">
                 <div class="row align-items-center m-b-60 m-b-xs-40">
                     <div class="col-md-9">
@@ -1013,13 +844,13 @@
                         </div>
                     </div>
                     <div class="col-md-3 text-md-end">
-                        <a class='e-primary-btn has-icon active' data-aos-delay='600' data-aos-duration='1000' data-aos='fade-up' href="{{ url('contact-us') }}">Speak to a Visa Expert
+                        <a class='e-primary-btn has-icon active' data-aos-delay='600' data-aos-duration='1000' data-aos='fade-up' href="<?php echo e(url('contact-us')); ?>">Speak to a Visa Expert
                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                     </div>
                 </div>
             </div>
-            <div class="shape-8"><img alt="shape-8" src="{{ asset('assets/img/shapes/shape-8.webp') }}"></div>
-            <div class="shape-9"><img alt="shape-9" src="{{ asset('assets/img/shapes/shape-9.webp') }}"></div>
+            <div class="shape-8"><img alt="shape-8" src="<?php echo e(asset('assets/img/shapes/shape-8.webp')); ?>"></div>
+            <div class="shape-9"><img alt="shape-9" src="<?php echo e(asset('assets/img/shapes/shape-9.webp')); ?>"></div>
         </div>
         <div class="completed-project-bottom">
             <div class="container">
@@ -1027,12 +858,12 @@
                     <div class="col-md-4">
                         <div class="project-card">
                             <div class="thumb">
-                                <a href="#"><img alt="family visa1" src="{{ asset('img/family-visa1.png') }}"></a>
+                                <a href="#"><img alt="thumb-11" src="<?php echo e(asset('img/family-visa1.png')); ?>"></a>
                                 <div class="content">
                                     <h5>Family Visas</h5>
                                     <p>Partner, parent, child, and relative visa pathways handled with clarity and care.</p>
                                     <div class="details-btn">
-                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact-us') }}">Learn More
+                                        <a class='e-primary-btn is-hover-white has-icon' href="<?php echo e(url('contact-us')); ?>">Learn More
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                                     </div>
                                 </div>
@@ -1042,12 +873,12 @@
                     <div class="col-md-4">
                         <div class="project-card">
                             <div class="thumb">
-                                <a href="#"><img alt="visitor visa1" src="{{ asset('img/visitor-visa1.png') }}"></a>
+                                <a href="#"><img alt="thumb-11" src="<?php echo e(asset('img/visitor-visa1.png')); ?>"></a>
                                 <div class="content">
                                     <h5>Visitor Visas</h5>
                                     <p>Visitor, holiday, ETA, eVisitor, and transit support for seamless short-term travel plans.</p>
                                     <div class="details-btn">
-                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact-us') }}">Learn More
+                                        <a class='e-primary-btn is-hover-white has-icon' href="<?php echo e(url('contact-us')); ?>">Learn More
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                                     </div>
                                 </div>
@@ -1057,12 +888,12 @@
                     <div class="col-md-4">
                         <div class="project-card">
                             <div class="thumb">
-                                <a href="#"><img alt="appeals1" src="{{ asset('img/appeals.png') }}"></a>
+                                <a href="#"><img alt="thumb-11" src="<?php echo e(asset('img/appeals.png')); ?>"></a>
                                 <div class="content">
                                     <h5>Appeals &amp; Reviews</h5>
                                     <p>Guidance for review matters and other complex visa situations where careful strategy matters.</p>
                                     <div class="details-btn">
-                                        <a class='e-primary-btn is-hover-white has-icon' href="{{ url('contact-us') }}">Learn More
+                                        <a class='e-primary-btn is-hover-white has-icon' href="<?php echo e(url('contact-us')); ?>">Learn More
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span></a>
                                     </div>
                                 </div>
@@ -1106,7 +937,7 @@
                             <p>We understand your background, goal, and current visa situation.</p>
                         </div>
                         <div class="i-shape">
-                            <span class="i-shape-num" aria-hidden="true">01</span>
+                            <h1>01</h1>
                         </div>
                     </div>
                 </div>
@@ -1120,7 +951,7 @@
                             <p>We identify suitable options and explain the requirements clearly.</p>
                         </div>
                         <div class="i-shape">
-                            <span class="i-shape-num" aria-hidden="true">02</span>
+                            <h1>02</h1>
                         </div>
                     </div>
                 </div>
@@ -1134,7 +965,7 @@
                             <p>We help organise documents, address gaps, and prepare the application carefully.</p>
                         </div>
                         <div class="i-shape">
-                            <span class="i-shape-num" aria-hidden="true">03</span>
+                            <h1>03</h1>
                         </div>
                     </div>
                 </div>
@@ -1148,7 +979,7 @@
                             <p>We stay involved through submission, updates, and next-step planning.</p>
                         </div>
                         <div class="i-shape">
-                            <span class="i-shape-num" aria-hidden="true">04</span>
+                            <h1>04</h1>
                         </div>
                     </div>
                 </div>
@@ -1167,7 +998,7 @@
         <div class="container">
             <div class="row row-gap-5 align-items-center">
                 <div class="col-xl-5 col-lg-5">
-                    <div class="section-top-9" style="background-image: linear-gradient(#31339170), url('{{ asset('img/trust.png')  }}'); max-height: 600px;padding: 20px;background-size: cover;background-position: center;border-radius: 10px;">
+                    <div class="section-top-9" style="background-image: linear-gradient(#31339170), url('<?php echo e(asset('img/trust.png')); ?>'); max-height: 600px;padding: 20px;background-size: cover;background-position: center;border-radius: 10px;">
                         <div class="common-subtitle text-uppercase" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                             <span class="bg-p">Trust</span>
                         </div>
@@ -1194,7 +1025,7 @@
                                 <div class="service-content">
                                     <p>Understand what matters, what is needed, and what comes next.</p>
                                 </div>
-                                <div class="i-shape"><span class="i-shape-num" aria-hidden="true">01</span></div>
+                                <div class="i-shape"><h1>01</h1></div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -1206,7 +1037,7 @@
                                 <div class="service-content">
                                     <p>Recommendations shaped around your case, not generic assumptions.</p>
                                 </div>
-                                <div class="i-shape"><span class="i-shape-num" aria-hidden="true">02</span></div>
+                                <div class="i-shape"><h1>02</h1></div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -1218,7 +1049,7 @@
                                 <div class="service-content">
                                     <p>Support across study, family, skilled, sponsored, visitor, and review matters.</p>
                                 </div>
-                                <div class="i-shape"><span class="i-shape-num" aria-hidden="true">03</span></div>
+                                <div class="i-shape"><h1>03</h1></div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -1230,7 +1061,7 @@
                                 <div class="service-content">
                                     <p>We help turn confusion into a practical next step.</p>
                                 </div>
-                                <div class="i-shape"><span class="i-shape-num" aria-hidden="true">04</span></div>
+                                <div class="i-shape"><h1>04</h1></div>
                             </div>
                         </div>
                     </div>
@@ -1241,7 +1072,7 @@
     <!-- why-clients-choose-section end -->
 
     <!-- resources-knowledge-hub-section start -->
-    <section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #31339170), url('{{ asset('img/bg.png') }}');background-position: bottom;">
+    <section class="services-we-offer-section p-t-100 p-b-100 p-t-xs-80 p-b-xs-80" style="background-image: linear-gradient(45deg, #31339170), url('<?php echo e(asset('img/bg.png')); ?>');background-position: bottom;">
         <div class="container">
             <div class="text-center m-b-50 m-b-xs-40">
                 <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
@@ -1269,7 +1100,7 @@
                         <div class="service-content">
                             <p>Straightforward explainers for key pathways and subclasses.</p>
                         </div>
-                        <div class="i-shape"><span class="i-shape-num" aria-hidden="true">01</span></div>
+                        <div class="i-shape"><h1>01</h1></div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -1281,7 +1112,7 @@
                         <div class="service-content">
                             <p>Know what documents and details are usually important.</p>
                         </div>
-                        <div class="i-shape"><span class="i-shape-num" aria-hidden="true">02</span></div>
+                        <div class="i-shape"><h1>02</h1></div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -1293,7 +1124,7 @@
                         <div class="service-content">
                             <p>Helpful content for applicants who prefer visual guidance.</p>
                         </div>
-                        <div class="i-shape"><span class="i-shape-num" aria-hidden="true">03</span></div>
+                        <div class="i-shape"><h1>03</h1></div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
@@ -1305,7 +1136,7 @@
                         <div class="service-content">
                             <p>Stay informed about changes, timelines, and practical migration topics.</p>
                         </div>
-                        <div class="i-shape"><span class="i-shape-num" aria-hidden="true">04</span></div>
+                        <div class="i-shape"><h1>04</h1></div>
                     </div>
                 </div>
             </div>
@@ -1313,9 +1144,9 @@
     </section>
     <!-- resources-knowledge-hub-section end -->
 
-    @include('partials.testi')
+    <?php echo $__env->make('partials.testi', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-    @include('partials.commonCta', [
+    <?php echo $__env->make('partials.commonCta', [
         'ctaEyebrow' => 'Plan before you apply',
         'ctaHeading' => 'Ready to take the next step toward Australia?',
         'ctaLead' => 'Book a consultation with Visawizer and get clarity on your options, requirements, and best path forward.',
@@ -1323,9 +1154,10 @@
         'ctaPrimaryUrl' => url('book-appointment'),
         'ctaSecondaryLabel' => 'Contact Visawizer',
         'ctaSecondaryUrl' => url('contact-us'),
-    ])
+    ], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-    @include('partials.faq')
-    @include('partials.blogs')
+    <?php echo $__env->make('partials.faq', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+    <?php echo $__env->make('partials.blogs', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-@endsection    
+<?php $__env->stopSection(); ?>    
+<?php echo $__env->make('layouts.frontend', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH F:\xampp\htdocs\visawizer\resources\views/index.blade.php ENDPATH**/ ?>

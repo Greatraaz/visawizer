@@ -83,7 +83,7 @@
     }
 </style>
 <section class="completed-project-section contact-page-agent-section">
-    <div class="completed-project-top contact-page-agent-strip" style="background-image: linear-gradient(45deg, rgba(0, 96, 57, 0.88), rgba(0, 40, 28, 0.78)), url({{ asset('assets/images/home-banner-3.webp') }}); background-size: cover; background-position: center center; background-repeat: no-repeat;">
+    <div class="completed-project-top contact-page-agent-strip" style="background-image: linear-gradient(#0000008f), url({{ asset('img/main-banner.png') }}); background-size: cover; background-position: center center; background-repeat: no-repeat;">
         <div class="container">
             <div class="row align-items-center justify-content-between g-4 gy-5">
                 <div class="col-xl-4 col-lg-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">

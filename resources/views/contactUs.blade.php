@@ -83,7 +83,7 @@
         <div class="container">
             <div class="text-center m-b-40 m-b-xs-32">
                 <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <span>Contact</span>
+                    <span class="bg-p">Contact</span>
                 </div>
                 <div class="common-title mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     <h2>Get in touch</h2>
@@ -149,7 +149,7 @@
         <div class="container">
             <div class="text-center m-b-50 m-b-xs-40">
                 <div class="common-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <span>Send a message</span>
+                    <span class="bg-p">Send a message</span>
                 </div>
                 <div class="common-title mb-0" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
                     <h2>We will get back to you</h2>
@@ -215,8 +215,7 @@
                                         <textarea placeholder="How can we help you?" name="message"></textarea>
                                     </div>
                                     <div class="mb-3 text-start">
-                                        <input type="checkbox" required=""> By submitting, I confirm my acceptance of the T &amp; C and Privacy Policy.<br>
-                                        <input type="checkbox"> I&apos;m happy to receive updates via Call/SMS/RCS/WhatsApp
+                                        <input type="checkbox" required=""> By submitting, I confirm my acceptance of the <a href="{{ url('terms-and-conditions') }}">T &amp; C</a> and <a href="{{ url('privacy-policy') }}">Privacy Policy.</a>
                                     </div>
                                     <div class="input-button">
                                         <button type="submit" class="e-primary-btn has-icon">

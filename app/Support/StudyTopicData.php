@@ -2,6 +2,8 @@
 
 namespace App\Support;
 
+use Illuminate\Support\Str;
+
 class StudyTopicData
 {
     public static function get(string $slug): ?array
@@ -19,6 +21,18 @@ class StudyTopicData
         }
 
         return null;
+    }
+
+    public static function resolveSeo(array $page): array
+    {
+        $meta = $page['meta'] ?? [];
+        $label = $page['label'] ?? 'Study in Australia';
+
+        return [
+            'title' => $meta['title'] ?? ($label . ' | Study in Australia | Visawizer'),
+            'description' => $meta['description'] ?? Str::limit(strip_tags($page['hero']['subheading'] ?? $page['hero']['content'] ?? ''), 300, ''),
+            'keywords' => $meta['keywords'] ?? 'study visa in australia, student visa, Visawizer',
+        ];
     }
 
     public static function pages(): array
@@ -383,6 +397,11 @@ class StudyTopicData
             ],
             'study-visas' => [
                 'label' => 'Study Visas',
+                'meta' => [
+                    'title' => 'study visa in australia | visawizer',
+                    'description' => 'Study Visa in Australia: Pursue world-class education, gain global exposure, and build a bright future with an Australian student visa.',
+                    'keywords' => 'study visa in australia, visa services Melbourne, work visa Australia',
+                ],
                 'hero' => [
                     'tagline' => 'Student visa planning',
                     'heading' => 'Study visa guidance for international students',
@@ -434,6 +453,11 @@ class StudyTopicData
             ],
             'student-visa-subclass-500' => [
                 'label' => 'Student Visa Subclass 500',
+                'meta' => [
+                    'title' => 'student visa 500 | visawizer',
+                    'description' => 'Student Visa 500 allows international students to study in Australia full-time at approved institutions while living in Australia.',
+                    'keywords' => 'student visa 500, student visa 500 australia, 500 student visa condition',
+                ],
                 'aliases' => [
                     'student-visa-500',
                     'visa/student-visa-500',
@@ -484,6 +508,11 @@ class StudyTopicData
             ],
             'student-guardian-visa-subclass-590' => [
                 'label' => 'Student Guardian Visa Subclass 590',
+                'meta' => [
+                    'title' => 'student guardian visa subclass 590 | Visawizer',
+                    'description' => 'Student Guardian Visa Subclass 590 allows guardians to accompany and support international students studying in Australia.',
+                    'keywords' => 'Student Guardian Visa Subclass 590, subclass 590 student guardian visa, student visa australia',
+                ],
                 'aliases' => [
                     'student-guardian-590',
                     'visa/student-guardian-590',
@@ -532,6 +561,11 @@ class StudyTopicData
             ],
             'training-visa-subclass-407' => [
                 'label' => 'Training Visa Subclass 407',
+                'meta' => [
+                    'title' => 'training visa subclass 407 | 407 Visa process | visawizer',
+                    'description' => 'Training Visa Subclass 407 allows individuals to undertake workplace-based training in Australia to improve skills and gain professional experience.',
+                    'keywords' => 'training visa subclass 407, 407 Visa process, 407 visa australia requirements',
+                ],
                 'aliases' => [
                     'training-407',
                     'visa/training-407',
@@ -573,6 +607,11 @@ class StudyTopicData
             ],
             'temporary-graduate-visa-subclass-485' => [
                 'label' => 'Temporary Graduate Visa Subclass 485',
+                'meta' => [
+                    'title' => 'temporary graduate visa subclass 485 | visawizer',
+                    'description' => 'Temporary Graduate Visa Subclass 485 lets eligible international graduates live, work, and study in Australia after completing their studies.',
+                    'keywords' => 'temporary graduate visa subclass 485, graduate visa 485, post study visa australia',
+                ],
                 'aliases' => [
                     'temporary-graduate-485',
                     'visa/temporary-graduate-485',
@@ -614,6 +653,11 @@ class StudyTopicData
             ],
             'post-study-work-visa-485' => [
                 'label' => 'Post Study Work Visa 485',
+                'meta' => [
+                    'title' => 'post study work visa 485 | work visa 485 | visawizer',
+                    'description' => 'Post Study Work Visa 485 allows eligible graduates in Australia to live, work, and gain valuable experience after completing their studies.',
+                    'keywords' => 'post study work visa 485, work visa 485, post study 485 work visa',
+                ],
                 'aliases' => [
                     'post-study-work-485',
                     'visa/post-study-work-485',

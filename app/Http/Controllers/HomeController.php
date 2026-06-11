@@ -31,7 +31,10 @@ class HomeController extends Controller
 
     public function studyInAustralia()
     {
-        return view('study');
+        $page = StudyTopicData::get('study-visas') ?? [];
+        extract(StudyTopicData::resolveSeo($page));
+
+        return view('study', compact('title', 'description', 'keywords'));
     }
 
     public function visaGuide()
@@ -79,6 +82,15 @@ class HomeController extends Controller
         $keywords = 'visitor visa Australia, short stay visa Australia, ETA 601, eVisitor 651, visitor visa 600, transit visa 771, working holiday visa, Visawizer';
 
         return view('visitorShortStay', compact('title', 'description', 'keywords'));
+    }
+    
+    public function workHoliday462Landing()
+    {
+        $title = 'Australia Work and Holiday Visa Subclass 462 | Apply with Expert Guidance | Visawizer';
+        $description = 'Apply for Australia Work and Holiday Visa Subclass 462 with Visawizer. Check eligibility, prepare documents, and get expert guidance for young travellers from participating countries.';
+        $keywords = 'work and holiday visa 462, working holiday visa subclass 462, 462 visa Australia, work and holiday visa apply, Visawizer';
+
+        return view('workHoliday462Landing', compact('title', 'description', 'keywords'));
     }
 
     public function protectionAppealsHumanitarian()
@@ -128,8 +140,9 @@ class HomeController extends Controller
     private function renderStudyTopicPage(array $page)
     {
         $countries = StudyTopicData::countries();
+        extract(StudyTopicData::resolveSeo($page));
 
-        return view('studyTopic', compact('page', 'countries'));
+        return view('studyTopic', compact('page', 'countries', 'title', 'description', 'keywords'));
     }
 
     private function resolveVisaTopic(string $slug): ?array
@@ -163,18 +176,19 @@ class HomeController extends Controller
 
     private function renderVisaTopicPage(array $visaPage)
     {
+        $meta = $visaPage['meta'] ?? [];
         $category = strtolower($visaPage['category'] ?? '');
         $isFamily = str_contains($category, 'parent') || str_contains($category, 'partner') || str_contains($category, 'relative') || str_contains($category, 'family');
         $isVisitor = str_contains($category, 'visitor') || str_contains($category, 'short stay');
         $sectionTitle = $isFamily ? 'Family Visas' : ($isVisitor ? 'Visitor & Short Stay' : 'Work & Skilled Migration');
-        $title = ($visaPage['label'] ?? 'Visa') . ' | ' . $sectionTitle . ' | Visawizer';
+        $title = $meta['title'] ?? (($visaPage['label'] ?? 'Visa') . ' | ' . $sectionTitle . ' | Visawizer');
         $rawDescription = $visaPage['hero']['subheading'] ?? $visaPage['hero']['content'] ?? '';
-        $description = Str::limit(strip_tags($rawDescription), 300, '');
-        $keywords = match ($sectionTitle) {
+        $description = $meta['description'] ?? Str::limit(strip_tags($rawDescription), 300, '');
+        $keywords = $meta['keywords'] ?? (match ($sectionTitle) {
             'Family Visas' => 'Australia family visa, partner visa, parent visa, child visa, ',
             'Visitor & Short Stay' => 'Australia visitor visa, short stay visa, ETA, eVisitor, transit visa, working holiday visa, ',
             default => 'Australia work visa, skilled migration, ',
-        } . ($visaPage['label'] ?? 'Visawizer');
+        } . ($visaPage['label'] ?? 'Visawizer'));
 
         return view('workVisaTopic', [
             'page' => $visaPage,

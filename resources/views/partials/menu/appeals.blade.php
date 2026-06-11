@@ -106,7 +106,7 @@
               <div>
                 <div class="featured-img-wrap h-184">
                   <img src="{{ asset('img/appeals2.png') }}" alt="Students studying in Australia">
-                  <span class="featured-badge">✦ Visa Wizer</span>
+                  <span class="featured-badge">✦ Visawizer</span>
                 </div>
 
                 <div class="featured-heading">

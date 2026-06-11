@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Services\ChecklistEngine;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Cache;
 
@@ -12,7 +13,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        $this->app->singleton(ChecklistEngine::class);
     }
 
     /**

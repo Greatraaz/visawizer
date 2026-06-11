@@ -11,6 +11,8 @@ use App\Http\Controllers\Admin\ResourcesController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AppointmentBookingController;
+use App\Http\Controllers\ChecklistController;
+use App\Http\Controllers\Wh462EnquiryController;
 
 use Illuminate\Support\Facades\Artisan;
 
@@ -26,6 +28,7 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('work-skilled-migration', 'workSkilledMigration')->name('work-skilled-migration.index');
     Route::get('family-visas', 'familyVisas')->name('family-visas.index');
     Route::get('visitor-short-stay', 'visitorShortStay')->name('visitor-short-stay.index');
+    Route::get('australia-work-and-holiday-visa-subclass-462', 'workHoliday462Landing')->name('australia.work-holiday-462');
     Route::get('appeals-and-reviews', 'protectionAppealsHumanitarian')->name('protection-appeals-humanitarian.index');
 
     Route::get('visa-guides', 'visaGuide')->name('visa-guide');
@@ -87,6 +90,7 @@ Route::get('logout', [AuthController::class,'logout']);
 
 
 Route::post('contact-form', [FormController::class,'submitContact']);
+Route::post('wh462-enquiry', [Wh462EnquiryController::class, 'store']);
 Route::post('newsletter-form', [FormController::class,'submitNewsletter']);
 Route::post('event-form', [FormController::class,'submitEvent']);
 Route::get('thank-you', function () { return view('thankYou'); });
@@ -108,15 +112,18 @@ Route::post('send-mail', [CoursesController::class, 'sendMail']);
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'admin'], function () {
   Route::get('dashboard', [AdminController::class, 'index']);
   Route::get('dashboard/settings', [AdminController::class, 'settings']);
+  Route::get('settings', [AdminController::class, 'settings']);
   Route::post('store-settings', [AdminController::class, 'saveSettings']);
 
   Route::get('dashboard/banners', [AdminController::class, 'banners']);
+  Route::get('banners', [AdminController::class, 'banners']);
   Route::get('edit-banner/{id}', [AdminController::class, 'editBanner']);
   Route::post('store-banner', [AdminController::class, 'saveBanner']);
   Route::post('update-banner', [AdminController::class, 'updateBanner']);
   Route::get('delete-banner/{id}', [AdminController::class, 'deleteBanner']);
 
   Route::get('dashboard/testimonials', [AdminController::class, 'testimonials']);
+  Route::get('testimonials', [AdminController::class, 'testimonials']);
   Route::get('edit-testimonial/{id}', [AdminController::class, 'editTestimonial']);
   Route::post('store-testimonial', [AdminController::class, 'saveTestimonial']);
   Route::post('update-testimonial', [AdminController::class, 'updateTestimonial']);
@@ -128,7 +135,7 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'admi
   Route::post('update-white-paper', [WhitePaperController::class, 'update']);
   Route::get('delete-white-paper/{id}', [WhitePaperController::class, 'delete']);
 
-  Route::get('seminars', [SeminarController::class, 'index']);
+  Route::get('webinars', [SeminarController::class, 'index']);
   Route::get('edit-seminar/{id}', [SeminarController::class, 'edit']);
   Route::post('store-seminar', [SeminarController::class, 'store']);
   Route::post('update-seminar', [SeminarController::class, 'update']);
@@ -148,6 +155,12 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => 'admi
   Route::post('store-resources', [ResourcesController::class, 'store']);
   Route::post('update-resources', [ResourcesController::class, 'update']);
   Route::get('delete-resources/{id}', [ResourcesController::class, 'delete']);
+
+  Route::get('case-study', [CaseStudy::class, 'index']);
+  Route::get('edit-case-study/{id}', [CaseStudy::class, 'edit']);
+  Route::post('store-case-study', [CaseStudy::class, 'store']);
+  Route::post('update-case-study', [CaseStudy::class, 'update']);
+  Route::get('delete-case-study/{id}', [CaseStudy::class, 'delete']);
 
   Route::get('enquiries', [AdminController::class, 'enquiries']);
   Route::get('delete-enquiry/{id}', [AdminController::class, 'deleteEnquiry']);
@@ -169,6 +182,18 @@ Route::get("sitemap.xml" , function () {
 return \Illuminate\Support\Facades\Redirect::to('sitemap.xml');
  });
 
+Route::redirect('checklists', 'document-checklist')->name('checklists');
+
+Route::prefix('document-checklist')->name('checklist.')->group(function () {
+    Route::get('/', [ChecklistController::class, 'index'])->name('index');
+
+    // Session routes must be registered before /{slug} to avoid "session" being treated as a slug
+    Route::get('/session/{token}', [ChecklistController::class, 'resume'])->name('resume');
+    Route::patch('/session/{token}/tick', [ChecklistController::class, 'tick'])->name('tick');
+
+    Route::get('/{slug}', [ChecklistController::class, 'wizard'])->name('wizard');
+    Route::post('/{slug}/generate', [ChecklistController::class, 'generate'])->name('generate');
+});
+
 Route::get('visa/{slug}', [HomeController::class, 'showVisaTopic'])->name('visa.topic');
 Route::get('{slug}', [HomeController::class, 'showHeaderTopic'])->name('header.topic');
-

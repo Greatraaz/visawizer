@@ -23,7 +23,7 @@ class FormController extends Controller
             }],
             'email' => [
                 'required',
-                'email:rfc,dns',
+                'email',
                 'not_regex:/@(tempmail|yopmail|mailinator|10minutemail)\./i'
             ],
             'message'   => 'nullable|string|max:1000',
@@ -44,14 +44,24 @@ class FormController extends Controller
             'message'    => $request->message,
         ]);
 
-        if ($request->formName != 'Quiz') {        
-            Mail::send('emailer.courseThankYou', [
-                'name' => $request->name,
-                'courseName' => $request->course
-            ], function($message) use ($request){
-                $message->to($request->email)->subject('Thank you for contacting Visawizer');
-            });
-        }
+       
+        Mail::send('emailer.courseThankYou', [
+            'name' => $request->name,
+            'courseName' => $request->course
+        ], function($message) use ($request){
+            $message->to($request->email)->subject('Thank you for contacting Visawizer');
+        });
+
+        Mail::send('emailer.courseAdmin', [
+            'name' => $request->name,
+            'topic' => $request->course,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'city' => $request->city,
+            'messageText' => $request->message,
+        ], function($message){
+            $message->to('info@visawizer.com.au')->subject('New Website Inquiry');
+        });
 
         return response()->json(['status' => 'success','message' => 'Thank you! Your message has been submitted.']);
     }

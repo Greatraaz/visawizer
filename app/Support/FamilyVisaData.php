@@ -43,6 +43,11 @@ class FamilyVisaData
                 ['Sponsor and applicant preparation', 'Both partners have important responsibilities', 'The applicant must prepare identity, relationship, character, health, and visa history documents. The sponsor must also provide identity, eligibility, relationship, and sponsorship-related documents.'],
                 ['Common risk areas', 'Inconsistencies can weaken the case', ['Weak relationship timeline', 'Limited joint evidence', 'Conflicting dates or addresses', 'Poorly written statements', 'Missing sponsor details', 'Prior visa or relationship complications', 'Lack of explanation for gaps in evidence']],
                 ['We help couples prepare a clear and complete application', 'Visawizer helps couples review eligibility, organise relationship evidence, prepare statements, understand sponsor requirements, and structure the application file.', 'Book Partner Visa Consultation'],
+                [],
+                [
+                    'title' => 'Partner Visa 820/801 | Family Visa | Visawizer',
+                    'description' => 'Partner Visa (820/801): Allows the spouse or de facto partner of an Australian citizen, PR, or eligible NZ citizen to live in Australia.',
+                ],
             ),
 
             self::page(
@@ -57,7 +62,12 @@ class FamilyVisaData
                 ['Long-distance relationship evidence', 'Distance does not reduce the need for proof', 'Offshore partner applications often require careful evidence of communication, visits, financial support, shared future plans, relationship history, and commitment despite physical distance.'],
                 ['Sponsor eligibility and commitment', 'The sponsor’s role must be clearly documented', 'The sponsor must show eligibility, identity, relationship commitment, and support for the applicant. Sponsor documents should align with the applicant’s relationship evidence.'],
                 ['Common documentation gaps', 'Offshore files need strong consistency', ['Missing communication records', 'Weak visit/travel evidence', 'Unclear relationship timeline', 'Limited social recognition proof', 'Poorly explained cultural or family context', 'Inconsistent names, dates, or addresses']],
-                ['Support for couples across countries and timelines', 'Visawizer helps couples build a structured relationship file, prepare personal statements, review sponsor details, and organise offshore partner visa evidence.', 'Book Offshore Partner Visa Review']
+                ['Support for couples across countries and timelines', 'Visawizer helps couples build a structured relationship file, prepare personal statements, review sponsor details, and organise offshore partner visa evidence.', 'Book Offshore Partner Visa Review'],
+                [],
+                [
+                    'title' => 'Partner Visa 309/100 | Family Visa | Visawizer',
+                    'description' => 'Australian Partner Visa 309/100 allows spouses or de facto partners of Australian citizens or permanent residents to live in Australia.',
+                ],
             ),
 
             self::page(
@@ -72,7 +82,12 @@ class FamilyVisaData
                 ['Evidence of genuine intention', 'Engagement and marriage plans must be credible', 'Applicants should show that the relationship is genuine and that both partners genuinely intend to marry. Evidence may include relationship history, engagement proof, communication, photographs, family awareness, and wedding planning details.'],
                 ['Sponsor role', 'The Australian partner must support the application', 'The sponsor’s documents and statements should support the relationship history, marriage intention, and future plans as a couple.'],
                 ['Common challenges', 'A weak engagement story can create doubt', ['Limited in-person meeting evidence', 'Unclear marriage plans', 'Weak family or social proof', 'Inconsistent relationship timeline', 'Lack of future planning', 'Missing sponsor documents']],
-                ['We help engaged couples prepare with confidence', 'Visawizer helps review eligibility, organise relationship and engagement evidence, prepare sponsor documents, and plan the next partner visa stage.', 'Book 300 Visa Consultation']
+                ['We help engaged couples prepare with confidence', 'Visawizer helps review eligibility, organise relationship and engagement evidence, prepare sponsor documents, and plan the next partner visa stage.', 'Book 300 Visa Consultation'],
+                [],
+                [
+                    'title' => 'Prospective Marriage Visa 300 | Family Visa | Visawizer',
+                    'description' => 'Prospective Marriage Visa (Subclass 300) Allows an engaged person to enter Australia and marry their Australian partner within 9 months.',
+                ],
             ),
 
             self::page('visa/parent-103', ['parents-visa-subclass-103'], 'Parent Visa 103', '103', 'Parent Visas I', 'fa-light fa-people-roof',
@@ -81,7 +96,12 @@ class FamilyVisaData
                 ['Balance of Family Test', 'Family distribution is important', 'Many parent visa applications require the Balance of Family test. Home Affairs notes that this test applies to Parent 103, Contributory Parent 143, Temporary Contributory Parent 173, Aged Parent 804, Contributory Aged Parent 864, and Temporary Contributory Aged Parent 884.'],
                 ['Sponsorship planning', 'The sponsor must be eligible and settled', 'A parent visa application usually depends on an eligible child sponsor who is an Australian citizen, permanent resident, or eligible New Zealand citizen and is settled in Australia.'],
                 ['Document preparation', 'Build a complete family evidence file', ['Parent-child relationship evidence', 'Sponsor identity and status', 'Family structure documents', 'Balance of Family evidence', 'Identity documents', 'Health and character documents', 'Assurance of Support awareness, if applicable']],
-                ['We help families plan parent migration carefully', 'Visawizer helps assess eligibility, review family balance, organise sponsor documents, and prepare the parent visa file.', 'Book Parent Visa Consultation']
+                ['We help families plan parent migration carefully', 'Visawizer helps assess eligibility, review family balance, organise sponsor documents, and prepare the parent visa file.', 'Book Parent Visa Consultation'],
+                [],
+                [
+                    'title' => 'Parent Visa 103 | Family Visa | Visawizer',
+                    'description' => 'Australian Parent Visa 103 allows eligible parents of Australian citizens or permanent residents to migrate permanently.',
+                ],
             ),
 
             self::page('visa/contributory-parent-143', ['contributory-parent-visa-subclass-143'], 'Contributory Parent Visa 143', '143', 'Parent Visas I', 'fa-light fa-users',
@@ -90,7 +110,12 @@ class FamilyVisaData
                 ['Balance of Family Test', 'Eligibility starts with family structure', 'Applicants usually need to satisfy the Balance of Family test. This requires careful review of where the applicant’s children usually live and their migration status.'],
                 ['Sponsorship and assurance planning', 'Family support must be documented', 'The sponsor relationship, settlement status, financial support considerations, and family documents should be organised carefully before submission.'],
                 ['Contributory vs non-contributory planning', 'Compare parent visa options before deciding', 'Families should compare Subclass 143 with other parent visa options such as 103, 173, 804, 864, 870, and 884 based on location, age, timing, cost, and long-term goals.'],
-                ['Structured guidance for contributory parent applications', 'Visawizer helps families understand eligibility, gather evidence, compare pathways, and prepare a complete contributory parent visa application.', 'Book 143 Consultation']
+                ['Structured guidance for contributory parent applications', 'Visawizer helps families understand eligibility, gather evidence, compare pathways, and prepare a complete contributory parent visa application.', 'Book 143 Consultation'],
+                [],
+                [
+                    'title' => 'Parent Visa 143 | Family Visas | Visawize',
+                    'description' => 'Australian Parent Visa 143 lets eligible parents of settled citizens or permanent residents live permanently in Australia with family support.',
+                ],
             ),
 
             self::page('visa/contributory-parent-temp-173', ['contributory-parent-temporary-visa-subclass-173'], 'Contributory Parent Temporary Visa 173', '173', 'Parent Visas I', 'fa-light fa-user-clock',
@@ -99,7 +124,12 @@ class FamilyVisaData
                 ['Temporary visa purpose', 'Understand what this visa does and does not do', 'Subclass 173 is temporary. Families should understand its duration, limits, and how it may fit into broader parent visa planning.'],
                 ['Balance of Family Test', 'Family eligibility remains important', 'The Balance of Family test applies to Subclass 173, so applicants should review family distribution and evidence early.'],
                 ['Evidence planning', 'Parent and sponsor documents must align', ['Sponsor identity and status', 'Parent-child relationship proof', 'Children’s location and status evidence', 'Identity documents', 'Health and character documents', 'Family structure records']],
-                ['Guidance for staged parent visa planning', 'Visawizer helps families assess whether Subclass 173 fits their goals and organise the evidence required for a contributory parent pathway.', 'Book 173 Visa Review']
+                ['Guidance for staged parent visa planning', 'Visawizer helps families assess whether Subclass 173 fits their goals and organise the evidence required for a contributory parent pathway.', 'Book 173 Visa Review'],
+                [],
+                [
+                    'title' => 'Parent Temporary Visa 173 | Family Visas | Visawizer',
+                    'description' => 'Temporary Australian visa allowing eligible parents to live in Australia for up to 2 years before applying for a permanent parent visa.',
+                ],
             ),
 
             self::page('visa/aged-parent-804', ['aged-parent-visa-subclass-804'], 'Aged Parent Visa 804', '804', 'Parent Visas I', 'fa-light fa-user-shield',
@@ -108,7 +138,12 @@ class FamilyVisaData
                 ['Age and location planning', 'The applicant’s age and location matter', 'Aged parent pathways require careful review of age-related eligibility and whether the applicant can lodge from within Australia.'],
                 ['Balance of Family Test', 'Family distribution remains central', 'The Balance of Family test applies to Aged Parent Visa 804 and should be reviewed before lodging.'],
                 ['Documentation planning', 'Prepare the family file carefully', ['Parent-child relationship proof', 'Sponsor evidence', 'Identity documents', 'Children’s country of residence evidence', 'Health and character documents', 'Current visa status', 'Family structure documents']],
-                ['Support for aged parent visa planning', 'Visawizer helps review eligibility, sponsor readiness, evidence, timing, and long-term family planning for Subclass 804.', 'Book 804 Consultation']
+                ['Support for aged parent visa planning', 'Visawizer helps review eligibility, sponsor readiness, evidence, timing, and long-term family planning for Subclass 804.', 'Book 804 Consultation'],
+                [],
+                [
+                    'title' => 'Parent Visa 804 | aged parent visa subclass 804 | Visawizer',
+                    'description' => 'Aged Parent Visa (Subclass 804) allows eligible older parents of settled Australian citizens or residents to live permanently in Australia.',
+                ],
             ),
 
             self::page('visa/contributory-aged-parent-864', ['contributory-aged-parent-visa-subclass-864'], 'Contributory Aged Parent Visa 864', '864', 'Parent Visas II', 'fa-light fa-handshake-angle',
@@ -117,7 +152,12 @@ class FamilyVisaData
                 ['Balance of Family Test', 'Family structure must support eligibility', 'The Balance of Family test applies to Subclass 864 and should be reviewed carefully before applying.'],
                 ['Contributory route planning', 'Understand the contributory parent visa structure', 'Families should compare 864 with other aged parent and contributory parent pathways to choose a suitable route based on age, location, timing, and long-term goals.'],
                 ['Evidence and sponsorship', 'Sponsor and parent evidence must be complete', ['Sponsor identity and status', 'Parent-child relationship proof', 'Family balance evidence', 'Current visa status', 'Health and character documents', 'Assurance-related planning, where relevant']],
-                ['Guidance for contributory aged parent applications', 'Visawizer helps families assess eligibility, compare pathways, prepare documents, and structure the 864 visa application.', 'Book 864 Consultation']
+                ['Guidance for contributory aged parent applications', 'Visawizer helps families assess eligibility, compare pathways, prepare documents, and structure the 864 visa application.', 'Book 864 Consultation'],
+                [],
+                [
+                    'title' => 'contributory aged parent visa subclass 864 | Visawizer',
+                    'description' => 'Contributory Aged Parent Visa Subclass 864 lets eligible older parents of Australian citizens or residents live permanently in Australia.',
+                ],
             ),
 
             self::page('visa/sponsored-parent-870', ['sponsored-parent-temporary-visa-subclass-870'], 'Sponsored Parent Temporary Visa 870', '870', 'Parent Visas II', 'fa-light fa-file-signature',
@@ -135,12 +175,26 @@ class FamilyVisaData
                 ['Temporary visa role', 'Understand its place in long-term planning', 'Subclass 884 is temporary. Families should understand how it may connect with future aged contributory parent visa planning.'],
                 ['Balance of Family Test', 'Family balance must be reviewed early', 'The Balance of Family test applies to Subclass 884, so families should prepare evidence of where children usually live and their status.'],
                 ['Evidence planning', 'Prepare parent and sponsor documents carefully', ['Parent-child relationship proof', 'Sponsor identity and status', 'Children’s residence evidence', 'Current visa status', 'Identity and civil documents', 'Health and character documents']],
-                ['Guidance for temporary aged parent visa planning', 'Visawizer helps families review whether 884 fits their circumstances, prepare documents, and plan the possible next stage.', 'Book 884 Consultation']
+                ['Guidance for temporary aged parent visa planning', 'Visawizer helps families review whether 884 fits their circumstances, prepare documents, and plan the possible next stage.', 'Book 884 Consultation'],
+                [],
+                [
+                    'title' => 'Aged Parent Temporary Visa 884 | Family Visas | Visawizer',
+                    'description' => 'Aged Parent (Subclass 884) visa lets eligible aged parents stay temporarily in Australia while awaiting permanent parent visa processing.',
+                ],
             ),
 
-            self::childPage('visa/child-101', ['child-visa-subclass-101'], 'Child Visa 101', '101', 'Offshore child visa pathway', 'Child Visa Subclass 101 guidance', 'Support for eligible children outside Australia joining a parent in Australia.', 'Child Visa Subclass 101 is listed as a family migration pathway for eligible children. Home Affairs includes Subclass 101 among family visa processing priority categories and family migration options.', 'Discuss Child Visa 101', 'For children applying from outside Australia', 'This visa may suit eligible dependent children outside Australia whose parent is an Australian citizen, Australian permanent resident, or eligible New Zealand citizen.', 'Book Child Visa Review'),
-            self::childPage('visa/adoption-102', ['adoption-visa-subclass-102'], 'Adoption Visa 102', '102', 'Adoption visa pathway', 'Adoption Visa Subclass 102 guidance', 'Support for eligible adopted children outside Australia joining adoptive parents in Australia.', 'Adoption Visa Subclass 102 is listed by Home Affairs as a family visa option. It applies to eligible adoption situations where an adopted child is joining family in Australia.', 'Review Adoption Visa', 'For eligible adopted children outside Australia', 'This pathway may suit children who have been, or are being, adopted and need to migrate to Australia to live with their adoptive parent or parents.', 'Book Adoption Visa Consultation'),
-            self::remainingPage('visa/remaining-relative-115', ['remaining-relative-visa-subclass-115'], 'Remaining Relative Visa 115', '115', 'Offshore remaining relative pathway', 'Remaining Relative Visa Subclass 115 guidance', 'Support for eligible applicants outside Australia whose only near relatives are living in Australia.', 'Remaining Relative Visa Subclass 115 is an other family visa pathway. Home Affairs notes that other family visas offer permanent options for remaining relatives of settled Australian citizens, permanent residents, or eligible New Zealand citizens.', 'Review Remaining Relative 115', 'For applicants with no near relatives outside Australia', 'This pathway may suit eligible people outside Australia whose close family connections are in Australia and who meet the remaining relative criteria.', 'Book Remaining Relative Review'),
+            self::childPage('visa/child-101', ['child-visa-subclass-101'], 'Child Visa 101', '101', 'Offshore child visa pathway', 'Child Visa Subclass 101 guidance', 'Support for eligible children outside Australia joining a parent in Australia.', 'Child Visa Subclass 101 is listed as a family migration pathway for eligible children. Home Affairs includes Subclass 101 among family visa processing priority categories and family migration options.', 'Discuss Child Visa 101', 'For children applying from outside Australia', 'This visa may suit eligible dependent children outside Australia whose parent is an Australian citizen, Australian permanent resident, or eligible New Zealand citizen.', 'Book Child Visa Review', [
+                'title' => 'Child Visa 101 | Family Visas | Visawizer',
+                'description' => 'Child Visa 101 A simple guide to child visa requirements, eligibility, documents, and application steps for families.',
+            ]),
+            self::childPage('visa/adoption-102', ['adoption-visa-subclass-102'], 'Adoption Visa 102', '102', 'Adoption visa pathway', 'Adoption Visa Subclass 102 guidance', 'Support for eligible adopted children outside Australia joining adoptive parents in Australia.', 'Adoption Visa Subclass 102 is listed by Home Affairs as a family visa option. It applies to eligible adoption situations where an adopted child is joining family in Australia.', 'Review Adoption Visa', 'For eligible adopted children outside Australia', 'This pathway may suit children who have been, or are being, adopted and need to migrate to Australia to live with their adoptive parent or parents.', 'Book Adoption Visa Consultation', [
+                'title' => 'Adoption Visa 102 | Family Visas | Visawizer',
+                'description' => 'Adoption Visa Subclass 102 allows an adopted child outside Australia to migrate permanently and live with their adoptive parent(s) in Australia.',
+            ]),
+            self::remainingPage('visa/remaining-relative-115', ['remaining-relative-visa-subclass-115'], 'Remaining Relative Visa 115', '115', 'Offshore remaining relative pathway', 'Remaining Relative Visa Subclass 115 guidance', 'Support for eligible applicants outside Australia whose only near relatives are living in Australia.', 'Remaining Relative Visa Subclass 115 is an other family visa pathway. Home Affairs notes that other family visas offer permanent options for remaining relatives of settled Australian citizens, permanent residents, or eligible New Zealand citizens.', 'Review Remaining Relative 115', 'For applicants with no near relatives outside Australia', 'This pathway may suit eligible people outside Australia whose close family connections are in Australia and who meet the remaining relative criteria.', 'Book Remaining Relative Review', [
+                'title' => 'Remaining Relative Visa 115 | Family Visas | Visawizer',
+                'description' => 'Australian Remaining Relative Visa 115 allows eligible relatives of Australian citizens or residents to live permanently in Australia.',
+            ]),
             self::carerPage('visa/carer-116', ['carer-visa-subclass-116'], 'Carer Visa 116', '116', 'Offshore carer visa pathway', 'Carer Visa Subclass 116 guidance', 'Support for eligible applicants outside Australia who need to provide long-term care to a relative in Australia.', 'Carer Visa Subclass 116 is part of Australia’s other family visa options. Home Affairs includes carer visas among permanent family options for relatives of settled Australian citizens, permanent residents, or eligible New Zealand citizens.', 'Review Carer Visa 116', 'For relatives needed to provide care in Australia', 'This pathway may suit applicants outside Australia who need to move to Australia to provide substantial and continuing care to an eligible relative with a long-term medical condition.', 'Book Carer Visa Consultation'),
             self::orphanPage('visa/orphan-relative-117', ['orphan-relative-visa-subclass-117'], 'Orphan Relative Visa 117', '117', 'Offshore orphan relative pathway', 'Orphan Relative Visa Subclass 117 guidance', 'Support for eligible children outside Australia who need to live with a relative in Australia.', 'The Orphan Relative Visa Subclass 117 lets a child who is single come to Australia to live with a relative if their parents are deceased, cannot care for them, or cannot be found.', 'Discuss Orphan Relative 117', 'For children needing family care in Australia', 'This pathway may suit eligible children outside Australia who have no parent able to care for them and have an eligible relative in Australia.', 'Book 117 Visa Review'),
             self::childPage('visa/child-802', ['child-visa-subclass-802'], 'Child Visa 802', '802', 'Onshore child visa pathway', 'Child Visa Subclass 802 guidance', 'Support for eligible children in Australia applying to stay with a parent.', 'Child Visa Subclass 802 is listed among family visa options and applies to eligible child applicants in Australia.', 'Review Child Visa 802', 'For children already in Australia', 'This pathway may suit eligible dependent children who are in Australia and need to remain with an Australian citizen, permanent resident, or eligible New Zealand citizen parent.', 'Book 802 Visa Consultation'),
@@ -158,11 +212,11 @@ class FamilyVisaData
         return array_column($pages, null, '_key');
     }
 
-    private static function page(string $key, array $aliases, string $label, string $subclass, string $category, string $icon, array $hero, array $suit, array $planning, array $strategy, array $challenges, array $support, array $images = []): array
+    private static function page(string $key, array $aliases, string $label, string $subclass, string $category, string $icon, array $hero, array $suit, array $planning, array $strategy, array $challenges, array $support, array $images = [], array $meta = []): array
     {
         $folder = str_replace('visa/', '', $key);
 
-        return [
+        $page = [
             '_key' => $key,
             'label' => $label,
             'subclass' => $subclass,
@@ -206,9 +260,15 @@ class FamilyVisaData
             'images' => array_merge(self::familyImages($folder), $images),
             'bottom' => self::bottom(),
         ];
+
+        if ($meta !== []) {
+            $page['meta'] = $meta;
+        }
+
+        return $page;
     }
 
-    private static function childPage(string $key, array $aliases, string $label, string $subclass, string $tagline, string $heading, string $subheading, string $content, string $cta, string $suitHeading, string $suitContent, string $supportCta): array
+    private static function childPage(string $key, array $aliases, string $label, string $subclass, string $tagline, string $heading, string $subheading, string $content, string $cta, string $suitHeading, string $suitContent, string $supportCta, array $meta = []): array
     {
         $isAdoption = str_contains($key, 'adoption');
         return self::page($key, $aliases, $label, $subclass, 'Child & Relative Visas', $isAdoption ? 'fa-light fa-hands-holding-child' : 'fa-light fa-child',
@@ -218,10 +278,12 @@ class FamilyVisaData
             [$isAdoption ? 'Country-specific considerations' : 'Dependency and care', $isAdoption ? 'Adoption processes can vary by country' : 'The child’s care situation must be clear', $isAdoption ? 'The evidence required may depend on the country where the adoption took place, local laws, and whether the adoption meets Australian migration requirements.' : 'Depending on the child’s age and circumstances, evidence may need to show dependency, living arrangements, financial support, and parental responsibility.'],
             [$isAdoption ? 'Child welfare focus' : 'Consent and custody considerations', $isAdoption ? 'The child’s best interests must be protected' : 'Legal care arrangements matter', $isAdoption ? 'Adoption visa applications should be prepared with careful attention to identity, care arrangements, consent, legal responsibility, and child welfare.' : 'Where only one parent is involved in the application, custody, consent, or legal responsibility documents may be important.'],
             [$isAdoption ? 'Support for adoption-related migration planning' : 'Support for families bringing children to Australia', $isAdoption ? 'Visawizer helps families review documentation, identify evidence gaps, and prepare a structured adoption visa application file.' : 'Visawizer helps families organise identity, relationship, custody, dependency, and sponsor evidence for this child visa pathway.', $supportCta],
+            [],
+            $meta,
         );
     }
 
-    private static function remainingPage(string $key, array $aliases, string $label, string $subclass, string $tagline, string $heading, string $subheading, string $content, string $cta, string $suitHeading, string $suitContent, string $supportCta): array
+    private static function remainingPage(string $key, array $aliases, string $label, string $subclass, string $tagline, string $heading, string $subheading, string $content, string $cta, string $suitHeading, string $suitContent, string $supportCta, array $meta = []): array
     {
         return self::page($key, $aliases, $label, $subclass, 'Child & Relative Visas', 'fa-light fa-people-group',
             [$tagline, $heading, $subheading, $content, $cta],
@@ -229,7 +291,9 @@ class FamilyVisaData
             ['Family mapping', 'The family tree must be clear and complete', 'Remaining relative applications require detailed family structure evidence to show where near relatives live and how the applicant meets the criteria.'],
             ['Sponsor evidence', 'Sponsor eligibility must be documented', 'The sponsor’s Australian status, relationship to the applicant, settlement, and support role should be clearly evidenced.'],
             ['Queue and planning awareness', 'This can be a long-term pathway', 'Other family visas have limited annual places, and remaining relative queues can be long. Applicants should understand practical timing before applying.'],
-            ['Guidance for complex remaining relative cases', 'Visawizer helps applicants review family structure, sponsor readiness, document gaps, and application strategy.', $supportCta]
+            ['Guidance for complex remaining relative cases', 'Visawizer helps applicants review family structure, sponsor readiness, document gaps, and application strategy.', $supportCta],
+            [],
+            $meta,
         );
     }
 

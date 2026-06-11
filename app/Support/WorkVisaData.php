@@ -123,6 +123,11 @@ class WorkVisaData
                     'strategy' => 'assets/imgs/work/skilled-independent-189/strategy.webp',
                     'support' => 'assets/imgs/work/skilled-independent-189/support.webp',
                 ],
+                'meta' => [
+                    'title' => 'Skilled Independent Visa | Subclass 189',
+                    'description' => 'Apply for Skilled Independent Visa (Subclass 189) with Visawizer. Melbourne’s registered migration agents for expert 189 visa assistance.',
+                    'keywords' => 'subclass 189 visa australia, visa subclass 189, 189 australia visa, 189 subclass visa australia',
+                ],
             ],
 
             'visa/skilled-nominated-190' => [
@@ -225,6 +230,11 @@ class WorkVisaData
                     'strategy' => 'assets/imgs/work/skilled-work-regional-491/strategy.webp',
                     'support' => 'assets/imgs/work/skilled-work-regional-491/support.webp',
                 ],
+                'meta' => [
+                    'title' => 'Skilled Work Regional Visa | Subclass 491',
+                    'description' => 'Apply for the Skilled Work Regional (Provisional) Visa Subclass 491 with Visawizer. Temporary visa for skilled workers aiming to live and work in regional Australia.',
+                    'keywords' => '491 visa requirements, subclass 491, visa 491, Skilled Work Regional Visa',
+                ],
             ],
 
             'visa/permanent-residence-skilled-regional-191' => [
@@ -277,6 +287,11 @@ class WorkVisaData
                     'profile' => 'assets/imgs/work/permanent-residence-skilled-regional-191/profile.webp',
                     'strategy' => 'assets/imgs/work/permanent-residence-skilled-regional-191/strategy.webp',
                     'support' => 'assets/imgs/work/permanent-residence-skilled-regional-191/support.webp',
+                ],
+                'meta' => [
+                    'title' => 'Permanent Residence Visa | Subclass 191',
+                    'description' => 'Secure Australian PR with Skilled Regional Visa (Subclass 191). Melbourne’s registered migration agents for expert visa assistance.',
+                    'keywords' => 'australian permanent residence visa, australia pr, australia pr requirements, Subclass 191',
                 ],
             ],
 
@@ -396,6 +411,10 @@ class WorkVisaData
                     'strategy' => 'assets/imgs/work/skills-in-demand-482/strategy.webp',
                     'support' => 'assets/imgs/work/skills-in-demand-482/support.webp',
                 ],
+                'meta' => [
+                    'title' => 'Temporary Skill Shortage Visa | Subclass 482 | Visawizer',
+                    'keywords' => 'temporary skill shortage visa, subclass 482, 482 visa requirements, 482 visa',
+                ],
             ],
 
             'visa/employer-nomination-186-trt' => [
@@ -450,6 +469,10 @@ class WorkVisaData
                     'suit_planning' => 'assets/imgs/work/employer-nomination-186-trt/profile.webp',
                     'strategy' => 'assets/imgs/work/employer-nomination-186-trt/strategy.webp',
                     'support' => 'assets/imgs/work/employer-nomination-186-trt/support.webp',
+                ],
+                'meta' => [
+                    'title' => 'Subclass 186 | Employer Nomination Scheme',
+                    'keywords' => 'subclass 186, visa 186, 186 visa requirements, 186 visa, subclass 186 visa, employer nomination scheme',
                 ],
             ],
 
@@ -665,6 +688,10 @@ class WorkVisaData
                     'strategy' => 'assets/imgs/work/dama/strategy.webp',
                     'support' => 'assets/imgs/work/dama/support.webp',
                 ],
+                'meta' => [
+                    'title' => 'Designated Area Migration Agreements | DAMA',
+                    'keywords' => 'designated area migration agreements, dama visa',
+                ],
             ],
 
             'visa/temporary-work-400' => [
@@ -717,6 +744,10 @@ class WorkVisaData
                     'profile' => 'assets/imgs/work/temporary-work-400/profile.webp',
                     'strategy' => 'assets/imgs/work/temporary-work-400/strategy.webp',
                     'support' => 'assets/imgs/work/temporary-work-400/support.webp',
+                ],
+                'meta' => [
+                    'title' => 'Subclass 400 | Temporary Work Visa',
+                    'keywords' => 'subclass 400, temporary work visa',
                 ],
             ],
 

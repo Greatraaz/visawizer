@@ -78,13 +78,17 @@
 }
 .thankyou-actions {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
     gap: 14px;
     margin-top: 26px;
 }
 .thankyou-actions .e-primary-btn,
 .thankyou-actions .thankyou-secondary-btn {
     border-radius: 12px !important;
+    flex: 0 0 auto;
+    width: auto;
 }
 .thankyou-actions .e-primary-btn .icon-wrap,
 .thankyou-actions .thankyou-secondary-btn .icon-wrap {

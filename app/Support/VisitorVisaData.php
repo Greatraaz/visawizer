@@ -45,6 +45,11 @@ class VisitorVisaData
                 [],
                 [
                     ['eyebrow' => 'Family visit cases', 'heading' => 'Visiting family in Australia needs a clear invitation story', 'content' => 'If you are visiting family or friends, the application should include a proper invitation, relationship evidence, sponsor details where relevant, and an explanation of the visit purpose. Home Affairs advises applicants visiting family or friends to include an invitation letter, and if supporting someone in Australia, relevant evidence such as a doctor’s letter may help.'],
+                ],
+                [
+                    'title' => 'Visitor Visa for Australia | Visitor Visa Subclass 600',
+                    'description' => 'Apply for Australia Visitor Visa Subclass 600 with registered agents in Melbourne. Quick, reliable processing & trusted visa support. Act now!',
+                    'keywords' => 'visitor visa for australia, tourist visa australia, australia travel visa, tourist visa australia requirements, australia tourist visa application, australia subclass 600',
                 ]
             ),
 
@@ -60,6 +65,13 @@ class VisitorVisaData
                 ['Eligibility check', 'Passport eligibility matters first', 'Not every traveller can apply for eVisitor 651. Eligibility depends on passport nationality, purpose of travel, health and character considerations, and current immigration status.'],
                 ['When eVisitor may not be enough', 'Some travellers need a different visitor option', 'If the applicant needs a longer stay, has complex travel history, prior refusals, family sponsorship needs, or does not hold an eligible passport, another visa such as Visitor 600 may be more suitable.'],
                 ['We help you choose between 651 and other short-stay options', 'Visawizer helps travellers check pathway suitability, understand documents, and avoid choosing the wrong short-stay visa option.', 'Discuss E-Visitor Option'],
+                [],
+                [],
+                [
+                    'title' => 'E-Visitor Visa | Subclass 651 | Visawizer',
+                    'description' => 'Get expert help for E-Visitor Visa (Subclass 651) with Visawizer, Melbourne’s trusted Australian Registered Migration Agent. Contact today!',
+                    'keywords' => 'e visitor visa australia 651, e visitor visa for australia, e visitor visa to australia, e visitor visa 651 australia',
+                ]
             ),
 
             self::page(
@@ -74,6 +86,12 @@ class VisitorVisaData
                 ['Key suitability checks', 'Check before applying', ['Passport eligibility', 'Travel purpose', 'Intended stay length', 'Prior visa history', 'Health and character background', 'Whether a longer visitor visa is needed']],
                 ['Common issues', 'Fast does not mean automatic', 'Some ETA applications can need further assessment depending on the applicant’s history, purpose, or circumstances. Travellers should avoid assuming every ETA will be instant or straightforward.'],
                 ['Get guidance before choosing ETA 601', 'Visawizer helps travellers understand whether ETA is suitable or whether another visitor visa pathway should be considered.', 'Book ETA Guidance'],
+                [],
+                [],
+                [
+                    'title' => 'Electronic Travel Authorization Australia | Subclass 601',
+                    'keywords' => 'electronic travel authority australia, electronic travel authorization australia, australia electronic travel authority app, australia visa 601, australia electronic travel authority visa',
+                ]
             ),
 
             self::page(
@@ -88,6 +106,12 @@ class VisitorVisaData
                 ['Airport and route planning', 'Airport arrangements can affect visa need', 'Australian airports may have limited transit facilities, and airport limitations can mean a traveller needs a visa to clear immigration even if other transit-without-visa conditions appear to be met.'],
                 ['Evidence to prepare', 'A transit case should prove onward travel', ['Passport', 'Confirmed onward ticket', 'Visa for destination country, if required', 'Travel itinerary', 'Ship crew documents, if applicable', 'Explanation of transit route']],
                 ['Avoid last-minute airport problems', 'Visawizer helps travellers review transit visa needs, onward travel evidence, airport routing issues, and application preparation.', 'Review My Transit Plan'],
+                [],
+                [],
+                [
+                    'title' => 'Transit Visa Subclass 771',
+                    'keywords' => 'subclass 771, transitvisa',
+                ]
             ),
 
             self::page(
@@ -102,6 +126,13 @@ class VisitorVisaData
                 ['Eligibility planning', 'Check key requirements before applying', ['Age requirement', 'Passport eligibility', 'Health and character requirements', 'Funds and travel readiness', 'Previous working holiday history', 'Country-specific rules']],
                 ['Second or third visa awareness', 'Future working holiday visas may need planning', 'Some applicants may later explore second or third working holiday options if they meet the required criteria. Planning early can help travellers understand what evidence to keep.'],
                 ['Plan your working holiday with clarity', 'Visawizer helps travellers review eligibility, understand documents, avoid incorrect assumptions, and prepare their 417 visa application.', 'Book 417 Visa Review'],
+                [],
+                [],
+                [
+                    'title' => 'Australian Work and Holiday Visa | Subclass 417',
+                    'description' => 'Secure your Australian Work and Holiday Visa (Subclass 417) with Visawizer. Melbourne’s registered migration agents for expert 417 visa support.',
+                    'keywords' => 'work and holiday visa 417, 417 working holiday visa, 417 visa, subclass 417',
+                ]
             ),
 
             self::page(
@@ -116,6 +147,13 @@ class VisitorVisaData
                 ['Documents to prepare', 'Evidence can vary by country', ['Passport', 'Identity documents', 'Funds evidence', 'Education evidence, where required', 'English evidence, where required', 'Letter of support, where applicable', 'Health and character documents']],
                 ['Future visa planning', 'Keep records if you want future options', 'Some travellers may later consider a second or third work and holiday visa if they meet current requirements. Applicants should understand evidence requirements early and keep records properly.'],
                 ['Prepare your 462 pathway with confidence', 'Visawizer helps applicants review eligibility, understand country-specific requirements, prepare documents, and avoid incorrect visa selection.', 'Book 462 Visa Consultation'],
+                [],
+                [],
+                [
+                    'title' => 'Australian Work and Holiday | Visa Subclass 462 | Visawizer',
+                    'description' => 'Apply for Australian Work and Holiday Visa (Subclass 462) with Visawizer. Melbourne’s registered migration agents for expert 462 visa support.',
+                    'keywords' => 'work and holiday visa 462, working holiday visa 462, working holiday visa subclass 462, 462 work and holiday visa',
+                ]
             ),
         ];
 
@@ -144,11 +182,11 @@ class VisitorVisaData
         ];
     }
 
-    private static function page(string $key, array $aliases, string $label, string $subclass, string $icon, array $hero, array $suit, array $planning, array $strategy, array $challenges, array $support, array $images = [], array $extraSections = []): array
+    private static function page(string $key, array $aliases, string $label, string $subclass, string $icon, array $hero, array $suit, array $planning, array $strategy, array $challenges, array $support, array $images = [], array $extraSections = [], array $meta = []): array
     {
         $folder = str_replace('visa/', '', $key);
 
-        return [
+        $page = [
             '_key' => $key,
             'label' => $label,
             'subclass' => $subclass,
@@ -193,6 +231,12 @@ class VisitorVisaData
             'images' => array_merge(self::visitorImages($folder), $images),
             'bottom' => self::bottom(),
         ];
+
+        if ($meta !== []) {
+            $page['meta'] = $meta;
+        }
+
+        return $page;
     }
 
     private static function bottom(): array

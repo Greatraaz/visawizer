@@ -19,7 +19,9 @@
           <span class="sep">|</span>
           <a href="{{ url('privacy-policy') }}">Privacy Policy</a>
           <span class="sep">|</span>
-          <a href="{{ url('code-of-conduct') }}">Code of Conduct</a>
+          <a href="https://www.mara.gov.au/tools-for-registered-agents/code-of-conduct" target="_blank">Code of Conduct</a>
+          <span class="sep">|</span>
+          <a href="https://www.mara.gov.au/get-help-visa-subsite/FIles/consumer_guide_english.pdf" target="_blank">Consumer Guide</a>
         </div>
         <div class="visa-top-cta">
           <a href="tel:{{ config('site.phone1') }}"><i class="fa-regular fa-phone"></i> Call Now</a>
@@ -295,7 +297,7 @@
             <li><a href="{{ url('webinars') }}">Webinars</a></li>
             <li><a href="{{ url('white-papers') }}">White Papers</a></li>
             <li><a href="{{ url('visa-guides') }}">Visa Guides</a></li>
-            <li><a href="{{ url('checklists') }}">Checklists</a></li>
+            <li><a href="{{ route('checklist.index') }}">Checklists</a></li>
             <li><a href="{{ url('downloads') }}">Downloads</a></li>
             <li><a href="{{ url('faq') }}">FAQ</a></li>
             <li><a href="{{ url('privacy-policy') }}">Privacy Policy</a></li>
