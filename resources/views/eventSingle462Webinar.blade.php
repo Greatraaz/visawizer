@@ -626,12 +626,14 @@
     margin-bottom: 0;
     font-weight: 500;
     line-height: 1.45;
+    box-shadow: 0 0 12px #b7b5b5;
+    padding: 14px;
+    border-radius: 13px;
 }
-
 .ev462-page .ev462-innovation-banner__trust li i {
     flex-shrink: 0;
     margin-top: 4px;
-    font-size: 0.72rem;
+    font-size: 16px;
     color: var(--theme-color-3);
 }
 
@@ -1133,7 +1135,7 @@ button.accordion-button {
     ];
 @endphp
 
-<section class="breadcrumb-section" style="background-image: url({{ url('img/banner/webinar.png') }}); background-size: cover;">
+<section class="breadcrumb-section" style="background-image: url({{ url('img/banner/webinar1.png') }}); background-size: cover;background-position: center;">
     <div class="container-fluid">
         <div class="breadcrumb-content">
             <div class="breadcrumb-nav">
