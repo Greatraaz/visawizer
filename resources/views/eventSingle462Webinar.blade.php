@@ -324,41 +324,35 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding: clamp(28px, 3vw, 40px) clamp(24px, 2.5vw, 36px);
 }
 
 .ev462-page .ev462-why-split .study-grad-card .study-grad-sub + .study-grad-sub {
-    margin-top: 22px;
+    margin-top: 14px;
 }
 
 .ev462-page .ev462-why-split .study-grad-cta {
     margin-top: auto;
-    padding-top: 32px;
+    padding-top: 20px;
 }
 
 .ev462-page .ev462-why-split__visual {
     margin: 0;
-    flex: 1 1 auto;
     display: flex;
+    width: 100%;
+    height: 100%;
+    min-height: 260px;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 24px 55px rgba(15, 23, 42, 0.14);
-    border: 3px solid #fff;
 }
 
 .ev462-page .ev462-why-split__visual img {
     width: 100%;
     height: 100%;
-    min-height: 280px;
     object-fit: cover;
-    object-position: center;
+    object-position: center 42%;
     display: block;
-}
-
-@media (max-width: 1199px) {
-    .ev462-page .ev462-why-split__visual img {
-        min-height: 240px;
-        max-height: 380px;
-    }
 }
 
 .ev462-page .ev462-s5-band.study-s5-visa {
@@ -459,8 +453,7 @@
         0 22px 48px rgba(15, 23, 42, 0.07);
 }
 
-.ev462-page .ev462-innovation-banner__content,
-.ev462-page .ev462-innovation-banner__visual {
+.ev462-page .ev462-innovation-banner__content {
     padding: clamp(14px, 2vw, 22px) clamp(18px, 2.5vw, 28px) clamp(22px, 3vw, 36px);
 }
 
@@ -498,6 +491,9 @@
     list-style: none;
     padding: 0;
     margin: 0 0 4px;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 14px 18px;
 }
 
 .ev462-page .ev462-innovation-banner__trust li {
@@ -505,69 +501,38 @@
     align-items: flex-start;
     gap: 8px;
     color: #475569;
-    margin-bottom: 6px;
+    margin-bottom: 0;
     font-weight: 500;
+    line-height: 1.45;
 }
 
 .ev462-page .ev462-innovation-banner__trust li i {
     flex-shrink: 0;
-    margin-top: 3px;
+    margin-top: 4px;
     font-size: 0.72rem;
     color: var(--theme-color-3);
 }
 
+@media (max-width: 1199px) {
+    .ev462-page .ev462-innovation-banner__trust {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 767px) {
+    .ev462-page .ev462-innovation-banner__trust {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 575px) {
+    .ev462-page .ev462-innovation-banner__trust {
+        grid-template-columns: 1fr;
+    }
+}
+
 .ev462-page .ev462-innovation-banner__cta {
     margin-top: 1.1rem;
-}
-
-.ev462-page .ev462-innovation-banner__visual {
-    display: flex;
-    align-items: stretch;
-}
-
-.ev462-page .ev462-innovation-banner__figure {
-    margin: 0;
-    flex: 1 1 auto;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    border-radius: 14px;
-    overflow: hidden;
-    background: linear-gradient(180deg, color-mix(in srgb, var(--theme-color-3) 8%, #fffbeb) 0%, #ffffff 55%);
-    border: 1px solid color-mix(in srgb, var(--theme-color-3) 22%, rgba(251, 191, 36, 0.25));
-    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.08);
-    padding: clamp(12px, 2vw, 18px);
-}
-
-.ev462-page .ev462-innovation-banner__figure img {
-    flex: 1 1 auto;
-    width: 100%;
-    min-height: 280px;
-    object-fit: cover;
-    object-position: center top;
-    display: block;
-    border-radius: 10px;
-}
-
-@media (min-width: 992px) {
-    .ev462-page .ev462-innovation-banner__content {
-        padding-right: clamp(24px, 3vw, 36px);
-    }
-    .ev462-page .ev462-innovation-banner__visual {
-        border-left: 1px solid rgba(148, 163, 184, 0.28);
-        padding-left: clamp(20px, 2.5vw, 28px);
-    }
-}
-
-@media (max-width: 991px) {
-    .ev462-page .ev462-innovation-banner__visual {
-        border-top: 1px solid rgba(148, 163, 184, 0.28);
-        padding-top: clamp(18px, 2.5vw, 28px);
-    }
-    .ev462-page .ev462-innovation-banner__figure img {
-        min-height: 240px;
-        max-height: 360px;
-    }
 }
 
 .ev462-page .ev462-agenda-band {
@@ -886,13 +851,13 @@
                     <div class="ev462-why-split__header">
                         <h2>Why This Webinar Matters</h2>
                     </div>
-                    <div class="row row-gap-4 align-items-stretch g-4">
-                        <div class="col-xl-6 d-flex">
+                    <div class="row row-gap-3 align-items-stretch g-3">
+                        <div class="col-xl-4 col-lg-4 d-flex">
                             <figure class="ev462-why-split__visual w-100">
-                                <img src="{{ asset('assets/imgs/visitor/work-holiday-462/intro-suit.webp') }}" alt="Young applicant checking visa documents on a laptop with Australia travel visuals" loading="lazy" width="640" height="480">
+                                <img src="{{ asset('assets/imgs/founder/ankur-saini-trust.jpeg') }}" alt="{{ $event->speaker }} — Visa Wizer migration advisory" loading="lazy" width="640" height="512">
                             </figure>
                         </div>
-                        <div class="col-xl-6 d-flex">
+                        <div class="col-xl-8 col-lg-8 d-flex">
                             <div class="study-grad-card m-b-0 w-100">
                                 <p class="study-grad-sub m-b-0">The 462 Work and Holiday Visa is an exciting opportunity for eligible young people who want to travel, work and experience life in Australia. However, many applicants are confused about eligibility, documents, timing, ballot requirements and what happens after selection.</p>
                                 <p class="study-grad-sub m-b-0">This webinar will simplify the process and help you understand whether this pathway may be suitable for you before you make mistakes or miss important steps.</p>
@@ -942,7 +907,7 @@
                 <section class="ev462-innovation-band ev462-band">
                     <div class="ev462-innovation-banner" data-aos="fade-up">
                         <div class="row align-items-stretch g-0">
-                            <div class="col-lg-8 d-flex">
+                            <div class="col-12">
                                 <div class="ev462-innovation-banner__content w-100">
                                     <h2>Special Focus for Indian Applicants</h2>
                                     <p>Many Indian applicants are interested in the 462 Work and Holiday Visa but are unsure about the ballot process and how to prepare. This webinar will help applicants understand the practical sequence: checking eligibility, preparing documents, registering correctly, monitoring updates and avoiding avoidable errors.</p>
@@ -961,13 +926,6 @@
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                                         </a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 d-flex">
-                                <div class="ev462-innovation-banner__visual w-100">
-                                    <figure class="ev462-innovation-banner__figure">
-                                        <img src="{{ asset('assets/imgs/founder/ankur-saini-about.jpeg') }}" alt="{{ $event->speaker }} — Visa Wizer migration advisory" loading="lazy" width="400" height="520">
-                                    </figure>
                                 </div>
                             </div>
                         </div>
