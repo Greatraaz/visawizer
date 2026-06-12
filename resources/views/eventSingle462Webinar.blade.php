@@ -1238,7 +1238,7 @@ button.accordion-button {
                                 <p class="study-grad-sub m-b-0">This webinar will simplify the process and help you understand whether this pathway may be suitable for you before you make mistakes or miss important steps.</p>
                                 <div class="study-grad-cta">
                                     <a class="e-primary-btn has-icon" href="#eventForm">
-                                        Reserve Your Seat for ₹299
+                                        Reserve Your Seat
                                         <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                                     </a>
                                 </div>
@@ -1297,7 +1297,7 @@ button.accordion-button {
                                     </ul>
                                     <div class="ev462-innovation-banner__cta">
                                         <a class="e-primary-btn has-icon" href="#eventForm">
-                                            Reserve Your Seat for ₹299
+                                            Reserve Your Seat
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                                         </a>
                                     </div>
@@ -1331,22 +1331,6 @@ button.accordion-button {
                 </section>
 
                 <div class="ev462-content">
-                    <div class="ev462-section">
-                        <div class="common-subtitle text-uppercase"><span>Registration Fee</span></div>
-                        <div class="common-title text-start m-b-15"><h2>Reserve Your Seat</h2></div>
-                        <div class="ev462-fee">
-                            <p class="ev462-fee-old m-b-0">Actual Session Value: ₹5,000</p>
-                            <p class="ev462-fee-new m-b-0">Special Awareness Fee: ₹299 Only</p>
-                            <p class="study-copy-body m-b-0">This special fee has been introduced to make professional awareness accessible for young applicants and families planning their Australia journey.</p>
-                            <div class="ev462-fee-cta">
-                                <a class="e-primary-btn has-icon is-hover-white" href="#eventForm">
-                                    <span class="btext">Reserve Your Seat for ₹299</span>
-                                    <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="ev462-section">
                         <div class="common-subtitle text-uppercase"><span>Disclaimer</span></div>
                         <div class="common-title text-start m-b-15"><h2>Important Disclaimer</h2></div>
