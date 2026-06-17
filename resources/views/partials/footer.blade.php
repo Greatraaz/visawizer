@@ -13,8 +13,8 @@
                 <p>Migration Agents Registration Number</p>
                 <strong style="font-size: 20px;color: #000;">2117640</strong>
             </span> -->
-            <a href="https://portal.mara.gov.au/search-the-register-of-migration-agents/register-of-migration-agent-details/?ContactID=286ca2ae-3ff6-eb11-94ef-002248180ce1" target="_blank"> <img src="{{ url('img/MARN.png') }}"></a>
-            <a href="javascript:void(0);" > <img src="{{ url('img/mia.png') }}"></a>
+            <a href="https://portal.mara.gov.au/search-the-register-of-migration-agents/register-of-migration-agent-details/?ContactID=286ca2ae-3ff6-eb11-94ef-002248180ce1" target="_blank" rel="noopener noreferrer"> <img src="{{ url('img/MARN.png') }}" alt="Migration Agents Registration Authority registered agent badge" width="160" height="133" loading="lazy" decoding="async"></a>
+            <a href="https://www.mia.org.au/" target="_blank" rel="noopener noreferrer"> <img src="{{ url('img/mia.png') }}" alt="Migration Institute of Australia member badge" width="160" height="133" loading="lazy" decoding="async"></a>
         </div>
     </div>
     <div class="col-md-3">
@@ -22,7 +22,7 @@
             <div class="about-widget">
                 <div class="footer-logo">
                     <a href="{{ url('/') }}">
-                        <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="logo-footer">
+                        <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="Visawizer logo" width="150" height="40" loading="lazy" decoding="async">
                     </a>
                 </div>
                 <p class="text-white">Guiding your journey to new beginnings in Australia with expert education and migration assistance. Committed to providing tailored solutions to navigate visa processes and education pathways seamlessly.</p>

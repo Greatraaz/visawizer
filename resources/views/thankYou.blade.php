@@ -185,7 +185,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="thankyou-visual">
-                        <img src="{{ asset('assets/images/four/1.jpg') }}" alt="Thank you">
+                        <img src="{{ asset('assets/images/four/1.jpg') }}" alt="Thank you for contacting Visawizer" width="318" height="394" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>

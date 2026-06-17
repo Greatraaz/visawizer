@@ -35,7 +35,7 @@
     <div class="header-left">
       <div class="logo-wrap-2">
         <a href="{{ url('/') }}">
-          <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="Visawizer"/>
+          <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="Visawizer" width="140" height="40" loading="lazy" decoding="async"/>
         </a>
       </div>
     </div>
@@ -89,7 +89,7 @@
 
             <!-- 6) About Us / Why Visawizer -->
             <li class="has-dropdown has-megamenu">
-              <a href="javascript:void(0);">About Us <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
+              <a href="{{ url('about-us') }}">About Us <span class="nav-arrow"><i class="fa-regular fa-chevron-down"></i></span></a>
               <div class="visa-mega mega-menu22">
                 @include('partials.menu.aboutUs')
               </div>
@@ -125,17 +125,17 @@
     </div>
     <div class="off-canvas-logo m-b-20">
       <a href="{{ url('/') }}">
-        <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="side-logo"/>
+        <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="Visawizer" width="140" height="40" loading="lazy" decoding="async"/>
       </a>
     </div>
     <div class="off-canvas-text m-b-30">
       <p>Your trusted partner for Australian visas, education, and migration services.</p>
     </div>
     <div class="off-canvas-thumb m-b-40">
-      <img src="{{ asset('img/sidebar.png') }}" alt="thumb"/>
+      <img src="{{ asset('img/sidebar.png') }}" alt="Visawizer migration and education services" width="342" height="228" loading="lazy" decoding="async"/>
     </div>
     <div class="off-canvas-contact m-b-40">
-      <a href="#" class="off-canvas-contact-item">
+      <a href="https://www.google.com/maps/search/?api=1&amp;query={{ urlencode(config('site.address1')) }}" class="off-canvas-contact-item" target="_blank" rel="noopener noreferrer">
         <div class="icon" style="padding: 18px;">
           <i class="fa-solid fa-location-dot"></i>
         </div>
@@ -180,7 +180,7 @@
     <div class="off-canvas-head">
       <div class="off-canvas-logo">
         <a href="{{ url('/') }}">
-          <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="logo"/>
+          <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="Visawizer" width="140" height="40" loading="lazy" decoding="async"/>
         </a>
       </div>
       <div class="off-canvas-menubar-close" data-close="menubar">
@@ -193,7 +193,7 @@
         <li><a href="{{ url('/') }}">Home</a></li>
 
         <li class="has-dropdown">
-          <a href="javascript:void(0);">Study in Australia</a>
+          <a href="{{ url('study') }}">Study in Australia</a>
           <ul class="sub-menu">
             <li><a href="{{ url('study') }}">Study in Australia overview</a></li>
             <li><a href="{{ url('education') }}">Education</a></li>
@@ -284,7 +284,7 @@
         </li>
 
         <li class="has-dropdown">
-          <a href="javascript:void(0);">About Us / Why Visawizer</a>
+          <a href="{{ url('about-us') }}">About Us / Why Visawizer</a>
           <ul class="sub-menu">
             <li><a href="{{ url('about-us') }}">About Us</a></li>
             <li><a href="{{ url('contact-us') }}">Contact</a></li>

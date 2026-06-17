@@ -2918,7 +2918,7 @@
                         <div class="founder-cm-portrait__frame">
                             <div class="founder-hero__frame">
                                 <div class="founder-hero__inset" aria-hidden="true">
-                                    <img src="{{ $founderImg('ankur-saini-hero-inset.jpeg') }}" width="200" height="260" alt="" loading="lazy" decoding="async">
+                                    <img src="{{ $founderImg('ankur-saini-hero-inset.jpeg') }}" width="200" height="260" alt="Ankur Saini founder portrait detail" loading="lazy" decoding="async">
                                 </div>
                                 <div class="founder-hero__portrait">
                                     <img src="{{ $founderImg('ankur-saini-hero-portrait.jpeg') }}" width="440" height="550" alt="Ankur Saini Founder of Visawizer Education and Migration Services Melbourne Australia" loading="eager" decoding="async">

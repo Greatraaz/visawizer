@@ -314,6 +314,8 @@
                             <img
                                 src="{{ asset($testimonial['image']) }}"
                                 alt="{{ $testimonial['name'] }} — Visawizer client"
+                                width="300"
+                                height="360"
                                 loading="lazy"
                                 decoding="async"
                             >

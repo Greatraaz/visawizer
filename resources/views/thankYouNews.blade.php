@@ -77,7 +77,7 @@ a.batan {
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="{{ asset('assets/images/four/1.jpg') }}" style="border-radius: 10px;">
+                    <img src="{{ asset('assets/images/four/1.jpg') }}" alt="Thank you for subscribing to Visawizer updates" width="318" height="394" loading="lazy" decoding="async" style="border-radius: 10px;">
                 </div>
             </div>
         </div>

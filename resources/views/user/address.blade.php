@@ -29,7 +29,7 @@
 </style> 
 <div class="page-title page-portfolio-details  ">
     <div class="rellax" data-rellax-speed="5">
-        <img src="{{ asset('assets/images/page-title/shop-detail.jpg') }}" alt="">
+        <img src="{{ asset('assets/images/page-title/shop-detail.jpg') }}" alt="" width="1920" height="400" loading="lazy" decoding="async" aria-hidden="true">
     </div>
     <div class="content-wrap">
         <div class="tf-container w-1290">
@@ -37,11 +37,11 @@
                 <div class="col-lg-12">
                     <div class="content">
                         <h1 class="title">My Addresses</h1>
-                        <div class="icon-img"><img src="{{ asset('assets/images/item/line-throw-title.png') }}" alt=""></div>
+                        <div class="icon-img"><img src="{{ asset('assets/images/item/line-throw-title.png') }}" alt="" width="80" height="12" loading="lazy" decoding="async" aria-hidden="true"></div>
                         <div class="breadcrumb">
                             <a href="{{ url('/') }}">Home</a>
                             <div class="icon"><i class="icon-arrow-right1"></i></div>
-                            <a href="javascript:void(0)">My Addresses</a>
+                            <a href="{{ url()->current() }}">My Addresses</a>
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
     </div>
 
     <div class="img-item item-2">
-        <img src="{{ asset('assets/images/item/grass-6.png') }}" alt="">
+        <img src="{{ asset('assets/images/item/grass-6.png') }}" alt="" width="120" height="120" loading="lazy" decoding="async" aria-hidden="true">
     </div>
 </div>
 
