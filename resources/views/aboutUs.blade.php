@@ -2,7 +2,136 @@
 @section('content')
 @php
     $aboutPageUrl = url('about-us');
+    $aboutPromoVideoUrl = trim((string) config('site.aboutPageVideoUrl', ''));
+    if ($aboutPromoVideoUrl === '') {
+        $aboutPromoVideoUrl = 'https://www.youtube.com/watch?v=fLeJJPxua3E';
+    }
+    if (preg_match('/youtube\\.com\\/watch\\?v=([^&\\s]+)/i', $aboutPromoVideoUrl, $m)) {
+        $aboutPromoVideoUrl = 'https://www.youtube.com/watch?v=' . $m[1];
+    } elseif (preg_match('/youtu\\.be\\/([^?\\s]+)/i', $aboutPromoVideoUrl, $m)) {
+        $aboutPromoVideoUrl = 'https://www.youtube.com/watch?v=' . $m[1];
+    }
+    $aboutYoutubeId = '';
+    if (preg_match('/[?&]v=([^&\\s]+)/i', $aboutPromoVideoUrl, $m)) {
+        $aboutYoutubeId = $m[1];
+    } elseif (preg_match('/youtu\\.be\\/([^?\\s]+)/i', $aboutPromoVideoUrl, $m)) {
+        $aboutYoutubeId = $m[1];
+    } elseif (preg_match('/youtube\\.com\\/embed\\/([^?\\s]+)/i', $aboutPromoVideoUrl, $m)) {
+        $aboutYoutubeId = $m[1];
+    }
+
+    $schemaSiteUrl = rtrim(config('app.url', url('/')), '/');
+    $schemaAboutUrl = $schemaSiteUrl . '/about-us';
+    $schemaFounderUrl = $schemaSiteUrl . '/ankur-saini-founder-visawizer';
+    $schemaLogoUrl = asset('assets/images/visawizer_logo.svg');
+    $schemaPhone = preg_replace('/\s+/', '', (string) config('site.phone1'));
+    $schemaOrgSameAs = array_values(array_filter([
+        config('site.facebook'),
+        config('site.linkedin'),
+        config('site.instagram'),
+        config('site.youtube') ?: 'https://www.youtube.com/@' . ltrim((string) config('services.youtube.channel_handle', 'visawizer'), '@'),
+        config('site.twitter'),
+    ]));
+    $schemaPersonSameAs = array_values(array_filter([
+        config('site.ankurLinkedin'),
+        $schemaFounderUrl,
+        'https://portal.mara.gov.au/search-the-register-of-migration-agents/register-of-migration-agent-details/?ContactID=286ca2ae-3ff6-eb11-94ef-002248180ce1',
+    ]));
+    $schemaPerson = [
+        '@context' => 'https://schema.org',
+        '@type' => 'Person',
+        'name' => 'Ankur Saini',
+        'jobTitle' => 'Registered Migration Agent',
+        'identifier' => [
+            '@type' => 'PropertyValue',
+            'name' => 'MARN',
+            'value' => '2117640',
+        ],
+        'worksFor' => [
+            '@type' => 'Organization',
+            'name' => 'Visawizer',
+            'url' => $schemaSiteUrl,
+        ],
+        'address' => [
+            '@type' => 'PostalAddress',
+            'streetAddress' => 'Level 7/276 Flinders Street',
+            'addressLocality' => 'Melbourne',
+            'addressRegion' => 'VIC',
+            'postalCode' => '3000',
+            'addressCountry' => 'AU',
+        ],
+        'url' => $schemaFounderUrl,
+        'sameAs' => $schemaPersonSameAs,
+    ];
+    $schemaOrganization = [
+        '@context' => 'https://schema.org',
+        '@type' => 'Organization',
+        'name' => 'Visawizer',
+        'legalName' => 'Visawizer Education & Migration Services',
+        'url' => $schemaSiteUrl,
+        'logo' => $schemaLogoUrl,
+        'image' => asset('assets/images/principles-image-1.webp'),
+        'telephone' => $schemaPhone,
+        'email' => config('site.email1'),
+        'address' => [
+            '@type' => 'PostalAddress',
+            'streetAddress' => 'Level 7/276 Flinders Street',
+            'addressLocality' => 'Melbourne',
+            'addressRegion' => 'VIC',
+            'postalCode' => '3000',
+            'addressCountry' => 'AU',
+        ],
+        'sameAs' => $schemaOrgSameAs,
+    ];
+    $schemaBreadcrumb = [
+        '@context' => 'https://schema.org',
+        '@type' => 'BreadcrumbList',
+        'itemListElement' => [
+            [
+                '@type' => 'ListItem',
+                'position' => 1,
+                'name' => 'Home',
+                'item' => $schemaSiteUrl . '/',
+            ],
+            [
+                '@type' => 'ListItem',
+                'position' => 2,
+                'name' => 'About Us',
+                'item' => $schemaAboutUrl,
+            ],
+        ],
+    ];
+    $schemaVideo = null;
+    if ($aboutYoutubeId !== '') {
+        $schemaVideo = [
+            '@context' => 'https://schema.org',
+            '@type' => 'VideoObject',
+            'name' => 'About Visawizer | Registered Migration Agent in Melbourne',
+            'description' => 'Learn about Visawizer Education & Migration Services and how registered migration agent Ankur Saini helps clients with Australian visa pathways.',
+            'thumbnailUrl' => asset('assets/images/principles-image-2.webp'),
+            'contentUrl' => 'https://www.youtube.com/watch?v=' . $aboutYoutubeId,
+            'embedUrl' => 'https://www.youtube.com/embed/' . $aboutYoutubeId,
+            'publisher' => [
+                '@type' => 'Organization',
+                'name' => 'Visawizer',
+                'logo' => [
+                    '@type' => 'ImageObject',
+                    'url' => $schemaLogoUrl,
+                ],
+            ],
+        ];
+    }
 @endphp
+
+@push('head-meta')
+    <script type="application/ld+json">{!! json_encode($schemaPerson, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+    <script type="application/ld+json">{!! json_encode($schemaOrganization, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+    <script type="application/ld+json">{!! json_encode($schemaBreadcrumb, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+    @if ($schemaVideo)
+        <script type="application/ld+json">{!! json_encode($schemaVideo, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+    @endif
+@endpush
+
 <style type="text/css">
 .about-stats-band {
     position: relative;
@@ -638,8 +767,82 @@
         display: none;
     }
 }
+.about-breadcrumb.breadcrumb-section {
+    background-size: cover;
+    background-position: center;
+    overflow: visible;
+}
+.about-breadcrumb .breadcrumb-content {
+    background: linear-gradient(105deg, rgba(7, 16, 31, 0.82) 0%, rgba(7, 16, 31, 0.52) 42%, rgba(7, 16, 31, 0.18) 72%, transparent 100%);
+    overflow: visible;
+}
+.about-breadcrumb .breadcrumb-nav ul li,
+.about-breadcrumb .breadcrumb-nav ul li a {
+    color: rgba(255, 255, 255, 0.92);
+}
+.about-breadcrumb .breadcrumb-nav ul li a:hover {
+    color: var(--theme-color-2);
+}
+.about-breadcrumb .breadcrumb-title {
+    position: relative;
+    width: fit-content;
+    max-width: min(920px, 92vw);
+}
+.about-breadcrumb .breadcrumb-title::before {
+    content: "";
+    height: 310px;
+    width: 20px;
+    background: #ffffff;
+    position: absolute;
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%) skewX(28deg);
+    pointer-events: none;
+    z-index: 1;
+}
+.about-breadcrumb .breadcrumb-title h1 {
+    position: relative;
+    width: fit-content;
+    max-width: min(920px, 92vw);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: clamp(1.65rem, 3.2vw, 2.75rem);
+    line-height: 1.2;
+    margin: 0;
+    text-shadow:
+        0 2px 16px rgba(0, 0, 0, 0.65),
+        0 1px 3px rgba(0, 0, 0, 0.9);
+}
+.about-breadcrumb .breadcrumb-title h1::before {
+    display: none;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .about-breadcrumb .breadcrumb-title::before {
+        width: 25px;
+    }
+}
+@media (max-width: 991px) {
+    .about-breadcrumb .breadcrumb-title::before {
+        display: none;
+    }
+}
 </style>
-@include('partials.breadcrumb')
+@php $aboutBanner = rand(1, 24); @endphp
+<section class="breadcrumb-section about-breadcrumb" style="background-image: url('{{ asset("assets/images/banner/$aboutBanner.webp") }}');">
+    <div class="container-fluid">
+        <div class="breadcrumb-content">
+            <div class="breadcrumb-nav">
+                <ul>
+                    <li><a href="{{ url('/') }}">Home</a></li>
+                    <li><a href="{{ $aboutPageUrl }}">About Us</a></li>
+                </ul>
+            </div>
+            <div class="breadcrumb-title">
+                <h1>About Visawizer | Registered Migration Agent in Melbourne</h1>
+            </div>
+        </div>
+    </div>
+</section>
 <div style="background-color: #f8f7f0">
 
     <section class="why-us-section-6 p-t-100 p-t-xs-80" style="
@@ -651,17 +854,17 @@
                 <div class="col-xl-6">
                     <div class="thumb px-lg-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                         <div class="thumb-1">
-                            <img src="{{ asset('assets/images/principles-image-1.webp') }}" alt="Visawizer education and migration services Melbourne" width="520" height="420" loading="lazy" decoding="async"/>
+                            <img src="{{ asset('assets/images/principles-image-1.webp') }}" alt="Visawizer migration office Melbourne" width="363" height="429" loading="lazy" decoding="async"/>
                             <div class="s-shape">
-                                <img src="{{ asset('assets/img/shapes/shape-14.webp') }}" alt="Decorative section shape" width="200" height="200" loading="lazy" decoding="async"/>
+                                <img src="{{ asset('assets/img/shapes/shape-14.webp') }}" alt="" width="200" height="200" loading="lazy" decoding="async"/>
                             </div>
                         </div>
                         <div class="thumb-2">
-                            <img src="{{ asset('assets/images/principles-image-2.webp') }}" alt="Australian visa and study pathways" width="400" height="320" loading="lazy" decoding="async"/>
+                            <img src="{{ asset('assets/images/principles-image-2.webp') }}" alt="Australian visa consultation Melbourne" width="327" height="403" loading="lazy" decoding="async"/>
                         </div>
                         <div class="thumb-3">
                             <div class="shape-wrapped-thumb">
-                                <img src="{{ asset('assets/images/principles-image-3.webp') }}" alt="Migration consultation with Visawizer" width="400" height="320" loading="lazy" decoding="async"/>
+                                <img src="{{ asset('assets/images/principles-image-3.webp') }}" alt="Visawizer migration expert team" width="328" height="205" loading="lazy" decoding="async"/>
                             </div>
                         </div>
                     </div>
@@ -680,14 +883,17 @@
                         </div>
                         <div class="text">
                             <p>
-                                Visawizer Education &amp; Migration Services is a renowned facilitator for both education and migration endeavors targeting Australia. We recognize that embarking on international relocation or pursuing education abroad can be a monumental step, often taking you away from familiar terrains.
+                                Visawizer Education &amp; Migration Services is a renowned facilitator for both education and migration endeavors targeting Australia. Led by founder <a href="{{ url('ankur-saini-founder-visawizer') }}">Ankur Saini</a>, a MARN-registered migration agent in Melbourne, we help clients navigate complex visa pathways with clarity and care.
                             </p>
                             <p>
-                                That&apos;s why Visawizer is committed to offering a seamless, transparent, and efficient process tailored to your specific needs. Our comprehensive services span a wide range, encompassing General Skilled Migration, Student Visas, Admissions, Temporary Graduate Visas, Partner Visas, Parent Visas, and Employer-sponsored Visas, among others. Situated in the heart of Melbourne, our seasoned team of professionals is dedicated to supporting you from inception to completion. At Visawizer, you&apos;re not just another application; our consultants are devoted to understanding your unique circumstances, offering in-depth consultations, ensuring consistent updates on your application&apos;s progress, and ultimately helping you achieve your envisioned outcome.
+                                That&apos;s why Visawizer is committed to offering a seamless, transparent, and efficient process tailored to your specific needs. Our comprehensive services span a wide range, encompassing <a href="{{ url('visa/student-visa-500') }}">student visas</a>, admissions, temporary graduate visas, partner visas, parent visas, employer-sponsored visas, <a href="{{ url('visa/skilled-independent-189') }}">permanent residency (PR) pathways</a>, and broader <a href="{{ url('work-skilled-migration') }}">skilled migration</a> options. Situated in the heart of Melbourne, our seasoned team is dedicated to supporting you from inception to completion.
+                            </p>
+                            <p class="m-b-0">
+                                Read migration insights on our <a href="{{ url('blogs') }}">blog</a>, <a href="{{ url('book-appointment') }}">book a consultation</a>, or <a href="{{ url('contact-us') }}">contact us</a> to discuss your goals with a registered migration agent.
                             </p>
                         </div>
                         <div class="m-t-25">
-                            <a class="e-primary-btn has-icon" href="{{ url('contact-us') }}">Book Appointment
+                            <a class="e-primary-btn has-icon" href="{{ url('book-appointment') }}">Book Appointment
                                 <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                             </a>
                         </div>
@@ -705,8 +911,8 @@
                         <h2>Need help with your Visa?</h2>
                     </div>
                     <div class="text m-t-20">
-                        <p class="mb-3">We&apos;re happy to help you out. Just give us a call on Call - Or - SMS <a href="tel:+61468963273">0468 963 273</a> or even better book an appointment with us.</p>
-                        <a class="e-primary-btn has-icon" href="{{ url('contact-us') }}">Book Appointment
+                        <p class="mb-3">We&apos;re happy to help you out. Just give us a call on Call - Or - SMS <a href="tel:+61468963273">0468 963 273</a> or even better <a href="{{ url('book-appointment') }}">book an appointment</a> with us.</p>
+                        <a class="e-primary-btn has-icon" href="{{ url('book-appointment') }}">Book Appointment
                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                         </a>
                     </div>
@@ -796,7 +1002,7 @@
         </div>
 
         <div class="about-timeline-dark__cta">
-            <a class="e-primary-btn has-icon" href="{{ url('contact-us') }}">Book Appointment
+            <a class="e-primary-btn has-icon" href="{{ url('book-appointment') }}">Book Appointment
                 <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span></span>
             </a>
         </div>
@@ -838,25 +1044,6 @@
     </div>
 </section>
 
-@php
-    $aboutPromoVideoUrl = trim((string) config('site.aboutPageVideoUrl', ''));
-    if ($aboutPromoVideoUrl === '') {
-        $aboutPromoVideoUrl = 'https://www.youtube.com/watch?v=fLeJJPxua3E';
-    }
-    if (preg_match('/youtube\\.com\\/watch\\?v=([^&\\s]+)/i', $aboutPromoVideoUrl, $m)) {
-        $aboutPromoVideoUrl = 'https://www.youtube.com/watch?v=' . $m[1];
-    } elseif (preg_match('/youtu\\.be\\/([^?\\s]+)/i', $aboutPromoVideoUrl, $m)) {
-        $aboutPromoVideoUrl = 'https://www.youtube.com/watch?v=' . $m[1];
-    }
-    $aboutYoutubeId = '';
-    if (preg_match('/[?&]v=([^&\\s]+)/i', $aboutPromoVideoUrl, $m)) {
-        $aboutYoutubeId = $m[1];
-    } elseif (preg_match('/youtu\\.be\\/([^?\\s]+)/i', $aboutPromoVideoUrl, $m)) {
-        $aboutYoutubeId = $m[1];
-    } elseif (preg_match('/youtube\\.com\\/embed\\/([^?\\s]+)/i', $aboutPromoVideoUrl, $m)) {
-        $aboutYoutubeId = $m[1];
-    }
-@endphp
 <section class="about-why-dark">
     <div class="container">
         <div class="row align-items-center g-4 g-xl-5">
@@ -879,7 +1066,7 @@
                         </div>
                     </div>
                     <div class="about-why-dark__cta">
-                        <a class="e-primary-btn has-icon" href="{{ url('contact-us') }}">Book Appointment
+                        <a class="e-primary-btn has-icon" href="{{ url('book-appointment') }}">Book Appointment
                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                         </a>
                     </div>
@@ -893,7 +1080,7 @@
                                 data-bs-toggle="modal"
                                 data-bs-target="#aboutPromoVideoModal"
                                 aria-label="Play introduction video">
-                            <img src="{{ asset('assets/images/principles-image-2.webp') }}" alt="Visawizer introduction video preview" width="800" height="500" loading="lazy" decoding="async">
+                            <img src="{{ asset('assets/images/principles-image-2.webp') }}" alt="Ankur Saini – Registered Migration Agent Melbourne" width="327" height="403" loading="lazy" decoding="async">
                             <span class="about-why-dark__play" aria-hidden="true">
                                 <i class="fa-solid fa-play"></i>
                             </span>
@@ -904,7 +1091,7 @@
                            target="_blank"
                            rel="noopener noreferrer"
                            aria-label="Open video in new tab">
-                            <img src="{{ asset('assets/images/principles-image-2.webp') }}" alt="Visawizer introduction video preview" width="800" height="500" loading="lazy" decoding="async">
+                            <img src="{{ asset('assets/images/principles-image-2.webp') }}" alt="Ankur Saini – Registered Migration Agent Melbourne" width="327" height="403" loading="lazy" decoding="async">
                             <span class="about-why-dark__play" aria-hidden="true">
                                 <i class="fa-solid fa-play"></i>
                             </span>

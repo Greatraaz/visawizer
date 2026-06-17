@@ -14,6 +14,7 @@ return [
     'instagram' => '',
     'youtube' => '',
     'linkedin' => '',
+    'ankurLinkedin' => env('ANKUR_LINKEDIN_URL', ''),
     'pinterest' => '',
     'twitter' => '',
     'aboutPageVideoUrl' => '',

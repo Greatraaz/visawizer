@@ -316,7 +316,25 @@ class HomeController extends Controller
 
     public function aboutUs()
     {
-        return view('aboutUs');
+        $title = 'About Visawizer | Registered Migration Agent in Melbourne';
+        $description = 'Meet Ankur Saini, MARN-registered migration agent and founder of Visawizer. Based in Melbourne, we provide expert guidance for Australian student visas, PR, work visas and migration services.';
+        $keywords = 'About Visawizer, Ankur Saini, registered migration agent Melbourne, MARN 2117640, student visa Australia, PR visa, skilled migration, Visawizer';
+        $canonicalUrl = url('about-us');
+        $ogTitle = $title;
+        $ogDescription = $description;
+        $ogImage = asset('assets/images/principles-image-1.webp');
+        $ogType = 'website';
+
+        return view('aboutUs', compact(
+            'title',
+            'description',
+            'keywords',
+            'canonicalUrl',
+            'ogTitle',
+            'ogDescription',
+            'ogImage',
+            'ogType'
+        ));
     }
 
     public function founderAnkurSaini()

@@ -14,7 +14,26 @@
 
     <meta name="description" content="{{ $description ?? 'Trusted Melbourne migration agency offering expert visa support for student, work, partner, PR, and business visas across Australia.' }}">
     <meta name="keywords" content="{{ $keywords ?? 'migration agency Melbourne, certified Melbourne migration agent, visa services Melbourne, Australia migration consultant, work visa Australia, business visa consultant, migration advice Melbourne, visa application assistance' }}">
-    <link rel="canonical" href="{{ url()->current() }}">
+    <link rel="canonical" href="{{ $canonicalUrl ?? url()->current() }}">
+
+    @if (!empty($ogTitle))
+        <meta property="og:type" content="{{ $ogType ?? 'website' }}">
+        <meta property="og:url" content="{{ $canonicalUrl ?? url()->current() }}">
+        <meta property="og:title" content="{{ $ogTitle }}">
+        <meta property="og:description" content="{{ $ogDescription ?? $description ?? '' }}">
+        @if (!empty($ogImage))
+            <meta property="og:image" content="{{ $ogImage }}">
+        @endif
+        <meta property="og:site_name" content="Visawizer">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="{{ $ogTitle }}">
+        <meta name="twitter:description" content="{{ $ogDescription ?? $description ?? '' }}">
+        @if (!empty($ogImage))
+            <meta name="twitter:image" content="{{ $ogImage }}">
+        @endif
+    @endif
+
+    @stack('head-meta')
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/images/visa_favicon.png') }}"/>
 
