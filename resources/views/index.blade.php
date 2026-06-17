@@ -311,7 +311,7 @@
                                 <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
                             </span>
                         </a>
-                        <a class="home-static-secondary-btn" href="#home-visa-pathways">
+                        <a class="home-static-secondary-btn" href="{{ url('/') }}" onclick="var t=document.getElementById('home-visa-pathways');if(t){t.scrollIntoView({behavior:'smooth'});return false;}">
                             Explore Visa Pathways
                             <span class="icon-wrap">
                                 <span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span>
@@ -340,7 +340,7 @@
     </div>
 
     <div class="group-shape-1">
-        <img src="{{ asset('assets/img/shapes/group-shape-1.webp') }}" alt="Visitor Visa Subclass 600 Australia"/>
+        <img src="{{ asset('assets/img/shapes/group-shape-1.webp') }}" alt="Visitor Visa Subclass 600 Australia" width="1920" height="1080" loading="lazy" decoding="async">
     </div>
 </section>
 <!-- hero-section end -->
@@ -354,15 +354,15 @@
             <div class="col-xl-6">
                 <div class="thumb px-xl-5 left" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <div class="thumb-1">
-                        <img alt="thumb-1" src="{{ asset('img/img1.png') }}" alt="Australia Student Visa Consultant Melbourne">
-                        <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-14.webp') }}"></div>
+                        <img src="{{ asset('img/img1.png') }}" alt="Australia Student Visa Consultant Melbourne" width="266" height="315" loading="lazy" decoding="async">
+                        <div class="s-shape-1"><img src="{{ asset('assets/img/shapes/shape-14.webp') }}" alt="Decorative background shape" width="120" height="120" loading="lazy" decoding="async"></div>
                     </div>
-                    <div class="thumb-2"><img alt="thumb-2" src="{{ asset('img/img2.png') }}" alt="Registered Migration Agent Melbourne"></div>
+                    <div class="thumb-2"><img src="{{ asset('img/img2.png') }}" alt="Registered Migration Agent Melbourne" width="327" height="403" loading="lazy" decoding="async"></div>
                     <div class="thumb-3">
                         <div class="shape-wrapped-thumb">
-                            <img alt="thumb-3" src="{{ asset('img/img3.png') }}" alt="Skilled Migration Australia Visa Services">
-                            <div class="s-shape-1"><img alt="shape-1" src="{{ asset('assets/img/shapes/shape-13.webp') }}"></div>
-                            <div class="s-shape-2"><img alt="shape-2" src="{{ asset('assets/img/shapes/shape-15.webp') }}"></div>
+                            <img src="{{ asset('img/img3.png') }}" alt="Skilled Migration Australia Visa Services" width="328" height="205" loading="lazy" decoding="async">
+                            <div class="s-shape-1"><img src="{{ asset('assets/img/shapes/shape-13.webp') }}" alt="Decorative background shape" width="120" height="120" loading="lazy" decoding="async"></div>
+                            <div class="s-shape-2"><img src="{{ asset('assets/img/shapes/shape-15.webp') }}" alt="Decorative background shape" width="120" height="120" loading="lazy" decoding="async"></div>
                         </div>
                     </div>
                 </div>
@@ -542,7 +542,7 @@
                     <div class="project-card">
                         <div class="thumb">
                             <a href="{{ url('study') }}">
-                                <img src="{{ asset('img/study-in-australia.png') }}" alt="study-in-Australia"/>
+                                <img src="{{ asset('img/study-in-australia.png') }}" alt="Study in Australia visa pathway" width="600" height="450" loading="lazy" decoding="async">
                             </a>
                             <div class="content">
                                 <h5>Study in Australia</h5>
@@ -563,7 +563,7 @@
                     <div class="project-card">
                         <div class="thumb">
                             <a href="{{ url('visitor-short-stay') }}">
-                                <img src="{{ asset('img/visit-autraliya.png') }}" alt="visit-austrailia"/>
+                                <img src="{{ asset('img/visit-autraliya.png') }}" alt="Visit Australia short-stay visa pathway" width="600" height="450" loading="lazy" decoding="async">
                             </a>
                             <div class="content">
                                 <h5>Visit Australia</h5>
@@ -584,7 +584,7 @@
                     <div class="project-card">
                         <div class="thumb">
                             <a href="{{ url('work-skilled-migration') }}">
-                                <img src="{{ asset('img/skilled-migration.png') }}" alt="work skilled migration"/>
+                                <img src="{{ asset('img/skilled-migration.png') }}" alt="Skilled migration visa pathway" width="600" height="450" loading="lazy" decoding="async">
                             </a>
                             <div class="content">
                                 <h5>Skilled Migration</h5>
@@ -605,7 +605,7 @@
                     <div class="project-card">
                         <div class="thumb">
                             <a href="{{ url('skilled-employer-sponsored-regional-494') }}">
-                                <img src="{{ asset('img/employer-sponsored.png') }}" alt="skilled employer"/>
+                                <img src="{{ asset('img/employer-sponsored.png') }}" alt="Employer sponsored visa pathway" width="600" height="450" loading="lazy" decoding="async">
                             </a>
                             <div class="content">
                                 <h5>Employer Sponsored</h5>
@@ -626,7 +626,7 @@
                     <div class="project-card">
                         <div class="thumb">
                             <a href="{{ url('family-visas') }}">
-                                <img src="{{ asset('img/family-visas.png') }}" alt="family visa"/>
+                                <img src="{{ asset('img/family-visas.png') }}" alt="Family visa pathway" width="600" height="450" loading="lazy" decoding="async">
                             </a>
                             <div class="content">
                                 <h5>Family Visas</h5>
@@ -647,7 +647,7 @@
                     <div class="project-card">
                         <div class="thumb">
                             <a href="{{ url('appeals-and-reviews') }}">
-                                <img src="{{ asset('img/appeals-protection.png') }}" alt="appeals"/>
+                                <img src="{{ asset('img/appeals-protection.png') }}" alt="Appeals and reviews visa pathway" width="600" height="450" loading="lazy" decoding="async">
                             </a>
                             <div class="content">
                                 <h5>Appeals & Reviews</h5>
@@ -705,7 +705,7 @@
                                 <div class="swiper-slide">
                                     <div class="camping-card">
                                         <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('img/admission-support.png') }}" alt="Australia PR Consultation Services">
+                                            <img src="{{ asset('img/admission-support.png') }}" alt="Australia admissions support services" width="600" height="400" loading="lazy" decoding="async">
                                         </div>
                                         <div class="content">
                                             <div class="content-top">
@@ -722,7 +722,7 @@
                                 <div class="swiper-slide">
                                     <div class="camping-card">
                                         <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('img/student-visa.png') }}" alt="Student visa">
+                                            <img src="{{ asset('img/student-visa.png') }}" alt="Student visa guidance services" width="600" height="400" loading="lazy" decoding="async">
                                         </div>
                                         <div class="content">
                                             <div class="content-top">
@@ -739,7 +739,7 @@
                                 <div class="swiper-slide">
                                     <div class="camping-card">
                                         <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('img/post-study.png') }}" alt="post study">
+                                            <img src="{{ asset('img/post-study.png') }}" alt="Post-study planning services" width="600" height="400" loading="lazy" decoding="async">
                                         </div>
                                         <div class="content">
                                             <div class="content-top">
@@ -756,7 +756,7 @@
                                 <div class="swiper-slide">
                                     <div class="camping-card">
                                         <div class="thumb">
-                                            <img alt="thumb-2" src="{{ asset('img/student-support.png') }}" alt="Student support">
+                                            <img src="{{ asset('img/student-support.png') }}" alt="Student support services" width="600" height="400" loading="lazy" decoding="async">
                                         </div>
                                         <div class="content">
                                             <div class="content-top">
@@ -932,7 +932,7 @@
             </div>
             <div class="col-lg-6 hero-img-block ps-lg-5 mt-5 mt-lg-0">
                 <div class="hero-img-main" style="position:relative;">
-                <img src="{{ url('img/ankur-saini.jpeg') }}" alt="Resilient minds" loading="eager" fetchpriority="high" decoding="async">
+                <img src="{{ url('img/ankur-saini.jpeg') }}" alt="Ankur Saini, Founder of Visawizer Education and Migration Services" width="800" height="550" loading="lazy" fetchpriority="high" decoding="async">
                 <div class="hero-float-card2 d-lg-block d-none">
                     <div class="icon-wrap"><i class="fa fa-user"></i></div>
                     <!-- <div class="lbl2">Registered Migration Agent</div> -->
@@ -964,7 +964,7 @@
                     <div class="service-card" style="background-image: linear-gradient(90deg, var(--theme-color-3), rgba(0, 0, 0, 0)), url({{ asset('img/bg4.jpg') }});background-size: cover;background-position: center;">
                         <div class="service-top">
                             <h4>Skilled Migration</h4>
-                            <i><img alt="icon" src="{{ asset('assets/images/icon/workplace-business.svg') }}"></i>
+                            <i><img src="{{ asset('assets/images/icon/workplace-business.svg') }}" alt="Skilled migration icon" width="60" height="60" loading="lazy" decoding="async"></i>
                         </div>
                         <div class="service-content">
                             <p>For applicants exploring independent, nominated, or regional pathways including 189, 190, 491, 191, and 887 options.</p>
@@ -974,7 +974,7 @@
                 <div class="col-xl-6 col-md-6">
                     <div class="service-card" style="background-image: linear-gradient(90deg, rgb(0, 0, 0, 0), var(--theme-color-3)), url({{ asset('img/bg3.png') }});background-size: cover;background-position: center;">
                         <div class="service-top">
-                            <i><img alt="icon" src="{{ asset('assets/images/icon/corporate-governance.svg') }}"></i>
+                            <i><img src="{{ asset('assets/images/icon/corporate-governance.svg') }}" alt="Employer sponsored migration icon" width="60" height="60" loading="lazy" decoding="async"></i>
                             <h4 class="text-end">Employer Sponsored</h4>
                         </div>
                         <div class="service-content">
@@ -1018,8 +1018,8 @@
                     </div>
                 </div>
             </div>
-            <div class="shape-8"><img alt="shape-8" src="{{ asset('assets/img/shapes/shape-8.webp') }}"></div>
-            <div class="shape-9"><img alt="shape-9" src="{{ asset('assets/img/shapes/shape-9.webp') }}"></div>
+            <div class="shape-8"><img src="{{ asset('assets/img/shapes/shape-8.webp') }}" alt="Decorative section shape" width="200" height="200" loading="lazy" decoding="async"></div>
+            <div class="shape-9"><img src="{{ asset('assets/img/shapes/shape-9.webp') }}" alt="Decorative section shape" width="200" height="200" loading="lazy" decoding="async"></div>
         </div>
         <div class="completed-project-bottom">
             <div class="container">
@@ -1027,7 +1027,7 @@
                     <div class="col-md-4">
                         <div class="project-card">
                             <div class="thumb">
-                                <a href="#"><img alt="family visa1" src="{{ asset('img/family-visa1.png') }}"></a>
+                                <a href="{{ url('family-visas') }}"><img src="{{ asset('img/family-visa1.png') }}" alt="Family visa services" width="600" height="450" loading="lazy" decoding="async"></a>
                                 <div class="content">
                                     <h5>Family Visas</h5>
                                     <p>Partner, parent, child, and relative visa pathways handled with clarity and care.</p>
@@ -1042,7 +1042,7 @@
                     <div class="col-md-4">
                         <div class="project-card">
                             <div class="thumb">
-                                <a href="#"><img alt="visitor visa1" src="{{ asset('img/visitor-visa1.png') }}"></a>
+                                <a href="{{ url('visitor-short-stay') }}"><img src="{{ asset('img/visitor-visa1.png') }}" alt="Visitor visa services" width="600" height="450" loading="lazy" decoding="async"></a>
                                 <div class="content">
                                     <h5>Visitor Visas</h5>
                                     <p>Visitor, holiday, ETA, eVisitor, and transit support for seamless short-term travel plans.</p>
@@ -1057,7 +1057,7 @@
                     <div class="col-md-4">
                         <div class="project-card">
                             <div class="thumb">
-                                <a href="#"><img alt="appeals1" src="{{ asset('img/appeals.png') }}"></a>
+                                <a href="{{ url('appeals-and-reviews') }}"><img src="{{ asset('img/appeals.png') }}" alt="Appeals and reviews services" width="600" height="450" loading="lazy" decoding="async"></a>
                                 <div class="content">
                                     <h5>Appeals &amp; Reviews</h5>
                                     <p>Guidance for review matters and other complex visa situations where careful strategy matters.</p>

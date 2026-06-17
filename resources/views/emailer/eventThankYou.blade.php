@@ -33,9 +33,8 @@
             <p style="font-size:16px; line-height:1.6;">
                 Warmly,<br>
                 <strong>Team Visawizer</strong><br>
-                Ethics that Works at Work<br>
                 Email: <a href="mailto:{{ config('site.email1') }}" style="color:var(--theme-color-3);">{{ config('site.email1') }}</a><br>
-                Web: <a href="https://Visawizer.com" style="color:var(--theme-color-3);">https://Visawizer.com</a>
+                Web: <a href="https://visawizer.com.au" style="color:var(--theme-color-3);">https://visawizer.com.au</a>
             </p>
 
         </div>
