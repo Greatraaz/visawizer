@@ -40,7 +40,7 @@
 				@foreach ($whitePaper as $node)
 				<div class="work-card">
 					<div class="work-card-thumb">
-						<img alt="{{ $node->slug }}" src="{{ asset($node->image) }}">
+						<img src="{{ asset($node->image) }}" alt="{{ $node->title }}" width="440" height="280" loading="lazy" decoding="async">
 					</div>
 					<div class="work-card-content">
 						<h3>{{ $node->title }}</h3>

@@ -339,6 +339,8 @@
                                     <img
                                         src="{{ $featuredVideo['thumbnail'] }}"
                                         alt="{{ $featuredVideo['title'] }}"
+                                        width="640"
+                                        height="360"
                                         loading="lazy"
                                         decoding="async"
                                     >

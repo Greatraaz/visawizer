@@ -22,10 +22,10 @@
                     Book Study Consultation
                     <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                 </a>
-                <a class="study-btn-outline-light" href="#study-visa-support">Explore Student Visa Options</a>
+                <a class="study-btn-outline-light" href="{{ url('study') }}" onclick="var t=document.getElementById('study-visa-support');if(t){t.scrollIntoView({behavior:'smooth'});return false;}">Explore Student Visa Options</a>
             </div>
         </div>
-        <div class="shape"><img alt="" src="{{ asset('assets/imgs/study/s1-shape.webp') }}"></div>
+        <div class="shape"><img src="{{ asset('assets/imgs/study/s1-shape.webp') }}" alt="Decorative study hero shape" width="1920" height="1080" loading="lazy" decoding="async"></div>
     </div>
 </section>
 
@@ -103,11 +103,11 @@
             <div class="col-xl-6">
                 <div class="thumb px-xl-5 left" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <div class="thumb-1">
-                        <img src="{{ asset('assets/imgs/study/s3-plan.webp') }}" alt="Study planning">
+                        <img src="{{ asset('assets/imgs/study/s3-plan.webp') }}" alt="Study planning in Australia" width="360" height="260" loading="lazy" decoding="async">
                     </div>
-                    <div class="thumb-2"><img src="{{ asset('assets/imgs/study/s3-life.webp') }}" alt="Learning environment"></div>
+                    <div class="thumb-2"><img src="{{ asset('assets/imgs/study/s3-life.webp') }}" alt="Learning environment in Australia" width="390" height="300" loading="lazy" decoding="async"></div>
                     <div class="thumb-3">
-                        <div class="shape-wrapped-thumb"><img src="{{ asset('assets/imgs/study/s3-support.webp') }}" alt="Student support"></div>
+                        <div class="shape-wrapped-thumb"><img src="{{ asset('assets/imgs/study/s3-support.webp') }}" alt="Student support services" width="230" height="210" loading="lazy" decoding="async"></div>
                     </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@
             </div>
         </div>
     </div>
-    <div class="shape"><img alt="" src="{{ asset('assets/imgs/study/s3-shape.webp') }}"></div>
+    <div class="shape"><img src="{{ asset('assets/imgs/study/s3-shape.webp') }}" alt="Decorative study section shape" width="800" height="600" loading="lazy" decoding="async"></div>
 </section>
 
 {{-- Section 4: Journey steps — dark band + service-card-3 grid (reference: featured / training mix) --}}
@@ -253,7 +253,7 @@
                                 </a>
                             </div>
                             <div class="col-md-6 m-t-xs-30">
-                                <img src="{{ asset('assets/imgs/study/s6-side.webp') }}" alt="Students reviewing study options in Australia">
+                                <img src="{{ asset('assets/imgs/study/s6-side.webp') }}" alt="Students reviewing study options in Australia" width="353" height="235" loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -271,7 +271,7 @@
                 <div class="study-grad-thumb">
                     <span class="bg-p">After your studies</span>
                     <h2>Plan your next step after completing your course</h2>
-                    <img src="{{ asset('assets/imgs/study/s7-grad.webp') }}" alt="Graduate planning next steps in Australia">
+                    <img src="{{ asset('assets/imgs/study/s7-grad.webp') }}" alt="Graduate planning next steps in Australia" width="600" height="400" loading="lazy" decoding="async">
                 </div>
             </div>
             <div class="col-xl-6 order-xl-1" data-aos="fade-up">
@@ -312,7 +312,7 @@
                     <a class="study-btn-ghost-dark is-on-dark" href="{{ url('contact-us') }}">Contact Visawizer</a>
                 </div>
             </div>
-            <div class="icon-shape-1"><img alt="" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000" src="{{ asset('assets/imgs/study/s8-shape.webp') }}"></div>
+            <div class="icon-shape-1"><img src="{{ asset('assets/imgs/study/s8-shape.webp') }}" alt="Decorative appointment section shape" width="200" height="200" loading="lazy" decoding="async" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="1000"></div>
         </div>
     </div>
 </section>

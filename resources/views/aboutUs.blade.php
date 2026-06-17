@@ -1,5 +1,8 @@
 @extends('layouts.frontend')
 @section('content')
+@php
+    $aboutPageUrl = url('about-us');
+@endphp
 <style type="text/css">
 .about-stats-band {
     position: relative;
@@ -648,17 +651,17 @@
                 <div class="col-xl-6">
                     <div class="thumb px-lg-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                         <div class="thumb-1">
-                            <img src="{{ asset('assets/images/principles-image-1.webp') }}" alt="Visawizer education and migration services Melbourne"/>
+                            <img src="{{ asset('assets/images/principles-image-1.webp') }}" alt="Visawizer education and migration services Melbourne" width="520" height="420" loading="lazy" decoding="async"/>
                             <div class="s-shape">
-                                <img src="assets/img/shapes/shape-14.webp" alt=""/>
+                                <img src="{{ asset('assets/img/shapes/shape-14.webp') }}" alt="Decorative section shape" width="200" height="200" loading="lazy" decoding="async"/>
                             </div>
                         </div>
                         <div class="thumb-2">
-                            <img src="{{ asset('assets/images/principles-image-2.webp') }}" alt="Australian visa and study pathways"/>
+                            <img src="{{ asset('assets/images/principles-image-2.webp') }}" alt="Australian visa and study pathways" width="400" height="320" loading="lazy" decoding="async"/>
                         </div>
                         <div class="thumb-3">
                             <div class="shape-wrapped-thumb">
-                                <img src="{{ asset('assets/images/principles-image-3.webp') }}" alt="Migration consultation"/>
+                                <img src="{{ asset('assets/images/principles-image-3.webp') }}" alt="Migration consultation with Visawizer" width="400" height="320" loading="lazy" decoding="async"/>
                             </div>
                         </div>
                     </div>
@@ -717,10 +720,10 @@
     <div class="container d-flex justify-content-center px-3">
         <div class="about-timeline-yearbar-wrap">
             <nav class="about-timeline-yearbar" id="about-year-bar" role="tablist" aria-label="Journey milestones by year">
-                <a href="#about-tl-2013" class="about-timeline-yearbar__seg is-active" data-milestone="2013" role="tab" aria-selected="true">2013</a>
-                <a href="#about-tl-2019" class="about-timeline-yearbar__seg" data-milestone="2019" role="tab" aria-selected="false">2019</a>
-                <a href="#about-tl-2021" class="about-timeline-yearbar__seg" data-milestone="2021" role="tab" aria-selected="false">2021</a>
-                <a href="#about-tl-2023" class="about-timeline-yearbar__seg" data-milestone="2023" role="tab" aria-selected="false">2023</a>
+                <a href="{{ $aboutPageUrl }}" data-target="about-tl-2013" class="about-timeline-yearbar__seg is-active" data-milestone="2013" role="tab" aria-selected="true">2013</a>
+                <a href="{{ $aboutPageUrl }}" data-target="about-tl-2019" class="about-timeline-yearbar__seg" data-milestone="2019" role="tab" aria-selected="false">2019</a>
+                <a href="{{ $aboutPageUrl }}" data-target="about-tl-2021" class="about-timeline-yearbar__seg" data-milestone="2021" role="tab" aria-selected="false">2021</a>
+                <a href="{{ $aboutPageUrl }}" data-target="about-tl-2023" class="about-timeline-yearbar__seg" data-milestone="2023" role="tab" aria-selected="false">2023</a>
             </nav>
         </div>
     </div>
@@ -890,7 +893,7 @@
                                 data-bs-toggle="modal"
                                 data-bs-target="#aboutPromoVideoModal"
                                 aria-label="Play introduction video">
-                            <img src="{{ asset('assets/images/principles-image-2.webp') }}" alt="" width="800" height="500" loading="lazy">
+                            <img src="{{ asset('assets/images/principles-image-2.webp') }}" alt="Visawizer introduction video preview" width="800" height="500" loading="lazy" decoding="async">
                             <span class="about-why-dark__play" aria-hidden="true">
                                 <i class="fa-solid fa-play"></i>
                             </span>
@@ -901,7 +904,7 @@
                            target="_blank"
                            rel="noopener noreferrer"
                            aria-label="Open video in new tab">
-                            <img src="{{ asset('assets/images/principles-image-2.webp') }}" alt="" width="800" height="500" loading="lazy">
+                            <img src="{{ asset('assets/images/principles-image-2.webp') }}" alt="Visawizer introduction video preview" width="800" height="500" loading="lazy" decoding="async">
                             <span class="about-why-dark__play" aria-hidden="true">
                                 <i class="fa-solid fa-play"></i>
                             </span>
@@ -958,16 +961,13 @@
 
     pills.forEach(function (pill) {
         pill.addEventListener('click', function (e) {
-            var href = pill.getAttribute('href');
-            if (href && href.indexOf('#') === 0) {
-                e.preventDefault();
-                var el = document.querySelector(href);
-                var y = pill.getAttribute('data-milestone');
-                if (y) setActiveYear(y);
-                if (el) {
-                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    history.replaceState(null, '', href);
-                }
+            e.preventDefault();
+            var targetId = pill.getAttribute('data-target');
+            var el = targetId ? document.getElementById(targetId) : null;
+            var y = pill.getAttribute('data-milestone');
+            if (y) setActiveYear(y);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
             }
         });
     });

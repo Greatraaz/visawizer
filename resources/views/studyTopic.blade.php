@@ -824,6 +824,10 @@
     }
 </style>
 
+@php
+    $studyTopicScrollToForm = url()->current();
+@endphp
+
 <section class="hero-section-5 study-topic-hero" style="background-image: url('{{ asset($page['images']['hero_bg']) }}');">
     <div class="container">
         <div class="hero-content-5">
@@ -834,7 +838,7 @@
             <p class="hero-sub">{{ $page['hero']['subheading'] }}</p>
             <div class="hero-content-1">
                 <div class="join-us">
-                    <a class="e-primary-btn has-icon" href="#study-topic-contact-form">
+                    <a class="e-primary-btn has-icon" href="{{ $studyTopicScrollToForm }}" onclick="var t=document.getElementById('study-topic-contact-form');if(t){t.scrollIntoView({behavior:'smooth'});return false;}">
                         {{ $page['hero']['cta'] }}
                         <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span></span>
                     </a>
@@ -855,7 +859,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="band-thumb">
-                        <img src="{{ asset($page['images']['hero_band']) }}" alt="{{ $page['label'] }}">
+                        <img src="{{ asset($page['images']['hero_band']) }}" alt="{{ $page['label'] }}" width="340" height="160" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -889,7 +893,7 @@
                             <div class="study-topic-feature-visual">
                                 <div class="study-topic-feature-visual-frame">
                                     <span class="study-topic-feature-visual-badge">{{ $page['label'] }}</span>
-                                    <img src="{{ asset($page['images']['hero_band']) }}" alt="{{ $section['heading'] }}">
+                                    <img src="{{ asset($page['images']['hero_band']) }}" alt="{{ $section['heading'] }}" width="500" height="265" loading="lazy" decoding="async">
                                 </div>
                             </div>
                         @endif
@@ -900,7 +904,7 @@
                 @php $section3Items = $page['section3']['points'] ?? $page['section3']['cards'] ?? []; @endphp
                 <div class="study-topic-showcase-card">
                     <div class="study-topic-showcase-media">
-                        <img src="{{ asset($page['images']['sidebar']) }}" alt="{{ $page['label'] }}">
+                        <img src="{{ asset($page['images']['sidebar']) }}" alt="{{ $page['label'] }}" width="540" height="247" loading="lazy" decoding="async">
                     </div>
                     <div class="study-topic-showcase-content">
                         <div class="study-topic-section-tag">{{ $page['label'] }}</div>
@@ -920,7 +924,7 @@
                             </div>
                         @endif
                         <div class="m-t-25">
-                            <a class="e-primary-btn has-icon" href="#study-topic-contact-form">
+                            <a class="e-primary-btn has-icon" href="{{ $studyTopicScrollToForm }}" onclick="var t=document.getElementById('study-topic-contact-form');if(t){t.scrollIntoView({behavior:'smooth'});return false;}">
                                 {{ $page['hero']['cta'] }}
                                 <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span></span>
                             </a>
@@ -938,14 +942,14 @@
             <div class="col-xl-6">
                 <div class="thumb px-xl-5 left">
                     <div class="thumb-1">
-                        <img src="{{ asset($page['images']['section4']) }}" alt="{{ $page['section4']['heading'] }}">
+                        <img src="{{ asset($page['images']['section4']) }}" alt="{{ $page['section4']['heading'] }}" width="246" height="322" loading="lazy" decoding="async">
                     </div>
                     <div class="thumb-2">
-                        <img src="{{ asset($page['images']['hero_band']) }}" alt="{{ $page['label'] }}">
+                        <img src="{{ asset($page['images']['hero_band']) }}" alt="{{ $page['label'] }}" width="248" height="320" loading="lazy" decoding="async">
                     </div>
                     <div class="thumb-3">
                         <div class="shape-wrapped-thumb">
-                            <img src="{{ asset($page['images']['sidebar']) }}" alt="{{ $page['label'] }}">
+                            <img src="{{ asset($page['images']['sidebar']) }}" alt="{{ $page['label'] }}" width="236" height="162" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
@@ -1054,7 +1058,7 @@
                     <p>{{ $page['final']['subheading'] }}</p>
                 @endif
                 <div class="btn-wrap">
-                    <a class="e-primary-btn has-icon" href="#study-topic-contact-form">
+                    <a class="e-primary-btn has-icon" href="{{ $studyTopicScrollToForm }}" onclick="var t=document.getElementById('study-topic-contact-form');if(t){t.scrollIntoView({behavior:'smooth'});return false;}">
                         {{ $page['final']['cta'] }}
                         <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span></span>
                     </a>

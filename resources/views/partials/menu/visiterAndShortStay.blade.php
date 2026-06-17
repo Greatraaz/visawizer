@@ -37,7 +37,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="{{ url('#') }}">
+                  <a href="{{ url('contact-us') }}">
                     Centres & Accreditation
                     <span class="icon"><i class="fa-regular fa-arrow-up-right"></i></span>
                   </a>
@@ -88,7 +88,7 @@
           <div class="thumb">
             <div class="card border-0 shadow-lg overflow-hidden">
               <div class="position-relative">
-                <img src="{{ url('img/about2.png') }}" class="card-img" alt="Services" style="height: 410px; object-fit: cover; filter: brightness(0.55);">
+                <img src="{{ url('img/about2.png') }}" class="card-img" alt="Schedule a visitor visa appointment with Visawizer" width="500" height="410" loading="lazy" decoding="async" style="height: 410px; object-fit: cover; filter: brightness(0.55);">
                 <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-4">
                   <div style="background: #313391cc;padding: 30px;border-radius: 10px;">
                     <i class="fa-solid fa-headset fa-2x text-white mb-3"></i>

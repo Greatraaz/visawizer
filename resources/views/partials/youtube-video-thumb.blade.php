@@ -6,7 +6,7 @@
     data-video-date="{{ \Carbon\Carbon::parse($video['published_at'])->format('d M Y') }}"
 >
     <span class="vt-thumb__image">
-        <img src="{{ $video['thumbnail'] }}" alt="{{ $video['title'] }}" loading="lazy" decoding="async">
+        <img src="{{ $video['thumbnail'] }}" alt="{{ $video['title'] }}" width="320" height="180" loading="lazy" decoding="async">
         <span class="vt-thumb__play" aria-hidden="true"><i class="fa-solid fa-circle-play"></i></span>
     </span>
     <span class="vt-thumb__title">{{ $video['title'] }}</span>

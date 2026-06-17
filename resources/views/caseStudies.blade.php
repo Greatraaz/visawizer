@@ -21,7 +21,7 @@
                 <div class="col-xl-4 m-b-30">
                     <div class="camping-card">
                         <div class="thumb">
-                            <a href='{{ url('case-study/'.$node->slug) }}'><img alt="{{ $node->slug }}" src="{{ asset($node->image) }}"></a>
+                            <a href='{{ url('case-study/'.$node->slug) }}'><img src="{{ asset($node->image) }}" alt="{{ $node->title }}" width="400" height="300" loading="lazy" decoding="async"></a>
                         </div>
                         <div class="content">
                             <div class="content-top">

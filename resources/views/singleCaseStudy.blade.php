@@ -190,7 +190,7 @@
 
         <div class="container">
             @if($caseStudy->image)
-                <img src="{{ asset($caseStudy->image) }}" alt="{{ $caseStudy->title }}" class="cs-hero-img">
+                <img src="{{ asset($caseStudy->image) }}" alt="{{ $caseStudy->title }}" class="cs-hero-img" width="1140" height="380" loading="lazy" decoding="async">
             @else
                 <div class="cs-hero-img-placeholder">
                     <i class="bi bi-image"></i>

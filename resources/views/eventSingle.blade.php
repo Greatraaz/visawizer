@@ -30,7 +30,7 @@ textarea.form-control, .form-control {
                     <div class="details-layout-wrap">
                         <div class="details-content" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
                             <div class="thumb-wrap m-b-30">
-                                <img src="{{ asset($event->image) }}" alt="event-img" height="400" width="100%" class="object-fit-cover">
+                                <img src="{{ asset($event->image) }}" alt="{{ $event->title }}" width="960" height="400" loading="lazy" decoding="async" class="object-fit-cover">
                             </div>
                             <div class="count-down-date m-b-20">
                                 <i class="fa-light fa-calendar-days"></i>
@@ -92,7 +92,7 @@ textarea.form-control, .form-control {
                                 <div class="s-widget-wrap m-b-30">
                                     <div class="w-title">
                                         <h3>
-                                            <img src="{{ asset('assets/img/icons/icon-20.svg') }}" alt="icon"/>
+                                            <img src="{{ asset('assets/img/icons/icon-20.svg') }}" alt="Speaker section icon" width="20" height="20" loading="lazy" decoding="async"/>
                                             Speaker
                                         </h3>
                                         <div class="bar-wrap">
@@ -102,7 +102,7 @@ textarea.form-control, .form-control {
                                     </div>
                                     <div class="organizer-info-wrap">
                                         <div class="thumb">
-                                            <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="thumb"/ style="height: 100%;object-fit: contain;    border-radius: 0;padding: 6px;">
+                                            <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="Visawizer" width="120" height="120" loading="lazy" decoding="async" style="height: 100%;object-fit: contain;    border-radius: 0;padding: 6px;">
                                         </div>
                                         <div class="name">
                                             <h3>{{ $event->speaker }}</h3>
@@ -155,7 +155,7 @@ textarea.form-control, .form-control {
             </div>
         </div>
         <div class="d-shape-1">
-            <img src="{{ asset('assets/img/shapes/shape-31.webp') }}" alt="shape-31"/>
+            <img src="{{ asset('assets/img/shapes/shape-31.webp') }}" alt="Decorative section shape" width="200" height="200" loading="lazy" decoding="async"/>
         </div>
     </section>
 @endsection 

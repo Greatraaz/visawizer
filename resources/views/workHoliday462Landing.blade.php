@@ -325,6 +325,9 @@
             return ob_get_clean();
         }
     }
+    $wh462PageUrl = url('australia-work-and-holiday-visa-subclass-462');
+    $wh462ScrollToHeroForm = "var t=document.getElementById('wh462-hero-form');if(t){t.scrollIntoView({behavior:'smooth'});return false;}";
+    $wh462ScrollToFaqForm = "var t=document.getElementById('wh462-faq-form');if(t){t.scrollIntoView({behavior:'smooth'});return false;}";
 @endphp
 
 <style type="text/css">
@@ -1584,9 +1587,9 @@
                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span></span>
                         </a>
                     </div>
-                    <a class="wh462-btn-ghost" href="#wh462-hero-form">{{ $hero['secondary_cta'] }}</a>
+                    <a class="wh462-btn-ghost" href="{{ $wh462PageUrl }}" onclick="{{ $wh462ScrollToHeroForm }}">{{ $hero['secondary_cta'] }}</a>
                 </div>
-                <p class="wh462-micro-cta"><a href="#wh462-hero-form">{{ $hero['micro_cta'] }}</a></p>
+                <p class="wh462-micro-cta"><a href="{{ $wh462PageUrl }}" onclick="{{ $wh462ScrollToHeroForm }}">{{ $hero['micro_cta'] }}</a></p>
             </div>
         </div>
     </section>
@@ -1604,7 +1607,10 @@
                         <img
                             src="{{ asset($img['profile']) }}"
                             alt="Young traveller planning Australia Work and Holiday Visa Subclass 462"
+                            width="240"
+                            height="200"
                             loading="lazy"
+                            decoding="async"
                         >
                     </div>
                 </div>
@@ -1673,7 +1679,7 @@
                 <div class="row align-items-stretch row-gap-4 g-lg-4">
                     <div class="col-lg-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                         <div class="wh462-who-image">
-                            <img alt="Young travellers planning Australia work and holiday visa" src="{{ asset($img['intro']) }}">
+                            <img src="{{ asset($img['intro']) }}" alt="Young travellers planning Australia work and holiday visa" width="480" height="320" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="col-lg-7" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
@@ -1699,7 +1705,7 @@
         <div class="container">
             <div class="strip-inner">
                 <p>{{ $who['cta_text'] }}</p>
-                <a class="e-primary-btn has-icon" href="#wh462-hero-form">
+                <a class="e-primary-btn has-icon" href="{{ $wh462PageUrl }}" onclick="{{ $wh462ScrollToHeroForm }}">
                     {{ $who['cta_button'] }}
                     <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span></span>
                 </a>
@@ -1738,7 +1744,7 @@
                 @endforeach
             </div>
             <div class="text-center m-t-40">
-                <a class="e-primary-btn has-icon is-hover-white" href="#wh462-hero-form">
+                <a class="e-primary-btn has-icon is-hover-white" href="{{ $wh462PageUrl }}" onclick="{{ $wh462ScrollToHeroForm }}">
                     {{ $eligibility['cta'] }}
                     <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span></span>
                 </a>
@@ -1758,7 +1764,7 @@
                         <p class="visa-lead m-t-25 m-b-0">{{ $guidance['content'] }}</p>
                         <p class="visa-lead m-t-20 m-b-0">{{ $guidance['content2'] }}</p>
                         <div class="m-t-30">
-                            <a class="e-primary-btn has-icon" href="#wh462-hero-form">
+                            <a class="e-primary-btn has-icon" href="{{ $wh462PageUrl }}" onclick="{{ $wh462ScrollToHeroForm }}">
                                 {{ $guidance['cta'] }}
                                 <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span></span>
                             </a>
@@ -1811,7 +1817,7 @@
                                     <div class="swiper-slide">
                                         <div class="camping-card">
                                             <div class="thumb">
-                                                <img alt="{{ $category['title'] }}" src="{{ asset($category['image']) }}">
+                                                <img src="{{ asset($category['image']) }}" alt="{{ $category['title'] }}" width="600" height="400" loading="lazy" decoding="async">
                                             </div>
                                             <div class="content">
                                                 <div class="content-top">
@@ -1841,7 +1847,7 @@
                 </div>
             </div>
             <div class="text-center m-t-40">
-                <a class="e-primary-btn has-icon" href="#wh462-hero-form">
+                <a class="e-primary-btn has-icon" href="{{ $wh462PageUrl }}" onclick="{{ $wh462ScrollToHeroForm }}">
                     {{ $documents['cta'] }}
                     <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i><i class="fa-regular fa-arrow-right"></i></span></span>
                 </a>
@@ -1872,8 +1878,8 @@
                     </div>
                 </div>
             </div>
-            <div class="shape-8"><img alt="" src="{{ asset('assets/img/shapes/shape-8.webp') }}"></div>
-            <div class="shape-9"><img alt="" src="{{ asset('assets/img/shapes/shape-9.webp') }}"></div>
+            <div class="shape-8"><img src="{{ asset('assets/img/shapes/shape-8.webp') }}" alt="Decorative section shape" width="200" height="200" loading="lazy" decoding="async"></div>
+            <div class="shape-9"><img src="{{ asset('assets/img/shapes/shape-9.webp') }}" alt="Decorative section shape" width="200" height="200" loading="lazy" decoding="async"></div>
         </div>
         <div class="completed-project-bottom">
             <div class="container">
@@ -1882,8 +1888,8 @@
                         <div class="col-lg-4 col-md-6">
                             <div class="project-card">
                                 <div class="thumb">
-                                    <a href="#wh462-hero-form">
-                                        <img alt="{{ $step['title'] }}" src="{{ asset($step['image']) }}">
+                                    <a href="{{ $wh462PageUrl }}" onclick="{{ $wh462ScrollToHeroForm }}">
+                                        <img src="{{ asset($step['image']) }}" alt="{{ $step['title'] }}" width="600" height="450" loading="lazy" decoding="async">
                                     </a>
                                     <div class="number"><span>{{ str_pad((string) ($index + 1), 2, '0', STR_PAD_LEFT) }}</span></div>
                                     <div class="content">
@@ -1921,7 +1927,7 @@
                             @if (($option['align'] ?? 'left') === 'right')
                                 <div class="service-top">
                                     <h4 class="text-end">{{ $option['title'] }}</h4>
-                                    <i><img alt="" src="{{ asset($option['icon']) }}"></i>
+                                    <i><img src="{{ asset($option['icon']) }}" alt="{{ $option['title'] ?? 'Visa comparison icon' }}" width="46" height="46" loading="lazy" decoding="async"></i>
                                 </div>
                                 <div class="service-content">
                                     <p class="text-end" style="margin-left: auto;">{{ $option['text'] }}</p>
@@ -1929,7 +1935,7 @@
                             @else
                                 <div class="service-top">
                                     <h4>{{ $option['title'] }}</h4>
-                                    <i><img alt="" src="{{ asset($option['icon']) }}"></i>
+                                    <i><img src="{{ asset($option['icon']) }}" alt="{{ $option['title'] ?? 'Visa comparison icon' }}" width="46" height="46" loading="lazy" decoding="async"></i>
                                 </div>
                                 <div class="service-content">
                                     <p>{{ $option['text'] }}</p>
@@ -2001,7 +2007,8 @@
         'ctaPrimaryLabel' => $finalCta['primary'],
         'ctaPrimaryUrl' => url('book-appointment'),
         'ctaSecondaryLabel' => $finalCta['secondary'],
-        'ctaSecondaryUrl' => '#wh462-hero-form',
+        'ctaSecondaryUrl' => $wh462PageUrl,
+        'ctaSecondaryOnclick' => $wh462ScrollToHeroForm,
     ])
 
     @include('partials.testi', [
@@ -2037,7 +2044,7 @@
             <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
             <span>Book Appointment</span>
         </a>
-        <a class="wh462-sticky-btn wh462-sticky-btn--enquiry" href="#wh462-faq-form">
+        <a class="wh462-sticky-btn wh462-sticky-btn--enquiry" href="{{ $wh462PageUrl }}" onclick="{{ $wh462ScrollToFaqForm }}">
             <i class="fa-regular fa-paper-plane" aria-hidden="true"></i>
             <span>Submit Enquiry</span>
         </a>

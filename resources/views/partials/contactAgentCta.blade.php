@@ -88,7 +88,7 @@
             <div class="row align-items-center justify-content-between g-4 gy-5">
                 <div class="col-xl-4 col-lg-5" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
                     <div class="contact-page-agent-card text-center mx-lg-0 mx-auto" style="max-width: 400px;">
-                        <img class="contact-page-agent-card__logo" src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="Visawizer" width="140" height="40" loading="lazy">
+                        <img class="contact-page-agent-card__logo" src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="Visawizer" width="140" height="40" loading="lazy" decoding="async">
                         <p class="contact-page-agent-card__tagline mb-0">Education &amp; Migration Services</p>
                         <div class="contact-page-agent-card__icon mb-2">
                             <i class="fa-light fa-user-tie"></i>
@@ -119,7 +119,7 @@
                 </div>
             </div>
         </div>
-        <div class="shape-8"><img alt="" src="{{ asset('assets/img/shapes/shape-8.webp') }}"></div>
-        <div class="shape-9"><img alt="" src="{{ asset('assets/img/shapes/shape-9.webp') }}"></div>
+        <div class="shape-8"><img src="{{ asset('assets/img/shapes/shape-8.webp') }}" alt="Decorative section shape" width="200" height="200" loading="lazy" decoding="async"></div>
+        <div class="shape-9"><img src="{{ asset('assets/img/shapes/shape-9.webp') }}" alt="Decorative section shape" width="200" height="200" loading="lazy" decoding="async"></div>
     </div>
 </section>

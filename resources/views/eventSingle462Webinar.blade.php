@@ -1079,6 +1079,8 @@ button.accordion-button {
     $daysLeft = \Carbon\Carbon::now()->diffInDays(\Carbon\Carbon::parse($event->start_date), false);
     $shareUrl = urlencode(url()->current());
     $shareTitle = urlencode($event->title);
+    $ev462PageUrl = url()->current();
+    $ev462ScrollToForm = "var t=document.getElementById('eventForm');if(t){t.scrollIntoView({behavior:'smooth'});return false;}";
 
     $audiences = [
         'Young applicants planning to apply for the 462 Work and Holiday Visa',
@@ -1158,7 +1160,7 @@ button.accordion-button {
             <div class="row ev462-hero-row g-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                 <div class="col-lg-8 ev462-hero-main">
                     <div class="thumb-wrap ev462-hero-thumb">
-                        <img src="{{ asset($event->image) }}" alt="{{ $event->title }}" loading="eager" width="960" height="540">
+                        <img src="{{ asset($event->image) }}" alt="{{ $event->title }}" width="960" height="540" loading="eager" decoding="async">
                     </div>
                     <div class="count-down-date m-b-20">
                         <i class="fa-light fa-calendar-days"></i>
@@ -1173,7 +1175,7 @@ button.accordion-button {
                         <div class="s-widget-wrap m-b-0 h-100">
                             <div class="w-title">
                                 <h3>
-                                    <img src="{{ asset('assets/img/icons/icon-20.svg') }}" alt="icon"/>
+                                    <img src="{{ asset('assets/img/icons/icon-20.svg') }}" alt="Speaker section icon" width="20" height="20" loading="lazy" decoding="async"/>
                                     Speaker
                                 </h3>
                                 <div class="bar-wrap">
@@ -1183,7 +1185,7 @@ button.accordion-button {
                             </div>
                             <div class="organizer-info-wrap">
                                 <div class="thumb">
-                                    <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="Visawizer" style="height: 100%; object-fit: contain; border-radius: 0; padding: 6px;">
+                                    <img src="{{ asset('assets/images/visawizer_logo.svg') }}" alt="Visawizer" width="120" height="120" loading="lazy" decoding="async" style="height: 100%; object-fit: contain; border-radius: 0; padding: 6px;">
                                 </div>
                                 <div class="name">
                                     <h3>{{ $event->speaker }}</h3>
@@ -1229,7 +1231,7 @@ button.accordion-button {
                     <div class="row row-gap-3 align-items-stretch g-3">
                         <div class="col-xl-4 col-lg-4 d-flex">
                             <figure class="ev462-why-split__visual w-100">
-                                <img src="{{ asset('assets/imgs/founder/ankur-saini-trust.jpeg') }}" alt="{{ $event->speaker }} — Visa Wizer migration advisory" loading="lazy" width="640" height="512">
+                                <img src="{{ asset('assets/imgs/founder/ankur-saini-trust.jpeg') }}" alt="{{ $event->speaker }} — Visa Wizer migration advisory" width="400" height="320" loading="lazy" decoding="async">
                             </figure>
                         </div>
                         <div class="col-xl-8 col-lg-8 d-flex">
@@ -1237,7 +1239,7 @@ button.accordion-button {
                                 <p class="study-grad-sub m-b-0">The 462 Work and Holiday Visa is an exciting opportunity for eligible young people who want to travel, work and experience life in Australia. However, many applicants are confused about eligibility, documents, timing, ballot requirements and what happens after selection.</p>
                                 <p class="study-grad-sub m-b-0">This webinar will simplify the process and help you understand whether this pathway may be suitable for you before you make mistakes or miss important steps.</p>
                                 <div class="study-grad-cta">
-                                    <a class="e-primary-btn has-icon" href="#eventForm">
+                                    <a class="e-primary-btn has-icon" href="{{ $ev462PageUrl }}" onclick="{{ $ev462ScrollToForm }}">
                                         Reserve Your Seat
                                         <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                                     </a>
@@ -1296,7 +1298,7 @@ button.accordion-button {
                                         @endforeach
                                     </ul>
                                     <div class="ev462-innovation-banner__cta">
-                                        <a class="e-primary-btn has-icon" href="#eventForm">
+                                        <a class="e-primary-btn has-icon" href="{{ $ev462PageUrl }}" onclick="{{ $ev462ScrollToForm }}">
                                             Reserve Your Seat
                                             <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                                         </a>
@@ -1365,7 +1367,7 @@ button.accordion-button {
                             <div class="ev462-faq-collage" aria-hidden="true">
                                 @foreach ($faqGallery as $cell)
                                 <figure class="ev462-faq-collage__cell ev462-faq-collage__cell--{{ $cell['slot'] }}">
-                                    <img src="{{ asset($cell['src']) }}" alt="{{ $cell['alt'] }}" loading="lazy" width="520" height="360">
+                                    <img src="{{ asset($cell['src']) }}" alt="{{ $cell['alt'] }}" width="520" height="360" loading="lazy" decoding="async">
                                 </figure>
                                 @endforeach
                             </div>
@@ -1379,7 +1381,7 @@ button.accordion-button {
                             <div class="ev462-register-included w-100">
                                 <div class="ev462-register-included__card">
                                     <figure class="ev462-register-included__visual">
-                                        <img src="{{ asset('assets/imgs/founder/ankur-saini-founder-message.jpeg') }}" alt="{{ $event->speaker }} — Visa Wizer migration advisory" loading="lazy" width="640" height="480">
+                                        <img src="{{ asset('assets/imgs/founder/ankur-saini-founder-message.jpeg') }}" alt="{{ $event->speaker }} — Visa Wizer migration advisory" width="400" height="280" loading="lazy" decoding="async">
                                     </figure>
                                     <div class="ev462-register-included__body">
                                         <blockquote class="ev462-register-included__quote">
@@ -1438,7 +1440,7 @@ button.accordion-button {
             </div>
         </div>
         <div class="d-shape-1">
-            <img src="{{ asset('assets/img/shapes/shape-31.webp') }}" alt="shape-31"/>
+            <img src="{{ asset('assets/img/shapes/shape-31.webp') }}" alt="Decorative section shape" width="200" height="200" loading="lazy" decoding="async"/>
         </div>
     </section>
 </div>

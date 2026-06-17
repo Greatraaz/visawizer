@@ -553,7 +553,7 @@
                     <span>Working Holiday</span>
                 </div>
             </div>
-            <div class="shape"><img alt="" src="{{ asset('assets/img/shapes/shape-39.webp') }}"></div>
+            <div class="shape"><img src="{{ asset('assets/img/shapes/shape-39.webp') }}" alt="Decorative visitor visa hero shape" width="1920" height="1080" loading="lazy" decoding="async"></div>
         </div>
     </section>
 
@@ -584,7 +584,7 @@
             <div class="row row-gap-5 align-items-center">
                 <div class="col-lg-5" data-aos="fade-up">
                     <div class="visitor-split-media">
-                        <img src="{{ asset('assets/imgs/visitor/vv-split-guidance.webp') }}" alt="Visitor visa guidance for Australia">
+                        <img src="{{ asset('assets/imgs/visitor/vv-split-guidance.webp') }}" alt="Visitor visa guidance for Australia" width="480" height="420" loading="lazy" decoding="async">
                     </div>
                 </div>
                 <div class="col-lg-7" data-aos="fade-up" data-aos-delay="120">
@@ -678,7 +678,7 @@
                 <div class="row g-0 align-items-stretch">
                     <div class="col-lg-5">
                         <div class="visitor-work-media">
-                            <img src="{{ asset('assets/imgs/visitor/vv-work-holiday.webp') }}" alt="Working holiday visa guidance for young travellers">
+                            <img src="{{ asset('assets/imgs/visitor/vv-work-holiday.webp') }}" alt="Working holiday visa guidance for young travellers" width="480" height="420" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -746,7 +746,7 @@
         <div class="container">
             <div class="visitor-audience-layout">
                 <div class="visitor-image-card" data-aos="fade-up">
-                    <img src="{{ asset('assets/imgs/visitor/vv-audience.webp') }}" alt="Visitor visa support for travellers and families">
+                    <img src="{{ asset('assets/imgs/visitor/vv-audience.webp') }}" alt="Visitor visa support for travellers and families" width="400" height="420" loading="lazy" decoding="async">
                 </div>
                 <div data-aos="fade-up" data-aos-delay="120">
                     <div class="visitor-separated">

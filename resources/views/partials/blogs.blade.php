@@ -53,7 +53,7 @@
                                 <div class="swiper-slide">
                                     <div class="blog-card">
                                         <div class="thumb">
-                                            <a href="{{ url('blog/' . $slug) }}"><img class="w-100" src="{{ $featuredImage }}" alt="{{ $slug }}"></a>
+                                            <a href="{{ url('blog/' . $slug) }}"><img class="w-100" src="{{ $featuredImage }}" alt="{{ strip_tags($title) }}" width="400" height="200" loading="lazy" decoding="async"></a>
                                             <div class="category">
                                                 <a href="javascript:void(0);">{{ $author }}</a>
                                             </div>
@@ -107,5 +107,5 @@
             </div>
         </div>
     </div>
-    <div class="shape"><img alt="shape" src="{{ asset('assets/img/shapes/shape-38.webp') }}"></div>
+    <div class="shape"><img src="{{ asset('assets/img/shapes/shape-38.webp') }}" alt="Decorative section shape" width="200" height="200" loading="lazy" decoding="async"></div>
 </section>

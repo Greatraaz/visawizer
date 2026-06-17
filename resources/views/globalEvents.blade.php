@@ -55,7 +55,7 @@
                     <div class="event-card-2 m-b-30">
                         <div class="event-thumb">
                             <a href="{{ url('event-details/'.$event->slug) }}">
-                                <img src="{{ asset($event->image) }}" alt="thumb" height="300" class="object-fit-cover">
+                                <img src="{{ asset($event->image) }}" alt="{{ $event->title }}" width="400" height="300" loading="lazy" decoding="async" class="object-fit-cover">
                             </a>
 
                             <div class="event-date">

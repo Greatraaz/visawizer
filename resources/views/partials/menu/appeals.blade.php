@@ -24,7 +24,7 @@
                     </li>
                   </ul>
                 </div>
-                <img src="{{ asset('img/appeals1.png') }}" class="rounded-3 mt-3" style="height: 220px;width: 100%;object-fit: cover;object-position: top;">
+                <img src="{{ asset('img/appeals1.png') }}" class="rounded-3 mt-3" alt="Appeals and visa review guidance from Visawizer" width="320" height="220" loading="lazy" decoding="async" style="height: 220px;width: 100%;object-fit: cover;object-position: top;">
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@
             <div class="featured-panel">
               <div>
                 <div class="featured-img-wrap h-184">
-                  <img src="{{ asset('img/appeals2.png') }}" alt="Students studying in Australia">
+                  <img src="{{ asset('img/appeals2.png') }}" alt="Visawizer appeals and review support for visa decisions" width="400" height="215" loading="lazy" decoding="async">
                   <span class="featured-badge">✦ Visawizer</span>
                 </div>
 
@@ -132,7 +132,7 @@
         <div class="featured-panel">
           <div>
             <div class="featured-img-wrap h-184">
-              <img src="{{ asset('img/appeals3.png') }}" alt="Students studying in Australia">
+              <img src="{{ asset('img/appeals3.png') }}" alt="Expert support for protection and humanitarian visa matters" width="400" height="215" loading="lazy" decoding="async">
               <span class="featured-badge">✦ Get Expert Support</span>
             </div>
 

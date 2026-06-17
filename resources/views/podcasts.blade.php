@@ -23,7 +23,7 @@
             <div class="col-xl-6 m-b-30">
                 <div class="testimonial-card-2">
                     <div class="thumb">
-                        <img alt="thumb-10" src="{{ asset('assets/images/testimonial1.webp') }}">
+                        <img src="{{ asset('assets/images/testimonial1.webp') }}" alt="Visawizer podcast testimonial from Neha Sharma" width="220" height="220" loading="lazy" decoding="async">
                     </div>
                     <div class="card-content">
                         <div class="review">
@@ -34,13 +34,13 @@
                             <h6>HR Manager, Delhi</h6>
                         </div>
                     </div>
-                    <div class="quote-icon"><img alt="icon" src="{{ asset('assets/img/icons/icon-5.svg') }}"></div>
+                    <div class="quote-icon"><img src="{{ asset('assets/img/icons/icon-5.svg') }}" alt="Quote icon" width="40" height="40" loading="lazy" decoding="async"></div>
                 </div>
             </div>
             <div class="col-xl-6">
                 <div class="testimonial-card-2">
                     <div class="thumb">
-                        <img alt="thumb-10" src="{{ asset('assets/images/testimonial2.webp') }}">
+                        <img src="{{ asset('assets/images/testimonial2.webp') }}" alt="Visawizer podcast testimonial from Shivam Gupta" width="220" height="220" loading="lazy" decoding="async">
                     </div>
                     <div class="card-content">
                         <div class="review">
@@ -51,13 +51,13 @@
                             <h6>Senior Analyst, Bengaluru</h6>
                         </div>
                     </div>
-                    <div class="quote-icon"><img alt="icon" src="{{ asset('assets/img/icons/icon-5.svg') }}"></div>
+                    <div class="quote-icon"><img src="{{ asset('assets/img/icons/icon-5.svg') }}" alt="Quote icon" width="40" height="40" loading="lazy" decoding="async"></div>
                 </div>
             </div>
             <div class="col-xl-6">
                 <div class="testimonial-card-2">
                     <div class="thumb">
-                        <img alt="thumb-10" src="{{ asset('assets/images/testimonial3.webp') }}">
+                        <img src="{{ asset('assets/images/testimonial3.webp') }}" alt="Visawizer podcast testimonial from Aditi Mehra" width="220" height="220" loading="lazy" decoding="async">
                     </div>
                     <div class="card-content">
                         <div class="review">
@@ -68,13 +68,13 @@
                             <h6>Operations Lead, Mumbai</h6>
                         </div>
                     </div>
-                    <div class="quote-icon"><img alt="icon" src="{{ asset('assets/img/icons/icon-5.svg') }}"></div>
+                    <div class="quote-icon"><img src="{{ asset('assets/img/icons/icon-5.svg') }}" alt="Quote icon" width="40" height="40" loading="lazy" decoding="async"></div>
                 </div>
             </div>
             <div class="col-xl-6">
                 <div class="testimonial-card-2">
                     <div class="thumb">
-                        <img alt="thumb-10" src="{{ asset('assets/images/testimonial4.webp') }}">
+                        <img src="{{ asset('assets/images/testimonial4.webp') }}" alt="Visawizer podcast testimonial from Laxman Singh" width="220" height="220" loading="lazy" decoding="async">
                     </div>
                     <div class="card-content">
                         <div class="review">
@@ -85,7 +85,7 @@
                             <h6>Compliance Officer, Ahmedabad</h6>
                         </div>
                     </div>
-                    <div class="quote-icon"><img alt="icon" src="{{ asset('assets/img/icons/icon-5.svg') }}"></div>
+                    <div class="quote-icon"><img src="{{ asset('assets/img/icons/icon-5.svg') }}" alt="Quote icon" width="40" height="40" loading="lazy" decoding="async"></div>
                 </div>
             </div>
         </div>

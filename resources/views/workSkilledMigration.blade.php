@@ -466,7 +466,7 @@
                 <a class="study-btn-outline-light" href="{{ url('book-appointment') }}"><i class="fa-regular fa-calendar-check"></i> Book Consultation</a>
             </div>
         </div>
-        <div class="shape"><img alt="" src="{{ asset('assets/img/shapes/shape-39.webp') }}"></div>
+        <div class="shape"><img src="{{ asset('assets/img/shapes/shape-39.webp') }}" alt="Decorative work migration hero shape" width="1920" height="1080" loading="lazy" decoding="async"></div>
     </div>
 </section>
 
@@ -531,7 +531,7 @@
         <div class="row row-gap-5 align-items-center">
             <div class="col-md-4 d-flex justify-content-center justify-content-md-start">
                 <div class="wsm-skilled-mission__figure" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                    <img src="{{ asset('assets/imgs/work/wsm-s3-mission.webp') }}" alt="Skilled migration planning for Australia" loading="lazy" width="520" height="650">
+                    <img src="{{ asset('assets/imgs/work/wsm-s3-mission.webp') }}" alt="Skilled migration planning for Australia" width="520" height="650" loading="lazy" decoding="async">
                 </div>
             </div>
             <div class="col-md-8">
@@ -626,42 +626,42 @@
                     <div class="wsm-regional-catalog__grid" role="list">
                         <a class="wsm-regional-catalog__cell" role="listitem" href="{{ url('visa/dama') }}">
                             <span class="wsm-regional-catalog__num" aria-hidden="true">01</span>
-                            <div class="wsm-regional-catalog__ico" aria-hidden="true"><img src="{{ asset('assets/imgs/work/wsm-regional-dama.webp') }}" alt="" loading="lazy"></div>
+                            <div class="wsm-regional-catalog__ico" aria-hidden="true"><img src="{{ asset('assets/imgs/work/wsm-regional-dama.webp') }}" alt="DAMA regional migration pathway" width="180" height="130" loading="lazy" decoding="async"></div>
                             <div class="wsm-regional-catalog__body">
                                 <h4>DAMA</h4>
                             </div>
                         </a>
                         <a class="wsm-regional-catalog__cell" role="listitem" href="{{ url('visa/temporary-work-400') }}">
                             <span class="wsm-regional-catalog__num" aria-hidden="true">02</span>
-                            <div class="wsm-regional-catalog__ico" aria-hidden="true"><img src="{{ asset('assets/imgs/work/wsm-regional-400.webp') }}" alt="" loading="lazy"></div>
+                            <div class="wsm-regional-catalog__ico" aria-hidden="true"><img src="{{ asset('assets/imgs/work/wsm-regional-400.webp') }}" alt="Temporary Work Visa Subclass 400" width="180" height="130" loading="lazy" decoding="async"></div>
                             <div class="wsm-regional-catalog__body">
                                 <h4>Temporary Work Visa 400</h4>
                             </div>
                         </a>
                         <a class="wsm-regional-catalog__cell" role="listitem" href="{{ url('visa/temporary-activity-408') }}">
                             <span class="wsm-regional-catalog__num" aria-hidden="true">03</span>
-                            <div class="wsm-regional-catalog__ico" aria-hidden="true"><img src="{{ asset('assets/imgs/work/wsm-regional-408.webp') }}" alt="" loading="lazy"></div>
+                            <div class="wsm-regional-catalog__ico" aria-hidden="true"><img src="{{ asset('assets/imgs/work/wsm-regional-408.webp') }}" alt="Temporary Activity Visa Subclass 408" width="180" height="130" loading="lazy" decoding="async"></div>
                             <div class="wsm-regional-catalog__body">
                                 <h4>Temporary Activity Visa 408</h4>
                             </div>
                         </a>
                         <a class="wsm-regional-catalog__cell" role="listitem" href="{{ url('visa/skilled-employer-sponsored-494') }}">
                             <span class="wsm-regional-catalog__num" aria-hidden="true">04</span>
-                            <div class="wsm-regional-catalog__ico" aria-hidden="true"><img src="{{ asset('assets/imgs/work/wsm-regional-494.webp') }}" alt="" loading="lazy"></div>
+                            <div class="wsm-regional-catalog__ico" aria-hidden="true"><img src="{{ asset('assets/imgs/work/wsm-regional-494.webp') }}" alt="Regional employer sponsored visa options" width="180" height="130" loading="lazy" decoding="async"></div>
                             <div class="wsm-regional-catalog__body">
                                 <h4>Regional employer options</h4>
                             </div>
                         </a>
                         <a class="wsm-regional-catalog__cell" role="listitem" href="{{ url('visa/skills-in-demand-482') }}">
                             <span class="wsm-regional-catalog__num" aria-hidden="true">05</span>
-                            <div class="wsm-regional-catalog__ico" aria-hidden="true"><img src="{{ asset('assets/imgs/work/wsm-regional-labour.webp') }}" alt="" loading="lazy"></div>
+                            <div class="wsm-regional-catalog__ico" aria-hidden="true"><img src="{{ asset('assets/imgs/work/wsm-regional-labour.webp') }}" alt="Labour agreement visa awareness" width="180" height="130" loading="lazy" decoding="async"></div>
                             <div class="wsm-regional-catalog__body">
                                 <h4>Labour agreement awareness</h4>
                             </div>
                         </a>
                         <a class="wsm-regional-catalog__cell" role="listitem" href="{{ url('visa/temporary-activity-408') }}">
                             <span class="wsm-regional-catalog__num" aria-hidden="true">06</span>
-                            <div class="wsm-regional-catalog__ico" aria-hidden="true"><img src="{{ asset('assets/imgs/work/wsm-regional-special.webp') }}" alt="" loading="lazy"></div>
+                            <div class="wsm-regional-catalog__ico" aria-hidden="true"><img src="{{ asset('assets/imgs/work/wsm-regional-special.webp') }}" alt="Special-purpose work and activity planning" width="180" height="130" loading="lazy" decoding="async"></div>
                             <div class="wsm-regional-catalog__body">
                                 <h4>Special-purpose work or activity planning</h4>
                             </div>
@@ -700,7 +700,7 @@
                 <div class="col-lg-3 d-flex align-items-center justify-content-center">
                     <div class="wsm-innovation-banner__visual w-100">
                         <div class="wsm-innovation-banner__figure">
-                            <img src="{{ asset('assets/imgs/work/wsm-innovation.webp') }}" alt="National Innovation Visa — exceptional talent in Australia" loading="lazy">
+                            <img src="{{ asset('assets/imgs/work/wsm-innovation.webp') }}" alt="National Innovation Visa — exceptional talent in Australia" width="280" height="220" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>

@@ -33,7 +33,7 @@
                     <div class="col-xl-4 col-md-6 col-sm-12 m-b-30">
                         <div class="blog-card">
                             <div class="thumb">
-                                <a href="{{ url('blog/' . $slug) }}"><img class="w-100" src="{{ $featuredImage }}" alt="{{ $slug }}"></a>
+                                <a href="{{ url('blog/' . $slug) }}"><img class="w-100" src="{{ $featuredImage }}" alt="{{ strip_tags($title) }}" width="400" height="230" loading="lazy" decoding="async"></a>
                                 <div class="event-date">
                                     <h2>{{ $day }}</h2>
                                     <h5>{{ $month }}</h5><span>{{ $year }}</span>

@@ -5,6 +5,9 @@
 @endpush
 
 @section('content')
+    @php
+        $visaGuidePageUrl = url('visa-guides');
+    @endphp
     <div class="visa-guide-page">
     <!-- HERO SECTION -->
     <section class="vw-hero">
@@ -20,7 +23,7 @@
               </p>
               <div class="vw-btn-row">
                 <a class="vw-btn vw-btn-primary" href="{{ url('book-appointment') }}">Book a Visa Consultation</a>
-                <a class="vw-btn vw-btn-secondary" href="#visa-categories">Explore Visa Categories</a>
+                <a class="vw-btn vw-btn-secondary" href="{{ $visaGuidePageUrl }}" onclick="var t=document.getElementById('visa-categories');if(t){t.scrollIntoView({behavior:'smooth'});return false;}">Explore Visa Categories</a>
               </div>
             </div>
 
@@ -29,19 +32,19 @@
                 <h3>Not sure where to start?</h3>
                 <p class="text-dark">Choose your goal and move to the most relevant visa guide.</p>
                 <div class="vw-finder-list">
-                  <a class="vw-finder-item" href="#study-visa">
+                  <a class="vw-finder-item" href="{{ $visaGuidePageUrl }}" onclick="var t=document.getElementById('study-visa');if(t){t.scrollIntoView({behavior:'smooth'});return false;}">
                     <span class="vw-icon">01</span>
                     <span><strong>I want to study in Australia</strong><br />Student, guardian, training and graduate visa pathways.</span>
                   </a>
-                  <a class="vw-finder-item" href="#skilled-visa">
+                  <a class="vw-finder-item" href="{{ $visaGuidePageUrl }}" onclick="var t=document.getElementById('skilled-visa');if(t){t.scrollIntoView({behavior:'smooth'});return false;}">
                     <span class="vw-icon">02</span>
                     <span><strong>I want to work or settle</strong><br />Skilled, regional and employer sponsored pathways.</span>
                   </a>
-                  <a class="vw-finder-item" href="#family-visa">
+                  <a class="vw-finder-item" href="{{ $visaGuidePageUrl }}" onclick="var t=document.getElementById('family-visa');if(t){t.scrollIntoView({behavior:'smooth'});return false;}">
                     <span class="vw-icon">03</span>
                     <span><strong>I want to join family</strong><br />Partner, parent, child and family visa options.</span>
                   </a>
-                  <a class="vw-finder-item" href="#appeals">
+                  <a class="vw-finder-item" href="{{ $visaGuidePageUrl }}" onclick="var t=document.getElementById('appeals');if(t){t.scrollIntoView({behavior:'smooth'});return false;}">
                     <span class="vw-icon">04</span>
                     <span><strong>I have a complex visa issue</strong><br />Refusals, appeals, protection and review matters.</span>
                   </a>

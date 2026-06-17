@@ -118,7 +118,7 @@
                     </a>
                 </div>
                 <div class="top-right">
-                    <img alt="authors" src="{{ asset('assets/images/area/faq.webp') }}">
+                    <img src="{{ asset('assets/images/area/faq.webp') }}" alt="Visawizer FAQ support illustration" width="118" height="118" loading="lazy" decoding="async">
                     <div class="people-joined">
                         <h5>325+</h5><span>Positive Feedback</span>
                     </div>

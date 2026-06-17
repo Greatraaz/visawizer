@@ -2112,7 +2112,7 @@
             @if ($section['kind'] === 'feature')
                 <div class="visitor-topic-feature" data-aos="fade-up">
                     <div class="visitor-topic-feature__media">
-                        <img src="{{ asset($section['image']) }}" alt="{{ $section['heading'] }}" loading="lazy">
+                        <img src="{{ asset($section['image']) }}" alt="{{ $section['heading'] }}" width="560" height="430" loading="lazy" decoding="async">
                     </div>
                     <div class="visitor-topic-feature__copy">
                         <div class="visitor-topic-icon"><i class="{{ $section['icon'] }}"></i></div>
@@ -2186,7 +2186,7 @@
                     <div class="row g-0 align-items-stretch">
                         <div class="col-lg-5">
                             <div class="visitor-topic-support__image">
-                                <img src="{{ asset($section['image']) }}" alt="{{ $section['heading'] }}" loading="lazy">
+                                <img src="{{ asset($section['image']) }}" alt="{{ $section['heading'] }}" width="480" height="340" loading="lazy" decoding="async">
                             </div>
                         </div>
                         <div class="col-lg-7">
@@ -2235,7 +2235,7 @@
                     </div>
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="visitor-topic-media">
-                            <img src="{{ asset($section['image']) }}" alt="{{ $section['heading'] }}" loading="lazy">
+                            <img src="{{ asset($section['image']) }}" alt="{{ $section['heading'] }}" width="540" height="360" loading="lazy" decoding="async">
                         </div>
                     </div>
                 </div>
@@ -2253,7 +2253,7 @@
             <div class="row g-0 align-items-stretch{{ $introShowsSuitForMerged ? ' wvt-intro-band__row--suit' : '' }}">
                 <div class="col-lg-6 wvt-intro-collage-wrap d-flex flex-column">
                     <figure class="wvt-intro-visual" data-aos="fade-up">
-                        <img src="{{ asset($introSingleImg) }}" alt="{{ $page['label'] }}" loading="lazy" width="720" height="720">
+                        <img src="{{ asset($introSingleImg) }}" alt="{{ $page['label'] }}" width="{{ $isFamilyVisaTopic ? 540 : 720 }}" height="{{ $isFamilyVisaTopic ? 420 : 720 }}" loading="lazy" decoding="async">
                     </figure>
                 </div>
                 <div class="col-lg-6 wvt-intro-text-col">
@@ -2317,7 +2317,7 @@
                             <div class="col-md-5 col-lg-4 order-1 order-md-2 text-center text-md-end">
                                 <div class="wvt-planning-visual-shell" data-aos="fade-up" data-aos-delay="20">
                                     <figure class="wvt-stack-overlap-visual">
-                                        <img src="{{ asset($stackSectionImg) }}" alt="" loading="lazy" width="480" height="480">
+                                        <img src="{{ asset($stackSectionImg) }}" alt="{{ $page['planning']['heading'] ?? $page['label'] }}" width="300" height="300" loading="lazy" decoding="async">
                                     </figure>
                                 </div>
                             </div>
@@ -2508,7 +2508,7 @@
             <div class="col-12 col-xl-11">
                 <div class="wvt-pair-col wvt-pair-col--strategy">
                     <div class="wvt-strategy-figure" data-aos="fade-up">
-                        <img src="{{ asset($strategyImg) }}" alt="{{ $page['strategy']['heading'] ?? 'Work visa strategy planning' }}" loading="lazy">
+                        <img src="{{ asset($strategyImg) }}" alt="{{ $page['strategy']['heading'] ?? 'Work visa strategy planning' }}" width="640" height="420" loading="lazy" decoding="async">
                     </div>
                     <div class="wvt-approach-copy" data-aos="fade-up">
                         <div class="common-subtitle text-uppercase m-b-10"><span>Approach</span></div>
@@ -2632,7 +2632,7 @@
             </div>
             <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <div class="wvt-support-figure">
-                    <img src="{{ asset($supportImg) }}" alt="" loading="lazy" width="640" height="420">
+                    <img src="{{ asset($supportImg) }}" alt="{{ $page['support']['heading'] ?? $page['label'] }}" width="540" height="360" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>

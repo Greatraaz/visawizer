@@ -2,7 +2,7 @@
 
   <!-- COL 2: Success -->
   <div class="col-lg-3 col-md-6 border-start border-1" style="border-color:rgba(102,0,63,.1)!important;">
-      <img src="{{ url('img/wp1.png') }}" class="rounded-3" style="height: 210px;width: 100%;object-fit: cover;">
+      <img src="{{ url('img/wp1.png') }}" class="rounded-3" alt="Visawizer education and migration guidance in Australia" width="320" height="210" loading="lazy" decoding="async" style="height: 210px;width: 100%;object-fit: cover;">
       <h5 style="margin: 10px 0 3px;">We Are Best</h5>
       <p>From choosing the right course to preparing your student visa and planning your post-study pathway, Visawizer helps you move with clarity and confidence.</p>
   </div>
@@ -131,7 +131,7 @@
   <!-- PROMO CARD -->
   <div class="col-lg-3 col-md-12">
     <div class="promo-card h-100">
-      <img src="{{ url('img/why-choose.png') }}" class="w-100 rounded-top" style="height:138px;object-fit:cover;" alt="Visawizer Team"/>
+      <img src="{{ url('img/why-choose.png') }}" class="w-100 rounded-top" alt="Visawizer team supporting Australian visa and migration clients" width="320" height="138" loading="lazy" decoding="async" style="height:138px;object-fit:cover;"/>
       <div class="p-3 d-flex flex-column gap-2" style="position:relative;z-index:1;">
         <h3 class="promo-heading mb-0">Why Choose Visawizer?</h3>
         <div class="promo-divider"></div>
@@ -139,7 +139,7 @@
           Registered migration agents delivering transparent, results-driven visa solutions for families and professionals across Australia.
         </p>
         <div class="d-flex flex-column gap-2 mt-1">
-          <a href="{{ url('contact/contact-us') }}" class="btn btn-gold btn-sm d-flex align-items-center justify-content-center gap-2 py-2">
+          <a href="{{ url('contact-us') }}" class="btn btn-gold btn-sm d-flex align-items-center justify-content-center gap-2 py-2">
             <i class="fa-solid fa-headset"></i> Speak to an Expert
           </a>
           <a href="{{ url('contact/book-appointment') }}" class="btn btn-outline-light-sm btn-sm d-flex align-items-center justify-content-center gap-2 py-2 text-white">

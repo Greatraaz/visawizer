@@ -123,7 +123,9 @@
 
                                 <a class="cl-guidance-toggle"
                                    data-bs-toggle="collapse"
-                                   href="#detail-{{ $item['key'] }}"
+                                   data-bs-target="#detail-{{ $item['key'] }}"
+                                   href="{{ url()->current() }}"
+                                   onclick="return false;"
                                    role="button"
                                    aria-expanded="false">
                                     View full guidance <i class="fa-solid fa-chevron-down ms-1"></i>

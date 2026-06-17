@@ -7,6 +7,7 @@
     $ctaPrimaryUrl = $ctaPrimaryUrl ?? url('book-appointment');
     $ctaSecondaryLabel = $ctaSecondaryLabel ?? 'Contact Visawizer';
     $ctaSecondaryUrl = $ctaSecondaryUrl ?? url('contact-us');
+    $ctaSecondaryOnclick = $ctaSecondaryOnclick ?? null;
 @endphp
 
 @once
@@ -96,7 +97,7 @@
                         {{ $ctaPrimaryLabel }}
                         <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                     </a>
-                    <a class="study-btn-ghost-dark is-on-dark" href="{{ $ctaSecondaryUrl }}">{{ $ctaSecondaryLabel }}</a>
+                    <a class="study-btn-ghost-dark is-on-dark" href="{{ $ctaSecondaryUrl }}"@if($ctaSecondaryOnclick) onclick="{{ $ctaSecondaryOnclick }}"@endif>{{ $ctaSecondaryLabel }}</a>
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@
                         <div class="details-content" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                             <div class="blog-card-5 m-b-40">
                                 <div class="thumb">
-                                    <img class="w-100" src="{{ $post['_embedded']['wp:featuredmedia'][0]['source_url'] ?? asset('assets/img/thumbs/thumb-148.webp') }}">
+                                    <img class="w-100" src="{{ $post['_embedded']['wp:featuredmedia'][0]['source_url'] ?? asset('assets/img/thumbs/thumb-148.webp') }}" alt="{{ strip_tags($post['title']['rendered']) }}" width="960" height="540" loading="lazy" decoding="async">
                                 </div>
                                 <div class="content">
                                     <div class="blog-info">
@@ -94,13 +94,13 @@
                                 <div class="s-widget-wrap mt-4">
                                     <div class="detail-contact text-center">
                                         <div class="thumb">
-                                            <img src="{{ asset('assets/images/contact-now.webp') }}" alt="shape">
+                                            <img src="{{ asset('assets/images/contact-now.webp') }}" alt="Contact Visawizer for visa guidance" width="280" height="200" loading="lazy" decoding="async">
                                         </div>
 
                                         <div class="icon-info-wrap">
                                             <div class="icon-wrap">
                                                 <div class="icon">
-                                                    <img src="{{ asset('assets/img/icons/icon-18.svg') }}" alt="icon">
+                                                    <img src="{{ asset('assets/img/icons/icon-18.svg') }}" alt="Contact phone icon" width="18" height="18" loading="lazy" decoding="async">
                                                 </div>
                                                 <div class="bar-wrap">
                                                     <div class="bar-1"></div>

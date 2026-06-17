@@ -702,7 +702,7 @@
                     <a class="study-btn-outline-light" href="{{ url('book-appointment') }}"><i class="fa-regular fa-calendar-check"></i> Book Appointment</a>
                 </div>
             </div>
-            <div class="shape"><img alt="" src="{{ asset('assets/img/shapes/shape-39.webp') }}"></div>
+            <div class="shape"><img src="{{ asset('assets/img/shapes/shape-39.webp') }}" alt="Decorative family visa hero shape" width="1920" height="1080" loading="lazy" decoding="async"></div>
         </div>
     </section>
 
@@ -736,7 +736,7 @@
                     <div class="text-uppercase"><span class="bg-p">For couples building life together</span></div>
                     <div class="common-title text-start m-b-15 mt-3"><h2>Partner visa pathways for married, de facto, and engaged couples</h2></div>
                     <div class="family-split-media">
-                        <img src="{{ asset('assets/imgs/family/fv-split-partner.webp') }}" alt="Partner visa support for couples">
+                        <img src="{{ asset('assets/imgs/family/fv-split-partner.webp') }}" alt="Partner visa support for couples" width="480" height="454" loading="lazy" decoding="async">
                     </div>
                 </div>
                 <div class="col-lg-7" data-aos="fade-up" data-aos-delay="120">
@@ -775,7 +775,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="family-inline-image">
-                            <img src="{{ asset('assets/imgs/family/fv-split-parent.webp') }}" alt="Parents and family reviewing Australian visa options">
+                            <img src="{{ asset('assets/imgs/family/fv-split-parent.webp') }}" alt="Parents and family reviewing Australian visa options" width="570" height="250" loading="lazy" decoding="async">
                         </div>
                         <p class="study-copy-body">Visawizer helps families compare options such as Parent Visa 103, Contributory Parent Visa 143, Contributory Parent Temporary Visa 173, Aged Parent Visa 804, Contributory Aged Parent Visa 864, Sponsored Parent Temporary Visa 870, and Contributory Aged Parent Temporary Visa 884.</p>
                         <div class="family-parent-list">
@@ -806,9 +806,9 @@
                 <p class="study-copy-sub m-b-0">Child and orphan relative visa pathways require careful evidence around relationship, care, dependency, custody, and family circumstances.</p>
             </div>
             <div class="family-image-strip" data-aos="fade-up" data-aos-delay="100">
-                <img src="{{ asset('assets/imgs/family/fv-child-strip-1.webp') }}" alt="Child visa pathway planning">
-                <img src="{{ asset('assets/imgs/family/fv-child-strip-2.webp') }}" alt="Family care and child visa documents">
-                <img src="{{ asset('assets/imgs/family/fv-child-strip-3.webp') }}" alt="Children joining family in Australia">
+                <img src="{{ asset('assets/imgs/family/fv-child-strip-1.webp') }}" alt="Child visa pathway planning" width="480" height="300" loading="lazy" decoding="async">
+                <img src="{{ asset('assets/imgs/family/fv-child-strip-2.webp') }}" alt="Family care and child visa documents" width="320" height="300" loading="lazy" decoding="async">
+                <img src="{{ asset('assets/imgs/family/fv-child-strip-3.webp') }}" alt="Children joining family in Australia" width="400" height="300" loading="lazy" decoding="async">
             </div>
             <div class="family-child-grid m-t-45" data-aos="fade-up" data-aos-delay="150">
                 <div class="family-child-card">
@@ -860,7 +860,7 @@
                                 <span class="icon-wrap"><span class="icon"><i class="fa-regular fa-arrow-right"></i> <i class="fa-regular fa-arrow-right"></i></span></span>
                             </a>
                             <div class="family-relative-photo">
-                                <img src="{{ asset('assets/imgs/family/fv-split-carer.webp') }}" alt="Relative visa guidance for care and support">
+                                <img src="{{ asset('assets/imgs/family/fv-split-carer.webp') }}" alt="Relative visa guidance for care and support" width="420" height="235" loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -877,7 +877,7 @@
                 <p class="study-s4-intro m-b-0 mx-auto" style="max-width:760px;">Family applications need accurate documents, strong evidence, and a clear explanation of the relationship or family need.</p>
             </div>
             <div class="family-process-visual" data-aos="fade-up" data-aos-delay="100">
-                <img src="{{ asset('assets/imgs/family/fv-process.webp') }}" alt="Structured family visa preparation process">
+                <img src="{{ asset('assets/imgs/family/fv-process.webp') }}" alt="Structured family visa preparation process" width="960" height="390" loading="lazy" decoding="async">
             </div>
             <div class="family-process-grid" data-aos="fade-up" data-aos-delay="150">
                 @foreach ($process as $index => $step)
@@ -907,7 +907,7 @@
                     </div>
                 @endforeach
                 <div class="family-evidence-map__center">
-                    <img src="{{ asset('assets/imgs/family/fv-evidence.webp') }}" alt="Family visa evidence and document preparation">
+                    <img src="{{ asset('assets/imgs/family/fv-evidence.webp') }}" alt="Family visa evidence and document preparation" width="380" height="520" loading="lazy" decoding="async">
                     <div class="family-evidence-map__caption">
                         <h3>Evidence tells the family story</h3>
                         <p>Each document should connect clearly to the relationship, sponsor position, identity, care need, or family circumstance being claimed.</p>
@@ -926,7 +926,7 @@
             </div>
             <div class="family-why-layout">
                 <div class="family-why-visual" data-aos="fade-up" data-aos-delay="100">
-                    <img src="{{ asset('assets/imgs/family/fv-why.webp') }}" alt="Families choosing careful visa guidance">
+                    <img src="{{ asset('assets/imgs/family/fv-why.webp') }}" alt="Families choosing careful visa guidance" width="520" height="430" loading="lazy" decoding="async">
                 </div>
                 <div class="family-why-grid" data-aos="fade-up" data-aos-delay="150">
                     @foreach ($whyCards as $card)

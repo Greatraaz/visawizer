@@ -123,7 +123,7 @@
       <div class="featured-panel">
         <div>
           <div class="featured-img-wrap">
-            <img src="{{ asset('img/map.png') }}" alt="Students studying in Australia">
+            <img src="{{ asset('img/map.png') }}" alt="Students studying in Australia" width="320" height="159" loading="lazy" decoding="async">
             <span class="featured-badge">✦ Expert Guidance</span>
           </div>
 

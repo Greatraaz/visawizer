@@ -621,7 +621,7 @@
                     <span>Humanitarian Concerns</span>
                 </div>
             </div>
-            <div class="shape"><img alt="" src="{{ asset('assets/img/shapes/shape-39.webp') }}"></div>
+            <div class="shape"><img src="{{ asset('assets/img/shapes/shape-39.webp') }}" alt="Decorative appeals hero shape" width="1920" height="1080" loading="lazy" decoding="async"></div>
         </div>
     </section>
 
@@ -687,7 +687,7 @@
                 <div class="row g-0 align-items-stretch">
                     <div class="col-lg-5">
                         <div class="protection-visa-image">
-                            <img src="{{ asset('assets/imgs/protection/pa-split-protection.webp') }}" alt="Protection visa guidance for asylum seekers in Australia">
+                            <img src="{{ asset('assets/imgs/protection/pa-split-protection.webp') }}" alt="Protection visa guidance for asylum seekers in Australia" width="480" height="430" loading="lazy" decoding="async">
                         </div>
                     </div>
                     <div class="col-lg-7">
@@ -738,7 +738,7 @@
                 </div>
                 <div class="col-lg-5 protection-evidence-aside" data-aos="fade-up" data-aos-delay="120">
                     <div class="protection-evidence-mini-image">
-                        <img src="{{ asset('assets/imgs/protection/pa-evidence.webp') }}" alt="Evidence planning for protection and appeal matters">
+                        <img src="{{ asset('assets/imgs/protection/pa-evidence.webp') }}" alt="Evidence planning for protection and appeal matters" width="400" height="150" loading="lazy" decoding="async">
                     </div>
                     <p class="study-copy-body m-b-0">Evidence planning helps connect the legal issue, personal history, previous decisions, and supporting material into one organised file.</p>
                 </div>
@@ -787,7 +787,7 @@
                 </div>
                 <div class="protection-urgent-aside" data-aos="fade-up" data-aos-delay="140">
                     <div class="protection-urgent-image">
-                        <img src="{{ asset('assets/imgs/protection/pa-urgent.webp') }}" alt="Urgent visa review and protection guidance">
+                        <img src="{{ asset('assets/imgs/protection/pa-urgent.webp') }}" alt="Urgent visa review and protection guidance" width="400" height="220" loading="lazy" decoding="async">
                     </div>
                     <ul class="protection-urgent-list">
                         @foreach ($urgentIndicators as $indicator)
